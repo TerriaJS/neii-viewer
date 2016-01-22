@@ -259,7 +259,8 @@ terria.start({
     });
 
     var nowViewingTab = new NowViewingTabViewModel({
-        nowViewing: terria.nowViewing
+        nowViewing: terria.nowViewing,
+        noDataText: "Add data using the Data Services tab."
     });
 
     var isSmallScreen = document.body.clientWidth <= 700 || document.body.clientHeight <= 420;
