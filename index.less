@@ -36,7 +36,7 @@
 @terriajs-path: "./TerriaJS";
 @cesium-path: "@{terriajs-path}/build/Cesium";
 
-@default-font: 'Roboto', sans-serif;
+@default-font: ,'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
 @highlight-color: #68ADFE;
 @left-side-panels-width: 350px;
 
@@ -126,8 +126,21 @@ span.cesium-credit-delimiter:nth-child(2) {
 @import "npm://terriajs/lib/Styles/SearchTab.less";
 
 // NEII overrides to be cleaned up
+
+
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,200,500);
+
+.brand-bar {
+    background:hsl(0, 0, 30%) url(http://neii.gov.au/sites/default/files/bg_1_col.jpg);
+    background-position: top right;
+    background-size: 25%;
+    background-repeat: no-repeat;
+}
+
 .brand-bar-element {
   padding-right: 5px;
+  color:white;
+  font-size:20px;
 }
 
 .brand-bar-name {
@@ -158,11 +171,50 @@ span.cesium-credit-delimiter:nth-child(2) {
 }
 
 .brand-bar-element.brand-bar-element-first {
-  font-family:'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family:'Dosis','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight:500;
 }
 
-.brand-bar-element.brand-bar-element-first:before {
+/*.brand-bar-element.brand-bar-element-first:before {
   content: "National Environmental Information Infrastructure";
-  color:hsl(99, 43%, 69%);
-  font-size:17px;
+}*/
+
+.explorer-panel-tab-label, .data-catalog-group-label, .data-catalog-top-group-label {
+    font-family:'Dosis','Helvetica Neue Light', 'Arial';
+    font-weight:400;
+    font-size:18px;
+}
+
+.data-catalog-top-group-label {
+}
+
+.explorer-panel-body-pane {
+    background:hsl(0,0,30%);
+}
+
+.modalTitle {
+    font-family:'Dosis','Helvetica Neue Light', 'Arial';
+    font-size:24px;
+}
+
+.catalog-item-info-description {
+    font-size: 16px;
+}
+
+.explorer-panel-header {
+    background:white;
+}
+
+.explorer-panel-tab-active a {
+    background:hsl(0,3%,93%);
+}
+
+.explorer-panel-tab-content a {
+    color:hsl(16, 58%, 25%);
+
+}
+
+.explorer-panel-tab:hover,.explorer-panel-tab-content a:hover, .explorer-panel-tab:hover a {
+    color:hsl(16, 28%, 15%);
+    fill:grey;
 }
