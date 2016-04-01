@@ -37,7 +37,7 @@
 @cesium-path: "@{terriajs-path}/build/Cesium";
 
 @default-font: 'Dosis','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
-@highlight-color: #68ADFE;
+@highlight-color: hsl(82,50%,57%);
 @left-side-panels-width: 350px;
 
 // Panels
@@ -197,8 +197,12 @@ span.cesium-credit-delimiter:nth-child(2) {
     font-size:24px;
 }
 
+.catalog-item-info h2 {
+    font-size: 22px;
+}
+
 .catalog-item-info-description {
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 
 .explorer-panel-header {
@@ -217,4 +221,12 @@ span.cesium-credit-delimiter:nth-child(2) {
 .explorer-panel-tab:hover,.explorer-panel-tab-content a:hover, .explorer-panel-tab:hover a {
     color:hsl(16, 28%, 15%);
     fill:grey;
+}
+
+.markdown p {
+    font-family: Arial, sans-serif;
+}
+
+.markdown a {
+    color: @highlight-color;
 }
