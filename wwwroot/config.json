@@ -16,9 +16,9 @@
         "nci.org.au"
     ],
     "initializationUrls" : [
-        "neii-ereefs",
-        "neii-geofabric-new",
-        "neii-solarclim-new"
+        "neii-oceans",
+        "neii-water",
+        "neii-air"
     ],
     "parameters": {
         "bingMapsKey": "AgZHSWd9Yda7ZjEUkRaG40lVbRAJc9sGl6wy39qWb_QjYwVgVg7drbcLgYUufiOb",
