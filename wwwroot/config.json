@@ -18,7 +18,8 @@
     "initializationUrls" : [
         "neii-oceans",
         "neii-water",
-        "neii-air"
+        "neii-air",
+        "neii-contextual"
     ],
     "parameters": {
         "bingMapsKey": "AgZHSWd9Yda7ZjEUkRaG40lVbRAJc9sGl6wy39qWb_QjYwVgVg7drbcLgYUufiOb",
