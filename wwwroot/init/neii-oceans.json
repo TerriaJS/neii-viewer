@@ -230,6 +230,50 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "name": "Reef temperature",
+                            "type": "group",
+                            "preserveOrder": true,
+                            "items": [
+                                {
+                                "name": "Sea surface temperature (daily composites)",
+                                "type": "wms-getCapabilities",
+                                "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/RT2_gridAgg_P1D_SST"
+                                },
+                                {
+                                "name": "Degree heating days (daily composites)",
+                                "type": "wms-getCapabilities",
+                                "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/RT2_gridAgg_P1D_DHD"
+                                },
+                                {
+                                "name": "Error variables (daily composites)",
+                                "type": "wms-getCapabilities",
+                                "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/RT2_gridAgg_P1D_ERR"
+                                },
+                                {
+                                "name": "Weekly composites",
+                                "type": "wms-getCapabilities",
+                                "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/RT2_gridAgg_P1W"
+                                },
+                                {
+                                "name": "Monthly composites",
+                                "type": "wms-getCapabilities",
+                                "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/RT2_gridAgg_P1M"
+                                },
+                                {
+                                "name": "Seasonal composites",
+                                "type": "wms-getCapabilities",
+                                "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/RT2_gridAgg_P6M"
+                                },
+                                {
+                                "name": "Annual composites",
+                                "type": "wms-getCapabilities",
+                                "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/RT2_gridAgg_P1A"
+                                }
+
+
+                            ]
                         }
                     ]
                 }
