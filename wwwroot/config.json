@@ -19,6 +19,9 @@
         "neii-oceans",
         "neii-water",
         "neii-air",
+        "neii-biota",
+        "neii-land",
+        "neii-other",
         "neii-contextual"
     ],
     "parameters": {
