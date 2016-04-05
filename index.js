@@ -78,6 +78,7 @@ var raiseErrorToUser = require('terriajs/lib/Models/raiseErrorToUser');
 var selectBaseMap = require('terriajs/lib/ViewModels/selectBaseMap');
 var defaultValue = require('terriajs-cesium/Source/Core/defaultValue');
 
+var svgInfo = require('terriajs/lib/SvgPaths/svgInfo');
 var svgPlus = require('terriajs/lib/SvgPaths/svgPlus');
 var svgShare = require('terriajs/lib/SvgPaths/svgShare');
 var svgWorld = require('terriajs/lib/SvgPaths/svgWorld');
@@ -194,7 +195,16 @@ terria.start({
                         terria: terria
                     });
                 }
-            })
+            }),
+            new MenuBarItemViewModel({
+                label: 'About',
+                tooltip: 'About NEII Viewer.',
+                svgPath: svgInfo,
+                svgPathWidth: 18,
+                svgPathHeight: 18,
+                svgFillRule: 'evenodd',
+                href: 'about.html'
+            })            
         ]
     });
 
