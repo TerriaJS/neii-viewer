@@ -126,7 +126,7 @@ span.cesium-credit-delimiter:nth-child(2) {
 @import "npm://terriajs/lib/Styles/SearchTab.less";
 
 // NEII overrides to be cleaned up
-
+@neiibg: hsl(0,0,30%);
 
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,200,500);
 
@@ -233,4 +233,16 @@ span.cesium-credit-delimiter:nth-child(2) {
 
 .markdown a {
     color: @highlight-color;
+}
+
+.menu-bar-item {
+    border-radius:0;
+    background:@neiibg;
+}
+
+.navigation-controls,.compass-gyro-background{
+    background:@neiibg;
+}
+.compass-outer-ring-background {
+    border-color:@neiibg;
 }
