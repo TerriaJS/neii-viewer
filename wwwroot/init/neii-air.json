@@ -19,8 +19,12 @@
                                     "description": "",
                                     "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
                                     "url": "http://neii.bom.gov.au/services/solarclim/wms/data/monClim_gloHorExp1Hou.nc",
+                                    "featureInfoTemplate" : {
+                                        "template": "{{#value}}{{value}} MJ/m&#178;{{/value}}",
+                                        "name": "{{#value}}{{value}} MJ/m2{{/value}}"
+                                    },
                                     "type": "wms",
-                                    "rectangle": [
+                                      "rectangle": [
                                         "100.0",
                                         "-44.0",
                                         "159.0",
@@ -34,6 +38,10 @@
                                     "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
                                     "url": "http://neii.bom.gov.au/services/solarclim/wms/data/monClim_dirNorExp1Hou.nc",
                                     "type": "wms",
+                                    "featureInfoTemplate" : {
+                                        "template": "{{#value}}{{value}} MJ/m&#178;{{/value}}",
+                                        "name": "{{#value}}{{value}} MJ/m2{{/value}}"
+                                    },
                                     "rectangle": [
                                         "100.0",
                                         "-44.0",
@@ -48,6 +56,10 @@
                                     "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
                                     "url": "http://neii.bom.gov.au/services/solarclim/wms/data/monClim_gloHorExp1Day.nc",
                                     "type": "wms",
+                                    "featureInfoTemplate" : {
+                                        "template": "{{#value}}{{value}} MJ/m&#178;{{/value}}",
+                                        "name": "{{#value}}{{value}} MJ/m2{{/value}}"
+                                    },
                                     "rectangle": [
                                         "100.0",
                                         "-44.0",
@@ -62,6 +74,10 @@
                                     "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
                                     "url": "http://neii.bom.gov.au/services/solarclim/wms/data/monClim_dirNorExp1Day.nc",
                                     "type": "wms",
+                                    "featureInfoTemplate" : {
+                                        "template": "{{#value}}{{value}} MJ/m&#178;{{/value}}",
+                                        "name": "{{#value}}{{value}} MJ/m2{{/value}}"
+                                    },
                                     "rectangle": [
                                         "100.0",
                                         "-44.0",
@@ -76,6 +92,10 @@
                                     "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
                                     "url": "http://neii.bom.gov.au/services/solarclim/wms/data/annClim_gloHorExp1Day.nc",
                                     "type": "wms",
+                                    "featureInfoTemplate" : {
+                                        "template": "{{#value}}{{value}} MJ/m&#178;{{/value}}",
+                                        "name": "{{#value}}{{value}} MJ/m2{{/value}}"
+                                    },
                                     "rectangle": [
                                         "100.0",
                                         "-44.0",

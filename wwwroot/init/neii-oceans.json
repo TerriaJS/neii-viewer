@@ -29,8 +29,8 @@
                                     "items": [
                                         {
                                             "description": "Chlorophyll-a, reflecting wavelengths in the green part of the visible light spectrum, is the substance that helps plants capture the sun’s energy. In the water, it indicates the presence of microscopic green algae (phytoplankton). While these plants are a natural part of the reef ecosystem, elevated numbers (a bloom) of phytoplankton signal elevated nutrient levels, especially nitrogen, in the water. Typical sources are runoff from excess fertiliser being applied to crops and, to a lesser extent in the Great Barrier Reef region, sewage contamination from urban areas.",
-                                            "layers": "Chl_MIM_mean",
-                                            "name": "Chlorophyll-a concentration (annual)",
+                                            "layers": "Chl_MIM_median",
+                                            "name": "Chlorophyll-a concentration (annual median)",
                                             "parameters": {
                                                 "ABOVEMAXCOLOR": "0xAF324B",
                                                 "BELOWMINCOLOR": "transparent",
@@ -45,13 +45,17 @@
                                                 "VERSION": "1.1.1"
                                             },
                                             "type": "wms",
+                                            "featureInfoTemplate" : {
+                                                "template": "{{#value}}{{value}} µg/L{{/value}}"
+                                            },
+                                            "rectangle": [ 142, -9.5, 156, -25.5 ],
                                             "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/mwq_gridAgg_P1A"
                                         },
                                         {
                                             "abstract": "...",
                                             "description": "...",
-                                            "layers": "Chl_MIM_mean",
-                                            "name": "Coloured dissolved organic matter (annual)",
+                                            "layers": "CDOM_MIM_median",
+                                            "name": "Coloured dissolved organic matter (annual median)",
                                             "parameters": {
                                                 "ABOVEMAXCOLOR": "0xAF324B",
                                                 "BELOWMINCOLOR": "transparent",
@@ -66,19 +70,23 @@
                                                 "VERSION": "1.1.1"
                                             },
                                             "type": "wms",
+                                            "featureInfoTemplate" : {
+                                                "template": "{{value}} <a href=\"http://environment.data.gov.au/def/property/absorption_by_colored_dissolved_organic_solids\">m<sup>-1</sup></a>"
+                                            },
+                                            "rectangle": [ 142, -9.5, 156, -25.5 ],
                                             "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/mwq_gridAgg_P1A"
                                         },
                                         {
                                             "abstract": "...",
                                             "description": "...",
                                             "layers": "Nap_MIM_median",
-                                            "name": "Non-algal particles (annual)",
+                                            "name": "Non-algal particles (annual median)",
                                             "parameters": {
                                                 "ABOVEMAXCOLOR": "0xAF324B",
                                                 "BELOWMINCOLOR": "transparent",
                                                 "COLORSCALERANGE": "0,0.5",
                                                 "FORMAT": "image/png",
-                                                "LAYERS": "CDOM_MIM_median",
+                                                "LAYERS": "Nap_MIM_median",
                                                 "LOGSCALE": "false",
                                                 "NUMCOLORBANDS": "16",
                                                 "PALETTE": "mwq_nap",
@@ -87,6 +95,10 @@
                                                 "VERSION": "1.1.1"
                                             },
                                             "type": "wms",
+                                            "featureInfoTemplate": {
+                                                "template": "{{value}} <a href=\"http://environment.data.gov.au/def/property/absorption_by_non-algal_particles\">m<sup>-1</sup></a>"
+                                            },
+                                            "rectangle": [ 142, -9.5, 156, -25.5 ],
                                             "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/mwq_gridAgg_P1A"
                                         }
                                     ]
@@ -98,7 +110,7 @@
                                         {
                                             "abstract": "Chlorophyll-a, reflecting wavelengths in the green part of the visible light spectrum, is the substance that helps plants capture the sun’s energy. In the water, it indicates the presence of microscopic green algae (phytoplankton). While these plants are a natural part of the reef ecosystem, elevated numbers (a bloom) of phytoplankton signal elevated nutrient levels, especially nitrogen, in the water. Typical sources are runoff from excess fertiliser being applied to crops and, to a lesser extent in the Great Barrier Reef region, sewage contamination from urban areas.",
                                             "description": "...",
-                                            "layers": "Chl_MIM_mean",
+                                            "layers": "Chl_MIM_median",
                                             "name": "Chlorophyll-a concentration (seasonal)",
                                             "parameters": {
                                                 "ABOVEMAXCOLOR": "0xAF324B",
@@ -114,12 +126,16 @@
                                                 "VERSION": "1.1.1"
                                             },
                                             "type": "wms",
+                                            "rectangle": [ 142, -9.5, 156, -25.5 ],
+                                            "featureInfoTemplate" : {
+                                                "template": "{{#value}}{{value}} µg/L{{/value}}"
+                                            },
                                             "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/mwq_gridAgg_P6M"
                                         },
                                         {
                                             "abstract": "...",
                                             "description": "...",
-                                            "layers": "Chl_MIM_mean",
+                                            "layers": "CDOM_MIM_median",
                                             "name": "Coloured dissolved organic matter (seasonal)",
                                             "parameters": {
                                                 "ABOVEMAXCOLOR": "0xAF324B",
@@ -135,6 +151,10 @@
                                                 "VERSION": "1.1.1"
                                             },
                                             "type": "wms",
+                                            "rectangle": [ 142, -9.5, 156, -25.5 ],
+                                            "featureInfoTemplate" : {
+                                                "template": "{{value}} <a href=\"http://environment.data.gov.au/def/property/absorption_by_colored_dissolved_organic_solids\">m<sup>-1</sup></a>"
+                                            },
                                             "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/mwq_gridAgg_P6M"
                                         },
                                         {
@@ -147,7 +167,7 @@
                                                 "BELOWMINCOLOR": "transparent",
                                                 "COLORSCALERANGE": "0,0.5",
                                                 "FORMAT": "image/png",
-                                                "LAYERS": "CDOM_MIM_median",
+                                                "LAYERS": "Nap_MIM_median",
                                                 "LOGSCALE": "false",
                                                 "NUMCOLORBANDS": "16",
                                                 "PALETTE": "mwq_nap",
@@ -156,6 +176,10 @@
                                                 "VERSION": "1.1.1"
                                             },
                                             "type": "wms",
+                                            "rectangle": [ 142, -9.5, 156, -25.5 ],
+                                            "featureInfoTemplate": {
+                                                "template": "{{value}} <a href=\"http://environment.data.gov.au/def/property/absorption_by_non-algal_particles\">m<sup>-1</sup></a>"
+                                            },
                                             "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/mwq_gridAgg_P6M"
                                         }
                                     ]
@@ -167,7 +191,7 @@
                                         {
                                             "abstract": "Chlorophyll-a, reflecting wavelengths in the green part of the visible light spectrum, is the substance that helps plants capture the sun’s energy. In the water, it indicates the presence of microscopic green algae (phytoplankton). While these plants are a natural part of the reef ecosystem, elevated numbers (a bloom) of phytoplankton signal elevated nutrient levels, especially nitrogen, in the water. Typical sources are runoff from excess fertiliser being applied to crops and, to a lesser extent in the Great Barrier Reef region, sewage contamination from urban areas.",
                                             "description": "...",
-                                            "layers": "Chl_MIM_mean",
+                                            "layers": "Chl_MIM_median",
                                             "name": "Chlorophyll-a concentration (monthly)",
                                             "parameters": {
                                                 "ABOVEMAXCOLOR": "0xAF324B",
@@ -183,12 +207,16 @@
                                                 "VERSION": "1.1.1"
                                             },
                                             "type": "wms",
+                                            "rectangle": [ 142, -9.5, 156, -25.5 ],
+                                            "featureInfoTemplate" : {
+                                                "template": "{{#value}}{{value}} µg/L{{/value}}"
+                                            },
                                             "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/mwq_gridAgg_P1M"
                                         },
                                         {
                                             "abstract": "...",
                                             "description": "...",
-                                            "layers": "Chl_MIM_mean",
+                                            "layers": "CDOM_MIM_median",
                                             "name": "Coloured dissolved organic matter (monthly)",
                                             "parameters": {
                                                 "ABOVEMAXCOLOR": "0xAF324B",
@@ -204,6 +232,10 @@
                                                 "VERSION": "1.1.1"
                                             },
                                             "type": "wms",
+                                            "rectangle": [ 142, -9.5, 156, -25.5 ],
+                                            "featureInfoTemplate" : {
+                                                "template": "{{value}} <a href=\"http://environment.data.gov.au/def/property/absorption_by_colored_dissolved_organic_solids\">m<sup>-1</sup></a>"
+                                            },
                                             "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/mwq_gridAgg_P1M"
                                         },
                                         {
@@ -216,7 +248,7 @@
                                                 "BELOWMINCOLOR": "transparent",
                                                 "COLORSCALERANGE": "0,0.5",
                                                 "FORMAT": "image/png",
-                                                "LAYERS": "CDOM_MIM_median",
+                                                "LAYERS": "Nap_MIM_median",
                                                 "LOGSCALE": "false",
                                                 "NUMCOLORBANDS": "16",
                                                 "PALETTE": "mwq_nap",
@@ -225,6 +257,10 @@
                                                 "VERSION": "1.1.1"
                                             },
                                             "type": "wms",
+                                            "rectangle": [ 142, -9.5, 156, -25.5 ],
+                                            "featureInfoTemplate": {
+                                                "template": "{{value}} <a href=\"http://environment.data.gov.au/def/property/absorption_by_non-algal_particles\">m<sup>-1</sup></a>"
+                                            },
                                             "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/mwq_gridAgg_P1M"
                                         }
                                     ]
