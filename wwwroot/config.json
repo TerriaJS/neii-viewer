@@ -16,7 +16,7 @@
         "nci.org.au"
     ],
     "initializationUrls" : [
-        "neii-oceans",
+        "neii-oceans-prod",
         "neii-water",
         "neii-air",
         "neii-biota",
