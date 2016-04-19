@@ -71,6 +71,7 @@ var SharePopupViewModel = require('terriajs/lib/ViewModels/SharePopupViewModel')
 var MapProgressBarViewModel = require('terriajs/lib/ViewModels/MapProgressBarViewModel');
 var updateApplicationOnHashChange = require('terriajs/lib/ViewModels/updateApplicationOnHashChange');
 var updateApplicationOnMessageFromParentWindow = require('terriajs/lib/ViewModels/updateApplicationOnMessageFromParentWindow');
+var DisclaimerViewModel = require('terriajs/lib/ViewModels/DisclaimerViewModel');
 
 var Terria = require('terriajs/lib/Models/Terria');
 var registerCatalogMembers = require('terriajs/lib/Models/registerCatalogMembers');
@@ -101,6 +102,11 @@ terria.error.addEventListener(function(e) {
         title: e.title,
         message: e.message
     });
+});
+
+DisclaimerViewModel.create({
+    container: 'ui',
+    terria: terria
 });
 
 terria.start({
@@ -144,7 +150,7 @@ terria.start({
 
     var brandBarElements = defaultValue(terria.configParameters.brandBarElements, [
             '',
-            '<a target="_blank" href="http://www.nicta.com.au"><img src="images/terria_logo.png" height="52" title="Version: {{ version }}" /></a>',
+            '<a target="_blank" href="http://terria.io"><img src="images/terria_logo.png" height="52" title="Version: {{ version }}" /></a>',
             ''
         ]);
     brandBarElements = brandBarElements.map(function(s) { return s.replace(/\{\{\s*version\s*\}\}/, version);});
