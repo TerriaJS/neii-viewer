@@ -201,7 +201,22 @@ terria.start({
                         terria: terria
                     });
                 }
-            }),
+            }),/*
+            new MenuBarItemViewModel({
+                label: 'Related Maps',
+                tooltip: 'View other maps in the NationalMap family.',
+                svgPath: svgRelated,
+                svgPathWidth: 14,
+                svgPathHeight: 13,
+                callback: function() {
+                    PopupMessageViewModel.open(ui, {
+                        title: 'Related Maps',
+                        message: require('./lib/Views/RelatedMaps.html'),
+                        width: 600,
+                        height: 430
+                    });
+                }
+            }),*/
             new MenuBarItemViewModel({
                 label: 'About',
                 tooltip: 'About NEII Viewer.',
