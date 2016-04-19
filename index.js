@@ -65,6 +65,7 @@ var NavigationViewModel = require('terriajs/lib/ViewModels/NavigationViewModel')
 var NowViewingAttentionGrabberViewModel = require('terriajs/lib/ViewModels/NowViewingAttentionGrabberViewModel');
 var NowViewingTabViewModel = require('terriajs/lib/ViewModels/NowViewingTabViewModel');
 var PopupMessageViewModel = require('terriajs/lib/ViewModels/PopupMessageViewModel');
+var PopupMessageConfirmationViewModel = require('terriajs/lib/ViewModels/PopupMessageConfirmationViewModel');
 var SearchTabViewModel = require('terriajs/lib/ViewModels/SearchTabViewModel');
 var SettingsPanelViewModel = require('terriajs/lib/ViewModels/SettingsPanelViewModel');
 var SharePopupViewModel = require('terriajs/lib/ViewModels/SharePopupViewModel');
@@ -335,4 +336,32 @@ terria.start({
     });
 
     document.getElementById('loadingIndicator').style.display = 'none';
+
+    if(terria.configParameters.globalDisclaimer !== undefined) {
+      var disclaimer = terria.configParameters.globalDisclaimer;
+      var hostname = location.hostname;
+      if(disclaimer.enabled && hostname.indexOf('localhost') === -1) {
+          var message = '';
+          if (!hostname.match(/neii\.org\.au/)) {
+            message += require('./lib/Views/DevelopmentDisclaimer.html');
+          }
+          var options = {
+              title: (disclaimer.title !== undefined) ? disclaimer.title : 'Warning',
+              confirmText: "Ok",
+              width: 600,
+              height: 550,
+              message: message,
+              horizontalPadding : 100
+          };
+
+          if(disclaimer.confirmationRequired) {
+              // To account for confirmation buttons
+              options.height += 30;
+              PopupMessageConfirmationViewModel.open(ui, options);
+          } else {
+              PopupMessageViewModel.open(ui, options);
+          }
+      }
+    }
+
 });

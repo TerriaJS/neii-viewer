@@ -22,6 +22,11 @@
             "text": "Your organisation",
             "link": "http://www.example.com"
         },
+        "globalDisclaimer": {
+            "enabled": true,
+            "confirmationRequired": true,
+            "title": "Disclaimer"
+        },
         "appName": "Terria Map",
         "supportEmail-CHANGETHIS": "help@example.com",
         "brandBarElements": [
