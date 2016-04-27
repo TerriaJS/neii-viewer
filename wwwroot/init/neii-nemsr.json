@@ -1,0 +1,17 @@
+{
+    "catalog": [
+        {
+            "name": "NEII Data Services – Experimental",
+            "type": "group",
+            "isOpen": true,
+            "items": [
+                {
+                    "type": "wfs",
+                    "name": "NEMSR sites",
+                    "url": "",
+                    "layers": ""
+                }
+            ]
+        }
+    ]
+}

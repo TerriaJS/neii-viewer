@@ -13,3 +13,15 @@ datasources/00_National_Data_Sets.json
 
 # added by GitSavvy
 /wwwroot/editor/
+
+# added by GitSavvy
+/error.log
+
+# added by GitSavvy
+/.gitignore
+
+# added by GitSavvy
+/.gitignore
+
+# added by GitSavvy
+/output.log
