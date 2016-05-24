@@ -6,7 +6,7 @@
             "isOpen": true,
             "items": [
                 {
-                    "name": "Water (2)",
+                    "name": "Water (1)",
                     "type": "group",
                     "items": [
                         {
@@ -145,7 +145,7 @@
                                         },
                                         {
                                             "name": "Water Pipeline",
-                                            "layers": "sh_carto:AHGFWaterPipeline",
+                                            "layers": "ahgf_shcarto:AHGFWaterPipeline",
                                             "description": "Man-made pipelines used for transporting water (mapped)",
                                             "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
                                             "url": "http://geofabric.bom.gov.au/simplefeatures/ows",
@@ -159,7 +159,7 @@
                                         },
                                         {
                                             "name": "Structure",
-                                            "layers": "sh_carto:AHGFStructure",
+                                            "layers": "ahgf_shcarto:AHGFStructure",
                                             "description": "Types of water structures (mapped)",
                                             "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
                                             "url": "http://geofabric.bom.gov.au/simplefeatures/ows",
@@ -715,7 +715,7 @@
                           ],
                           "type": "group",
                           "name": "Water Observations from Space"
-                        }                        
+                        }
                     ]
                 }
             ]
