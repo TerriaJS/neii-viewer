@@ -1,15 +1,33 @@
 {
     "catalog": [
         {
-            "name": "NEII Data Services – Experimental",
+            "name": "NEII Data Services – Conformant",
             "type": "group",
             "isOpen": true,
             "items": [
                 {
-                    "type": "wfs",
-                    "name": "NEMSR sites",
-                    "url": "",
-                    "layers": ""
+                    "type": "group",
+                    "name": "National Environmental Monitoring Sites",
+                    "items": [
+                        {
+                            "type": "group",
+                            "name": "Network",
+                            "items": [
+                                {
+                                    "type": "wfs",
+                                    "name": "Organisation",
+                                    "url": "http://104.236.81.25/cgi-bin/mapserv",
+                                    "parameters": {
+                                        "map": "/data/mapfiles/nemsr.map",
+                                        "typename": "nemsr_sites",
+                                        "BBOX": "-50,100,0,170"
+                                    },
+                                    "requestGeoJson": false,
+                                    "flipGmlCoords": true
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

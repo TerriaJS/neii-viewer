@@ -6,7 +6,8 @@
         "neii-biota",
         "neii-land",
         "neii-other",
-        "neii-contextual"
+        "neii-contextual",
+        "neii-nemsr"
     ],
     "parameters": {
         "bingMapsKey": "AgZHSWd9Yda7ZjEUkRaG40lVbRAJc9sGl6wy39qWb_QjYwVgVg7drbcLgYUufiOb",
