@@ -1,33 +1,168 @@
 {
     "catalog": [
         {
-            "name": "NEII Data Services – Conformant",
+            "name": "Environmental Monitoring Sites – Meta Data",
             "type": "group",
             "isOpen": true,
             "items": [
                 {
+                    "name": "Air (2)",
                     "type": "group",
-                    "name": "National Environmental Monitoring Sites",
                     "items": [
-                        {
-                            "type": "group",
-                            "name": "Network",
-                            "items": [
-                                {
-                                    "type": "wfs",
-                                    "name": "Organisation",
-                                    "url": "http://104.236.81.25/cgi-bin/mapserv",
-                                    "parameters": {
-                                        "map": "/data/mapfiles/nemsr.map",
-                                        "typename": "nemsr_sites",
-                                        "BBOX": "-50,100,0,170"
-                                    },
-                                    "requestGeoJson": false,
-                                    "flipGmlCoords": true
-                                }
+					    {
+                            "name": "ACORN-SAT (Bureau of Meteorology)",
+                            "layers": "network_id=4",
+						    "info": [
+						        {
+								    "name":"Description",
+								    "content":"This is the description of the ACORN-SAT dataset"
+						    	},
+							    {
+								    "name":"URL",
+								    "content":"[ACORN-SAT] (http://www.bom.gov.au/climate/change/acorn-sat/)"
+							    },
+							    {
+								    "name":"Contact Name",
+								    "content":"Ian Muirhead"
+							    },
+							    {
+								    "name":"Contact Phone",
+									"content":"11111111"
+								},
+								{
+									"name":"Contact Address",
+									"content":"GPO Box 1289, Melbourne VIC 3001"
+								},
+								{
+									"name":"Email",
+									"content":"info@bom.gov.au"
+								}												
+					        ],
+                            "description": "ACORN-SAT (Bureau of Meteorology)",
+                            "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
+                            "url": "http://104.236.81.25/cgi-bin/nemsr/get_geojson.py?network_id=4",
+                            "type": "geojson",
+                            "rectangle": [
+                                "100.0",
+                                "-44.0",
+                                "159.0",
+                                "-4.0"
+                            ],
+							"featureInfoTemplate" : "<h1>Site ID: </h1>{{site_id}}.<br /><h2> Description:</h2> {{description}} <br /><h3>URL:</h3> <a href='{{site_url}}'>More information</a>"
+                        },                                        
+					    {
+                            "name": "Solar radiation (Bureau of Meteorology)",
+                            "layers": "network_id=5",
+                            "description": "Solar radiation (Bureau of Meteorology)",
+                            "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
+                            "url": "http://104.236.81.25/cgi-bin/nemsr/get_geojson.py?network_id=5",
+                            "type": "geojson",
+                            "rectangle": [
+                                "100.0",
+                                "-44.0",
+                                "159.0",
+                                "-4.0"
                             ]
                         }
                     ]
+                },
+                
+  		        {
+                    "name": "Biota (0)",
+                    "type": "group",
+                    "items": []
+                },
+		        {
+                    "name": "Land (4)",
+                    "type": "group",
+                    "items": [
+					    {
+                            "name": "Groundcover (Department of Agriculture and Water Resources)",
+                            "layers": "network_id=7",
+                            "description": "Groundcover (Department of Agriculture and Water Resources)",
+                            "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
+                            "url": "http://104.236.81.25/cgi-bin/nemsr/get_geojson.py?network_id=7",
+                            "type": "geojson",
+                            "rectangle": [
+                                "100.0",
+                                "-44.0",
+                                "159.0",
+                                "-4.0"
+					        ]
+                        },
+					    {
+                            "name": "Seismic (Geoscience Australia)",
+                            "layers": "network_id=1",
+                            "description": "Seismic (Geoscience Australia)",
+                            "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
+                            "url": "http://104.236.81.25/cgi-bin/nemsr/get_geojson.py?network_id=1",
+                            "type": "geojson",
+                            "rectangle": [
+                                "100.0",
+                                "-44.0",
+                                "159.0",
+                                "-4.0"
+                            ]
+                        },
+				        {
+                            "name": "Geomag (Geoscience Australia)",
+                            "layers": "network_id=3",
+                            "description": "Geomag (Geoscience Australia)",
+                            "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
+                            "url": "http://104.236.81.25/cgi-bin/nemsr/get_geojson.py?network_id=3",
+                            "type": "geojson",
+                            "rectangle": [
+                                "100.0",
+                                "-44.0",
+                                "159.0",
+                                "-4.0"
+                            ]
+                        },
+					    {
+                            "name": "Accoustic Pressure (Geoscience Australia)",
+                            "layers": "network_id=2",
+                            "description": "Accoustic Pressure (Geoscience Australia)",
+                            "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
+                            "url": "http://104.236.81.25/cgi-bin/nemsr/get_geojson.py?network_id=2",
+                            "type": "geojson",
+                            "rectangle": [
+                                "100.0",
+                                "-44.0",
+                                "159.0",
+                                "-4.0"
+                            ]
+                        }
+			        ]
+                },
+		        {
+                    "name": "Oceans (0)",
+                    "type": "group",
+                    "items": []
+                },
+		        {
+                    "name": "Other (0)",
+                    "type": "group",
+                    "items": []
+                },
+		        {
+                    "name": "Water (1)",
+                    "type": "group",
+                    "items": [
+					    {
+                            "name": "Water data online (Bureau of Meteorology)",
+                            "layers": "network_id=6",
+                            "description": "Water data online (Bureau of Meteorology)",
+                            "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
+                            "url": "http://104.236.81.25/cgi-bin/nemsr/get_geojson.py?network_id=6",
+                            "type": "geojson",
+                            "rectangle": [
+                                "100.0",
+                                "-44.0",
+                                "159.0",
+                                "-4.0"
+                            ]
+                        }
+			        ]
                 }
             ]
         }
