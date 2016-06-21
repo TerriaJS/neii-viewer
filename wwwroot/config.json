@@ -1,39 +1,38 @@
 {
-    "initializationUrls" : [
-        "neii-oceans-prod",
-        "neii-water",
-        "neii-air",
-        "neii-biota",
-        "neii-land",
-        "neii-other",
-        "neii-contextual",
-        "neii-nemsr"
-    ],
-    "parameters": {
-        "bingMapsKey": "AgZHSWd9Yda7ZjEUkRaG40lVbRAJc9sGl6wy39qWb_QjYwVgVg7drbcLgYUufiOb",
-        "googleUrlShortenerKey": null,
-        "googleAnalyticsKey": null,
-        "googleAnalyticsOptions": null,
-        "corsProxyBaseUrl": "proxy/",
-        "disclaimer": {
-            "text": "Disclaimer: This map must not be used for navigation or precise spatial analysis",
-            "url": ""
-        },
-        "developerAttribution-CHANGEHTIS": {
-            "text": "Your organisation",
-            "link": "http://www.example.com"
-        },
-        "globalDisclaimer": {
-            "enabled": true,
-            "confirmationRequired": true,
-            "title": "Disclaimer"
-        },
-        "appName": "Terria Map",
-        "supportEmail-CHANGETHIS": "help@example.com",
-        "brandBarElements": [
-            "National Environmental<br/> Information Infrastructure",
-            ""
-        ]
-    }
+  "initializationUrls": [
+    "neii-oceans-prod",
+    "neii-water",
+    "neii-air",
+    "neii-biota",
+    "neii-land",
+    "neii-other",
+    "https://raw.githubusercontent.com/TerriaJS/neii-viewer/master/wwwroot/init/neii-nemsr.json",
+    "neii-contextual"
+  ],
+  "parameters": {
+    "bingMapsKey": "AgZHSWd9Yda7ZjEUkRaG40lVbRAJc9sGl6wy39qWb_QjYwVgVg7drbcLgYUufiOb",
+    "googleUrlShortenerKey": null,
+    "googleAnalyticsKey": null,
+    "googleAnalyticsOptions": null,
+    "corsProxyBaseUrl": "/proxy/",
+    "disclaimer": {
+      "text": "Disclaimer: This map must not be used for navigation or precise spatial analysis",
+      "url": ""
+    },
+    "developerAttribution-CHANGEHTIS": {
+      "text": "Your organisation",
+      "link": "http://www.example.com"
+    },
+    "globalDisclaimer": {
+      "enabled": true,
+      "confirmationRequired": true,
+      "title": "Disclaimer"
+    },
+    "appName": "NEII Viewer",
+    "supportEmail-CHANGETHIS": "help@example.com",
+    "brandBarElements": [
+      "National Environmental<br/> Information Infrastructure",
+      ""
+    ]
+  }
 }
-
