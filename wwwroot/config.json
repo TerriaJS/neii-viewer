@@ -12,7 +12,7 @@
   "parameters": {
     "bingMapsKey": "AgZHSWd9Yda7ZjEUkRaG40lVbRAJc9sGl6wy39qWb_QjYwVgVg7drbcLgYUufiOb",
     "googleUrlShortenerKey": null,
-    "googleAnalyticsKey": null,
+    "googleAnalyticsKey": "UA-62048953-2",
     "googleAnalyticsOptions": null,
     "corsProxyBaseUrl": "/proxy/",
     "disclaimer": {
