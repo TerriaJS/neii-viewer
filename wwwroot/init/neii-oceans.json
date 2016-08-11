@@ -1,9 +1,16 @@
 {
+	"homeCamera": {
+        "east": 155,
+        "north": -5,
+        "south": -45,
+        "west": 105
+    },
+    "services": [],
     "catalog": [
         {
             "name": "NEII Data Services – Conformant",
             "type": "group",
-            "isOpen": true,
+            "isOpen": false,
             "items": [
                 {
                     "name": "Oceans (3)",
