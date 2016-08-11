@@ -1,23 +1,17 @@
 {
-    "homeCamera": {
-        "east": 155,
-        "north": -5,
-        "south": -45,
-        "west": 105
-    },
-    "services": [],
     "catalog": [
         {
             "name": "NEII Data Services – Conformant",
             "type": "group",
-            "isOpen": false,
+            "isOpen": true,
             "items": [
                 {
-                    "name": "Oceans (2)",
+                    "name": "Oceans (3)",
                     "type": "group",
                     "items": [
-                        {
-                            "name": "eReefs Marine Water Quality",
+                        
+						{
+                            "name": "Marine water quality (eReefs)",
                             "type": "group",
                             "isOpen": false,
                             "preserveOrder": true,
@@ -53,7 +47,6 @@
                                         },
                                         {
                                             "abstract": "...",
-                                            "description": "...",
                                             "layers": "CDOM_MIM_median",
                                             "name": "Coloured dissolved organic matter (annual median)",
                                             "parameters": {
@@ -78,7 +71,6 @@
                                         },
                                         {
                                             "abstract": "...",
-                                            "description": "...",
                                             "layers": "Nap_MIM_median",
                                             "name": "Non-algal particles (annual median)",
                                             "parameters": {
@@ -109,7 +101,6 @@
                                     "items": [
                                         {
                                             "abstract": "Chlorophyll-a, reflecting wavelengths in the green part of the visible light spectrum, is the substance that helps plants capture the sun’s energy. In the water, it indicates the presence of microscopic green algae (phytoplankton). While these plants are a natural part of the reef ecosystem, elevated numbers (a bloom) of phytoplankton signal elevated nutrient levels, especially nitrogen, in the water. Typical sources are runoff from excess fertiliser being applied to crops and, to a lesser extent in the Great Barrier Reef region, sewage contamination from urban areas.",
-                                            "description": "...",
                                             "layers": "Chl_MIM_median",
                                             "name": "Chlorophyll-a concentration (seasonal)",
                                             "parameters": {
@@ -134,7 +125,6 @@
                                         },
                                         {
                                             "abstract": "...",
-                                            "description": "...",
                                             "layers": "CDOM_MIM_median",
                                             "name": "Coloured dissolved organic matter (seasonal)",
                                             "parameters": {
@@ -159,7 +149,6 @@
                                         },
                                         {
                                             "abstract": "...",
-                                            "description": "...",
                                             "layers": "Nap_MIM_median",
                                             "name": "Non-algal particles (seasonal)",
                                             "parameters": {
@@ -190,7 +179,6 @@
                                     "items": [
                                         {
                                             "abstract": "Chlorophyll-a, reflecting wavelengths in the green part of the visible light spectrum, is the substance that helps plants capture the sun’s energy. In the water, it indicates the presence of microscopic green algae (phytoplankton). While these plants are a natural part of the reef ecosystem, elevated numbers (a bloom) of phytoplankton signal elevated nutrient levels, especially nitrogen, in the water. Typical sources are runoff from excess fertiliser being applied to crops and, to a lesser extent in the Great Barrier Reef region, sewage contamination from urban areas.",
-                                            "description": "...",
                                             "layers": "Chl_MIM_median",
                                             "name": "Chlorophyll-a concentration (monthly)",
                                             "parameters": {
@@ -215,7 +203,6 @@
                                         },
                                         {
                                             "abstract": "...",
-                                            "description": "...",
                                             "layers": "CDOM_MIM_median",
                                             "name": "Coloured dissolved organic matter (monthly)",
                                             "parameters": {
@@ -240,7 +227,6 @@
                                         },
                                         {
                                             "abstract": "...",
-                                            "description": "...",
                                             "layers": "Nap_MIM_median",
                                             "name": "Non-algal particles (monthly)",
                                             "parameters": {
@@ -267,8 +253,9 @@
                                 }
                             ]
                         },
-                        {
-                            "name": "Reef temperature",
+
+						{
+                            "name": "Reef temperature (eReefs)",
                             "type": "group",
                             "preserveOrder": true,
                             "items": [
@@ -307,13 +294,47 @@
                                 "type": "wms-getCapabilities",
                                 "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/RT2_gridAgg_P1A"
                                 }
-
-
-                            ]
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
+									]
+						}, 
+				 
+						{ 
+					"name": "Marine key ecological features (DotEE)",
+                            "type": "group",
+                            "preserveOrder": true,
+                            "items": [
+                                {"name": "Marine key ecological features - unnamed",
+                                            "layers": "Key_Ecological_Features",
+                                            "dataCustodian": "[Department of the Environment and Energy](http://www.environment.gov.au/)",
+                                            "url": "http://www.environment.gov.au/mapping/services/ogc_services/Key_Ecological_Features/MapServer/WMSServer",
+                                            "type": "wms",
+                                            "rectangle": [
+                                                "100.0",
+                                                "-44.0",
+                                                "159.0",
+                                                "-4.0"]
+												},
+												
+								{"name": "Marine key ecological features - named",
+                                            "layers": "Key_Ecological_Features_named",
+                                            "dataCustodian": "[Department of the Environment and Energy](http://www.environment.gov.au/)",
+                                            "url": "http://www.environment.gov.au/mapping/services/ogc_services/Key_Ecological_Features_named/MapServer/WMSServer",
+                                            "type": "wms",
+                                            "rectangle": [
+                                                "100.0",
+                                                "-44.0",
+                                                "159.0",
+                                                "-4.0"]
+	
+												}
+												]
+						}
+				
+				
+							
+							  ]
+				}
+					  ]
+		}
+				]
+    }
+	 
