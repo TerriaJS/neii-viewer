@@ -6,6 +6,7 @@
         "west": 105
     },
     "services": [],
+    "corsDomains": [ "neii.bom.gov.au" ],
     "catalog": [
         {
             "name": "NEII Data Services – Conformant",
