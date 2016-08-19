@@ -1,0 +1,20 @@
+@import '~terriajs/lib/Sass/common/_variables.scss';
+
+//$logo-height: 120px;
+
+// overrides
+
+$font-base: 'Dosis','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-pop: $font-base;
+
+
+$color-primary: darken(hsl(82, 50%, 57%), 10%); 
+$color-secondary: hsl(82, 50%, 75%); // hsl(0,0,15%); // hsl(82, 50%, 30%);
+
+$dark: hsl(0,0,30%); //#3F4854;
+$dark-with-overlay: hsl(0,0,30%);;
+$dark-lighter: hsl(0,0,50%);
+
+// new variables
+$color-primary-light:lighten($color-primary,10%);
+$color-primary-dark:darken($color-primary,10%);

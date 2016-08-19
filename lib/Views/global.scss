@@ -7,12 +7,21 @@ body {
 }
 
 :global {
+    @import url(https://fonts.googleapis.com/css?family=Dosis:400,200,500);
+    //@default-font: 'Dosis','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+
 	@media print {
 		.nationalmap-print-disclaimer {
 			color: #000;
 			display: block;
 		}
 	}
+
+    html {
+        font-family: $font-base;
+    }
+
+
 
 	.tjs-branding__branding {
 		a:first-child, a:last-child {
@@ -22,5 +31,123 @@ body {
 				display: inline;
 			}
 		}
+        font-family:'Dosis','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 500;
+        color: white;
+        font-size: 20px;
+        background:hsl(0, 0, 30%) url(http://neii.gov.au/sites/default/files/bg_1_col.jpg);
+        background-position: top right;
+        background-size: 25%;
+        background-repeat: no-repeat;
+
+
+
 	}
+    .tjs-standard-user-interface__sidePanel {
+        background:hsl(0,0,15%);
+    }
+    .tjs-side-panel__workBench {
+        font-family:'Dosis','Helvetica Neue Light', 'Arial';
+        font-weight:400;
+        font-size:18px;
+        background:hsl(0,0,15%);
+    }
+
+    .tjs-_buttons__btn {
+        &-primary { font-family: $font-base; }
+      //background: $color-primary;
+        &:hover { 
+        color: $color-primary; 
+            
+        }
+        &:focus { 
+            //color: $color-primary-light; 
+        }
+    }
+
+    .tjs-_buttons__btn--map {
+        background-color: hsl(0,0,30%);
+        &:focus, &:hover { color: white; }
+    }
+    // groups in add data
+    .tjs-data-catalog-group__btn--catalog{
+        &:hover { background: $color-primary-light; color: white;}
+        &:focus { background: $color-primary; color: white;}
+    }
+
+    .tjs-data-catalog-item__btn-catalog-item--is-previewed {
+        color: $color-primary;
+    }
+
+    .tjs-tabs__btn--tab {    
+        font-family:$font-base
+    }
+
+
+    .tjs-tabs__btn--selected {
+        color:hsl(82, 50%, 30%);
+    }
+    .tjs-tabs__btn--tab:hover {    
+        color:hsl(82, 50%, 57%);
+    }
+
+    /* Lat/lon buttons */
+    .tjs-legend__locationBar, .tjs-legend__distanceLegend {
+        
+        background:$dark;
+        color:white;
+        &:hover,&:focus { background: $dark; color: white; }
+    
+    }
+
+    /* Flatten and simplify display of timeline controls */
+    .tjs-timeline-controls__timeline__control {
+        background:$dark-lighter;
+        border:none;
+    }
+
+    .tjs-timeline__text-cell {
+        font-family: $font-base; 
+    }
+
+    .tjs-timeline__timeline {
+        background:$dark-lighter;
+    }
+
+    .cesium-timeline-bar {
+        background:$dark-with-overlay;
+    }
+
+    /* Feature info table */
+    .tjs-feature-info-section__content {
+        h1 {
+            color: $color-primary;
+        }
+        table th {
+            font-family: $font-base; // not monospaced
+            font-weight:200; // not bold
+            padding-right:0.5em;
+        }
+
+        table td {
+            border:none;
+            font-family: $font-base; // not monospaced
+            font-weight:normal; // not bold
+            color:hsl(0,0%,90%);
+
+        }
+        a {
+            color:$color-secondary;
+        }
+    }
+
+    /* tjs-data-catalog-group__btn--catalog tjs-_buttons__btn undefined tjs-data-catalog-group__isPreviewed */
+
+
+    /*.btn { 
+        background: red;
+        border:4px solid blue;
+    }*/
+
+
 }
