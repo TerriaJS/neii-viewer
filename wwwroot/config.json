@@ -1,12 +1,12 @@
 {
   "initializationUrls": [
-    "neii-oceans-prod",
+    "neii-oceans",
     "neii-water",
     "neii-air",
     "neii-biota",
     "neii-land",
     "neii-other",
-    "http://neii.bom.gov.au/cgi-bin/nemsr/get_viewer_config.json",
+    "/proxy/_60s/http://neii.bom.gov.au/cgi-bin/nemsr/get_viewer_config.json",
     "neii-contextual"
   ],
   "parameters": {

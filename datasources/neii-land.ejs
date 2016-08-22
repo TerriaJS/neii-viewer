@@ -6,10 +6,9 @@
             "isOpen": true,
             "items": [
                 {
-                    "name": "Land (0)",
+                    "name": "<%- titleWithCount('Land', include('includes/land-items')) %>",
                     "type": "group",
-                    "items": [
-                    ]
+                    "items": <% include includes/land-items %>
                 }
             ]
         }
