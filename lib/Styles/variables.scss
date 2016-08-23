@@ -14,6 +14,7 @@ $color-secondary: hsl(82, 50%, 75%); // hsl(0,0,15%); // hsl(82, 50%, 30%);
 $dark: hsl(0,0,30%); //#3F4854;
 $dark-with-overlay: hsl(0,0,30%);;
 $dark-lighter: hsl(0,0,50%);
+$dark-darker: hsl(0,0,15%);
 
 // new variables
 $color-primary-light:lighten($color-primary,10%);
