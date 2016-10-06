@@ -1,5 +1,5 @@
 {
-  "name": "terriajs-map",
+  "name": "neii-viewer",
   "version": "0.0.1",
   "description": "Geospatial catalog explorer based on TerriaJS.",
   "license": "Apache-2.0",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/TerriaJS/TerriaMap"
+    "url": "http://github.com/TerriaJS/neii-viewer"
   },
   "dependencies": {
     "terriajs-server": "^2.5.1"
