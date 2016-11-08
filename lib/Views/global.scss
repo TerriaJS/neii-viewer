@@ -58,7 +58,7 @@ body {
             font-family: $font-base; 
         }
         &:hover { 
-            color: $color-primary;             
+            // background: darken($color-primary, 10%);  // can delete after terriajs v4.5.0
         }
     }
 
@@ -109,35 +109,39 @@ body {
         table td {
             border:none;
             font-family: $font-base; // not monospaced
-            font-weight:normal; // not bold
-            color:hsl(0,0%,90%);
+            // font-weight:normal; // not bold
+            // color:hsl(0,0%,90%);
 
         }
-        a {
-            color:$color-secondary;
+        table tr:nth-child(odd) {
+            background-color: rgba(84, 84, 84, 0.8);
         }
+        // a {
+        //     color:$color-secondary;
+        // }
     }
 
     /* The Data Catalog ("Add Data") page */
       // expandable catalog groups
-    .tjs-data-catalog-group__btn--catalog {
-        &:hover { background: $color-secondary; color: white; }
-        &:focus { background: $color-primary; color: white;}
-    }
+    // .tjs-data-catalog-group__btn--catalog {
+    //     &:hover { background: $color-secondary; color: white; }
+    //     &:focus { background: $color-primary; color: white;}
+    // }
       // The currently selected item in the list
-    .tjs-data-catalog-item__btn-catalog-item--is-previewed {
-        ,&:focus {color: $color-primary; }
-    }
+    // .tjs-data-catalog-item__btn-catalog-item--is-previewed {
+    //     ,&:focus {color: $color-primary; }
+    // }
       // The tabs at the top 
-    .tjs-tabs__btn--tab {    
-        font-family:$font-base
-    }
+    // .tjs-tabs__btn--tab {
+    //     font-family:$font-base
+    // }
 
-    .tjs-tabs__btn--selected {
-        color:$color-primary-dark;
-    }
-    .tjs-tabs__btn--tab:hover {    
-        color:$color-secondary;
+    // Ensure the "download data" options in the feature info panel (csv, json) are readable.
+    .tjs-feature-info-panel__panel .tjs-dropdown__list a {
+        color: $color-secondary;
+        &:hover {
+            color: $color-secondary-hover;
+        }
     }
 
 }

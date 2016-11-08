@@ -1,21 +1,34 @@
 @import '~terriajs/lib/Sass/common/_variables.scss';
 
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,200,500);
 //$logo-height: 120px;
 
 // overrides
-
+// $font-size-base: 15px;  // not used yet
+$font-size-large: 1.4rem;
+$font-size-mid-large: 1.3rem;
+$font-size-base: 1.2rem;
+$font-size-mid-small: 1.1rem;
+$font-size-button: 1rem;
+$font-size-small: 1rem;
+$font-size-mid-mini: 0.9rem;
+$font-size-feature-info: 0.85rem;
+$font-size-mini: 0.85rem;
 $font-base: 'Dosis','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
 $font-pop: $font-base;
+$font-weight-normal: 500;
 
+$color-primary: #BCC94E;
+$color-primary-hover: darken($color-primary, 10%);
+$color-secondary: #632D1A;
 
-$color-primary: '#BCC94E';
-$color-secondary: lighten($color-secondary, 10%);
-
-$dark: '#4D4D4D';
+$dark: #4D4D4D;
 $dark-with-overlay: $dark;
-$dark-lighter: '#7E7E7E';
+$dark-lighter: #7E7E7E;
 $dark-darker: darken($dark, 10%);
 
+$modal-highlight: $color-primary-hover;
+$modal-selected: $color-primary;
+
 // new variables
-$color-primary-light:lighten($color-primary,10%);
-$color-primary-dark:darken($color-primary,10%);
+$color-secondary-hover: #BB5430;
