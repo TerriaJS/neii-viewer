@@ -8,13 +8,13 @@ $font-base: 'Dosis','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Ne
 $font-pop: $font-base;
 
 
-$color-primary: darken(hsl(82, 50%, 57%), 10%); 
-$color-secondary: hsl(82, 50%, 75%); // hsl(0,0,15%); // hsl(82, 50%, 30%);
+$color-primary: '#BCC94E';
+$color-secondary: lighten($color-secondary, 10%);
 
-$dark: hsl(0,0,30%); //#3F4854;
-$dark-with-overlay: hsl(0,0,30%);;
-$dark-lighter: hsl(0,0,50%);
-$dark-darker: hsl(0,0,15%);
+$dark: '#4D4D4D';
+$dark-with-overlay: $dark;
+$dark-lighter: '#7E7E7E';
+$dark-darker: darken($dark, 10%);
 
 // new variables
 $color-primary-light:lighten($color-primary,10%);
