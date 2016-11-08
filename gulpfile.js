@@ -314,7 +314,7 @@ gulp.task('render-datasource-templates', function() {
             var result = ejs.render(template, {
                 titleWithCount: function (title, text) {
                     var items = JSON.parse(text).length;
-                    return title + ': ' + items;
+                    return title + ' (' + items + ')';
                 }},
                 { filename: templateFilename }
             );
