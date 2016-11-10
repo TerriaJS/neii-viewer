@@ -21,7 +21,7 @@
       "url": ""
     },
     "globalDisclaimer": {
-      "devHostRegex": "nicta\.com\.au"
+      "devHostRegex": "nicta\\.com\\.au"
     },
     "appName": "NEII Viewer",
     "supportEmail-CHANGETHIS": "help@example.com",
