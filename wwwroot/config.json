@@ -20,6 +20,9 @@
       "text": "Disclaimer: This map must not be used for navigation or precise spatial analysis",
       "url": ""
     },
+    "globalDisclaimer": {
+      "devHostRegex": "nicta\.com\.au"
+    },
     "appName": "NEII Viewer",
     "supportEmail-CHANGETHIS": "help@example.com",
     "brandBarElements": [
