@@ -14,7 +14,7 @@ export default function UserInterface(props) {
         <StandardUserInterface {... props} version={version}>
             <Menu>
                 <RelatedMaps viewState={props.viewState} />
-                <MenuItem caption="About" href="about.html" key="about-link"/>
+                <MenuItem caption="About" href="//neii.gov.au/data-viewer" key="about-link"/>
             </Menu>
         </StandardUserInterface>
     );

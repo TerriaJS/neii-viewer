@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 2016-11-XX
+
+* Updated "about" link and related maps.
+
 ### 2016-11-08
 
 * Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 4.5.0.  Significant changes relevant to NEII-viewer users include:
