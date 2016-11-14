@@ -11,10 +11,12 @@ $font-size-mid-small: 1rem;
 $font-size-button: 0.9rem;
 $font-size-small: 0.9rem;
 $font-size-mid-mini: 0.85rem;
-$font-size-feature-info: 0.85rem;
+$font-size-feature-info: 0.9rem;
 $font-size-mini: 0.85rem;
+
 $font-base: 'Dosis','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
 $font-pop: $font-base;
+$font-feature-info: $font-base; // not mono
 $font-weight-normal: 500;
 
 $color-primary: #BCC94E;

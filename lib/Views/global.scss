@@ -65,20 +65,19 @@ body {
             color: $color-primary;
         }
         table th {
-            font-family: $font-base; // not monospaced
             font-weight:200; // not bold
             padding-right:0.5em;
         }
 
         table td {
             border:none;
-            font-family: $font-base; // not monospaced
+            padding:2px; // down from 5px
             // font-weight:normal; // not bold
             // color:hsl(0,0%,90%);
 
         }
         table tr:nth-child(odd) {
-            background-color: rgba(84, 84, 84, 0.8);
+            background-color: rgba(84, 84, 84, 0.2);
         }
     }
 
