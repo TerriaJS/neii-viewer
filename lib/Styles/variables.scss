@@ -28,10 +28,14 @@ $dark-lighter: #7E7E7E;
 $dark-darker: darken($dark, 10%);
 $charcoal-grey: $dark-lighter;
 
+$text-link: $color-primary;
+$text-visited-link: $color-secondary;
+
 $modal-highlight: $color-primary-hover;
 $modal-selected: $color-primary;
 
 $overlay: #7E7E7E; // If we need transparency, rgba(255, 255, 255, 0.375) could do it
+$link-text-decoration: underline;
 
 // new variables
 $color-secondary-hover: #BB5430;
