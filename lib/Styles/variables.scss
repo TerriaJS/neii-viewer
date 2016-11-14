@@ -19,7 +19,7 @@ $font-pop: $font-base;
 $font-weight-normal: 500;
 
 $color-primary: #BCC94E;
-$color-primary-hover: darken($color-primary, 10%);
+@function get-hover-color($base-color) {@return darken($base-color, 10%)}
 $color-secondary: #632D1A;
 
 $dark: #4D4D4D;
@@ -31,7 +31,7 @@ $charcoal-grey: $dark-lighter;
 $text-link: $color-primary;
 $text-visited-link: $color-secondary;
 
-$modal-highlight: $color-primary-hover;
+$modal-highlight: darken($color-primary, 10%);
 $modal-selected: $color-primary;
 
 $overlay: #7E7E7E; // If we need transparency, rgba(255, 255, 255, 0.375) could do it
