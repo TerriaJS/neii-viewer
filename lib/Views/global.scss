@@ -16,10 +16,6 @@ body {
 
     @import url(https://fonts.googleapis.com/css?family=Dosis:400,200,500);
 
-    html {
-        font-family: $font-base;
-    }
-
     /* Logo area in top left */
 	.tjs-branding__branding {
 		a:first-child, a:last-child {
@@ -72,29 +68,11 @@ body {
         table td {
             border:none;
             padding:2px; // down from 5px
-            // font-weight:normal; // not bold
-            // color:hsl(0,0%,90%);
-
         }
         table tr:nth-child(odd) {
             background-color: rgba(84, 84, 84, 0.2);
         }
     }
-
-    /* The Data Catalog ("Add Data") page */
-      // expandable catalog groups
-    // .tjs-data-catalog-group__btn--catalog {
-    //     &:hover { background: $color-secondary; color: white; }
-    //     &:focus { background: $color-primary; color: white;}
-    // }
-      // The currently selected item in the list
-    // .tjs-data-catalog-item__btn-catalog-item--is-previewed {
-    //     ,&:focus {color: $color-primary; }
-    // }
-      // The tabs at the top 
-    // .tjs-tabs__btn--tab {
-    //     font-family:$font-base
-    // }
 
     // Ensure the "download data" options in the feature info panel (csv, json) are readable.
     .tjs-feature-info-panel__panel .tjs-dropdown__list a {
@@ -102,6 +80,19 @@ body {
         &:hover {
             color: $color-primary;
         }
+    }
+
+    // Make the location and distance bars a little wider, to accommodate the larger font sizes.
+    .tjs-legend__locationBar, .tjs-legend__distanceLegend {
+      .tjs-legend__section-long{
+        width: 145px;
+      }
+      .tjs-legend__section{
+        width: 125px;
+      }
+      .tjs-legend__section-short{
+        width: 80px;
+      }
     }
 
 }
