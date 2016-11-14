@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 2016-11-XX
+
+* Update fonts and colours to match the NEII website.
+
 ### 2016-11-08
 
 * Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 4.5.0.  Significant changes relevant to NEII-viewer users include:
