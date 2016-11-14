@@ -26,9 +26,12 @@ $dark: #4D4D4D;
 $dark-with-overlay: $dark;
 $dark-lighter: #7E7E7E;
 $dark-darker: darken($dark, 10%);
+$charcoal-grey: $dark-lighter;
 
 $modal-highlight: $color-primary-hover;
 $modal-selected: $color-primary;
+
+$overlay: #7E7E7E; // If we need transparency, rgba(255, 255, 255, 0.375) could do it
 
 // new variables
 $color-secondary-hover: #BB5430;

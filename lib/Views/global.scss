@@ -40,42 +40,6 @@ body {
         background-repeat: no-repeat;
 
 	}
-    /* Background of whole left panel */
-    .tjs-standard-user-interface__sidePanel {
-        background:$dark-darker;
-    }
-    /* Individual sections within the left panel */
-    .tjs-side-panel__workBench {
-        font-family:$font-base;
-        font-weight:400;
-        font-size:18px;
-        background:$dark-darker;
-    }
-
-    /* All kinds of buttons in various screens */
-    .tjs-_buttons__btn {
-        &-primary { 
-            font-family: $font-base; 
-        }
-        &:hover { 
-            // background: darken($color-primary, 10%);  // can delete after terriajs v4.5.0
-        }
-    }
-
-    /* Buttons like "Share" within the map area. */
-    .tjs-_buttons__btn--map {
-        background-color: hsl(0,0,30%);
-        &:focus, &:hover { color: white; }
-    }
-
-    /* Lat/lon buttons */
-    .tjs-legend__locationBar, .tjs-legend__distanceLegend {
-        
-        background:$dark;
-        color:white;
-        &:hover,&:focus { background: $dark; color: white; }
-    
-    }
 
     /* Flatten and simplify display of timeline controls */
     .tjs-timeline-controls__timeline__control {
