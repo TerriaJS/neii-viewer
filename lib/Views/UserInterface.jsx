@@ -5,7 +5,9 @@ import version from '../../version';
 import StandardUserInterface from 'terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx';
 import MenuItem from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem';
 import RelatedMaps from './RelatedMaps';
-import { Menu } from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups';
+import { Menu, Nav } from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups';
+import MeasureTool from 'terriajs/lib/ReactViews/Map/Navigation/MeasureTool';
+
 
 import './global.scss';
 
@@ -16,6 +18,9 @@ export default function UserInterface(props) {
                 <RelatedMaps viewState={props.viewState} />
                 <MenuItem caption="About" href="//neii.gov.au/data-viewer" key="about-link"/>
             </Menu>
+            <Nav>
+                <MeasureTool terria={props.viewState.terria} key="measure-tool"/>
+            </Nav>
         </StandardUserInterface>
     );
 }
