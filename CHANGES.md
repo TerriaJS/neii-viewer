@@ -1,9 +1,6 @@
 Change Log
 ==========
 
-### 2016-11-XX
-
-* Update fonts and colours to match the NEII website.
 ### 2016-11-16
 
 * Made fonts and colours consistent with NEII website.
