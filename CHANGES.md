@@ -4,6 +4,7 @@ Change Log
 ### 2016-11-16
 
 * Made fonts and colours consistent with NEII website.
+* Updated "about" link and related maps.
 * Added a button below the map navigation buttons to measure the distance between points.
 * Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 4.6.0.  Significant changes relevant to NEII-veiwer users include:
   * Change in defaults:

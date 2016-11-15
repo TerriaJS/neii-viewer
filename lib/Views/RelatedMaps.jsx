@@ -25,6 +25,19 @@ function RelatedMaps(props) {
             </p>
 
             <div className={classNames(PanelStyles.section, Styles.section)}>
+                <a target="_blank" href="http://nationalmap.gov.au/">
+                    <img className={Styles.image} src={require('../../wwwroot/images/nationalmap.jpg')}
+                         alt="NationalMap"/>
+                </a>
+
+                <a target="_blank" className={Styles.link} href="http://nationalmap.gov.au/">NationalMap</a>
+
+                <p>
+                    The NationalMap is a website for map-based access to spatial data from Australian government agencies. It is an initiative of the Australian Government's Department of the Prime Minister and Cabinet and the software has been developed by Data61 working closely with the Department of the Prime Minister and Cabinet, Geoscience Australia and other government agencies.
+                </p>
+            </div>
+
+            <div className={classNames(PanelStyles.section, Styles.section)}>
                 <a target="_blank" href="http://nationalmap.gov.au/renewables/">
                     <img className={Styles.image} src={require('../../wwwroot/images/aremi.jpg')}
                          alt="AREMI"/>
@@ -56,21 +69,6 @@ function RelatedMaps(props) {
                     More information on the Government's White Paper on Developing Northern Australia is available
                     here: <a target="_blank" className={Styles.link} href="https://northernaustralia.dpmc.gov.au">
                     https://northernaustralia.dpmc.gov.au</a>.
-                </p>
-            </div>
-
-            <div className={classNames(PanelStyles.section, Styles.section)}>
-                <a target="_blank" href="http://neiiviewer.nicta.com.au">
-                    <img className={Styles.image} src={require('../../wwwroot/images/neii.jpg')}
-                         alt="NEII Viewer"/>
-                </a>
-
-                <a target="_blank" className={Styles.link} href="http://neiiviewer.nicta.com.au">NEII Viewer</a>
-
-                <p>
-                    The National Environmental Information Infrastructure (NEII) is an information platform designed
-                    to improve discovery, access and re-use of nationally significant environmental data. More
-                    information on the NEII is available here: [www.neii.gov.au](http://www.neii.gov.au)
                 </p>
             </div>
 
