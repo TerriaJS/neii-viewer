@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 2016-12-XX
+
+* Updated information shown about NEII "conformant" data groups.
+
 ### 2016-11-16
 
 * Made fonts and colours consistent with NEII website.
