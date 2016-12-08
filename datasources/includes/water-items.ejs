@@ -2,6 +2,14 @@
     {
         "name": "Geofabric",
         "type": "group",
+        "description": "The Australian Hydrological Geospatial Fabric (Geofabric) is a specialised Geographic Information System (GIS). It registers the spatial relationships between important hydrological features such as rivers, water bodies, aquifers and monitoring points.\n\nBy detailing the spatial dimensions of these hydrofeatures and how they are connected, it is possible to analyse how water is stored, transported and used through the landscape.</p><p>The quality of the spatial data and attribution is largely based upon the input data from AusHydro and ANUDEM Streams and the National Catchment Boundaries. Additional post-processing of these feature classes creates the resulting feature classes within the Geofabric products.",
+        "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
+        "info": [
+            {
+              "name": "Further Information",
+              "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+            }
+          ],
         "items": [
             {
                 "name": "Surface Hydrology - Stream Cartography",
@@ -596,6 +604,16 @@
         ]
     },
     {
+      "type": "group",
+      "name": "Water Observations from Space",
+      "description": "This OGC Web Map Service (WMS) provides access to the Water Observations from Space (WOfS) gridded dataset indicating areas where surface water has been observed using the Geoscience Australia's (GA) Landsat 5 and 7 satellite data holdings.  WOfS covers all of mainland Australia and Tasmania but excludes off-shore Territories.\n\nWOfS is derived from Landsat-5 and Landsat-7 satellite imagery acquired over Australia between 1987 to November 2014. The Landsat data underpinning WOfS is ARG25 standard data located in the Australian Geoscience Data Cube (AGDC) at the National Computational Infrastructure (NCI) in the Australian National University (ANU), Canberra. The WOfS product is calculated from all acceptable Landsat scenes in the Geoscience Australia archive for the time period. The detection process is based on spectral analysis of each pixel in each Landsat scene.",
+      "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+      "info": [
+            {
+              "name": "Further Information",
+              "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+            }
+         ],
       "items": [
         {
           "layers": "WaterObservations",
@@ -702,9 +720,7 @@
             }
           ]
         }
-      ],
-      "type": "group",
-      "name": "Water Observations from Space"
+      ]
     },
     {
         "name": "Australian Hydrography",
