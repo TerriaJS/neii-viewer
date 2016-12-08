@@ -29,8 +29,8 @@ $dark-lighter: #7E7E7E;
 $dark-darker: darken($dark, 10%);
 $charcoal-grey: $dark-lighter;
 
-$text-link: $color-primary;
-$text-visited-link: $color-secondary;
+$text-link: $color-secondary;
+$text-visited-link: #BB5430;
 
 $modal-highlight: darken($color-primary, 10%);
 $modal-selected: $color-primary;
