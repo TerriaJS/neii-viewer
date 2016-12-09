@@ -30,6 +30,7 @@
       "<span>National Environmental<br/> Information Infrastructure</span>",
       ""
     ],
-    "openAddData": true
+    "openAddData": true,
+    "autoPlay": false
   }
 }
