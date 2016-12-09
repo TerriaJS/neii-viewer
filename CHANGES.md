@@ -1,7 +1,7 @@
 Change Log
 ==========
 
-### 2016-12-XX
+### 2016-12-09
 
 * Updated information shown about NEII "conformant" data groups.
 * Updated styling on Feature Info panel and data catalogue.
@@ -9,7 +9,6 @@ Change Log
 * Updated styling on Feature Info panel and data catalogue.
 * Turned off timeline animation by default.
 * Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 4.7.1.  Significant changes relevant to NEII-veiwer users include:
-* Fixed a bug where providing feedback did not properly share the map view.
   * Fixed a bug leading to oversized graphics being displayed from WPS calls.
   * Added the ability for users to share their view of the map when providing feedback.
   * Extra components can now be added to FeatureInfoSection.
