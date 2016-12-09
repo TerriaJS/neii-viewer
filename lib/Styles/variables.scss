@@ -32,8 +32,15 @@ $charcoal-grey: $dark-lighter;
 $text-link: $color-secondary;
 $text-visited-link: #BB5430;
 
-$modal-highlight: darken($color-primary, 10%);
-$modal-selected: $color-primary;
+$modal-secondary-bg: #EDECEC;
+$modal-highlight: #BB5430;
+$modal-selected: #FFFFFF;
+$modal-tab-bg: $dark-lighter;
+$modal-selected-tab-bg: $modal-tab-bg;
+$modal-text: $dark;
+$dropdown-hover-color: $text-visited-link;
+
+$data-catalog-color: $color-secondary;
 
 $feature-info-bg: $modal-bg;  // ie. white
 $feature-info-color: $dark;
