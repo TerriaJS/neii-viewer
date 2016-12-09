@@ -57,30 +57,22 @@ body {
 
     /* Feature info table */
     .tjs-feature-info-section__content {
-        h1 {
-            color: $color-primary;
-        }
         table th {
             font-weight:200; // not bold
             padding-right:0.5em;
         }
-
         table td {
-            border:none;
             padding:2px; // down from 5px
-        }
-        table tr:nth-child(odd) {
-            background-color: rgba(84, 84, 84, 0.2);
         }
     }
 
     // Ensure the "download data" options in the feature info panel (csv, json) are readable.
-    .tjs-feature-info-panel__panel .tjs-dropdown__list a {
-        color: $color-secondary;
-        &:hover {
-            color: $color-primary;
-        }
-    }
+    // .tjs-feature-info-panel__panel .tjs-dropdown__list a {
+    //     color: $text-link;
+    //     &:hover {
+    //         color: $text-visited-link;
+    //     }
+    // }
 
     // Make the location and distance bars a little wider, to accommodate the larger font sizes.
     .tjs-legend__locationBar, .tjs-legend__distanceLegend {
