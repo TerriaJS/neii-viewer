@@ -8,6 +8,15 @@ Change Log
 * Added three new Geoscience Australia layers: Topographic Maps, Gravity Anomaly and Magnetic Intensity.
 * Updated styling on Feature Info panel and data catalogue.
 * Turned off timeline animation by default.
+* Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 4.7.1.  Significant changes relevant to NEII-veiwer users include:
+* Fixed a bug where providing feedback did not properly share the map view.
+  * Fixed a bug leading to oversized graphics being displayed from WPS calls.
+  * Added the ability for users to share their view of the map when providing feedback.
+  * Extra components can now be added to FeatureInfoSection.
+  * "Download Data" in FeatureInfoSection now "Download Data for this Feature".
+  * Fixed a bug that prevented the scale bar from displaying correctly.
+  * Support added for creating custom WPS types, and for reusing `Point`, `Polygon`, and `Region` editors in custom types.
+  * Fixed a bug that caused the legend to be missing for WMS catalog items where the legend came from GetCapabilities but the URL did not contain `GetLegendGraphic`.
 
 ### 2016-11-16
 
