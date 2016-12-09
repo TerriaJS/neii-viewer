@@ -129,7 +129,7 @@ terria.start({
 
                 var options = {
                     title: (globalDisclaimer.title !== undefined) ? globalDisclaimer.title : 'Warning',
-                    confirmText: (globalDisclaimer.buttonTitle || "Ok"),
+                    confirmText: (globalDisclaimer.buttonTitle || "OK"),
                     width: 600,
                     height: 550,
                     message: message,
