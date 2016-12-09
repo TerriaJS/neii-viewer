@@ -12,7 +12,7 @@ var minNode = require('./package.json').engines.node;
 if (!require('semver').satisfies(process.version, minNode)) {
     console.log('Terria requires Node.js ' + minNode + ' to build. Please update your version of Node.js, delete your node_modules directory' +
         ', then run npm install and gulp again.');
-    process.exit();
+    console.exit();
 }
 
 
@@ -25,7 +25,7 @@ var watchOptions = {
     interval: 1000
 };
 
-gulp.task('build-app', ['write-version'], function(done) {
+gulp.task('build-app', ['check-terriajs-dependencies', 'write-version'], function(done) {
     var runWebpack = require('terriajs/buildprocess/runWebpack.js');
     var webpack = require('webpack');
     var webpackConfig = require('./buildprocess/webpack.config.js')(true);
@@ -33,7 +33,7 @@ gulp.task('build-app', ['write-version'], function(done) {
     runWebpack(webpack, webpackConfig, done);
 });
 
-gulp.task('release-app', ['write-version'], function(done) {
+gulp.task('release-app', ['check-terriajs-dependencies', 'write-version'], function(done) {
     var runWebpack = require('terriajs/buildprocess/runWebpack.js');
     var webpack = require('webpack');
     var webpackConfig = require('./buildprocess/webpack.config.js')(false);
@@ -47,7 +47,7 @@ gulp.task('release-app', ['write-version'], function(done) {
     }), done);
 });
 
-gulp.task('watch-app', function(done) {
+gulp.task('watch-app', ['check-terriajs-dependencies'], function(done) {
     var fs = require('fs');
     var watchWebpack = require('terriajs/buildprocess/watchWebpack');
     var webpack = require('webpack');
@@ -78,8 +78,16 @@ gulp.task('watch-terriajs-assets', ['copy-terriajs-assets'], function() {
 gulp.task('make-editor-schema', ['copy-editor'], function() {
     var generateSchema = require('generate-terriajs-schema');
 
+    var terriaJSRoot = getPackageRoot('terriajs');
+
     return generateSchema({
-        source: getPackageRoot('terriajs'),
+        sourceGlob: [
+            path.join(terriaJSRoot, 'lib/Models/*CatalogItem.js'),
+            path.join(terriaJSRoot, 'lib/Models/*CatalogGroup.js'),
+            path.join(terriaJSRoot, 'lib/Models/*CatalogMember.js'),
+            '!' + path.join(terriaJSRoot, 'lib/Models/addUserCatalogMember.js'),
+            '!' + path.join(terriaJSRoot, 'lib/Models/AsyncFunctionResultCatalogItem.js')
+        ],
         dest: 'wwwroot/editor',
         noversionsubdir: true,
         editor: true,
@@ -199,6 +207,7 @@ gulp.task('make-package', function() {
     var argv = require('yargs').argv;
     var fs = require('fs-extra');
     var spawnSync = require('child_process').spawnSync;
+    var json5 = require('json5');
 
     var packageName = argv.packageName || (process.env.npm_package_name + '-' + spawnSync('git', ['describe']).stdout.toString().trim());
     var packagesDir = path.join('.', 'deploy', 'packages');
@@ -224,8 +233,8 @@ gulp.task('make-package', function() {
     fs.copySync('node_modules', path.join(workingDir, 'node_modules'), copyOptions);
 
     if (argv.serverConfigOverride) {
-        var serverConfig = JSON.parse(fs.readFileSync('devserverconfig.json', 'utf8'));
-        var serverConfigOverride = JSON.parse(fs.readFileSync(argv.serverConfigOverride, 'utf8'));
+        var serverConfig = json5.parse(fs.readFileSync('devserverconfig.json', 'utf8'));
+        var serverConfigOverride = json5.parse(fs.readFileSync(argv.serverConfigOverride, 'utf8'));
         var productionServerConfig = mergeConfigs(serverConfig, serverConfigOverride);
         fs.writeFileSync(path.join(workingDir, 'productionserverconfig.json'), JSON.stringify(productionServerConfig, undefined, '  '));
     } else {
@@ -233,8 +242,8 @@ gulp.task('make-package', function() {
     }
 
     if (argv.clientConfigOverride) {
-        var clientConfig = JSON.parse(fs.readFileSync(path.join('wwwroot', 'config.json'), 'utf8'));
-        var clientConfigOverride = JSON.parse(fs.readFileSync(argv.clientConfigOverride, 'utf8'));
+        var clientConfig = json5.parse(fs.readFileSync(path.join('wwwroot', 'config.json'), 'utf8'));
+        var clientConfigOverride = json5.parse(fs.readFileSync(argv.clientConfigOverride, 'utf8'));
         var productionClientConfig = mergeConfigs(clientConfig, clientConfigOverride);
         fs.writeFileSync(path.join(workingDir, 'wwwroot', 'config.json'), JSON.stringify(productionClientConfig, undefined, '  '));
     }
@@ -340,3 +349,38 @@ gulp.task('render-datasource-templates', function() {
 gulp.task('watch-datasource-templates', ['render-datasource-templates'], function() {
     return gulp.watch(['datasources/**/*.ejs','datasources/*.json'], watchOptions, [ 'render-datasource-templates' ]);
 });
+
+gulp.task('sync-terriajs-dependencies', function() {
+    var appPackageJson = require('./package.json');
+    var terriaPackageJson = require('terriajs/package.json');
+
+    syncDependencies(appPackageJson.dependencies, terriaPackageJson);
+    syncDependencies(appPackageJson.devDependencies, terriaPackageJson);
+
+    fs.writeFileSync('./package.json', JSON.stringify(appPackageJson, undefined, '  '));
+});
+
+gulp.task('check-terriajs-dependencies', function() {
+    var appPackageJson = require('./package.json');
+    var terriaPackageJson = require('terriajs/package.json');
+
+    syncDependencies(appPackageJson.dependencies, terriaPackageJson, true);
+    syncDependencies(appPackageJson.devDependencies, terriaPackageJson, true);
+});
+
+
+function syncDependencies(dependencies, targetJson, justWarn) {
+    for (var dependency in dependencies) {
+        if (dependencies.hasOwnProperty(dependency)) {
+            var version = targetJson.dependencies[dependency] || targetJson.devDependencies[dependency];
+            if (version && version !== dependencies[dependency]) {
+                if (justWarn) {
+                    console.warn('Warning: There is a version mismatch for ' + dependency + '. This build may fail or hang. You should run `gulp sync-terriajs-dependencies`, then re-run `npm install`, then run gulp again.');
+                } else {
+                    console.log('Updating ' + dependency + ' from ' + dependencies[dependency] + ' to ' + version + '.');
+                    dependencies[dependency] = version;
+                }
+            }
+        }
+    }
+}
