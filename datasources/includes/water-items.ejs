@@ -1,6 +1,6 @@
 [
     {
-        "name": "Geofabric",
+        "name": "Geofabric (BoM)",
         "type": "group",
         "description": "The Australian Hydrological Geospatial Fabric (Geofabric) is a specialised Geographic Information System (GIS). It registers the spatial relationships between important hydrological features such as rivers, water bodies, aquifers and monitoring points.\n\nBy detailing the spatial dimensions of these hydrofeatures and how they are connected, it is possible to analyse how water is stored, transported and used through the landscape.</p><p>The quality of the spatial data and attribution is largely based upon the input data from AusHydro and ANUDEM Streams and the National Catchment Boundaries. Additional post-processing of these feature classes creates the resulting feature classes within the Geofabric products.",
         "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
@@ -605,7 +605,7 @@
     },
     {
       "type": "group",
-      "name": "Water Observations from Space",
+      "name": "Water Observations from Space (GA)",
       "description": "This OGC Web Map Service (WMS) provides access to the Water Observations from Space (WOfS) gridded dataset indicating areas where surface water has been observed using the Geoscience Australia's (GA) Landsat 5 and 7 satellite data holdings.  WOfS covers all of mainland Australia and Tasmania but excludes off-shore Territories.\n\nWOfS is derived from Landsat-5 and Landsat-7 satellite imagery acquired over Australia between 1987 to November 2014. The Landsat data underpinning WOfS is ARG25 standard data located in the Australian Geoscience Data Cube (AGDC) at the National Computational Infrastructure (NCI) in the Australian National University (ANU), Canberra. The WOfS product is calculated from all acceptable Landsat scenes in the Geoscience Australia archive for the time period. The detection process is based on spectral analysis of each pixel in each Landsat scene.",
       "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
       "info": [
@@ -735,5 +735,43 @@
         "layers":"6,7",
         "type": "esri-mapServer",
         "opacity": 1.0
+    },
+    {
+        "name": "AusHydro (GA)",
+        "type": "group",
+        "description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.The AusHydro database provides a seamless surface hydrography layer for Australia at a nominal scale of 1:250, 000. It consists of lines, points and polygons representing natural and man-made features such as water courses, lakes, dams and other waterbodies. The natural water course layer consists of a linear network with a consistent topology that provide directional flow paths through the network for hydrological analysis. This network was used to produce the National 9 second Digital Elevation Model (DEM) of  Australia (http://www.ga.gov.au/nmd/products/digidat/dem_9s.jsp). It also provides information on naming, hierarchy and perenniality.",
+        "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+        "info": [
+            {
+              "name": "Further Information",
+              "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+            }
+          ],
+        "items": [
+            {
+              "name": "Basin",
+              "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+              "url": "http://services.ga.gov.au/site_1/services/Surface_Hydrology_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+              "layers":"Basins",
+              "type": "wms",
+	          "opacity": 1.0
+			},
+            {
+              "name": "Surface HydroLines Regional",
+              "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+              "url": "http://services.ga.gov.au/site_1/services/Surface_Hydrology_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+              "layers":"Surface_HydroLines_Regional",
+              "type": "wms",
+	          "opacity": 1.0
+			},
+            {
+              "name": "Surface HydroPolys Regional",
+              "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+              "url": "http://services.ga.gov.au/site_1/services/Surface_Hydrology_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+              "layers":"Surface_HydroPolys_Regional",
+              "type": "wms",
+	          "opacity": 1.0
+			} 
+        ]
     }
 ]
