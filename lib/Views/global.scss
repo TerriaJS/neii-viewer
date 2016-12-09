@@ -66,14 +66,6 @@ body {
         }
     }
 
-    // Ensure the "download data" options in the feature info panel (csv, json) are readable.
-    // .tjs-feature-info-panel__panel .tjs-dropdown__list a {
-    //     color: $text-link;
-    //     &:hover {
-    //         color: $text-visited-link;
-    //     }
-    // }
-
     // Make the location and distance bars a little wider, to accommodate the larger font sizes.
     .tjs-legend__locationBar, .tjs-legend__distanceLegend {
       .tjs-legend__section-long{
