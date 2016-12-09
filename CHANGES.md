@@ -5,6 +5,7 @@ Change Log
 
 * Updated information shown about NEII "conformant" data groups.
 * Updated styling on Feature Info panel and data catalogue.
+* Added three new Geoscience Australia layers: Topographic Maps, Gravity Anomaly and Magnetic Intensity.
 
 ### 2016-11-16
 

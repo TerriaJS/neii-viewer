@@ -1,12 +1,25 @@
 [
     {
-        "name": "Australian World Heritage Areas",
+        "name": "Australian World Heritage Areas (DotEE)",
         "type": "wms",
         "url": "http://www.environment.gov.au/mapping/services/ogc_services/World_Heritage_Areas/MapServer/WMSServer",
         "layers": "World_Heritage_Areas_Australia"
     },
     {
-      "name": "Collaborative Australian Protected Areas Database (CAPAD) 2014",
+        "name": "Australia 250K Topographic Map 2008 (GA)",
+        "info": [
+            {
+                "name": "Licensing, Terms & Conditions",
+                "content": "[Licence](http://www.ga.gov.au/copyright)"
+            }
+        ],
+        "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+        "url": "http://www.ga.gov.au/gisimg/rest/services/topography/NATMAP_Digital_Maps_250K_2008Edition_WM/MapServer",
+        "layers":"0",
+        "type": "esri-mapServer"
+    },
+    {
+      "name": "Collaborative Australian Protected Areas Database (CAPAD) 2014 (DotEE)",
       "url": "http://www.environment.gov.au/mapping/services/ogc_services/capad/MapServer/WMSServer",
       "layers": "Protected_Areas_2014",
       "type": "wms"
@@ -16,5 +29,19 @@
         "url": "http://www.environment.gov.au/mapping/services/ogc_services/Important_Wetlands/MapServer/WMSServer",
         "layers": "Directory of Important Wetlands in Australia",
         "type": "wms"
-    } 
+    },
+       {
+        "name": "Gravity Anomaly (GA)",
+        "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+        "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer/9",
+        "layers":"9",
+        "type": "esri-mapServer"
+    },
+    {
+        "name": "Magnetic Intensity (GA)",
+        "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+        "url": "http://services.ga.gov.au/site_9/rest/services/Geophysical_Grids/MapServer/4",
+        "layers":"4",
+        "type": "esri-mapServer"
+    }
 ]
