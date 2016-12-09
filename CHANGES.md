@@ -6,7 +6,7 @@ Change Log
 * Updated information shown about NEII "conformant" data groups.
 * Added three new Geoscience Australia layers: Topographic Maps, Gravity Anomaly and Magnetic Intensity.
 * Updated styling on Feature Info panel and data catalogue.
-* Turn off timeline animation by default.
+* Turned off timeline animation by default.
 
 ### 2016-11-16
 
