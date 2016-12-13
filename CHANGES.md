@@ -1,7 +1,7 @@
 Change Log
 ==========
 
-### 2016-12-09
+### 2016-12-13
 
 * Updated information shown about NEII "conformant" data groups.
 * Updated styling on Feature Info panel and data catalogue.
