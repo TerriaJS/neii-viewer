@@ -47,6 +47,19 @@ body {
         border-bottom: 2px solid $color-secondary;
     }
 
+    /* Change the Done button into an X */
+    .tjs-explorer-window__btn--close-modal {
+      &:before {
+        content: '✕' !important;
+      }
+      color: #EDEDED;
+      font-size: $font-size-large !important;
+      border: none;
+      &:focus, &:hover {
+        border: none;
+      }
+    }
+
     /* Flatten and simplify display of timeline controls */
     .tjs-timeline-controls__timeline__control {
         background:$dark-lighter;
