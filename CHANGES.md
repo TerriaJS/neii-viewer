@@ -1,14 +1,14 @@
 Change Log
 ==========
 
-### 2016-12-XX
+### 2016-12-21
 
 * Updated information shown about NEII "conformant" data groups.
+* Updated styling on Feature Info panel and data catalogue.
 * Added three new Geoscience Australia layers: Topographic Maps, Gravity Anomaly and Magnetic Intensity.
 * Updated styling on Feature Info panel and data catalogue.
 * Turned off timeline animation by default.
-* Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 4.7.1.  Significant changes relevant to NEII-veiwer users include:
-* Fixed a bug where providing feedback did not properly share the map view.
+* Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 4.7.2.  Significant changes relevant to NEII-veiwer users include:
   * Fixed a bug leading to oversized graphics being displayed from WPS calls.
   * Added the ability for users to share their view of the map when providing feedback.
   * Extra components can now be added to FeatureInfoSection.
@@ -16,6 +16,13 @@ Change Log
   * Fixed a bug that prevented the scale bar from displaying correctly.
   * Support added for creating custom WPS types, and for reusing `Point`, `Polygon`, and `Region` editors in custom types.
   * Fixed a bug that caused the legend to be missing for WMS catalog items where the legend came from GetCapabilities but the URL did not contain `GetLegendGraphic`.
+  * Updated GNAF API to new Lucene-based backend, which should improve performance.
+  * Updated custom `<chart>` tag to allow a `colors` attribute, containing comma separated css strings (one per column), allowing users to customize chart colors. The `colors` attribute in charts can also be passed through from a WPS ComplexData response.
+  * Updated styling of Give Feedback form.
+  * Improved consistency of "Search" and "Add Data" font sizes.
+  * Improved flexibility of Feature Info Panel styling.
+  * Fixed a bug that could cause an extra `/` to be added to end of URLs by `ArcGisMapServerCatalogItem`, causing some servers to reject the request.
+  * Added a workaround for a bug in Internet Explorer 11 on Windows 7 that could cause the user interface to hang.
 
 ### 2016-11-16
 

@@ -13,6 +13,7 @@ $font-size-small: 0.9rem;
 $font-size-mid-mini: 0.85rem;
 $font-size-feature-info: 0.9rem;
 $font-size-mini: 0.85rem;
+$font-size-credits: 0.65rem;
 
 $font-base: 'Dosis','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
 $font-pop: $font-base;
@@ -29,11 +30,26 @@ $dark-lighter: #7E7E7E;
 $dark-darker: darken($dark, 10%);
 $charcoal-grey: $dark-lighter;
 
-$text-link: $color-primary;
-$text-visited-link: $color-secondary;
+$text-link: $color-secondary;
+$text-visited-link: #BB5430;
 
-$modal-highlight: darken($color-primary, 10%);
-$modal-selected: $color-primary;
+$modal-secondary-bg: #FFFFFF;
+$modal-highlight: #BB5430;
+$modal-selected: #FFFFFF;
+$modal-tab-bg: $dark-lighter;
+$modal-selected-tab-bg: $modal-tab-bg;
+$modal-text: $dark;
+$dropdown-hover-color: $text-visited-link;
 
-$overlay: #7E7E7E; // If we need transparency, rgba(255, 255, 255, 0.375) could do it
+$data-catalog-color: $color-secondary;
+
+$feature-info-bg: $modal-bg;  // ie. white
+$feature-info-color: $dark;
+$feature-info-header-bg: $dark-lighter;
+$feature-info-btn-color: $modal-bg;
+$feature-info-table-odd-row-bg: #EDECEC;
+$feature-info-table-border-style: none;
+$feature-info-table-width: 100%;
+
+$overlay: $dark-lighter; // If we need transparency, rgba(255, 255, 255, 0.375) could do it
 $link-text-decoration: underline;

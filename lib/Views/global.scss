@@ -34,8 +34,28 @@ body {
         background-position: top right;
         background-size: 30%;
         background-repeat: no-repeat;
-
 	}
+
+    /* Because the Add Data catalog is white on both sides, add a border between the two panels */
+    .tjs-data-catalog-tab__data-explorer.tjs-tabs__tab-left-col {
+        border-right: #EEEEEE 1px solid;
+    }
+
+    /* Change the color of the Add Web Data link */
+    .tjs-add-data__tab-list__btn {
+        color: $color-secondary;
+        border-bottom: 2px solid $color-secondary;
+    }
+
+    /* Change the Done button coloring. */
+    .tjs-explorer-window__btn--close-modal {
+      border: 2px solid #EEEEEE;
+      color: #EEEEEE;
+      &:focus, &:hover {
+        border: 2px solid $dark;
+        color: $dark;
+      }
+    }
 
     /* Flatten and simplify display of timeline controls */
     .tjs-timeline-controls__timeline__control {
@@ -57,28 +77,12 @@ body {
 
     /* Feature info table */
     .tjs-feature-info-section__content {
-        h1 {
-            color: $color-primary;
-        }
         table th {
-            font-weight:200; // not bold
+            font-weight:400; // not bold
             padding-right:0.5em;
         }
-
         table td {
-            border:none;
             padding:2px; // down from 5px
-        }
-        table tr:nth-child(odd) {
-            background-color: rgba(84, 84, 84, 0.2);
-        }
-    }
-
-    // Ensure the "download data" options in the feature info panel (csv, json) are readable.
-    .tjs-feature-info-panel__panel .tjs-dropdown__list a {
-        color: $color-secondary;
-        &:hover {
-            color: $color-primary;
         }
     }
 
