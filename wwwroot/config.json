@@ -27,7 +27,7 @@
     "supportEmail-CHANGETHIS": "help@example.com",
     "brandBarElements": [
       "",
-      "<span>National Environmental<br/> Information Infrastructure</span>",
+      "<span title=\"Version: {{version}}\">National Environmental<br/> Information Infrastructure</span>",
       ""
     ],
     "openAddData": true,
