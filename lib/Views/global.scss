@@ -47,6 +47,16 @@ body {
         border-bottom: 2px solid $color-secondary;
     }
 
+    /* Change the Done button coloring. */
+    .tjs-explorer-window__btn--close-modal {
+      border: 2px solid #EEEEEE;
+      color: #EEEEEE;
+      &:focus, &:hover {
+        border: 2px solid $dark;
+        color: $dark;
+      }
+    }
+
     /* Flatten and simplify display of timeline controls */
     .tjs-timeline-controls__timeline__control {
         background:$dark-lighter;
