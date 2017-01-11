@@ -122,15 +122,17 @@ terria.start({
                 }
                 message += require('./lib/Views/GlobalDisclaimer.html');
 
-                var options = {
-                    title: (globalDisclaimer.title !== undefined) ? globalDisclaimer.title : 'Warning',
-                    confirmText: (globalDisclaimer.buttonTitle || "OK"),
-                    width: 600,
-                    height: 550,
-                    message: message,
-                    horizontalPadding : 100
-                };
-                viewState.notifications.push(options);
+                if (message.trim().length > 0) {
+                    var options = {
+                        title: (globalDisclaimer.title !== undefined) ? globalDisclaimer.title : 'Warning',
+                        confirmText: (globalDisclaimer.buttonTitle || "OK"),
+                        width: 600,
+                        height: 550,
+                        message: message,
+                        horizontalPadding : 100
+                    };
+                    viewState.notifications.push(options);
+                }
             }
         }
 

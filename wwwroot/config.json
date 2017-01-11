@@ -6,7 +6,7 @@
     "neii-biota",
     "neii-land",
     "neii-other",
-    "/proxy/_60s/http://neii.bom.gov.au/cgi-bin/nemsr/get_viewer_config.json",
+    "proxy/_60s/http://neii.bom.gov.au/cgi-bin/nemsr/get_viewer_config.json",
     "neii-contextual"
   ],
   "parameters": {
@@ -15,7 +15,6 @@
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": "UA-62048953-2",
     "googleAnalyticsOptions": null,
-    "corsProxyBaseUrl": "/proxy/",
     "disclaimer": {
       "text": "Disclaimer: This map must not be used for navigation or precise spatial analysis",
       "url": ""
@@ -24,7 +23,7 @@
       "devHostRegex": "nicta\\.com\\.au"
     },
     "appName": "NEII Viewer",
-    "supportEmail-CHANGETHIS": "help@example.com",
+    "supportEmail": "environment@bom.gov.au",
     "brandBarElements": [
       "",
       "<span title=\"Version: {{version}}\">National Environmental<br/> Information Infrastructure</span>",
