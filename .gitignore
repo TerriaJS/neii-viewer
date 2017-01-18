@@ -8,20 +8,26 @@ wwwroot/init/nm.json
 datasources/00_National_Data_Sets.json
 .DS_Store
 .localized
+.sass-cache
 /terriajs.pid
 /terriajs-server.log
 
-# added by GitSavvy
 /wwwroot/editor/
-
-# added by GitSavvy
 /error.log
-
-# added by GitSavvy
-/.gitignore
-
-# added by GitSavvy
-/.gitignore
-
-# added by GitSavvy
+/error.log
 /output.log
+privateserverconfig.json
+wwwroot/privateconfig.json
+deploy/packages/
+deploy/work/
+
+/wwwroot/init/neii-air.json
+/wwwroot/init/neii-biota.json
+/wwwroot/init/neii-contextual.json
+/wwwroot/init/neii-experimental.json
+/wwwroot/init/neii-land.json
+/wwwroot/init/neii-nemsr.json
+/wwwroot/init/neii-oceans-prod.json
+/wwwroot/init/neii-oceans.json
+/wwwroot/init/neii-other.json
+/wwwroot/init/neii-water.json

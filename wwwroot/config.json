@@ -1,38 +1,35 @@
 {
   "initializationUrls": [
-    "neii-oceans-prod",
+    "neii-oceans",
     "neii-water",
     "neii-air",
     "neii-biota",
     "neii-land",
     "neii-other",
-    "http://neii.bom.gov.au/cgi-bin/nemsr/get_viewer_config.json",
+    "proxy/_60s/http://neii.bom.gov.au/cgi-bin/nemsr/get_viewer_config.json",
     "neii-contextual"
   ],
   "parameters": {
+    "feedbackUrl": "feedback",
     "bingMapsKey": "AgZHSWd9Yda7ZjEUkRaG40lVbRAJc9sGl6wy39qWb_QjYwVgVg7drbcLgYUufiOb",
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": "UA-62048953-2",
     "googleAnalyticsOptions": null,
-    "corsProxyBaseUrl": "/proxy/",
     "disclaimer": {
       "text": "Disclaimer: This map must not be used for navigation or precise spatial analysis",
       "url": ""
     },
-    "developerAttribution-CHANGEHTIS": {
-      "text": "Your organisation",
-      "link": "http://www.example.com"
-    },
     "globalDisclaimer": {
-      "enabled": true,
-      "confirmationRequired": true,
-      "title": "Disclaimer"
+      "devHostRegex": "nicta\\.com\\.au"
     },
     "appName": "NEII Viewer",
-    "supportEmail-CHANGETHIS": "help@example.com",
+    "supportEmail": "environment@bom.gov.au",
     "brandBarElements": [
-      "National Environmental<br/> Information Infrastructure",
+      "",
+      "<span title=\"Version: {{version}}\">National Environmental<br/> Information Infrastructure</span>",
       ""
-    ]
+    ],
+    "openAddData": true,
+    "autoPlay": false
   }
 }

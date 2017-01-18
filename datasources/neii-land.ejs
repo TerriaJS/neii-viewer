@@ -1,0 +1,16 @@
+{
+    "catalog": [
+        {
+            "name": "NEII Data Services – Conformant",
+            "type": "group",
+            "isOpen": false,
+            "items": [
+                {
+                    "name": "<%- titleWithCount('Land', include('includes/land-items')) %>",
+                    "type": "group",
+                    "items": <% include includes/land-items %>
+                }
+            ]
+        }
+    ]
+}

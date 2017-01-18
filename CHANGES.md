@@ -1,6 +1,242 @@
 Change Log
 ==========
 
+### 2016-12-21
+
+* Updated information shown about NEII "conformant" data groups.
+* Updated styling on Feature Info panel and data catalogue.
+* Added three new Geoscience Australia layers: Topographic Maps, Gravity Anomaly and Magnetic Intensity.
+* Updated styling on Feature Info panel and data catalogue.
+* Turned off timeline animation by default.
+* Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 4.7.2.  Significant changes relevant to NEII-veiwer users include:
+  * Fixed a bug leading to oversized graphics being displayed from WPS calls.
+  * Added the ability for users to share their view of the map when providing feedback.
+  * Extra components can now be added to FeatureInfoSection.
+  * "Download Data" in FeatureInfoSection now "Download Data for this Feature".
+  * Fixed a bug that prevented the scale bar from displaying correctly.
+  * Support added for creating custom WPS types, and for reusing `Point`, `Polygon`, and `Region` editors in custom types.
+  * Fixed a bug that caused the legend to be missing for WMS catalog items where the legend came from GetCapabilities but the URL did not contain `GetLegendGraphic`.
+  * Updated GNAF API to new Lucene-based backend, which should improve performance.
+  * Updated custom `<chart>` tag to allow a `colors` attribute, containing comma separated css strings (one per column), allowing users to customize chart colors. The `colors` attribute in charts can also be passed through from a WPS ComplexData response.
+  * Updated styling of Give Feedback form.
+  * Improved consistency of "Search" and "Add Data" font sizes.
+  * Improved flexibility of Feature Info Panel styling.
+  * Fixed a bug that could cause an extra `/` to be added to end of URLs by `ArcGisMapServerCatalogItem`, causing some servers to reject the request.
+  * Added a workaround for a bug in Internet Explorer 11 on Windows 7 that could cause the user interface to hang.
+
+### 2016-11-16
+
+* Made fonts and colours consistent with NEII website.
+* Updated "about" link and related maps.
+* Added a button below the map navigation buttons to measure the distance between points.
+* Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 4.6.0.  Significant changes relevant to NEII-veiwer users include:
+  * Change in defaults:
+    * The `clipToRectangle` property of raster catalog items (`WebMapServiceCatalogItem`, `ArcGisMapServerCatalogItem`, etc.) now defaults to `true`.  It was `false` in previous releases.  Using `false` prevents features (especially point features) right at the edge of the layer's rectangle from being cut off when the server reports too tight a rectangle, but also causes the layer to load much more slowly in many cases.  Starting in this version, we favour performance and the much more common case that the rectangle can be trusted.
+  * Made `WebMapServiceCatalogItem` tolerant of a `GetCapabilities` where a `LegendURL` element does not have an `OnlineResource` or a `Dimension` does not have any values.
+  * Add support for 'Long' type hint to CSV data for specifying longitude.
+  * The marker indicating the location of a search result is now placed correctly on the terrain surface.
+  * `CatalogFunction` region parameters are now selected on the main map rather than the preview map.
+  * Some regions that were previously not selectable in Analytics, except via autocomplete, are now selectable.
+  * Added hover text that shows the position of data catalog search results in the full catalog.
+  * Widened scrollbars and improve their contrast.
+  * Removed the default maximum number of 10 results when searching the data catalog.
+  * Allow users to browse for JSON configuration files when adding "Local Data".
+  * Made it easier to use custom fonts and colors in applications built on TerriaJS, via new SCSS variables.
+  * Fixed a bug that caused a `CswCatalogGroup` to fail to load if the server had a `references` element without a `protocol`.
+  * The order of the legend for an `ArcGisMapServerCatalogItem` now matches the order used by ArcGIS itself.
+  * Large legends are now scaled down to fit within the width of the workbench panel.
+  * Improved the styling of links inside the Feature Information panel.
+  * Fixed a bug that could cause the Feature Information panel's close button to initially appear in the wrong place, and then jump to the right place when moving the mouse near it.
+
+### 2016-11-08
+
+* Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 4.5.0.  Significant changes relevant to NEII-viewer users include:
+  * Added support for the Sensor Observation Service format, via the `SensorObservationServiceCatalogItem`.
+  * Added support for end date columns in CSV data (automatic with column names containing `end_date`, `end date`, `end_time`, `end time`; or set in json file using `isEndDate` in `tableStyle.columns`.
+  * Fixed calculation of end dates for moving-point CSV files, which could lead to points disappearing periodically.
+  * Fixed a bug that prevented fractional seconds in time-varying WMS periodicity.
+  * Added the ability to the workbench UI to select the `style` to use to display a Web Map Service (WMS) layer when multiple styles are available.
+  * Added the ability to the workbench UI to select from among the available dimensions of a Web Map Service (WMS) layer.
+  * Improved the error reporting and handling when specifying invalid values for the WMS COLORSCALERANGE parameter in the UI.
+  * Added the ability to drag existing points when creating a `UserDrawing`.
+  * Fixed a bug that could cause nonsensical legends for CSV columns with all null values.
+  * Fixed a bug that prevented the Share panel from being used at all if the URL shortening service encountered an error.
+  * Fixed a bug that could cause an error when adding multiple catalog items to the map quickly.
+  * Tweaked the z-order of the window that appears when hovering over a chart series, so that it does not appear on top of the Feature Information panel.
+  * Fixed a bug that could lead to incorrect colors in a legend for a CSV file with explicit `colorBins` and cut off at a minimum and maximum.
+  * We now show the feature info panel the first time a dataset is added, containing a suggestion to click the map to learn more about a location.  Also improved the wording for the feature info panel when there is no data.
+  * Fixed support for time-varying feature info for vector tile based region mapping.
+  * `updateApplicationOnMessageFromParentWindow` now also allows messages from the `opener` window, i.e. the window that opened the page by calling `window.open`.  The parent or opener may now also send a message with an `allowOrigin` property to specify an origin that should be allowed to post messages.
+  * Fixed a bug that prevented charts from loading http urls from https.
+  * The `isNcWMS` property of `WebMapServiceCatalogItem` is now set to true, and the COLORSCALERANGE controls are available in the UI, for ncWMS2 servers.
+  * Added the ability to prevent CSVs with time and `id` columns from appearing as moving points, by setting `idColumns` to either `null` or `[]`.
+  * Fixed a bug that prevented default parameters to `CatalogFunction`s from being shown in the user interface.
+  * Fixed a problem that made `BooleanParameter`s show up incorrectly in the user interface.
+  * Embedded `<chart>` elements now support two new optional attributes:
+     * `title`: overrides the title that would otherwise be derived from the name of the feature.
+     * `hide-buttons`: If `"true"`, the Expand and Download buttons are hidden from the chart.
+  * Fixed a bug in embedded `<collapsible>` elements that prevented them from being expandable.
+  * Improved SDMX-JSON support to make it possible to change region type in the UI.
+  * Deprecated `RegionMapping.setRegionColumnType` in favour of `RegionMapping.prototype.setRegionColumnType`. `regionDetails[].column` and `.disambigColumn` have also been deprecated.
+
+### 2016-10-06
+
+* Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 4.4.0.  Significant changes relevant to NEII-viewer users include:
+  * Fixed a bug that caused Cesium (3D view) to crash when plotting a CSV with non-numerical data in the depth column.
+  * Added automatic time-series charts of attributes to the feature info of time-varying region-mapped csvs.
+  * Refactored Csv, AbsItt and Sdmx-Json catalog items to depend on a common `TableCatalogItem`. Deprecated `CsvCatalogItem.setActiveTimeColumn` in favour of `tableStructure.setActiveTimeColumn`.
+  * Error in geocoding addresses in csv files now shows in dialog box.
+  * Fixed CSS styling of the timeline and added padding to the feature info panel.
+  * Enhanced JSON support to recognise JSON5 format for user-added files.
+  * Deprecated `indicesIntoUniqueValues`, `indicesOrValues`, `indicesOrNumericalValues` and `usesIndicesIntoUniqueValues` in `TableColumn` (`isEnum` replaces `usesIndicesIntoUniqueValues`).
+  * Added support for explicitly colouring enum columns using a `tableStyle.colorBins` array of `{"value":v, "color":c}` objects
+  * Improved rendering speed when changing the display variable for large lat/lon csv files.
+  * Default to moving feature CSVs if a time, latitude, longitude and a column named `id` are present.
+  * Fixed a bug so units flow through to charts of moving CSV features.
+  * Fixed a bug that prevented the `contextItem` of a `CatalogFunction` from showing during location selection.
+  * Fixed a bug that caused `&amp;` to appear in some URLs instead of simply `&`, leading to an error when visiting the link.
+  * Added the ability to pass a LineString to a Web Processing Service.
+  * Fixed a bug that prevented `tableStyle.dataVariable` = `null` from working.
+  * Uses a smarter default column for CSV files.
+  * Fixed a bug that caused an error message to appear repeatedly when there was an error downloading tiles for a base map.
+  * Fixed a bug that caused WMS layer names and WFS type names to not be displayed on the dataset info page.
+  * We now preserve the state of the feature information panel when sharing.  This was lost in the transition to the new user interface in 4.0.0.
+  * Added a popup message when using region mapping on old browsers without an `ArrayBuffer` type (such as Internet Explorer 9).  These browsers won't support vector tile based region mapping.
+  * Fixed bug where generic parameters such as strings were not passed through to WPS services.
+  * Fixed a bug where the chart panel did not update with polled data files.
+  * Removed the Australian Hydrography layer from `createAustraliaBaseMapOptions`, as the source is no longer available.
+  * Fixed a bug that caused the GetCapabilities URL of a WMS catalog item to be shown even when `hideSource` was set to true.
+  * Newly-added user data is now automatically selected for the preview map.
+  * Fixed a bug where selecting a new column on a moving point CSV file did not update the chart in the feature info panel.
+  * Fixed dropdowns dropping from the bounds of the screen in Safari.
+  * Fixed a bug that prevented the feature info panel from updating with polled lat/lon csvs.
+  * Improved handing of missing data in charts, so that it is ignored instead of shown as 0.
+  * Added a loading indicator for user-added files.
+  * Fixed a bug that prevented printing the map in the 2D mode.
+  * Fixed a bug when changing between x-axis units in the chart panel.
+  * Added support for ArcGis FeatureServers, using the new catalog types `esri-featureServer` and `esri-featureServer-group`. Catalog type `esri-group` can load REST service, MapServer and FeatureServer endpoints. (For backwards compatability, catalog type `esri-mapServer-group` continues to work for REST service as well as MapServer endpoints.)
+  * Adds bulk geocoding capability for Australian addresses. So GnafAPI can be used with batches of addresses, if configured.
+  * Updated to [Cesium](http://cesiumjs.org) 1.23 (from 1.20).  See the [change log](https://github.com/AnalyticalGraphicsInc/cesium/blob/1.23/CHANGES.md) for details.
+  * Added support for a wider range of SDMX-JSON data files, including the ability to sum over dimensions via `aggregatedDimensionIds`.
+  * Added support for `tableStyle.colorBins` as array of values specifying the boundaries between the color bins in the legend, eg. `[3000, 3500, 3900, 4000]`. `colorBins` can still be an integer specifying the number of bins, in which case Terria determines the boundaries.
+  * Added support for moving-point csv files, via an `idColumns` array on csv catalog items. By default, feature positions, color and size are interpolated between the known time values; set `isSampled` to false to prevent this. (Color and size are never interpolated when they are drawn from a text column.)
+  * Added support for polling csv files with a partial update, and by using `idColumns` to identify features across updates.
+  * Added a time series chart to the Feature Info Panel for sampled, moving features.
+  * Fixed a bug which prevented time-varying CZML feature info from updating.
+  * Made explorer panel not rendered at all when hidden and made the preview map destroy itself when unmounted - this mitigates performance issues from having Leaflet running in the background on very busy vector datasets.
+  * Fixed a bug that caused the selection indicator to get small when near the right edge of the map and to overlap the side panel when past the left edge.
+  * Map controls and menus now become translucent while the explorer window (Data Catalog) is visible.
+  * Legend images that fail to load are now hidden entirely.
+  * Improved the appearance of the opacity slider and added a percentage display.
+  * Fixed a bug that prevented sharing from working in Internet Explorer.
+  * Worked around a problem in the Websense Web Filter that caused it to block access to some of the TerriaJS Web Workers due to a URL in the license text in a comment in a source file.
+  * Made the column title for time-based CSV exports from chart default to 'date'
+  * Stopped the CSV creation webworker from being run multiple times on viewing a chart.
+  * Removed the empty circles from non-selected base maps on the Map settings panel.
+  * Prevented text from being selected when dragging the compass control.
+  * Stopped IE9 from setting bizarre inline dimensions on custom branding images.
+  * Fixed workbench reordering in browsers other than Chrome.
+  * URLs on the dataset info page are now auto-selected when clicked, making them easier to copy.
+
+### 2016-07-15
+
+* Catalog (init) files can now be stored as .ejs files in /datasources, rendered by the EJS templating library. See comments in gulpfile.js.
+* Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 4.0.2.  Significant changes relevant to NEII-viewer users include:
+  * A brand new user interface, incorporating user feedback and the results of usability testing!
+  * `CswCatalogGroup` will now include Web Processing Services from the catalog if configured with `includeWps` set to true.
+  * `WebMapServiceCatalogItem` will now detect ncWMS servers and set isNcWMS to true.
+  * Uses a new mechanism for storing the data associated with the Share feature, avoid URL length limits.
+  * Added partial support for the SDMX-JSON format.
+
+### 2016-06-15
+
+* Added a prominent link to the preview of the new UI.
+* Added GNAF as a location search provider.
+* Fixed an issue where the 404 error page would display incorrectly if given a non-existent path (eg, nationlmap.gov.au/nonexistent/path)
+* Added CNT3 as an alias for ISO3 as a csv column name (for three-letter country codes).
+* Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 3.3.0.  Significant changes relevant to NationalMap users include:
+  * `CkanCatalogItem.createCatalogItemFromResource`'s `options.allowGroups` has been replaced with `options.allowWmsGroups` and `options.allowWfsGroups`.
+  * Added support for WFS in CKAN items.
+  * Fixed a bug that prevented the terriajs-server's `"proxyAllDomains": true` option from working.
+  * Added support in FeatureInfoTemplate for referencing CSV columns by either their name in the CSV file, or the name they are given via `TableStyle.columns...name` (if any).
+  * Improved CSV handling to ignore any blank lines, ie. those containing only commas.
+  * Fixed a bug in `CswCatalogGroup` that prevented it from working in Internet Explorer.
+  * Fixed a bug on IE9 that prevented shortened URLs from loading.
+  * Fixed a map started with smooth terrain being unable to switch to 3D terrain.
+  * Fixed a bug in `CkanCatalogItem` that prevented it from using the proxy for dataset URLs.
+  * Fixed feature picking when displaying a point-based vector and a region mapped layer at the same time.
+  * Stopped generation of WMS intervals being dependent on JS dates and hence sensitive to daylight savings time gaps.
+  * Fixed a bug that led to zero property values being considered time-varying in the Feature Info panel.
+  * Fixed a bug that prevented lat/lon injection into templates with time-varying properties.
+  * Add `parameters` property in `WebFeatureServiceCatalogItem` to allow accessing URLs that need additional parameters.
+  * Fixed a bug where visiting a shared link with a time-series layer would crash on load.
+  * Added a direct way to format numbers in feature info templates, eg. `{{#terria.formatNumber}}{"useGrouping": true, "maximumFractionDigits": 3}{{value}}{{/terria.formatNumber}}`. The quotes around the keys are optional.
+  * When the number of unique values in a CSV column exceeds the number of color bins available, the legend now displays "XX other values" as the label for the last bucket rather than simply "Other".
+  * CSV columns with up to 21 unique values can now be fully displayed in the legend.  Previously, the number of bins was limited to 9.
+  * Added `cycle` option to `tableColumnStyle.colorBinMethod` for enumeration-type CSV columns.  When the number of unique values in the column exceeds the number of color bins available, this option makes TerriaJS color all values by cycling through the available colors, rather than coloring only the most common values and lumping the rest into an "Other" bucket.
+  * Metadata and single data files (e.g. KML, GeoJSON) are now consistently cached for one day instead of two weeks.
+  * `WebMapServiceCatalogItem` now uses the legend for the `style` specified in `parameters` when possible.  It also now includes the `parameters` when building a `GetLegendGraphic` URL.
+  * Fixed a bug that prevented switching to the 3D view after starting the application in 2D mode.
+### 2016-06-15
+* Support "globalDisclaimer" configuration option, defined as follows:
+        "globalDisclaimer": {
+            "confirmationRequired": true, // Whether user must click the correct button to dismiss it (otherwise click anywhere)
+            "buttonTitle": "I agree",     // Text for that button (defaults to "Ok").
+            "title": "Disclaimer",        // Title for the window
+            "prodHostRegex": "gov.\\.au$", // If this regular expression is NOT matched, add the DevelopmentDisclaimerPreamble.html
+            "devHostRegex-OPTIONAL": "\\b(staging|preview|test|dev)\\.", // If this regular expression IS matched, add that preamble
+            "enableOnLocalhost": true     // By default, Disclaimers are not shown when testing locally. Add this to test your disclaimer.
+        },
+
+
+### 2016-05-13b
+
+* Fixed a bug in the build configuration that allowed extra whitespace to be inserted in multi-line strings.  This whitespace could case the markdown formatter to treat the string as preformatted text and break, e.g., error messages.
+
+### 2016-05-13
+
+* Breaking changes:
+  * Columns with the name `ced_aec` are no longer supported for region mapping.  Please use `com_elb_code` or `com_elb_name` instead.
+* Added new region types for region mapping:
+  * Commonwealth electoral divisions 2016 by ID, from the Australian Electoral Commission: (column names: `divisionnm`, `com_elb_name_2016`, or `com_elb_name`)
+  * Commonwealth electoral divisions 2016 by name, from the Australian Electoral Commission: (column names: `divisionid`, `com_elb_code_2016`, `com_elb_code`, or `com_elb`)
+  * Natural resource management regions by ID (column names: `nrmr`, `nrmr_code`, or `nrmr_code_2011`)
+  * Natural resource management regions by name (column name: `nrmr_name`)
+  * Australian drainage divisions by ID (column names: `add`, `add_code`, `add_code_2011`)
+  * Australian drainage divisions by name (column name: `add_name`)
+* Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 3.1.0.  Significant changes relevant to NationalMap users include:
+  * Injected clicked lat and long into templates under `{{terria.coords.latitude}}` and `{{terria.coords.longitude}}`.
+  * Fixed an exception being thrown when selecting a region while another region highlight was still loading.
+  * Added `CesiumTerrainCatalogItem` to display a 3D surface model in a supported Cesium format.
+  * Added support for configuration of how time is displayed on the timeline - catalog items can now specify a dateFormat hash
+      in their configuration that has formats for `timelineTic` (what is displayed on the timeline itself) and `currentTime`
+      (which is the current time at the top-left).
+  * Fixed display when `tableStyle.colorBins` is 0.
+  * Added `fogSettings` option to init file to customize fog settings, introduced in Cesium 1.16.
+  * Improved zooming to csvs, to include a small margin around the points.
+  * Support ArcGIS MapServer extents specified in a wider range of projections, including GDA MGA zones.
+  * WMS legends now use a bigger font, include labels, and are anti-aliased when we can determine that the server is Geoserver and supports these options.
+  * Added support for time-series data sets with gaps - these are skipped when scrubbing on the timeline or playing.
+  * Only trigger a search when the user presses enter or stops typing for 3 seconds.  This will greatly reduce the number of times that searches are performed, which is important with a geocoder like Bing Maps that counts each geocode as a transaction.
+  * Reduced the tendency for search to lock up the web browser while it is in progress.
+  * For WMS catalog items that have animated data, the initial time of the timeslider can be specified with `initialTimeSource` as `start`, `end`, `present` (nearest date to present), or with an ISO8601 date.
+  * Added ability to remove csv columns from the Now Viewing panel, using `"type": "HIDDEN"` in `tableStyle.columns`.
+  * Updated to [Cesium](http://cesiumjs.org) 1.20.  Significant changes relevant to TerriaJS users include:
+      * Fixed loading for KML `NetworkLink` to not append a `?` if there isn't a query string.
+      * Fixed handling of non-standard KML `styleUrl` references within a `StyleMap`.
+      * Fixed issue in KML where StyleMaps from external documents fail to load.
+      * Added translucent and colored image support to KML ground overlays
+      * `GeoJsonDataSource` now handles CRS `urn:ogc:def:crs:EPSG::4326`
+      * Fix a race condition that would cause the terrain to continue loading and unloading or cause a crash when changing terrain providers. [#3690](https://github.com/AnalyticalGraphicsInc/cesium/issues/3690)
+      * Fix issue where the `GroundPrimitive` volume was being clipped by the far plane. [#3706](https://github.com/AnalyticalGraphicsInc/cesium/issues/3706)
+      * Fixed a reentrancy bug in `EntityCollection.collectionChanged`. [#3739](https://github.com/AnalyticalGraphicsInc/cesium/pull/3739)
+      * Fixed a crash that would occur if you added and removed an `Entity` with a path without ever actually rendering it. [#3738](https://github.com/AnalyticalGraphicsInc/cesium/pull/3738)
+      * Fixed issue causing parts of geometry and billboards/labels to be clipped. [#3748](https://github.com/AnalyticalGraphicsInc/cesium/issues/3748)
+      * Fixed bug where transparent image materials were drawn black.
+      * Fixed `Color.fromCssColorString` from reusing the input `result` alpha value in some cases.
+### 2016-05-15
+* Detect when an old version of Node.js is being used, and fail helpfully.
+
 ### 2016-04-15
 
 * Updated the URLs for the Water Observations from Space datasets to `geoserver.nci.org.au`.
