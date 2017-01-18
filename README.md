@@ -1,5 +1,5 @@
 NEII Viewer
 ==========
 
-This is the repository for http://neii.org.au/viewer. It is based on https://github.com/TerriaJS/map, and
+This is the repository for http://neii.gov.au/viewer/. It is based on [Terria Map](https://github.com/TerriaJS/map), and
 built using the [TerriaJS](https://github.com/TerriaJS/TerriaJS) library.
