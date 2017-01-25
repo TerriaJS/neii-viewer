@@ -30,8 +30,20 @@ $dark-lighter: #7E7E7E;
 $dark-darker: darken($dark, 10%);
 $charcoal-grey: $dark-lighter;
 
-$text-link: $color-secondary;
-$text-visited-link: #BB5430;
+@function get-link-color($bg-color) {
+  @if (lightness($bg-color) > 50) {
+    @return $color-secondary; // Dark color needed on a light background
+  } @else {
+    @return $color-primary; // Light color needed on a dark background
+  }
+}
+@function get-visited-link-color($bg-color) {
+  @if (lightness($bg-color) > 50) {
+    @return #BB5430; // Dark color needed on a light background
+  } @else {
+    @return #BB5430; // Light color needed on a dark background
+  }
+}
 
 $modal-secondary-bg: #FFFFFF;
 $modal-highlight: #BB5430;
@@ -39,7 +51,7 @@ $modal-selected: #FFFFFF;
 $modal-tab-bg: $dark-lighter;
 $modal-selected-tab-bg: $modal-tab-bg;
 $modal-text: $dark;
-$dropdown-hover-color: $text-visited-link;
+$dropdown-hover-color: #BB5430;
 
 $data-catalog-color: $color-secondary;
 
