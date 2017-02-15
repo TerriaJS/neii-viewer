@@ -1,6 +1,45 @@
 Change Log
 ==========
 
+### 2017-02-15
+
+* Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 4.10.1. Significant changes relevant to NEII-veiwer users include:
+  * Canceled pending tile requests when removing a layer from the 2D map.  This should drastically improve the responsiveness when dragging the time slider of a time-dynamic layer in 2D mode.
+  * Added the data source and data service details to the "About this dataset" (preview) panel.
+  * Renamed `SpatialDetailingFunction`, `WhyAmISpecialFunction`, and `PlacesLikeMeFunction` to `SpatialDetailingCatalogFunction`, `WhyAmISpecialCatalogFunction`, and `PlacesLikeMeCatalogFunction`, respectively.  The old names will be removed in a future release.
+  * Fixed incorrect tooltip text for the Share button.
+  * Improved the build process and content of the user guide documentation.
+  * Fixed a bug that prevented downloading data from the chart panel if the map was started in 2D mode.
+  * Changed the default opacity of table data to 0.8 from 0.6.
+  * Added the ability to read dates in the format "2017-Q2".
+  * Improved support for SDMX-JSON, including showing values as a percent of regional totals, showing the selected conditions in a more concise format, and fixing some bugs.
+  * Updated `TableCatalogItem`s to show a download URL in About This Dataset, which downloads the entire dataset as csv, even if the original data was more complex (eg. from an API).
+  * The icon specified to the `MenuPanel` / `DropdownPanel` theme can now be either the identifier of an icon from `Icon.GLYPHS` or an actual SVG `require`'d via the `svg-sprite-loader`.
+  * Fixed a bug that caused time-varying points from a CSV file to leave a trail on the 2D map.
+  * Add `Terria.filterStartDataCallback`.  This callback gives an application the opportunity to modify start (share) data supplied in a URL before TerriaJS loads it.
+    * Reduced the size of the initial TerriaJS JavaScript code by about 30% when starting in 2D mode.
+  * `CkanCatalogGroup` now automatically adds the type of the resource (e.g. `(WMS)`) after the name when a dataset contains multiple resources that can be turned into catalog items and `useResourceName` is false.
+  * Added support for ArcGIS FeatureServers to `CkanCatalogGroup` and `CkanCatalogItem`.  In order for `CkanCatalogGroup` to include FeatureServers, `includeEsriFeatureServer` must be set to true.
+  * Changed default URL for the share service from `/share` to `share` and made it configurable by specifying `shareUrl` in config.json.  This helps with deployments in subdirectories.
+  * Upgraded to [Cesium 1.29](https://github.com/AnalyticalGraphicsInc/cesium/blob/1.29/CHANGES.md).
+  * Fixed a bug that prevented a `shareUrl` specified in `config.json` from actually being used by the `ShareDataService`.
+  * Adding a JSON init file by dropping it on the map or selecting it from the My Data tab no longer adds an entry to the Workbench and User-Added Data catalog.
+  * WPS return type can now be `application/vnd.terriajs.catalog-member+json` which allows a json catalog member to be returned in WPS along with the usual attributes to control display.
+  * `chartLineColor` tableStyle attribute added, allowing per column specification of chart line color.
+  * Fixed a bug that caused a `WebMapServiceCatalogItem` inside a `WebMapServiceCatalogGroup` to revert to defaults from GetCapabilities instead of using shared properties.
+  * Fix a bug that prevented drawing the marker and zooming to the point when searching for a location in 2D.
+  * Fixed a bug where `WebMapTileServiceCatalogItem` would incorrectly interpret a bounding box and return only the lower left corner causing Cesium to crash on render.
+  * Fixed a bug that caused the feedback form to be submitted when unchecking "Share my map view".
+  * Fixed a bug with calculating bounding rectangles in `ArcGisCatalogItem` caused by changes to `proj4` package.
+  * Fixed a bug preventing chart axis labels from being visible on a white background.
+  * Fixed a bug that caused the Feedback panel to appear below the chart panel, making it difficult to use.
+  * Changed defaults:
+    * `WebProcessingServiceCatalogFunction` now defaults to invoking the `Execute` service via an HTTP POST with XML encoding rather than an HTTP GET with KVP encoding.  This is a more sensible default because the WPS specification requires that servers support POST/XML while GET/KVP is optional.  Plus, POST/XML allows large input parameters, such as a polygon descibing all of Australia, to be successfully passed to the WPS process.  To force use of GET/KVP, set the `executeWithHttpGet` property to `true`.
+  * Fixed problems with third-party dependencies causing `npm install` and `npm run gulp` to fail.
+  * Fixed a bug that prevented the proxy from being used for loading legends, even in situations where it is necessary such as an `http` legend accessed from an `https` site.
+  * Added link to re-download local files, noting that TerriaJS may have done additional processing (eg. geocoding).
+
+
 ### 2016-12-21
 
 * Updated information shown about NEII "conformant" data groups.
