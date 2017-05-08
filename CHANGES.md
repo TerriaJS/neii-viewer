@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+### 2017-05-08
+
+* Added SOS2 Watercourse Discharge and Watercourse Levels items to "NEII Data Services – Conformant" -> Water -> "Bureau of Meteorology Water Regulations Data".
+
+
 ### 2017-04-18
 
 * Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 5.1.0. Significant changes relevant to NEII-veiwer users include:
