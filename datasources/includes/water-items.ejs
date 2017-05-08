@@ -607,6 +607,114 @@
         ]
     },
     {
+        "name": "Bureau of Meteorology Water Regulations Data",
+        "type": "group",
+        "description": "The Bureau receives water data measured at stations around Australia from organisations named in the Water Regulations (2008). This data is stored in the Australian Water Resource Information System (AWRIS). A large proportion of time series data in AWRIS is made available to the public via Sensor Observation Service (SOS2) web services. NEII uses these web services to present storage levels, storage volume, water course discharge and water course levels data. Please refer to http://www.bom.gov.au/waterdata/ for more information.",
+        "custodian": "Bureau of Meteorology",
+        "isOpen": false,
+        "items": [
+            {
+                "name": "Watercourse Levels",
+                "url": "http://www.bom.gov.au/waterdata/services",
+                "type": "sos",
+                "proceduresName": "Frequency",
+                "description": "Watercourse levels, as defined under category 1a of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
+                "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
+                "observablePropertiesName": "Observation type",
+                "startDate": "1980-01-01T00:00:00+10",
+                "endDate": "2016-10-01T00:00:00+10",
+                "procedures": [
+                    {
+                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_YearlyMean",
+                        "title": "Annual average",
+                        "defaultDuration": "40y"
+                    },
+                    {
+                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_MonthlyMean",
+                        "title": "Monthly average",
+                        "defaultDuration": "3y"
+                    },
+                    {
+                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMean",
+                        "title": "Daily average",
+                        "defaultDuration": "32d"
+                    },
+                    {
+                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMin",
+                        "title": "Daily minimum",
+                        "defaultDuration": "32d"
+                    },
+                    {
+                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMax",
+                        "title": "Daily maximum",
+                        "defaultDuration": "32d"
+                    },
+                    {
+                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_HourlyMean",
+                        "title": "Hourly average",
+                        "defaultDuration": "48h"
+                    }
+                ],
+                "observableProperties": [
+                    {
+                        "identifier": "http://bom.gov.au/waterdata/services/parameters/Water Course Level",
+                        "title": "Water Course Level",
+                        "units": "metres"
+                    }
+                ]
+            },
+            {
+                "name": "Watercourse Discharge",
+                "url": "http://www.bom.gov.au/waterdata/services",
+                "type": "sos",
+                "proceduresName": "Frequency",
+                "description": "Watercourse discharge, as defined under category 1b of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
+                "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
+                "observablePropertiesName": "Observation type",
+                "startDate": "1980-01-01T00:00:00+10",
+                "procedures": [
+                    {
+                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_YearlyMean",
+                        "title": "Annual average",
+                        "defaultDuration": "40y"
+                    },
+                    {
+                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_MonthlyMean",
+                        "title": "Monthly average",
+                        "defaultDuration": "3y"
+                    },
+                    {
+                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMean",
+                        "title": "Daily average",
+                        "defaultDuration": "32d"
+                    },
+                    {
+                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMin",
+                        "title": "Daily minimum",
+                        "defaultDuration": "32d"
+                    },
+                    {
+                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMax",
+                        "title": "Daily maximum",
+                        "defaultDuration": "32d"
+                    },
+                    {
+                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_HourlyMean",
+                        "title": "Hourly average",
+                        "defaultDuration": "48h"
+                    }
+                ],
+                "observableProperties": [
+                    {
+                        "identifier": "http://bom.gov.au/waterdata/services/parameters/Water Course Discharge",
+                        "title": "Water Course Discharge",
+                        "units": "cubic m/s"
+                    }
+                ]
+            }
+        ]
+    },
+    {
       "type": "group",
       "name": "Water Observations from Space (GA)",
       "description": "This OGC Web Map Service (WMS) provides access to the Water Observations from Space (WOfS) gridded dataset indicating areas where surface water has been observed using the Geoscience Australia's (GA) Landsat 5 and 7 satellite data holdings.  WOfS covers all of mainland Australia and Tasmania but excludes off-shore Territories.\n\nWOfS is derived from Landsat-5 and Landsat-7 satellite imagery acquired over Australia between 1987 to November 2014. The Landsat data underpinning WOfS is ARG25 standard data located in the Australian Geoscience Data Cube (AGDC) at the National Computational Infrastructure (NCI) in the Australian National University (ANU), Canberra. The WOfS product is calculated from all acceptable Landsat scenes in the Geoscience Australia archive for the time period. The detection process is based on spectral analysis of each pixel in each Landsat scene.",
