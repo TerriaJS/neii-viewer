@@ -1,6 +1,17 @@
 Change Log
 ==========
 
+### 2017-05-12
+
+* Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 5.2.0. Significant changes relevant to NEII-veiwer users include:
+  * Added the `showFeaturesAtAllTimes` option to Sensor Observation Service items. This improves the user experience if the server returns some features starting in 1990, say, and some starting in 1995, so that the latter still appear (as grey points with no data) in 1990.
+  * Fixed a bug that prevented preview charts in the feature info panel from updating when the user changed the Sensor Observation Service frequency.
+  * Fixed a bug that allowed the user to de-select all the display choices for Sensor Observation Service items.
+  * Improved the appearance of charts where all the y-values are null. (It now shows "No preview available".)
+  * Upgraded to Leaflet 1.0.3 for the 2D and preview maps.
+  * Upgraded to [Cesium 1.33](https://github.com/AnalyticalGraphicsInc/cesium/blob/1.33/CHANGES.md) for the 3D view.
+
+
 ### 2017-05-08
 
 * Added SOS2 Watercourse Discharge and Watercourse Levels items to "NEII Data Services – Conformant" -> Water -> "Bureau of Meteorology Water Regulations Data".
