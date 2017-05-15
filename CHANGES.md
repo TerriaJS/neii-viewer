@@ -1,9 +1,11 @@
 Change Log
 ==========
 
-### 2017-05-12
+### 2017-05-15
 
-* Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 5.2.2. Significant changes relevant to NEII-veiwer users include:
+* Renamed "NEII Data Services – Conformant" -> Water -> "Bureau of Meteorology Water Regulations Data" to "Water Regulations Data (BoM)".
+* Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 5.2.4. Significant changes relevant to NEII-veiwer users include:
+  * Fixed a bug that prevented error messages, such as when a dataset fails to load, from being shown to the user. Instead, the errors were silently ignored.
   * Added the `showFeaturesAtAllTimes` option to Sensor Observation Service items. This improves the user experience if the server returns some features starting in 1990, say, and some starting in 1995, so that the latter still appear (as grey points with no data) in 1990.
   * Fixed a bug that prevented preview charts in the feature info panel from updating when the user changed the Sensor Observation Service frequency.
   * Fixed a bug that allowed the user to de-select all the display choices for Sensor Observation Service items.
