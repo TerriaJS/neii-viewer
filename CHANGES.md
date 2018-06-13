@@ -218,6 +218,16 @@ Change Log
   * Fixed workbench reordering in browsers other than Chrome.
   * URLs on the dataset info page are now auto-selected when clicked, making them easier to copy.
 
+### 2017-XX-XX
+
+* Use `gtar` when building `make-package` on OSX to create GNU tar compatible tarballs.
+* Change deafult mobile view mode to a configuration parameter rather then hard coded to 2D.
+* Add Augmented Reality mode for iOS and Android devices with a compass and accelerometer, activated by enabling `experimentalFeatures` in `config.json` and adding the AugmentedVirtualityTool to the ExperimentalMenu in the customisable user interface.
+
+### 2016-11-15
+
+* Fixed link to NEII viewer in Related Maps.
+
 ### 2016-07-15
 
 * Catalog (init) files can now be stored as .ejs files in /datasources, rendered by the EJS templating library. See comments in gulpfile.js.
