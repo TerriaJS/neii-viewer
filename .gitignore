@@ -31,3 +31,4 @@ deploy/work/
 /wwwroot/init/neii-oceans.json
 /wwwroot/init/neii-other.json
 /wwwroot/init/neii-water.json
+packages/
