@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### In the next version
+
+* Added the group "NEII Data Services – Conformant -> Land -> Satellite Imagery" from Digital Earth Australia.
+
 ### 2017-05-15
 
 * Renamed "NEII Data Services – Conformant" -> Water -> "Bureau of Meteorology Water Regulations Data" to "Water Regulations Data (BoM)".
