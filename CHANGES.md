@@ -1,6 +1,7 @@
 Change Log
 ==========
 
+
 ### 2017-08-27
 
 * Added the group "NEII Data Services – Conformant -> Land -> Satellite Imagery" from Digital Earth Australia.
