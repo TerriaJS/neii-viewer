@@ -1,10 +1,10 @@
 Change Log
 ==========
 
-### In the next version
+### 2017-08-27
 
 * Added the group "NEII Data Services – Conformant -> Land -> Satellite Imagery" from Digital Earth Australia.
-* Update to [TerriaJS 6.0.2](https://github.com/TerriaJS/terriajs/blob/6.0.2/CHANGES.md).
+* Update to [TerriaJS 6.0.5](https://github.com/TerriaJS/terriajs/blob/6.0.5/CHANGES.md).
 
 ### 2017-05-15
 
