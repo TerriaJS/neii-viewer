@@ -1,0 +1,16 @@
+{
+  "catalog": [
+    {
+      "name": "NEII Data Services – Conformant",
+      "type": "group",
+      "isOpen": false,
+      "items": [
+        {
+          "name": "Biota (0)",
+          "type": "group",
+          "items": []
+        }
+      ]
+    }
+  ]
+}

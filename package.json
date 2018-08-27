@@ -24,9 +24,9 @@
     "awsS3ServerConfigOverridePath": "s3://nationalmap-apps/neii/privateserverconfig-2016-11-10.json",
     "awsS3ClientConfigOverridePath": "s3://nationalmap-apps/neii/privateclientconfig-2016-10-06.json",
     "docker": {
-        "name": "data61/terria-terriamap",
-        "include": "wwwroot node_modules devserverconfig.json index.js package.json version.js"
-      }
+      "name": "data61/terria-terriamap",
+      "include": "wwwroot node_modules devserverconfig.json index.js package.json version.js"
+    }
   },
   "devDependencies": {
     "babel-eslint": "^7.0.0",
