@@ -81,6 +81,8 @@
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS8:NBART:FALSE",
                       "type": "wms",
+                      "opacity": 1,
+                      "ignoreUnknownTileErrors": true,
                       "useOwnClock": true
                     },
                     {
@@ -89,6 +91,8 @@
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS8:NBART:TRUE",
                       "type": "wms",
+                      "opacity": 1,
+                      "ignoreUnknownTileErrors": true,
                       "useOwnClock": true
                     }
                   ]
@@ -103,6 +107,8 @@
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS7:NBART:FALSE",
                       "type": "wms",
+                      "opacity": 1,
+                      "ignoreUnknownTileErrors": true,
                       "useOwnClock": true
                     },
                     {
@@ -111,6 +117,8 @@
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS7:NBART:TRUE",
                       "type": "wms",
+                      "opacity": 1,
+                      "ignoreUnknownTileErrors": true,
                       "useOwnClock": true
                     }
                   ]
@@ -125,6 +133,8 @@
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS5:NBART:FALSE",
                       "type": "wms",
+                      "opacity": 1,
+                      "ignoreUnknownTileErrors": true,
                       "useOwnClock": true
                     },
                     {
@@ -133,11 +143,25 @@
                       "url": "http://gsky.nci.org.au/ows",
                       "layers": "LS5:NBART:TRUE",
                       "type": "wms",
+                      "opacity": 1,
+                      "ignoreUnknownTileErrors": true,
                       "useOwnClock": true
                     }
                   ]
                 }
               ]
+            },
+
+            {
+              "id": "9c408407",
+              "name": "Sentinel-2 A/B Near Real-Time (NRT) terrain corrected surface reflectance",
+              "url": "https://nrt-au.dea.ga.gov.au/",
+              "type": "wms-getCapabilities",
+              "flatten": true,
+              "itemProperties": {
+                "ignoreUnknownTileErrors": true,
+                "opacity": 1
+              }
             }
         ]
     }
