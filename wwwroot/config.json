@@ -11,7 +11,7 @@
   ],
   "parameters": {
     "initFragmentPaths": [
-        "https://raw.githubusercontent.com/TerriaJS/neii-viewer/master/wwwroot/init/"
+        "proxy/_60s/https://raw.githubusercontent.com/TerriaJS/neii-viewer/master/wwwroot/init/"
     ],
     "feedbackUrl": "feedback",
     "bingMapsKey": "AgZHSWd9Yda7ZjEUkRaG40lVbRAJc9sGl6wy39qWb_QjYwVgVg7drbcLgYUufiOb",
