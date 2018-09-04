@@ -1,5 +1,5 @@
 {
-  "name": "neii-viewer",
+  "name": "neii-viewer-catalogue-staging",
   "version": "0.0.1",
   "description": "Geospatial catalog explorer based on TerriaJS.",
   "license": "Apache-2.0",
@@ -19,7 +19,7 @@
     "awsProfile": "nationalmap",
     "awsS3PackagesPath": "s3://nationalmap-apps/neii",
     "awsRegion": "ap-southeast-2",
-    "awsEc2InstanceType": "t2.medium",
+    "awsEc2InstanceType": "t2.nano",
     "awsEc2ImageId": "ami-2a644649",
     "awsKeyName": "natmap-kring",
     "awsS3ServerConfigOverridePath": "s3://nationalmap-apps/neii/privateserverconfig-2016-11-10.json",
