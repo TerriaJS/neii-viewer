@@ -7,33 +7,27 @@
   },
   "services": [],
   "catalog": [
-    {
-      "name": "NEII Data Services – Conformant",
-      "type": "group",
-      "isOpen": false,
-      "items": [
         {
-          "name": "Oceans (4)",
-          "type": "group",
-          "items": [
-            {
-              "name": "Department of Primary Industries",
-              "type": "group",
-              "preserveOrder": true,
-              "items": [
+              "name": " NSW Marine protected areas (DPI)",
+              "description": "This layer provides a geographic interpretation of Marine Park and Aquatic Reserve boundaries in NSW as described in the NSW Marine Estate Management (Management Rules) Regulation 1999 and NSW Government Gazette (Aquatic Reserves).",
+              "info": [
                 {
-                  "name": "Marine protected areas",
-                  "typeNames": "PUBLIC_Marine_Protected_Areas:NSW_Marine_Protected_Areas",
-                  "dataCustodian": "[DPI](http://www.seed.nsw.gov.au/)",
-                  "url": "https://spatial.industry.nsw.gov.au/arcgis/services/PUBLIC/Marine_Protected_Areas/MapServer/WFSServer",
-                  "type": "wfs-getCapabilities",
-                  "rectangle": [
-                    "100.0",
-                    "-44.0",
-                    "159.0",
-                    "-4.0"
-                  ]
+                  "name": "Data Custodian",
+                  "content": "[NSW Government](http://www.seed.nsw.gov.au/)"
+                },
+                {
+                  "name": "Further Information",
+                  "content": "[NSW Government](http://www.seed.nsw.gov.au/)"
                 }
+				      ],
+              "typeNames": "PUBLIC_Marine_Protected_Areas:NSW_Marine_Protected_Areas",
+			        "url": "https://spatial.industry.nsw.gov.au/arcgis/services/PUBLIC/Marine_Protected_Areas/MapServer/WFSServer",
+              "type": "wfs-getCapabilities",
+              "rectangle": [
+                "100.0",
+                "-44.0",
+                "159.0",
+                "-4.0"
               ]
             },
             {
