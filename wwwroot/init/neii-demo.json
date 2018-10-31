@@ -152,7 +152,8 @@
                         "hourOffset": 4
                     },
                     "isEnabled": true,
-                    "isShown": true
+                    "isShown": true,
+                    "showOnChart": true
                 },
                 {
                     "name": "DEA Landsat 5",
