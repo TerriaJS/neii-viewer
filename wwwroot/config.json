@@ -1,5 +1,8 @@
 {
   "initializationUrls": [
+    "neii-demo"
+  ],
+  "dnu_initializationUrls": [
     "neii-oceans",
     "neii-water",
     "neii-air",
@@ -10,7 +13,7 @@
     "neii-contextual"
   ],
   "parameters": {
-    "initFragmentPaths": [
+    "dnu_initFragmentPaths": [
         "proxy/_60s/https://raw.githubusercontent.com/TerriaJS/neii-viewer/master/wwwroot/init/"
     ],
     "feedbackUrl": "feedback",

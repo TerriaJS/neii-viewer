@@ -1,0 +1,181 @@
+{
+    "homeCamera": {
+        "west": 112,
+        "south": -48,
+        "east": 155,
+        "north": -5
+    },
+    "catalog": [
+        {
+            "name": "Water Regulations Data (BoM)",
+            "type": "group",
+            "description": "The Bureau receives water data measured at stations around Australia from organisations named in the Water Regulations (2008). This data is stored in the Australian Water Resource Information System (AWRIS). A large proportion of time series data in AWRIS is made available to the public via Sensor Observation Service (SOS2) web services. NEII uses these web services to present storage levels, storage volume, water course discharge and water course levels data. Please refer to http://www.bom.gov.au/waterdata/ for more information.",
+            "custodian": "Bureau of Meteorology",
+            "isOpen": true,
+            "items": [
+                {
+                    "name": "Watercourse Levels",
+                    "url": "http://www.bom.gov.au/waterdata/services",
+                    "type": "sos",
+                    "proceduresName": "Frequency",
+                    "description": "Watercourse levels, as defined under category 1a of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
+                    "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
+                    "observablePropertiesName": "Observation type",
+                    "startDate": "1980-01-01T00:00:00+10",
+                    "filterByProcedures": false,
+                    "isEnabled": true,
+                    "isShown": true,
+                    "procedures": [
+                        {
+                            "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_YearlyMean",
+                            "title": "Annual average",
+                            "defaultDuration": "40y"
+                        },
+                        {
+                            "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_MonthlyMean",
+                            "title": "Monthly average",
+                            "defaultDuration": "3y"
+                        },
+                        {
+                            "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMean",
+                            "title": "Daily average",
+                            "defaultDuration": "32d"
+                        },
+                        {
+                            "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMin",
+                            "title": "Daily minimum",
+                            "defaultDuration": "32d"
+                        },
+                        {
+                            "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMax",
+                            "title": "Daily maximum",
+                            "defaultDuration": "32d"
+                        },
+                        {
+                            "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_HourlyMean",
+                            "title": "Hourly average",
+                            "defaultDuration": "48h"
+                        }
+                    ],
+                    "observableProperties": [
+                        {
+                            "identifier": "http://bom.gov.au/waterdata/services/parameters/Water Course Level",
+                            "title": "Water Course Level",
+                            "units": "metres"
+                        }
+                    ]
+                },
+                {
+                    "name": "Watercourse Discharge",
+                    "url": "http://www.bom.gov.au/waterdata/services",
+                    "type": "sos",
+                    "proceduresName": "Frequency",
+                    "description": "Watercourse discharge, as defined under category 1b of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
+                    "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
+                    "observablePropertiesName": "Observation type",
+                    "startDate": "1980-01-01T00:00:00+10",
+                    "filterByProcedures": false,
+                    "procedures": [
+                        {
+                            "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_YearlyMean",
+                            "title": "Annual average",
+                            "defaultDuration": "40y"
+                        },
+                        {
+                            "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_MonthlyMean",
+                            "title": "Monthly average",
+                            "defaultDuration": "3y"
+                        },
+                        {
+                            "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMean",
+                            "title": "Daily average",
+                            "defaultDuration": "32d"
+                        },
+                        {
+                            "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMin",
+                            "title": "Daily minimum",
+                            "defaultDuration": "32d"
+                        },
+                        {
+                            "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMax",
+                            "title": "Daily maximum",
+                            "defaultDuration": "32d"
+                        },
+                        {
+                            "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_HourlyMean",
+                            "title": "Hourly average",
+                            "defaultDuration": "48h"
+                        }
+                    ],
+                    "observableProperties": [
+                        {
+                            "identifier": "http://bom.gov.au/waterdata/services/parameters/Water Course Discharge",
+                            "title": "Water Course Discharge",
+                            "units": "cubic m/s"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Satellite imagery",
+            "type": "group",
+            "isOpen": true,
+            "items": [
+                {
+                    "name": "GSKY Daily WOFLs Landsat (dev)",
+                    "type": "wms",
+                    "layers": "wofs",
+                    "url": "http://130.56.242.16/ows/dea/wofs",
+                    "legendUrl": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/WOfS/WOFLs/v2.1.0/wofs-legend.svg",
+                    "linkedWcsUrl": "http://130.56.242.16/ows/dea/wofs",
+                    "linkedWcsCoverage": "wofs",
+                    "ignoreUnknownTileErrors": true,
+                    "opacity": 1,
+                    "showOnChart": true,
+                    "localizedAvailabilityService": {
+                        "url": "https://ows.services.devkube.dea.ga.gov.au",
+                        "layers": "wofs_albers",
+                        "queryLayers": "wofs_albers",
+                        "hourOffset": 14
+                    }
+                },
+                {
+                    "name": "GSKY Daily WOFLs Landsat (NCI)",
+                    "url": "https://gsky.nci.org.au/ows",
+                    "type": "wms",
+                    "layers": "wofs",
+                    "localizedAvailabilityService": {
+                        "url": "https://ows.services.devkube.dea.ga.gov.au",
+                        "layers": "wofs_albers",
+                        "queryLayers": "wofs_albers",
+                        "hourOffset": 4
+                    },
+                    "isEnabled": true,
+                    "isShown": true
+                },
+                {
+                    "name": "DEA Landsat 5",
+                    "type": "wms",
+                    "url": "https://gsky.nci.org.au/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+                    "layers": "LS5:GEOMEDIAN:TRUE",
+                    "showOnChart": true
+                },
+                {
+                    "name": "DEA Landsat 7",
+                    "type": "wms",
+                    "url": "https://gsky.nci.org.au/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+                    "layers": "LS7:GEOMEDIAN:TRUE",
+                    "showOnChart": true
+                },
+                {
+                    "name": "DEA Landsat 8",
+                    "type": "wms",
+                    "url": "https://gsky.nci.org.au/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+                    "layers": "LS8:GEOMEDIAN:TRUE",
+                    "showOnChart": true
+                }
+            ]
+        }
+    ]
+}
