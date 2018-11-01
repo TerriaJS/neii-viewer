@@ -175,6 +175,27 @@
                     "url": "https://gsky.nci.org.au/ows?service=WMS&version=1.3.0&request=GetCapabilities",
                     "layers": "LS8:GEOMEDIAN:TRUE",
                     "showOnChart": true
+                },
+                {
+                    "name": "DEA Landsat 5 Daily",
+                    "type": "wms",
+                    "url": "https://gsky.nci.org.au/ows",
+                    "layers": "LS5:NBART:TRUE:DAILY",
+                    "showOnChart": true
+                },
+                {
+                    "name": "DEA Landsat 7 Daily",
+                    "type": "wms",
+                    "url": "https://gsky.nci.org.au/ows",
+                    "layers": "LS7:NBART:TRUE:DAILY",
+                    "showOnChart": true
+                },
+                {
+                    "name": "DEA Landsat 8 Daily",
+                    "type": "wms",
+                    "url": "https://gsky.nci.org.au/ows",
+                    "layers": "LS8:NBART:TRUE:DAILY",
+                    "showOnChart": true
                 }
             ]
         }
