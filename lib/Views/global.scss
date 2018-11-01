@@ -99,4 +99,24 @@ body {
       }
     }
 
+    // Our chart background is white so the default white color doesn't work.
+    .tjs-chart-preview__preview-chart-wrapper {
+        .line {
+            stroke: hsl(0, 0%, 60%) !important;
+        }
+
+        .tick text, .units-label {
+            fill: #777 !important;
+        }
+
+        .tick line {
+            stroke: #ccc !important;
+        }
+
+        .axis path {
+            stroke: #ddd !important;
+        }
+    }
+
+
 }
