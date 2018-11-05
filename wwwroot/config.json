@@ -13,8 +13,8 @@
     "neii-contextual"
   ],
   "parameters": {
-    "dnu_initFragmentPaths": [
-        "proxy/_60s/https://raw.githubusercontent.com/TerriaJS/neii-viewer/master/wwwroot/init/"
+    "initFragmentPaths": [
+        "proxy/_60s/https://raw.githubusercontent.com/TerriaJS/neii-viewer/dea-demo/wwwroot/init/"
     ],
     "feedbackUrl": "feedback",
     "bingMapsKey": "Ah0FX538FOPIU4YbgatM2ZbNG1nIXWw0SL-kECSxZJ8BKa32aQe_x9cakb9Lepg-",
