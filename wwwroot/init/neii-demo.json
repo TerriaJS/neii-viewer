@@ -141,7 +141,7 @@
                     }
                 },
                 {
-                    "name": "GSKY Daily WOFLs Landsat (NCI) 4 hours",
+                    "name": "GSKY Daily WOFLs Landsat (NCI)",
                     "url": "https://gsky.nci.org.au/ows",
                     "type": "wms",
                     "layers": "wofs",
@@ -149,23 +149,11 @@
                         "url": "https://ows.services.devkube.dea.ga.gov.au",
                         "layers": "wofs_albers",
                         "queryLayers": "wofs_albers",
-                        "hourOffset": 4
+                        "hourOffset": 4,
+                        "dateProperty": "data_available_for_utc_dates"
                     },
                     "isEnabled": true,
                     "isShown": true,
-                    "showOnChart": true
-                },
-                {
-                    "name": "GSKY Daily WOFLs Landsat (NCI) 14 hours",
-                    "url": "https://gsky.nci.org.au/ows",
-                    "type": "wms",
-                    "layers": "wofs",
-                    "localizedAvailabilityService": {
-                        "url": "https://ows.services.devkube.dea.ga.gov.au",
-                        "layers": "wofs_albers",
-                        "queryLayers": "wofs_albers",
-                        "hourOffset": 14
-                    },
                     "showOnChart": true
                 },
                 {
