@@ -1,6 +1,9 @@
 Change Log
 ==========
 
+### 2018-11-05
+
+* Update to [TerriaJS 6.3.2](https://github.com/TerriaJS/terriajs/blob/6.3.2/CHANGES.md).
 
 ### 2018-08-27
 
