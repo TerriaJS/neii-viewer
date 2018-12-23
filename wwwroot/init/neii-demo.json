@@ -23,8 +23,6 @@
                     "observablePropertiesName": "Observation type",
                     "startDate": "1980-01-01T00:00:00+10",
                     "filterByProcedures": false,
-                    "isEnabled": true,
-                    "isShown": true,
                     "procedures": [
                         {
                             "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_YearlyMean",
@@ -75,6 +73,8 @@
                     "observablePropertiesName": "Observation type",
                     "startDate": "1980-01-01T00:00:00+10",
                     "filterByProcedures": false,
+                    "isEnabled": true,
+                    "isShown": true,
                     "procedures": [
                         {
                             "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_YearlyMean",
