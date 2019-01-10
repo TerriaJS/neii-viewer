@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "sync-dependencies": "^1.0.3",
-    "terriajs-server": "^2.7.0"
+    "terriajs-server": "^2.7.4"
   },
   "config": {
     "awsProfile": "nationalmap",
@@ -23,7 +23,7 @@
     "awsEc2ImageId": "ami-02c24e5197e7785cd",
     "awsKeyName": "natmap-kring",
     "awsS3ServerConfigOverridePath": "s3://nationalmap-apps/neii/privateserverconfig-2016-11-10.json",
-    "awsS3ClientConfigOverridePath": "s3://nationalmap-apps/neii/privateclientconfig-2016-10-06.json",
+    "awsS3ClientConfigOverridePath": "s3://nationalmap-apps/neii/privateclientconfig-2018-09-27.json",
     "docker": {
       "name": "data61/terria-terriamap",
       "include": "wwwroot node_modules devserverconfig.json index.js package.json version.js"
@@ -59,9 +59,9 @@
     "semver": "^5.0.0",
     "style-loader": "^0.19.1",
     "svg-sprite-loader": "^3.4.0",
-    "terriajs": "6.0.5",
+    "terriajs": "6.3.6",
     "terriajs-catalog-editor": "^0.2.0",
-    "terriajs-cesium": "1.41.2",
+    "terriajs-cesium": "1.51.0",
     "terriajs-schema": "latest",
     "urijs": "^1.18.12",
     "url-loader": "^0.5.7",
@@ -76,7 +76,7 @@
     "start": "bash ./node_modules/terriajs-server/run_server.sh --config-file devserverconfig.json",
     "stop": "bash ./node_modules/terriajs-server/stop_server.sh",
     "gulp": "gulp",
-    "postinstall": "echo 'Installation with NPM successful. What to do next:\\n  npm start       # Starts the server on port 3001\\n  gulp watch      # Builds NationalMap and dependencies, and rebuilds if files change.'",
+    "postinstall": "echo 'Installation successful. What to do next:\\n  npm start       # Starts the server on port 3001\\n  gulp watch      # Builds TerriaMap and dependencies, and rebuilds if files change.'",
     "hot": "webpack-dev-server --inline --config buildprocess/webpack.config.hot.js --hot --host 0.0.0.0",
     "deploy": "rm -rf node_modules && npm install && npm run deploy-without-reinstall",
     "deploy-without-reinstall": "gulp clean && gulp release && npm run deploy-current",

@@ -14,10 +14,11 @@
         "proxy/_60s/https://raw.githubusercontent.com/TerriaJS/neii-viewer/catalogue-staging/wwwroot/init/"
     ],
     "feedbackUrl": "feedback",
-    "bingMapsKey": "AgZHSWd9Yda7ZjEUkRaG40lVbRAJc9sGl6wy39qWb_QjYwVgVg7drbcLgYUufiOb",
+    "bingMapsKey": "Ah0FX538FOPIU4YbgatM2ZbNG1nIXWw0SL-kECSxZJ8BKa32aQe_x9cakb9Lepg-",
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": "UA-62048953-2",
     "googleAnalyticsOptions": null,
+    "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJmMGVmYWQyNy1hMTgxLTQ0NzgtYjJmYi05MWVlODdlN2M2YmEiLCJpZCI6MzU1Mywic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTUzODAyNTgzN30.nW2jknU2nTfaZPhaefYPQ6L28FGMRHwLuixeU8uQu24",
     "disclaimer": {
       "text": "Disclaimer: This map must not be used for navigation or precise spatial analysis",
       "url": ""
