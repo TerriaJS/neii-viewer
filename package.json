@@ -1,4 +1,8 @@
 {
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "name": "neii-viewer",
   "version": "0.0.1",
   "description": "Geospatial catalog explorer based on TerriaJS.",
@@ -59,7 +63,7 @@
     "semver": "^5.0.0",
     "style-loader": "^0.19.1",
     "svg-sprite-loader": "^3.4.0",
-    "terriajs": "Terriajs/terriajs#3009-sos-imagery",
+    "terriajs": "6.3.7",
     "terriajs-catalog-editor": "^0.2.0",
     "terriajs-cesium": "1.53.0",
     "terriajs-schema": "latest",
