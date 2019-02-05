@@ -162,6 +162,7 @@ gulp.task('make-package', function() {
 
     fs.copySync('wwwroot', path.join(workingDir, 'wwwroot'), copyOptions);
     fs.copySync('node_modules', path.join(workingDir, 'node_modules'), copyOptions);
+    fs.copySync('deploy/varnish', path.join(workingDir, 'varnish'), copyOptions);
 
     if (argv.serverConfigOverride) {
         var serverConfig = json5.parse(fs.readFileSync('devserverconfig.json', 'utf8'));
@@ -293,6 +294,7 @@ gulp.task('sync-terriajs-dependencies', function() {
     syncDependencies(appPackageJson.devDependencies, terriaPackageJson);
 
     fs.writeFileSync('./package.json', JSON.stringify(appPackageJson, undefined, '  '));
+    console.log('TerriaMap\'s package.json has been updated. Now run yarn install.');
 });
 
 gulp.task('check-terriajs-dependencies', function() {
