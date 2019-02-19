@@ -146,7 +146,7 @@
                 },
                 {
                     "name": "GSKY Daily WOFLs Landsat (NCI)",
-                    "url": "https://gsky.nci.org.au/ows",
+                    "url": "https://gsky.nci.org.au/ows/dea",
                     "type": "wms",
                     "layers": "wofs",
                     "localizedAvailabilityService": {
@@ -156,9 +156,18 @@
                         "hourOffset": 4,
                         "dateProperty": "data_available_for_utc_dates"
                     },
+                    "isEnabled": false,
+                    "showOnChart": true,
+                    "featureTimesProperty": "data_available_for_utc_dates"
+                },
+                {
+                    "name": "DEA Water Observations from Space",
+                    "url": "https://ows.services.devkube.dea.ga.gov.au",
+                    "type": "wms",
+                    "layers": "wofs_albers",
                     "isEnabled": true,
-                    "isShown": true,
-                    "showOnChart": true
+                    "showOnChart": true,
+                    "featureTimesProperty": "data_available_for_utc_dates"
                 },
                 {
                     "name": "DEA Landsat 5",
