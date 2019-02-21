@@ -1,8 +1,8 @@
 {
+  // "initializationUrls": [
+  //   "neii-demo"
+  // ],
   "initializationUrls": [
-    "neii-demo"
-  ],
-  "dnu_initializationUrls": [
     "neii-oceans",
     "neii-water",
     "neii-air",
@@ -10,12 +10,13 @@
     "neii-land",
     "neii-other",
     "proxy/_60s/http://neii.bom.gov.au/cgi-bin/nemsr/get_viewer_config.json",
-    "neii-contextual"
+    "neii-contextual",
+    "dea"
   ],
   "parameters": {
-    "initFragmentPaths": [
-        "proxy/_60s/https://raw.githubusercontent.com/TerriaJS/neii-viewer/dea-demo/wwwroot/init/"
-    ],
+    // "initFragmentPaths": [
+    //     "proxy/_60s/https://raw.githubusercontent.com/TerriaJS/neii-viewer/dea-demo/wwwroot/init/"
+    // ],
     "feedbackUrl": "feedback",
     "bingMapsKey": "Ah0FX538FOPIU4YbgatM2ZbNG1nIXWw0SL-kECSxZJ8BKa32aQe_x9cakb9Lepg-",
     "googleUrlShortenerKey": null,
