@@ -226,6 +226,9 @@ Change Log
   * Stopped IE9 from setting bizarre inline dimensions on custom branding images.
   * Fixed workbench reordering in browsers other than Chrome.
   * URLs on the dataset info page are now auto-selected when clicked, making them easier to copy.
+### Next Release
+
+* Fix the hot reload script.
 
 ### 2017-XX-XX
 
