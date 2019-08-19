@@ -12,103 +12,567 @@
             {
               "name": "Satellite Imagery",
               "type": "group",
+              "preserveOrder": true,
               "items": [
                 {
-                  "name": "Landsat 16 day aggregate terrain corrected surface reflectance",
+                  "name": "Water Observations from Space",
                   "type": "group",
-                  "description": "The publication of the Digital Earth Australia (DEA) Landsat data on NationalMap is the result of the 12 month collaborative project “TerriaCube” between the National Computation Infrastructure (NCI), Geoscience Australia, Department of the Environment and Energy (DoEE) and CSIRO Land & Water and Data61 teams. <p>Each stakeholder contribution was essential for the project’s success: the NCI developed the data services; Geoscience Australia provided the data; Department of Environment and CSIRO Land and Water, provided insights and the user stories; and CSIRO Data61 provided the software development of terriaJS.</p> <p>The project aimed to enable access to the DEA satellite imagery data managed by the NCI on NationalMap; and built functionalities in terriaJS to allow users to easily interact with the data. The project results were twofold: <ol> <li>users have now access to terrain corrected surface reflectance from Landsat 5, 7 and 8 presented as true colour and false colour composites and</li> <li>all applications using the open source terriaJS have the “screen splitter” and “date picker” functionalities developed, allowing users to make comparisons of imagery for different points in time.</li> </ol> </p> <center> <img style='padding: 10px' height='100px' src='/proxy/http://static.nationalmap.nicta.com.au/images/DEA.jpg'/> <img style='padding: 10px' height='100px' src='/proxy/http://static.nationalmap.nicta.com.au/images/Data61.png'/> <img style='padding: 10px' height='100px' src='/proxy/http://static.nationalmap.nicta.com.au/images/NCI.svg'/> </center> <br/> <center> <img style='padding: 10px' height='100px' src='/proxy/http://static.nationalmap.nicta.com.au/images/GA.jpg'/> <img style='padding: 10px' height='100px' src='/proxy/http://static.nationalmap.nicta.com.au/images/DoEE.png'/> </center>",
                   "preserveOrder": true,
                   "items": [
                     {
-                      "name": "Landsat 8 - March 2013 - onwards",
+                      "name": "Daily observations",
                       "type": "group",
+                      "preserveOrder": true,
                       "items": [
                         {
-                          "id": "8b895019",
-                          "name": "Landsat 8 False colour",
-                          "url": "http://gsky.nci.org.au/ows",
-                          "layers": "LS8:NBART:FALSE",
+                          "name": "Water Observations from Space Daily (WOfS Daily Observations)",
                           "type": "wms",
-                          "opacity": 1,
+                          "layers": "wofs_albers",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_albers",
                           "ignoreUnknownTileErrors": true,
-                          "useOwnClock": true
-                        },
-                        {
-                          "id": "f9a5924e",
-                          "name": "Landsat 8 True colour",
-                          "url": "http://gsky.nci.org.au/ows",
-                          "layers": "LS8:NBART:TRUE",
-                          "type": "wms",
                           "opacity": 1,
-                          "ignoreUnknownTileErrors": true,
-                          "useOwnClock": true
+                          "featureTimesProperty": "data_available_for_dates"
                         }
                       ]
                     },
                     {
-                      "name": "Landsat 7 - May 1999 - onwards",
+                      "name": "Seasonal summaries",
                       "type": "group",
+                      "preserveOrder": true,
                       "items": [
                         {
-                          "id": "d66f5d82",
-                          "name": "Landsat 7 False colour",
-                          "url": "http://gsky.nci.org.au/ows",
-                          "layers": "LS7:NBART:FALSE",
+                          "name": "Water Observations from Space 25m Wet Count (WOfs April to October Statistics)",
                           "type": "wms",
-                          "opacity": 1,
+                          "layers": "wofs_apr_oct_summary_wet",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_apr_oct_summary_wet",
                           "ignoreUnknownTileErrors": true,
-                          "useOwnClock": true
+                          "opacity": 1
                         },
                         {
-                          "id": "f4a00b1a",
-                          "name": "Landsat 7 True colour",
-                          "url": "http://gsky.nci.org.au/ows",
-                          "layers": "LS7:NBART:TRUE",
+                          "name": "Water Observations from Space 25m Clear Count (WOfs April to October Statistics)",
                           "type": "wms",
-                          "opacity": 1,
+                          "layers": "wofs_apr_oct_summary_clear",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_apr_oct_summary_clear",
                           "ignoreUnknownTileErrors": true,
-                          "useOwnClock": true
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Water Observations from Space 25m Summary (WOfs April to October Statistics)",
+                          "type": "wms",
+                          "layers": "wofs_apr_oct_summary_statistics",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_apr_oct_summary_statistics",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Water Observations from Space 25m Wet Count (WOfs November to March Statistics)",
+                          "type": "wms",
+                          "layers": "wofs_nov_mar_summary_wet",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_nov_mar_summary_wet",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Water Observations from Space 25m Clear Count (WOfs November to March Statistics)",
+                          "type": "wms",
+                          "layers": "wofs_nov_mar_summary_clear",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_nov_mar_summary_clear",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Water Observations from Space 25m Summary (WOfs November to March Statistics)",
+                          "type": "wms",
+                          "layers": "wofs_nov_mar_summary_statistics",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_nov_mar_summary_statistics",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
                         }
                       ]
                     },
                     {
-                      "name": "Landsat 5 - August 1986 - November 2011",
+                      "name": "Annual Summaries",
                       "type": "group",
+                      "preserveOrder": true,
                       "items": [
                         {
-                          "id": "5d5028b5",
-                          "name": "Landsat 5 False colour",
-                          "url": "http://gsky.nci.org.au/ows",
-                          "layers": "LS5:NBART:FALSE",
+                          "name": "Water Observations from Space 25m Wet Count (WOfS Annual Statistics)",
                           "type": "wms",
-                          "opacity": 1,
+                          "layers": "wofs_annual_summary_wet",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_annual_summary_wet",
                           "ignoreUnknownTileErrors": true,
-                          "useOwnClock": true
+                          "opacity": 1
                         },
                         {
-                          "id": "11992f37",
-                          "name": "Landsat 5 True colour",
-                          "url": "http://gsky.nci.org.au/ows",
-                          "layers": "LS5:NBART:TRUE",
+                          "name": "Water Observations from Space 25m Clear Count (WOfS Annual Statistics)",
                           "type": "wms",
-                          "opacity": 1,
+                          "layers": "wofs_annual_summary_clear",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_annual_summary_clear",
                           "ignoreUnknownTileErrors": true,
-                          "useOwnClock": true
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Water Observations from Space 25m Summary (WOfS Annual Statistics)",
+                          "type": "wms",
+                          "layers": "wofs_annual_summary_statistics",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_annual_summary_statistics",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "All of time Summaries",
+                      "type": "group",
+                      "preserveOrder": true,
+                      "items": [
+                        {
+                          "name": "Water Observations from Space 25m Filtered Summary (WOfS Filtered Statistics)",
+                          "type": "wms",
+                          "layers": "wofs_filtered_summary",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_filtered_summary",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Water Observations from Space 25m Wet Count (WOfS Statistics)",
+                          "type": "wms",
+                          "layers": "wofs_summary_wet",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_summary_wet",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Water Observations from Space 25m Clear Count (WOfS Statistics)",
+                          "type": "wms",
+                          "layers": "wofs_summary_clear",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_summary_clear",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Water Observations from Space 25m Summary (WOfS Statistics)",
+                          "type": "wms",
+                          "layers": "Water Observations from Space Statistics",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "Water Observations from Space Statistics",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Water Observations from Space 25m Confidence (WOfs Filtered Statistics)",
+                          "type": "wms",
+                          "layers": "wofs_filtered_summary_confidence",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_filtered_summary_confidence",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "id": "9c408407",
-                  "name": "Sentinel-2 A/B Near Real-Time (NRT) terrain corrected surface reflectance",
-                  "url": "https://nrt-au.dea.ga.gov.au/",
-                  "type": "wms-getCapabilities",
-                  "flatten": true,
-                  "itemProperties": {
-                    "ignoreUnknownTileErrors": true,
-                    "opacity": 1
-                  }
+                  "name": "Annual Landsat Geomedian",
+                  "type": "group",
+                  "preserveOrder": true,
+                  "items": [
+                    {
+                      "name": "Surface Reflectance (Landsat 5)",
+                      "type": "wms",
+                      "layers": "ls5_nbart_geomedian_annual",
+                      "url": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "ls5_nbart_geomedian_annual",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "featureInfoTemplate": {
+                        "formats": {
+                          "lat": {
+                            "maximumFractionDigits": 5
+                          },
+                          "lon": {
+                            "maximumFractionDigits": 5
+                          }
+                        },
+                        "template": "<table>  <tr><td><b>Time</b></td><td>{{time}}</td></tr>  <tr><td><b>Blue - 490</b></td><td>{{bands.blue}}</td></tr>  <tr><td><b>Green - 560</b></td><td>{{bands.green}}</td></tr>  <tr><td><b>Red - 660</b></td><td>{{bands.red}}</td></tr>  <tr><td><b>Near Infrared (NIR) - 840</b></td><td>{{bands.nir}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 1650</b></td><td>{{bands.swir1}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 2220</b></td><td>{{bands.swir2}}</td></tr>  <tr><td><b>NDVI - Red, NIR</b></td><td>{{band_derived.ndvi}}</td></tr>  <tr><td><b>NDWI - Green, SWIR</b></td><td>{{band_derived.ndwi}}</td></tr></table><p><chart id='{{lat}}{{lon}}{{time}}' title='NBART at {{lat}},{{lon}}' column-units='Wavelength (nm), Reflectance x 10k' preview-x-label='NBART Reflectance'>nm,NBART Reflectance\n490,{{bands.blue}}\n560,{{bands.green}}\n660,{{bands.red}}\n840,{{bands.nir}}\n1650,{{bands.swir1}}\n2220,{{bands.swir2}}</chart></p><p><b>Imagery available for dates:</b>{{#data_available_for_dates}}<br/>{{.}}{{/data_available_for_dates}}</p>"
+                      }
+                    },
+                    {
+                      "name": "Surface Reflectance (Landsat 7)",
+                      "type": "wms",
+                      "layers": "ls7_nbart_geomedian_annual",
+                      "url": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "ls7_nbart_geomedian_annual",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "featureInfoTemplate": {
+                        "formats": {
+                          "lat": {
+                            "maximumFractionDigits": 5
+                          },
+                          "lon": {
+                            "maximumFractionDigits": 5
+                          }
+                        },
+                        "template": "<table>  <tr><td><b>Time</b></td><td>{{time}}</td></tr>  <tr><td><b>Blue - 490</b></td><td>{{bands.blue}}</td></tr>  <tr><td><b>Green - 560</b></td><td>{{bands.green}}</td></tr>  <tr><td><b>Red - 660</b></td><td>{{bands.red}}</td></tr>  <tr><td><b>Near Infrared (NIR) - 840</b></td><td>{{bands.nir}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 1650</b></td><td>{{bands.swir1}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 2220</b></td><td>{{bands.swir2}}</td></tr>  <tr><td><b>NDVI - Red, NIR</b></td><td>{{band_derived.ndvi}}</td></tr>  <tr><td><b>NDWI - Green, SWIR</b></td><td>{{band_derived.ndwi}}</td></tr></table><p><chart id='{{lat}}{{lon}}{{time}}' title='NBART at {{lat}},{{lon}}' column-units='Wavelength (nm), Reflectance x 10k' preview-x-label='NBART Reflectance'>nm,NBART Reflectance\n490,{{bands.blue}}\n560,{{bands.green}}\n660,{{bands.red}}\n840,{{bands.nir}}\n1650,{{bands.swir1}}\n2220,{{bands.swir2}}</chart></p><p><b>Imagery available for dates:</b>{{#data_available_for_dates}}<br/>{{.}}{{/data_available_for_dates}}</p>"
+                      }
+                    },
+                    {
+                      "name": "Surface Reflectance (Landsat 8)",
+                      "type": "wms",
+                      "layers": "ls8_nbart_geomedian_annual",
+                      "url": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "ls8_nbart_geomedian_annual",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "featureInfoTemplate": {
+                        "formats": {
+                          "lat": {
+                            "maximumFractionDigits": 5
+                          },
+                          "lon": {
+                            "maximumFractionDigits": 5
+                          }
+                        },
+                        "template": "<table>  <tr><td><b>Time</b></td><td>{{time}}</td></tr>  <tr><td><b>Blue - 480</b></td><td>{{bands.blue}}</td></tr>  <tr><td><b>Green - 560</b></td><td>{{bands.green}}</td></tr>  <tr><td><b>Red - 660</b></td><td>{{bands.red}}</td></tr>  <tr><td><b>Near Infrared (NIR) - 870</b></td><td>{{bands.nir}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 1610</b></td><td>{{bands.swir1}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 2200</b></td><td>{{bands.swir2}}</td></tr>  <tr><td><b>NDVI - Red, NIR</b></td><td>{{band_derived.ndvi}}</td></tr>  <tr><td><b>NDWI - Green, SWIR</b></td><td>{{band_derived.ndwi}}</td></tr></table><p><chart id='{{lat}}{{lon}}{{time}}' title='NBART at {{lat}},{{lon}}' column-units='Wavelength (nm), Reflectance x 10k' preview-x-label='NBART Reflectance'>nm,NBART Reflectance\n480,{{bands.blue}}\n560,{{bands.green}}\n660,{{bands.red}}\n870,{{bands.nir}}\n1610,{{bands.swir1}}\n2200,{{bands.swir2}}</chart></p><p><b>Imagery available for dates:</b>{{#data_available_for_dates}}<br/>{{.}}{{/data_available_for_dates}}</p>"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Barest Earth (Landsat 8)",
+                  "type": "group",
+                  "preserveOrder": true,
+                  "items": [
+                    {
+                      "name": "Barest Earth 25m Mosiac",
+                      "type": "wms",
+                      "layers": "ls8_barest_earth_mosaic",
+                      "url": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "ls8_barest_earth_mosaic",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "featureInfoTemplate": {
+                        "formats": {
+                          "lat": {
+                            "maximumFractionDigits": 5
+                          },
+                          "lon": {
+                            "maximumFractionDigits": 5
+                          }
+                        },
+                        "template": "<table>  <tr><td><b>Time</b></td><td>{{time}}</td></tr>  <tr><td><b>Blue - 480</b></td><td>{{bands.blue}}</td></tr>  <tr><td><b>Green - 560</b></td><td>{{bands.green}}</td></tr>  <tr><td><b>Red - 660</b></td><td>{{bands.red}}</td></tr>  <tr><td><b>Near Infrared (NIR) - 870</b></td><td>{{bands.nir}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 1610</b></td><td>{{bands.swir1}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 2200</b></td><td>{{bands.swir2}}</td></tr>  <tr><td><b>NDVI - Red, NIR</b></td><td>{{band_derived.ndvi}}</td></tr>  <tr><td><b>NDWI - Green, SWIR</b></td><td>{{band_derived.ndwi}}</td></tr></table><p><chart id='{{lat}}{{lon}}{{time}}' title='NBART at {{lat}},{{lon}}' column-units='Wavelength (nm), Reflectance x 10k' preview-x-label='NBART Reflectance'>nm,NBART Reflectance\n480,{{bands.blue}}\n560,{{bands.green}}\n660,{{bands.red}}\n870,{{bands.nir}}\n1610,{{bands.swir1}}\n2200,{{bands.swir2}}</chart></p><p><b>Imagery available for dates:</b>{{#data_available_for_dates}}<br/>{{.}}{{/data_available_for_dates}}</p>"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Sentinel-2 Definitive",
+                  "type": "group",
+                  "preserveOrder": true,
+                  "items": [
+                    {
+                      "name": "Definitive Surface Reflectance (Sentinel 2A and 2B combined)",
+                      "type": "wms",
+                      "layers": "s2_ard_granule_nbar_t",
+                      "url": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "s2_ard_granule_nbar_t",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "featureInfoTemplate": {
+                        "formats": {
+                          "lat": {
+                            "maximumFractionDigits": 5
+                          },
+                          "lon": {
+                            "maximumFractionDigits": 5
+                          }
+                        },
+                        "template": "<table>  <tr><td><b>Time</b></td><td>{{time}}</td></tr>  <tr><td><b>Narrow Blue - 440</b></td><td>{{bands.nbart_coastal_aerosol}}</td></tr>  <tr><td><b>Blue - 490</b></td><td>{{bands.nbart_blue}}</td></tr>  <tr><td><b>Green - 560</b></td><td>{{bands.nbart_green}}</td></tr>  <tr><td><b>Red - 670</b></td><td>{{bands.nbart_red}}</td></tr>  <tr><td><b>Vegetation Red Edge - 710</b></td><td>{{bands.nbart_red_edge_1}}</td></tr>  <tr><td><b>Vegetation Red Edge - 740</b></td><td>{{bands.nbart_red_edge_2}}</td></tr>  <tr><td><b>Vegetation Red Edge - 780</b></td><td>{{bands.nbart_red_edge_3}}</td></tr>  <tr><td><b>Near Infrared (NIR) - 840</b></td><td>{{bands.nbart_nir_1}}</td></tr>  <tr><td><b>Narrow Near Infrared - 870</b></td><td>{{bands.nbart_nir_2}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 1610</b></td><td>{{bands.nbart_swir_2}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 2190</b></td><td>{{bands.nbart_swir_3}}</td></tr>  <tr><td><b>NDVI - Red, NIR</b></td><td>{{band_derived.ndvi}}</td></tr>  <tr><td><b>NDWI - Green, NIR</b></td><td>{{band_derived.ndwi}}</td></tr></table><p><chart id='{{lat}}{{lon}}{{time}}' title='NBART at {{lat}},{{lon}}' column-units='Wavelength (nm), Reflectance x 10k' preview-x-label='NBART Reflectance'>nm,NBART Reflectance\n440,{{bands.nbart_coastal_aerosol}}\n490,{{bands.nbart_blue}}\n560,{{bands.nbart_green}}\n670,{{bands.nbart_red}}\n710,{{bands.nbart_red_edge_1}}\n740,{{bands.nbart_red_edge_2}}\n780,{{bands.nbart_red_edge_3}}\n840,{{bands.nbart_nir_1}}\n870,{{bands.nbart_nir_2}}\n1610,{{bands.nbart_swir_2}}\n2190,{{bands.nbart_swir_3}}</chart></p><p><b>Imagery available for dates:</b>{{#data_available_for_dates}}<br/>{{.}}{{/data_available_for_dates}}</p>"
+                      },
+                      "featureTimesProperty": "data_available_for_dates"
+                    },
+                    {
+                      "name": "Definitive Surface Reflectance (Sentinel 2A)",
+                      "type": "wms",
+                      "layers": "s2a_ard_granule_nbar_t",
+                      "url": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "s2a_ard_granule_nbar_t",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "featureInfoTemplate": {
+                        "formats": {
+                          "lat": {
+                            "maximumFractionDigits": 5
+                          },
+                          "lon": {
+                            "maximumFractionDigits": 5
+                          }
+                        },
+                        "template": "<table>  <tr><td><b>Time</b></td><td>{{time}}</td></tr>  <tr><td><b>Narrow Blue - 440</b></td><td>{{bands.nbart_coastal_aerosol}}</td></tr>  <tr><td><b>Blue - 490</b></td><td>{{bands.nbart_blue}}</td></tr>  <tr><td><b>Green - 560</b></td><td>{{bands.nbart_green}}</td></tr>  <tr><td><b>Red - 670</b></td><td>{{bands.nbart_red}}</td></tr>  <tr><td><b>Vegetation Red Edge - 710</b></td><td>{{bands.nbart_red_edge_1}}</td></tr>  <tr><td><b>Vegetation Red Edge - 740</b></td><td>{{bands.nbart_red_edge_2}}</td></tr>  <tr><td><b>Vegetation Red Edge - 780</b></td><td>{{bands.nbart_red_edge_3}}</td></tr>  <tr><td><b>Near Infrared (NIR) - 840</b></td><td>{{bands.nbart_nir_1}}</td></tr>  <tr><td><b>Narrow Near Infrared - 870</b></td><td>{{bands.nbart_nir_2}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 1610</b></td><td>{{bands.nbart_swir_2}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 2190</b></td><td>{{bands.nbart_swir_3}}</td></tr>  <tr><td><b>NDVI - Red, NIR</b></td><td>{{band_derived.ndvi}}</td></tr>  <tr><td><b>NDWI - Green, NIR</b></td><td>{{band_derived.ndwi}}</td></tr></table><p><chart id='{{lat}}{{lon}}{{time}}' title='NBART at {{lat}},{{lon}}' column-units='Wavelength (nm), Reflectance x 10k' preview-x-label='NBART Reflectance'>nm,NBART Reflectance\n440,{{bands.nbart_coastal_aerosol}}\n490,{{bands.nbart_blue}}\n560,{{bands.nbart_green}}\n670,{{bands.nbart_red}}\n710,{{bands.nbart_red_edge_1}}\n740,{{bands.nbart_red_edge_2}}\n780,{{bands.nbart_red_edge_3}}\n840,{{bands.nbart_nir_1}}\n870,{{bands.nbart_nir_2}}\n1610,{{bands.nbart_swir_2}}\n2190,{{bands.nbart_swir_3}}</chart></p><p><b>Imagery available for dates:</b>{{#data_available_for_dates}}<br/>{{.}}{{/data_available_for_dates}}</p>"
+                      },
+                      "featureTimesProperty": "data_available_for_dates"
+                    },
+                    {
+                      "name": "Definitive Surface Reflectance (Sentinel 2B)",
+                      "type": "wms",
+                      "layers": "s2b_ard_granule_nbar_t",
+                      "url": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "s2b_ard_granule_nbar_t",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "featureInfoTemplate": {
+                        "formats": {
+                          "lat": {
+                            "maximumFractionDigits": 5
+                          },
+                          "lon": {
+                            "maximumFractionDigits": 5
+                          }
+                        },
+                        "template": "<table>  <tr><td><b>Time</b></td><td>{{time}}</td></tr>  <tr><td><b>Narrow Blue - 440</b></td><td>{{bands.nbart_coastal_aerosol}}</td></tr>  <tr><td><b>Blue - 490</b></td><td>{{bands.nbart_blue}}</td></tr>  <tr><td><b>Green - 560</b></td><td>{{bands.nbart_green}}</td></tr>  <tr><td><b>Red - 670</b></td><td>{{bands.nbart_red}}</td></tr>  <tr><td><b>Vegetation Red Edge - 710</b></td><td>{{bands.nbart_red_edge_1}}</td></tr>  <tr><td><b>Vegetation Red Edge - 740</b></td><td>{{bands.nbart_red_edge_2}}</td></tr>  <tr><td><b>Vegetation Red Edge - 780</b></td><td>{{bands.nbart_red_edge_3}}</td></tr>  <tr><td><b>Near Infrared (NIR) - 840</b></td><td>{{bands.nbart_nir_1}}</td></tr>  <tr><td><b>Narrow Near Infrared - 870</b></td><td>{{bands.nbart_nir_2}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 1610</b></td><td>{{bands.nbart_swir_2}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 2190</b></td><td>{{bands.nbart_swir_3}}</td></tr>  <tr><td><b>NDVI - Red, NIR</b></td><td>{{band_derived.ndvi}}</td></tr>  <tr><td><b>NDWI - Green, NIR</b></td><td>{{band_derived.ndwi}}</td></tr></table><p><chart id='{{lat}}{{lon}}{{time}}' title='NBART at {{lat}},{{lon}}' column-units='Wavelength (nm), Reflectance x 10k' preview-x-label='NBART Reflectance'>nm,NBART Reflectance\n440,{{bands.nbart_coastal_aerosol}}\n490,{{bands.nbart_blue}}\n560,{{bands.nbart_green}}\n670,{{bands.nbart_red}}\n710,{{bands.nbart_red_edge_1}}\n740,{{bands.nbart_red_edge_2}}\n780,{{bands.nbart_red_edge_3}}\n840,{{bands.nbart_nir_1}}\n870,{{bands.nbart_nir_2}}\n1610,{{bands.nbart_swir_2}}\n2190,{{bands.nbart_swir_3}}</chart></p><p><b>Imagery available for dates:</b>{{#data_available_for_dates}}<br/>{{.}}{{/data_available_for_dates}}</p>"
+                      },
+                      "featureTimesProperty": "data_available_for_dates"
+                    }
+                  ]
+                },
+                {
+                  "name": "Near Real-Time",
+                  "type": "group",
+                  "preserveOrder": true,
+                  "items": [
+                    {
+                      "name": "Near Real-Time Surface Reflectance (Sentinel 2A)",
+                      "type": "wms",
+                      "layers": "s2a_nrt_granule_nbar_t",
+                      "url": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "s2a_nrt_granule_nbar_t",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "featureInfoTemplate": {
+                        "formats": {
+                          "lat": {
+                            "maximumFractionDigits": 5
+                          },
+                          "lon": {
+                            "maximumFractionDigits": 5
+                          }
+                        },
+                        "template": "<table>  <tr><td><b>Time</b></td><td>{{time}}</td></tr>  <tr><td><b>Narrow Blue - 440</b></td><td>{{bands.nbart_coastal_aerosol}}</td></tr>  <tr><td><b>Blue - 490</b></td><td>{{bands.nbart_blue}}</td></tr>  <tr><td><b>Green - 560</b></td><td>{{bands.nbart_green}}</td></tr>  <tr><td><b>Red - 670</b></td><td>{{bands.nbart_red}}</td></tr>  <tr><td><b>Vegetation Red Edge - 710</b></td><td>{{bands.nbart_red_edge_1}}</td></tr>  <tr><td><b>Vegetation Red Edge - 740</b></td><td>{{bands.nbart_red_edge_2}}</td></tr>  <tr><td><b>Vegetation Red Edge - 780</b></td><td>{{bands.nbart_red_edge_3}}</td></tr>  <tr><td><b>Near Infrared (NIR) - 840</b></td><td>{{bands.nbart_nir_1}}</td></tr>  <tr><td><b>Narrow Near Infrared - 870</b></td><td>{{bands.nbart_nir_2}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 1610</b></td><td>{{bands.nbart_swir_2}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 2190</b></td><td>{{bands.nbart_swir_3}}</td></tr>  <tr><td><b>NDVI - Red, NIR</b></td><td>{{band_derived.ndvi}}</td></tr>  <tr><td><b>NDWI - Green, NIR</b></td><td>{{band_derived.ndwi}}</td></tr></table><p><chart id='{{lat}}{{lon}}{{time}}' title='NBART at {{lat}},{{lon}}' column-units='Wavelength (nm), Reflectance x 10k' preview-x-label='NBART Reflectance'>nm,NBART Reflectance\n440,{{bands.nbart_coastal_aerosol}}\n490,{{bands.nbart_blue}}\n560,{{bands.nbart_green}}\n670,{{bands.nbart_red}}\n710,{{bands.nbart_red_edge_1}}\n740,{{bands.nbart_red_edge_2}}\n780,{{bands.nbart_red_edge_3}}\n840,{{bands.nbart_nir_1}}\n870,{{bands.nbart_nir_2}}\n1610,{{bands.nbart_swir_2}}\n2190,{{bands.nbart_swir_3}}</chart></p><p><b>Imagery available for dates:</b>{{#data_available_for_dates}}<br/>{{.}}{{/data_available_for_dates}}</p>"
+                      },
+                      "featureTimesProperty": "data_available_for_dates"
+                    },
+                    {
+                      "name": "Near Real-Time Surface Reflectance (Sentinel 2B)",
+                      "type": "wms",
+                      "layers": "s2b_nrt_granule_nbar_t",
+                      "url": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "s2b_nrt_granule_nbar_t",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "featureInfoTemplate": {
+                        "formats": {
+                          "lat": {
+                            "maximumFractionDigits": 5
+                          },
+                          "lon": {
+                            "maximumFractionDigits": 5
+                          }
+                        },
+                        "template": "<table>  <tr><td><b>Time</b></td><td>{{time}}</td></tr>  <tr><td><b>Narrow Blue - 440</b></td><td>{{bands.nbart_coastal_aerosol}}</td></tr>  <tr><td><b>Blue - 490</b></td><td>{{bands.nbart_blue}}</td></tr>  <tr><td><b>Green - 560</b></td><td>{{bands.nbart_green}}</td></tr>  <tr><td><b>Red - 670</b></td><td>{{bands.nbart_red}}</td></tr>  <tr><td><b>Vegetation Red Edge - 710</b></td><td>{{bands.nbart_red_edge_1}}</td></tr>  <tr><td><b>Vegetation Red Edge - 740</b></td><td>{{bands.nbart_red_edge_2}}</td></tr>  <tr><td><b>Vegetation Red Edge - 780</b></td><td>{{bands.nbart_red_edge_3}}</td></tr>  <tr><td><b>Near Infrared (NIR) - 840</b></td><td>{{bands.nbart_nir_1}}</td></tr>  <tr><td><b>Narrow Near Infrared - 870</b></td><td>{{bands.nbart_nir_2}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 1610</b></td><td>{{bands.nbart_swir_2}}</td></tr>  <tr><td><b>Shortwave Infrared (SWIR) - 2190</b></td><td>{{bands.nbart_swir_3}}</td></tr>  <tr><td><b>NDVI - Red, NIR</b></td><td>{{band_derived.ndvi}}</td></tr>  <tr><td><b>NDWI - Green, NIR</b></td><td>{{band_derived.ndwi}}</td></tr></table><p><chart id='{{lat}}{{lon}}{{time}}' title='NBART at {{lat}},{{lon}}' column-units='Wavelength (nm), Reflectance x 10k' preview-x-label='NBART Reflectance'>nm,NBART Reflectance\n440,{{bands.nbart_coastal_aerosol}}\n490,{{bands.nbart_blue}}\n560,{{bands.nbart_green}}\n670,{{bands.nbart_red}}\n710,{{bands.nbart_red_edge_1}}\n740,{{bands.nbart_red_edge_2}}\n780,{{bands.nbart_red_edge_3}}\n840,{{bands.nbart_nir_1}}\n870,{{bands.nbart_nir_2}}\n1610,{{bands.nbart_swir_2}}\n2190,{{bands.nbart_swir_3}}</chart></p><p><b>Imagery available for dates:</b>{{#data_available_for_dates}}<br/>{{.}}{{/data_available_for_dates}}</p>"
+                      },
+                      "featureTimesProperty": "data_available_for_dates"
+                    }
+                  ]
+                },
+                {
+                  "name": "Fractional Cover Percentiles",
+                  "type": "group",
+                  "preserveOrder": true,
+                  "items": [
+                    {
+                      "name": "Fractional Cover Percentiles Annual",
+                      "type": "group",
+                      "preserveOrder": true,
+                      "items": [
+                        {
+                          "name": "Fractional Cover Percentiles - Median",
+                          "type": "wms",
+                          "layers": "fcp_rgb",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "fcp_rgb",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Fractional Cover Percentiles - Green Vegetation",
+                          "type": "wms",
+                          "layers": "fcp_green_veg",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "fcp_green_veg",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Fractional Cover Percentiles - Non-Green Vegetation",
+                          "type": "wms",
+                          "layers": "fcp_non_green_veg",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "fcp_non_green_veg",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Fractional Cover Percentiles - Bare Soil",
+                          "type": "wms",
+                          "layers": "fcp_bare_ground",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "fcp_bare_ground",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Fractional Cover Percentiles Seasonal",
+                      "type": "group",
+                      "preserveOrder": true,
+                      "items": [
+                        {
+                          "name": "Fractional Cover Percentiles Seasonal - Median",
+                          "type": "wms",
+                          "layers": "fcp_seasonal_rgb",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "fcp_seasonal_rgb",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Fractional Cover Percentiles Seasonal - Green Vegetation",
+                          "type": "wms",
+                          "layers": "fcp_seasonal_green_veg",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "fcp_seasonal_green_veg",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Fractional Cover Percentiles Seasonal - Non-Green Vegetation",
+                          "type": "wms",
+                          "layers": "fcp_seasonal_non_green_veg",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "fcp_seasonal_non_green_veg",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Fractional Cover Percentiles Seasonal - Bare Soil",
+                          "type": "wms",
+                          "layers": "fcp_seasonal_bare_ground",
+                          "url": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "fcp_seasonal_bare_ground",
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Marine and Tidal Regions",
+                  "type": "group",
+                  "preserveOrder": true,
+                  "items": [
+                    {
+                      "name": "Mangrove Canopy Cover",
+                      "type": "wms",
+                      "layers": "mangrove_cover",
+                      "url": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "mangrove_cover",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "Weathering Intensity",
+                  "type": "group",
+                  "preserveOrder": true,
+                  "items": [
+                    {
+                      "name": "Weathering Intensity 1 degree tile (Weathering Intensity)",
+                      "type": "wms",
+                      "layers": "weathering_intensity",
+                      "url": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "weathering_intensity",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "Multi-Scale Topographic Position",
+                  "type": "group",
+                  "preserveOrder": true,
+                  "items": [
+                    {
+                      "name": "Multi-Scale Topographic Position 1 degree tile (Multi-Scale Topographic Position)",
+                      "type": "wms",
+                      "layers": "multi_scale_topographic_position",
+                      "url": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.prod.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "multi_scale_topographic_position",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
+                    }
+                  ]
                 }
               ]
             }
