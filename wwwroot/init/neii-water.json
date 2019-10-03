@@ -742,7 +742,7 @@
               "items": [
                 {
                   "layers": "wofs_summary_wet",
-                  "url": "https://ows.services.dea.ga.gov.au",
+                  "url": "https://ows.dea.ga.gov.au",
                   "type": "wms",
                   "availableDimensions": {},
                   "rectangle": [
@@ -764,7 +764,7 @@
                 },
                 {
                   "layers": "wofs_summary_clear",
-                  "url": "https://ows.services.dea.ga.gov.au",
+                  "url": "https://ows.dea.ga.gov.au",
                   "type": "wms",
                   "availableDimensions": {},
                   "rectangle": [
@@ -786,7 +786,7 @@
                 },
                 {
                   "layers": "Water Observations from Space Statistics",
-                  "url": "https://ows.services.dea.ga.gov.au",
+                  "url": "https://ows.dea.ga.gov.au",
                   "type": "wms",
                   "availableDimensions": {},
                   "rectangle": [
@@ -808,7 +808,7 @@
                 },
                 {
                   "layers": "wofs_filtered_summary_confidence",
-                  "url": "https://ows.services.dea.ga.gov.au",
+                  "url": "https://ows.dea.ga.gov.au",
                   "type": "wms",
                   "availableDimensions": {},
                   "rectangle": [
@@ -830,7 +830,7 @@
                 },
                 {
                   "layers": "wofs_filtered_summary",
-                  "url": "https://ows.services.dea.ga.gov.au",
+                  "url": "https://ows.dea.ga.gov.au",
                   "type": "wms",
                   "availableStyles": "WOfS_filtered_frequency",
                   "availableDimensions": {},
