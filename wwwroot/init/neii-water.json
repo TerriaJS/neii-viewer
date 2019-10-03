@@ -741,9 +741,10 @@
               ],
               "items": [
                 {
-                  "layers": "WaterObservations",
-                  "url": "http://geoserver.nci.org.au/geoserver/NFRIP-WOfS/wms",
+                  "layers": "wofs_summary_wet",
+                  "url": "https://ows.services.dea.ga.gov.au",
                   "type": "wms",
+                  "availableDimensions": {},
                   "rectangle": [
                     111,
                     -45,
@@ -762,9 +763,10 @@
                   ]
                 },
                 {
-                  "layers": "ClearObservations",
-                  "url": "http://geoserver.nci.org.au/geoserver/NFRIP-WOfS/wms",
+                  "layers": "wofs_summary_clear",
+                  "url": "https://ows.services.dea.ga.gov.au",
                   "type": "wms",
+                  "availableDimensions": {},
                   "rectangle": [
                     111,
                     -45,
@@ -783,9 +785,10 @@
                   ]
                 },
                 {
-                  "layers": "WaterSummary",
-                  "url": "http://geoserver.nci.org.au/geoserver/NFRIP-WOfS/wms",
+                  "layers": "Water Observations from Space Statistics",
+                  "url": "https://ows.services.dea.ga.gov.au",
                   "type": "wms",
+                  "availableDimensions": {},
                   "rectangle": [
                     111,
                     -45,
@@ -804,9 +807,10 @@
                   ]
                 },
                 {
-                  "layers": "Confidence",
-                  "url": "http://geoserver.nci.org.au/geoserver/NFRIP-WOfS/wms",
+                  "layers": "wofs_filtered_summary_confidence",
+                  "url": "https://ows.services.dea.ga.gov.au",
                   "type": "wms",
+                  "availableDimensions": {},
                   "rectangle": [
                     112,
                     -45,
@@ -825,9 +829,11 @@
                   ]
                 },
                 {
-                  "layers": "WaterSummaryFiltered",
-                  "url": "http://geoserver.nci.org.au/geoserver/NFRIP-WOfS/wms",
+                  "layers": "wofs_filtered_summary",
+                  "url": "https://ows.services.dea.ga.gov.au",
                   "type": "wms",
+                  "availableStyles": "WOfS_filtered_frequency",
+                  "availableDimensions": {},
                   "rectangle": [
                     111,
                     -45,
