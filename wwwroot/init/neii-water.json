@@ -788,6 +788,7 @@
                   "layers": "Water Observations from Space Statistics",
                   "url": "https://ows.dea.ga.gov.au",
                   "type": "wms",
+                  "availableStyles": "WOfS_frequency",
                   "availableDimensions": {},
                   "rectangle": [
                     111,
