@@ -63,6 +63,10 @@ body {
         border:none;
     }
 
+    .tjs-chart-preview__preview-chart-wrapper {
+        background: $dark-lighter;
+    }
+
     .tjs-timeline__text-cell {
         font-family: $font-base; 
     }
@@ -97,6 +101,26 @@ body {
       .tjs-legend__section-short{
         width: 80px;
       }
+    }
+
+    .tjs-tabs__btn--selected{
+        color: $color-primary;
+        &:hover, &:focus{
+            color: $color-primary;
+        }
+    }
+    .tjs-tabs__btn--tab{
+        &:hover, &:focus{
+            color: darken($color-primary, 0.5);
+        }
+    }
+    .tjs-feature-info-panel__btn--close-feature{
+        &:hover, &:focus{
+          svg{
+                fill: #ffffff;
+          }
+
+        }
     }
 
 }

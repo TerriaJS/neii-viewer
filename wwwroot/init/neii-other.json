@@ -1,4 +1,8 @@
 {
+  "corsDomains" : [
+    "ows.dea.ga.gov.au",
+    "gsky.nci.org.au"
+  ],
   "catalog": [
     {
       "name": "NEII Data Services – Conformant",
@@ -311,6 +315,8 @@
                       "linkedWcsUrl": "https://ows.dea.ga.gov.au/",
                       "linkedWcsCoverage": "s2_ard_granule_nbar_t",
                       "ignoreUnknownTileErrors": true,
+                      "chartType": "momentPoints",
+                      "chartColor": "white",
                       "opacity": 1,
                       "featureInfoTemplate": {
                         "formats": {
@@ -333,6 +339,8 @@
                       "linkedWcsUrl": "https://ows.dea.ga.gov.au/",
                       "linkedWcsCoverage": "s2a_ard_granule_nbar_t",
                       "ignoreUnknownTileErrors": true,
+                      "chartType": "momentPoints",
+                      "chartColor": "white",
                       "opacity": 1,
                       "featureInfoTemplate": {
                         "formats": {
@@ -355,6 +363,8 @@
                       "linkedWcsUrl": "https://ows.dea.ga.gov.au/",
                       "linkedWcsCoverage": "s2b_ard_granule_nbar_t",
                       "ignoreUnknownTileErrors": true,
+                      "chartType": "momentPoints",
+                      "chartColor": "white",
                       "opacity": 1,
                       "featureInfoTemplate": {
                         "formats": {
@@ -384,6 +394,8 @@
                       "linkedWcsUrl": "https://ows.dea.ga.gov.au/",
                       "linkedWcsCoverage": "s2a_nrt_granule_nbar_t",
                       "ignoreUnknownTileErrors": true,
+                      "chartType": "momentPoints",
+                      "chartColor": "white",
                       "opacity": 1,
                       "featureInfoTemplate": {
                         "formats": {
@@ -406,6 +418,8 @@
                       "linkedWcsUrl": "https://ows.dea.ga.gov.au/",
                       "linkedWcsCoverage": "s2b_nrt_granule_nbar_t",
                       "ignoreUnknownTileErrors": true,
+                      "chartType": "momentPoints",
+                      "chartColor": "white",
                       "opacity": 1,
                       "featureInfoTemplate": {
                         "formats": {
@@ -584,6 +598,8 @@
                       "type": "wms",
                       "url": "https://gsky.nci.org.au/ows/dea",
                       "layers": "blend_sentinel2_landsat_nbart_daily_true_colour",
+                      "chartType": "momentPoints",
+                      "chartColor": "white",
                       "ignoreUnknownTileErrors": true,
                       "opacity": 1,
                       "featureTimesProperty": "data_available_for_dates"
@@ -593,6 +609,19 @@
                       "type": "wms",
                       "url": "https://gsky.nci.org.au/ows/dea",
                       "layers": "blend_sentinel2_landsat_nbart_daily_false_colour",
+                      "chartType": "momentPoints",
+                      "chartColor": "white",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "featureTimesProperty": "data_available_for_dates"
+                    },
+                    {
+                      "name": "Multi-sensor (Landsat and Sentinel 2) surface reflectance (Beta)",
+                      "type": "wms",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "blend_sentinel2_landsat_nbart_daily",
+                      "chartType": "momentPoints",
+                      "chartColor": "white",
                       "ignoreUnknownTileErrors": true,
                       "opacity": 1,
                       "featureTimesProperty": "data_available_for_dates"

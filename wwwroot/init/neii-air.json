@@ -31,6 +31,8 @@
                   "description": "",
                   "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
                   "url": "http://neii.bom.gov.au/services/solarclim/wms/data/monClim_gloHorExp1Hou.nc",
+                  "colorScaleMaximum": 35,
+                  "colorScaleMinimum": 0,
                   "featureInfoTemplate": {
                     "template": "{{#value}}{{value}} MJ/m&#178;{{/value}}",
                     "name": "{{#value}}{{value}} MJ/m2{{/value}}"
@@ -50,6 +52,8 @@
                   "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
                   "url": "http://neii.bom.gov.au/services/solarclim/wms/data/monClim_dirNorExp1Hou.nc",
                   "type": "wms",
+                  "colorScaleMaximum": 35,
+                  "colorScaleMinimum": 0,
                   "featureInfoTemplate": {
                     "template": "{{#value}}{{value}} MJ/m&#178;{{/value}}",
                     "name": "{{#value}}{{value}} MJ/m2{{/value}}"
@@ -68,6 +72,8 @@
                   "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
                   "url": "http://neii.bom.gov.au/services/solarclim/wms/data/monClim_gloHorExp1Day.nc",
                   "type": "wms",
+                  "colorScaleMaximum": 35,
+                  "colorScaleMinimum": 0,
                   "featureInfoTemplate": {
                     "template": "{{#value}}{{value}} MJ/m&#178;{{/value}}",
                     "name": "{{#value}}{{value}} MJ/m2{{/value}}"
@@ -90,6 +96,8 @@
                     "template": "{{#value}}{{value}} MJ/m&#178;{{/value}}",
                     "name": "{{#value}}{{value}} MJ/m2{{/value}}"
                   },
+                  "colorScaleMaximum": 35,
+                  "colorScaleMinimum": 0,
                   "rectangle": [
                     "100.0",
                     "-44.0",
@@ -108,6 +116,8 @@
                     "template": "{{#value}}{{value}} MJ/m&#178;{{/value}}",
                     "name": "{{#value}}{{value}} MJ/m2{{/value}}"
                   },
+                  "colorScaleMaximum": 25,
+                  "colorScaleMinimum": 10,
                   "rectangle": [
                     "100.0",
                     "-44.0",
