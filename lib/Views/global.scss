@@ -103,4 +103,24 @@ body {
       }
     }
 
+    .tjs-tabs__btn--selected{
+        color: $color-primary;
+        &:hover, &:focus{
+            color: $color-primary;
+        }
+    }
+    .tjs-tabs__btn--tab{
+        &:hover, &:focus{
+            color: darken($color-primary, 0.5);
+        }
+    }
+    .tjs-feature-info-panel__btn--close-feature{
+        &:hover, &:focus{
+          svg{
+                fill: #ffffff;
+          }
+
+        }
+    }
+
 }
