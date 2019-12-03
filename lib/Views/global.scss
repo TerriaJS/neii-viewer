@@ -63,6 +63,10 @@ body {
         border:none;
     }
 
+    .tjs-chart-preview__preview-chart-wrapper {
+        background: $dark-lighter;
+    }
+
     .tjs-timeline__text-cell {
         font-family: $font-base; 
     }
