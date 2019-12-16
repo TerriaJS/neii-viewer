@@ -764,7 +764,7 @@
                       "defaultDuration": "48h"
                     }
 		  ],
-		  "observeableProperties": [
+		  "observableProperties": [
 		    {
 		      "identifier": "http://bom.gov.au/waterdata/services/parameters/Storage Level",
 		      "title": "Storage Level",
@@ -814,7 +814,7 @@
                       "defaultDuration": "48h"
                     }
 		  ],
-		  "observeableProperties": [
+		  "observableProperties": [
 		    {
 		      "identifier": "http://bom.gov.au/waterdata/services/parameters/Storage Volume",
 		      "title": "Storage Volume",
@@ -864,7 +864,7 @@
                       "defaultDuration": "48h"
                     }
 		  ],
-		  "observeableProperties": [
+		  "observableProperties": [
 		    {
 		      "identifier": "http://bom.gov.au/waterdata/services/parameters/pH",
 		      "title": "pH",
@@ -913,7 +913,7 @@
                       "defaultDuration": "48h"
                     }
 		  ],
-		  "observeableProperties": [
+		  "observableProperties": [
 		    {
 		      "identifier": "http://bom.gov.au/waterdata/services/parameters/Turbidity",
 		      "title": "Turbidity",
@@ -963,7 +963,7 @@
                       "defaultDuration": "48h"
                     }
 		  ],
-		  "observeableProperties": [
+		  "observableProperties": [
 		    {
 		      "identifier": "http://bom.gov.au/waterdata/services/parameters/Water Temperature",
 		      "title": "Water Temperature",
@@ -1013,7 +1013,7 @@
                       "defaultDuration": "48h"
                     }
 		  ],
-		  "observeableProperties": [
+		  "observableProperties": [
 		    {
 		      "identifier": "http://bom.gov.au/waterdata/services/parameters/Electrical Conductivity @ 25C",
 		      "title": "Electrical Conductivity @ 25C",
