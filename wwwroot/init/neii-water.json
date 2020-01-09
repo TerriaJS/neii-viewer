@@ -728,10 +728,11 @@
                   "url": "http://www.bom.gov.au/waterdata/services",
 		  "type": "sos",
 		  "proceduresName": "Frequency",
-		  "description": "Storage level, as defined under category 1b of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
+		  "description": "Storage level, as defined under category 3a of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#waterStorage). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
                   "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
                   "observablePropertiesName": "Observation type",
                   "startDate": "1980-01-01T00:00:00+10",
+				  "filterByProcedures": false,
 		  "procedures": [
                     {
                       "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat7_C_B_1_YearlyMean",
@@ -777,7 +778,7 @@
                   "url": "http://www.bom.gov.au/waterdata/services",
 		  "type": "sos",
 		  "proceduresName": "Frequency",
-		  "description": "Storage volume, as defined under category 1b of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
+		  "description": "Storage volume, as defined under category 3b of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#waterStorage). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
                   "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
                   "observablePropertiesName": "Observation type",
                   "startDate": "1980-01-01T00:00:00+10",
@@ -827,7 +828,7 @@
                   "url": "http://www.bom.gov.au/waterdata/services",
 		  "type": "sos",
 		  "proceduresName": "Frequency",
-		  "description": "Water pH, as defined under category 1b of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
+		  "description": "Water pH, as defined under category 9g of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#waterQuality). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
                   "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
                   "observablePropertiesName": "Observation type",
                   "startDate": "1980-01-01T00:00:00+10",
@@ -857,11 +858,6 @@
                       "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat1_C_B_1_DailyMax",
                       "title": "Daily maximum",
                       "defaultDuration": "32d"
-                    },
-                    {
-                      "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat1_C_B_1_HourlyMean",
-                      "title": "Hourly average",
-                      "defaultDuration": "48h"
                     }
 		  ],
 		  "observableProperties": [
@@ -877,10 +873,11 @@
                   "url": "http://www.bom.gov.au/waterdata/services",
 		  "type": "sos",
 		  "proceduresName": "Frequency",
-		  "description": "Turbidity, as defined under category 1b of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
+		  "description": "Turbidity, as defined under category 9d of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#waterQuality). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
                   "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
                   "observablePropertiesName": "Observation type",
                   "startDate": "1980-01-01T00:00:00+10",
+				  "filterByProcedures": false,
 		  "procedures": [
                     {
                       "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat1_C_B_1_YearlyMean",
@@ -906,11 +903,6 @@
                       "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat1_C_B_1_DailyMax",
                       "title": "Daily maximum",
                       "defaultDuration": "32d"
-                    },
-                    {
-                      "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat1_C_B_1_HourlyMean",
-                      "title": "Hourly average",
-                      "defaultDuration": "48h"
                     }
 		  ],
 		  "observableProperties": [
@@ -926,7 +918,7 @@
                   "url": "http://www.bom.gov.au/waterdata/services",
 		  "type": "sos",
 		  "proceduresName": "Frequency",
-		  "description": "Water Temperature, as defined under category 1b of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
+		  "description": "Water Temperature, as defined under category 9h of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#waterQuality). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
                   "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
                   "observablePropertiesName": "Observation type",
                   "startDate": "1980-01-01T00:00:00+10",
@@ -956,11 +948,6 @@
                       "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat1_C_B_1_DailyMax",
                       "title": "Daily maximum",
                       "defaultDuration": "32d"
-                    },
-                    {
-                      "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat1_C_B_1_HourlyMean",
-                      "title": "Hourly average",
-                      "defaultDuration": "48h"
                     }
 		  ],
 		  "observableProperties": [
@@ -976,7 +963,7 @@
                   "url": "http://www.bom.gov.au/waterdata/services",
 		  "type": "sos",
 		  "proceduresName": "Frequency",
-		  "description": "Electrical conductivity, as defined under category 1b of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
+		  "description": "Electrical conductivity, as defined under category 9a of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#waterQuality). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
                   "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
                   "observablePropertiesName": "Observation type",
                   "startDate": "1980-01-01T00:00:00+10",
@@ -1006,11 +993,6 @@
                       "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat1_C_B_1_DailyMax",
                       "title": "Daily maximum",
                       "defaultDuration": "32d"
-                    },
-                    {
-                      "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat1_C_B_1_HourlyMean",
-                      "title": "Hourly average",
-                      "defaultDuration": "48h"
                     }
 		  ],
 		  "observableProperties": [
