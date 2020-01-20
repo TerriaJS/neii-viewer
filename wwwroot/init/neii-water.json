@@ -6,7 +6,7 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Water (4)",
+          "name": "Water (3)",
           "type": "group",
           "items": [
             {
@@ -732,7 +732,7 @@
                   "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
                   "observablePropertiesName": "Observation type",
                   "startDate": "1980-01-01T00:00:00+10",
-				  "filterByProcedures": false,
+		  "filterByProcedures": false,
 		  "procedures": [
                     {
                       "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat7_C_B_1_YearlyMean",
@@ -877,7 +877,7 @@
                   "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
                   "observablePropertiesName": "Observation type",
                   "startDate": "1980-01-01T00:00:00+10",
-				  "filterByProcedures": false,
+		  "filterByProcedures": false,
 		  "procedures": [
                     {
                       "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat1_C_B_1_YearlyMean",
@@ -1003,128 +1003,6 @@
 		    }
 		  ]
 		}
-              ]
-            },
-            {
-              "type": "group",
-              "name": "Water Observations from Space (GA)",
-              "description": "This OGC Web Map Service (WMS) provides access to the Water Observations from Space (WOfS) gridded dataset indicating areas where surface water has been observed using the Geoscience Australia's (GA) Landsat 5 and 7 satellite data holdings.  WOfS covers all of mainland Australia and Tasmania but excludes off-shore Territories.\n\nWOfS is derived from Landsat-5 and Landsat-7 satellite imagery acquired over Australia between 1987 to November 2014. The Landsat data underpinning WOfS is ARG25 standard data located in the Australian Geoscience Data Cube (AGDC) at the National Computational Infrastructure (NCI) in the Australian National University (ANU), Canberra. The WOfS product is calculated from all acceptable Landsat scenes in the Geoscience Australia archive for the time period. The detection process is based on spectral analysis of each pixel in each Landsat scene.",
-              "info": [
-                {
-                  "name": "Data Custodian",
-                  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
-                },
-                {
-                  "name": "Further Information",
-                  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
-                }
-              ],
-              "items": [
-                {
-                  "layers": "WaterObservations",
-                  "url": "http://geoserver.nci.org.au/geoserver/NFRIP-WOfS/wms",
-                  "type": "wms",
-                  "rectangle": [
-                    111,
-                    -45,
-                    155,
-                    -10
-                  ],
-                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)\n\n[nfrip@ga.gov.au](mailto:nfrip@ga.gov.au)",
-                  "name": "1 - Detections",
-                  "dataUrlType": "direct",
-                  "dataUrl": "http://www.ga.gov.au/scientific-topics/hazards/flood/wofs",
-                  "info": [
-                    {
-                      "name": "Licence",
-                      "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
-                    }
-                  ]
-                },
-                {
-                  "layers": "ClearObservations",
-                  "url": "http://geoserver.nci.org.au/geoserver/NFRIP-WOfS/wms",
-                  "type": "wms",
-                  "rectangle": [
-                    111,
-                    -45,
-                    155,
-                    -10
-                  ],
-                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)\n\n[nfrip@ga.gov.au](mailto:nfrip@ga.gov.au)",
-                  "name": "2 - Clear Observations",
-                  "dataUrlType": "direct",
-                  "dataUrl": "http://www.ga.gov.au/scientific-topics/hazards/flood/wofs",
-                  "info": [
-                    {
-                      "name": "Licence",
-                      "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
-                    }
-                  ]
-                },
-                {
-                  "layers": "WaterSummary",
-                  "url": "http://geoserver.nci.org.au/geoserver/NFRIP-WOfS/wms",
-                  "type": "wms",
-                  "rectangle": [
-                    111,
-                    -45,
-                    155,
-                    -10
-                  ],
-                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)\n\n[nfrip@ga.gov.au](mailto:nfrip@ga.gov.au)",
-                  "name": "3 - Summary",
-                  "dataUrlType": "direct",
-                  "dataUrl": "http://www.ga.gov.au/scientific-topics/hazards/flood/wofs",
-                  "info": [
-                    {
-                      "name": "Licence",
-                      "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
-                    }
-                  ]
-                },
-                {
-                  "layers": "Confidence",
-                  "url": "http://geoserver.nci.org.au/geoserver/NFRIP-WOfS/wms",
-                  "type": "wms",
-                  "rectangle": [
-                    112,
-                    -45,
-                    154,
-                    -10
-                  ],
-                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)\n\n[nfrip@ga.gov.au](mailto:nfrip@ga.gov.au)",
-                  "name": "4 - Confidence",
-                  "dataUrlType": "direct",
-                  "dataUrl": "http://www.ga.gov.au/scientific-topics/hazards/flood/wofs",
-                  "info": [
-                    {
-                      "name": "Licence",
-                      "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
-                    }
-                  ]
-                },
-                {
-                  "layers": "WaterSummaryFiltered",
-                  "url": "http://geoserver.nci.org.au/geoserver/NFRIP-WOfS/wms",
-                  "type": "wms",
-                  "rectangle": [
-                    111,
-                    -45,
-                    155,
-                    -10
-                  ],
-                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)\n\n[nfrip@ga.gov.au](mailto:nfrip@ga.gov.au)",
-                  "name": "5 - Filtered Summary",
-                  "dataUrlType": "direct",
-                  "dataUrl": "http://www.ga.gov.au/scientific-topics/hazards/flood/wofs",
-                  "info": [
-                    {
-                      "name": "Licence",
-                      "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
-                    }
-                  ]
-                }
               ]
             },
             {
