@@ -280,7 +280,7 @@
                   "preserveOrder": true,
                   "items": [
                     {
-                      "name": "Barest Earth 25m Mosiac",
+                      "name": "Barest Earth 25m Mosaic",
                       "type": "wms",
                       "layers": "ls8_barest_earth_mosaic",
                       "url": "https://ows.dea.ga.gov.au/",
