@@ -60,9 +60,11 @@
               "type": "esri-mapServer"
             },
             {
-              "name": "Collaborative Australian Protected Areas Database (CAPAD)(DotEE)",
+              "name": "Collaborative Australian Protected Areas Database (CAPAD) 2018 - Terrestrial (DoEE)",
               "url": "http://www.environment.gov.au/mapping/services/ogc_services/capad/MapServer/WMSServer",
+	      "description": "The Collaborative Australian Protected Areas Database (CAPAD) 2018 provides both spatial and textual information about government, Indigenous and privately protected areas for Australia, in both the marine and terrestrial environments. This dataset is for terrestrial data only. State, Territory and the large NGO conservation agencies supplied data current for 30 June 2018. This is the eleventh version of the terrestrial database, with previous versions released in 1997, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014 and 2016. <br/>The Department also publishes protected areas data for the marine environment. 'CAPAD 2018 - Marine' contains spatial and text information about offshore protected areas, for both State and Commonwealth waters. Previous versions of CAPAD marine information have been published in 1997, 2002, 2004, 2008, 2010, 2012, 2014 and 2016. <br/>CAPAD provides a snapshot of protected areas that meet the IUCN definition of a protected area: 'A protected area is a clearly defined geographical space, recognised, dedicated and managed, through legal or other effective means, to achieve the long term conservation of nature with associated ecosystem services and cultural values.' (IUCN Definition 2008).<br/>The department publishes a summary of the CAPAD data biennially on its website at <a href='http://www.environment.gov.au/capad/'>http://www.environment.gov.au/capad/</a>.<br/>CAPAD 2018 is available for use through the CC-BY 4.0 licencing model.",
               "layers": "Protected_Areas",
+	      "abstract": "",
               "type": "wms"
             },
             {
