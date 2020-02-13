@@ -13,7 +13,7 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Oceans (4)",
+          "name": "Oceans (5)",
           "type": "group",
           "items": [
             {
@@ -28,9 +28,9 @@
                   "name": "Further Information",
                   "content": "[NSW Government](http://www.seed.nsw.gov.au/)"
                 }
-				      ],
+              ],
               "typeNames": "PUBLIC_Marine_Protected_Areas:NSW_Marine_Protected_Areas",
-			  "url": "https://spatial.industry.nsw.gov.au/arcgis/services/PUBLIC/Marine_Protected_Areas/MapServer/WFSServer",
+              "url": "https://spatial.industry.nsw.gov.au/arcgis/services/PUBLIC/Marine_Protected_Areas/MapServer/WFSServer",
               "type": "wfs-getCapabilities",
               "rectangle": [
                 "100.0",
@@ -434,7 +434,13 @@
                   ]
                 }
               ]
-            }
+            },
+			{
+				"name": "Collaborative Australian Protected Areas Database (CAPAD) 2018 - Marine (DoEE)",
+				"url": "http://www.environment.gov.au/mapping/services/ogc_services/CAPAD_MARINE/MapServer/WMSServer",
+				"layers": "Marine CAPAD",
+				"type": "wms"
+			}
           ]
         }
       ]
