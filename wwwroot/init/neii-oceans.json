@@ -13,7 +13,7 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Oceans (4)",
+          "name": "Oceans (5)",
           "type": "group",
           "items": [
             {
@@ -434,7 +434,13 @@
                   ]
                 }
               ]
-            }
+            },
+			{
+				"name": "Collaborative Australian Protected Areas Database (CAPAD) 2018 - Marine (DoEE)",
+				"url": "http://www.environment.gov.au/mapping/services/ogc_services/CAPAD_MARINE/MapServer/WMSServer",
+				"layers": "Marine CAPAD",
+				"type": "wms"
+			}
           ]
         }
       ]
