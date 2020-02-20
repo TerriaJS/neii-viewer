@@ -41,7 +41,7 @@
               ]
             },
             {
-              "name": "Australian World Heritage Areas (DotEE)",
+              "name": "Australian World Heritage Areas (DoEE)",
               "type": "wms",
               "url": "http://www.environment.gov.au/mapping/services/ogc_services/World_Heritage_Areas/MapServer/WMSServer",
               "layers": "World_Heritage_Areas_Australia"
@@ -60,7 +60,7 @@
               "type": "esri-mapServer"
             },
             {
-              "name": "Collaborative Australian Protected Areas Database (CAPAD)(DotEE)",
+              "name": "Collaborative Australian Protected Areas Database (CAPAD) 2018 - Terrestrial (DoEE)",
               "url": "http://www.environment.gov.au/mapping/services/ogc_services/capad/MapServer/WMSServer",
               "layers": "Protected_Areas",
               "type": "wms"
