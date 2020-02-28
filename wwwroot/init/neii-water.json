@@ -6,7 +6,7 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Water (3)",
+          "name": "Water (5)",
           "type": "group",
           "items": [
             {
@@ -1045,7 +1045,113 @@
                   "opacity": 1
                 }
               ]
-            }
+            },
+			{
+			  "name": "Hydrogeology (GA)",
+              "type": "group",
+              "description": "Hydrogeology (GA)",
+              "info": [
+                {
+                  "name": "Data Custodian",
+                  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+                },
+                {
+                  "name": "Further Information",
+                  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+                }
+              ],
+              "items": [
+                {
+                  "name": "Hydrogeology",
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "url": "http://services.ga.gov.au/gis/services/Hydrogeology_of_Australia/MapServer/WmsServer?request=GetCapabilities&service=WMS",
+                  "layers": "Hydrogeology",
+                  "type": "wms",
+                  "opacity": 1
+                }
+			  ]
+			},
+			{
+			  "name": "Australian Surface Hydrology (Web Mercator)",
+              "type": "group",
+              "description": "Australian Surface Hydrology (Web Mercator)",
+              "info": [
+                {
+                  "name": "Data Custodian",
+                  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+                },
+                {
+                  "name": "Further Information",
+                  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+                }
+              ],
+              "items": [
+                {
+                  "name": "Basin",
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Surface_Hydrology_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "layers": "Basins",
+                  "type": "wms",
+                  "opacity": 1
+                },
+				{
+				  "name": "Catchments",
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Surface_Hydrology_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "layers": "Catchments",
+                  "type": "wms",
+                  "opacity": 1
+				},
+				{
+				  "name": "Surface HydroLines Regional",
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Surface_Hydrology_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "layers": "Surface_HydroLines_Regional",
+                  "type": "wms",
+                  "opacity": 1
+				},
+				{
+				  "name": "Surface HydroPolys Regional",
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Surface_Hydrology_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "layers": "Surface_HydroPolys_Regional",
+                  "type": "wms",
+                  "opacity": 1
+				},
+				{
+				  "name": "Surface HydroPoints Regional",
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Surface_Hydrology_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "layers": "Surface_HydroPoints_Regional",
+                  "type": "wms",
+                  "opacity": 1
+				},
+				{
+				  "name": "Surface HydroLines National",
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Surface_Hydrology_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "layers": "Surface_HydroLines_National",
+                  "type": "wms",
+                  "opacity": 1
+				},
+				{
+				  "name": "Surface HydroPolys National",
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Surface_Hydrology_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "layers": "Surface_HydroPolys_National",
+                  "type": "wms",
+                  "opacity": 1
+				},
+				{
+				  "name": "Surface HydroPoints National",
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Surface_Hydrology_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "layers": "Surface_HydroPoints_National",
+                  "type": "wms",
+                  "opacity": 1
+				}
+			  ]
+			}
           ]
         }
       ]

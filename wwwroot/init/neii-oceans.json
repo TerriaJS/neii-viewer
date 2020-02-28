@@ -13,7 +13,7 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Oceans (5)",
+          "name": "Oceans (8)",
           "type": "group",
           "items": [
             {
@@ -440,7 +440,135 @@
 				"url": "http://www.environment.gov.au/mapping/services/ogc_services/CAPAD_MARINE/MapServer/WMSServer",
 				"layers": "Marine CAPAD",
 				"type": "wms"
-			}
+			},
+			{					
+			    "name": "Australian Coastal Sediment Compartments",
+				"type": "group",
+				"description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.The AusHydro database provides a seamless surface hydrography layer for Australia at a nominal scale of 1:250, 000. It consists of lines, points and polygons representing natural and man-made features such as water courses, lakes, dams and other waterbodies. The natural water course layer consists of a linear network with a consistent topology that provide directional flow paths through the network for hydrological analysis. This network was used to produce the National 9 second Digital Elevation Model (DEM) of  Australia (http://www.ga.gov.au/nmd/products/digidat/dem_9s.jsp). It also provides information on naming, hierarchy and perenniality.",
+				"info": [
+					{
+					  "name": "Data Custodian",
+					  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+					},
+					{
+					  "name": "Further Information",
+					  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+					}
+				],
+				"items": [
+					{
+					  "name": "Regions",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://services.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Regions",
+					  "type": "wms",
+					  "opacity": 1
+					},
+					{
+					  "name": "Divisions",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://services.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Divisions",
+					  "type": "wms",
+					  "opacity": 1
+					},
+					{
+					  "name": "Primary compartments",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://services.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Primary_compartments",
+					  "type": "wms",
+					  "opacity": 1
+					},
+					{
+					  "name": "Secondary compartments",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://services.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Secondary_compartments",
+					  "type": "wms",
+					  "opacity": 1
+					},
+					{
+					  "name": "Primary points",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://services.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Primary_points",
+					  "type": "wms",
+					  "opacity": 1
+					},
+					{
+					  "name": "Secondary points",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://services.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Secondary_points",
+					  "type": "wms",
+					  "opacity": 1
+					}
+				]            
+			},
+			{
+				"name": "Australian Submarine Canyons",
+				"url": "http://services.ga.gov.au/gis/services/Submarine_Canyons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+				"layers": "Submarine_Canyons",
+				"type": "wms"
+			},
+			{					
+			    "name": "Bathymetry Derivatives Map of Australia",
+				"type": "group",
+				"description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.The AusHydro database provides a seamless surface hydrography layer for Australia at a nominal scale of 1:250, 000. It consists of lines, points and polygons representing natural and man-made features such as water courses, lakes, dams and other waterbodies. The natural water course layer consists of a linear network with a consistent topology that provide directional flow paths through the network for hydrological analysis. This network was used to produce the National 9 second Digital Elevation Model (DEM) of  Australia (http://www.ga.gov.au/nmd/products/digidat/dem_9s.jsp). It also provides information on naming, hierarchy and perenniality.",
+				"info": [
+					{
+					  "name": "Data Custodian",
+					  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+					},
+					{
+					  "name": "Further Information",
+					  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+					}
+				],
+				"items": [
+					{
+					  "name": "Topographic Rugosity",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_3/services/Bathymetry_Derivatives/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Topographic_Rugosity",
+					  "type": "wms",
+					  "opacity": 1
+					},
+					{
+					  "name": "Topographic Relief",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_3/services/Bathymetry_Derivatives/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Topographic_Relief",
+					  "type": "wms",
+					  "opacity": 1
+					},
+					{
+					  "name": "Topographic Slope",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_3/services/Bathymetry_Derivatives/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Topographic_Slope",
+					  "type": "wms",
+					  "opacity": 1
+					},
+					{
+					  "name": "Topographic Aspect",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_3/services/Bathymetry_Derivatives/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Topographic_Aspect",
+					  "type": "wms",
+					  "opacity": 1
+					},
+					{
+					  "name": "Hillshaded Bathymetry Topography",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_3/services/Bathymetry_Derivatives/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Hillshaded_Bathymetry_Topography",
+					  "type": "wms",
+					  "opacity": 1
+					}
+				]            
+			}			
           ]
         }
       ]
