@@ -13,7 +13,7 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Oceans (8)",
+          "name": "Oceans (12)",
           "type": "group",
           "items": [
             {
@@ -568,7 +568,1219 @@
 					  "opacity": 1
 					}
 				]            
-			}			
+			},			
+			{					
+			  "name": "Dynamic National Map Hydrology and Marine - Points",
+				"type": "group",
+				"description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.The AusHydro database provides a seamless surface hydrography layer for Australia at a nominal scale of 1:250, 000. It consists of lines, points and polygons representing natural and man-made features such as water courses, lakes, dams and other waterbodies. The natural water course layer consists of a linear network with a consistent topology that provide directional flow paths through the network for hydrological analysis. This network was used to produce the National 9 second Digital Elevation Model (DEM) of  Australia (http://www.ga.gov.au/nmd/products/digidat/dem_9s.jsp). It also provides information on naming, hierarchy and perenniality.",
+				"info": [
+					{
+					  "name": "Data Custodian",
+					  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+					},
+					{
+					  "name": "Further Information",
+					  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+					}
+				],
+				"items": [
+					{
+            "name": "Water Storage Points",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Dams_and_Tanks",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Soak",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_Soak",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Rockhole",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_Rockhole",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Pool",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_Pool",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Native Well",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_NativeWell",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Gnamma Hole",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_GnammaHole",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Bores",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Bores",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Bores",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Bores",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterholes",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterholes",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Springs",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Springs",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterfalls",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterfalls",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Locks",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Locks",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Lighthouses",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Lighthouses",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Offshore Rocks and Wrecks",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Offshore_Rocks_And_Wrecks",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Water Storage Points - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Dams_and_Tanks_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Soaks - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_Soaks_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Rockholes - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_Rockholes_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Pools - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_Pools_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Native Wells - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_NativeWells_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Gnamma Holes - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_GnammaHoles_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Bores - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Bores_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterholes - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterholes_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Springs - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Springs_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterfalls - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterfalls_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Locks - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Locks_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Lighthouses - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Lighthouses_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Offshore Rocks and Wrecks - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Points/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Offshore_Rocks_and_Wrecks_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          }
+				]
+      },
+      {					
+			  "name": "Dynamic National Map Hydrology and Marine",
+				"type": "group",
+				"description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.The AusHydro database provides a seamless surface hydrography layer for Australia at a nominal scale of 1:250, 000. It consists of lines, points and polygons representing natural and man-made features such as water courses, lakes, dams and other waterbodies. The natural water course layer consists of a linear network with a consistent topology that provide directional flow paths through the network for hydrological analysis. This network was used to produce the National 9 second Digital Elevation Model (DEM) of  Australia (http://www.ga.gov.au/nmd/products/digidat/dem_9s.jsp). It also provides information on naming, hierarchy and perenniality.",
+				"info": [
+					{
+					  "name": "Data Custodian",
+					  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+					},
+					{
+					  "name": "Further Information",
+					  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+					}
+				],
+				"items": [
+					{
+            "name": "Flats - Saline Coastal Flats",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Flats_SalineCoastalFlats",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Flats - Land Subject to Inundation",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Flats_LandSubjectToInundation",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Flats - Marine Swamps",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Flats_MarineSwamps",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Flats - Swamps",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Flats_Swamps",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourses - All Watercourse Lines",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourses_All_Rivers_Watercourse_Lines",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourses - All Connector Lines",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourses_All_Rivers_Connectors",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourses - Major Rivers Scale 1:5,000,000 to 1:300,000",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourses_Major_Rivers_Scale_5Million_to_300000",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourses - Major Rivers National Scale to 1:5,000,000",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourses_Major_Rivers_National_Scale_to_5Million",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Farm Dam Areas",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Farm_Dam_Area",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - All Flood Irrigation Storage",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_All_Flood_Irrigation_Storage",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - All Reservoirs",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_All_Reservoirs",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - All Lakes",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_All_Lakes",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Extra Lakes and Reservoirs",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Extra_Lakes_and_Reservoirs",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Reservoirs National Scale to 1:300,000",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Reservoirs_National_Scale_to_300000",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Lakes Scale 1:5,000,000 to 1:300,000",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Lakes_Scale_5Million_to_300000",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Lakes National Scale to 1:5,000,000",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Lakes_National_Scale_to_5Million",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Foreshore Flats",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Foreshore_Flats",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Pondage Areas - Settling Ponds",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Pondage_Areas_Settling_Ponds",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Pondage Areas - Salt Evaporators",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Pondage_Areas_Salt_Evaporators",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Pondage Areas - Aquaculture Areas",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "PondageArea_AquacultureAreas",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourse Areas",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourse_Areas",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Rapid Areas",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Rapid_Areas",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Canal Areas",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Canal_Areas",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Levees",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Levees",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Spillways",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Spillways",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Rapid Lines",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Rapid_Lines",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Dam Walls",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Dam_Walls",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Canal Lines",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Canal_Lines",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Water Storage Points",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Dams_and_Tanks",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Soak",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_Soak",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Rockhole",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_Rockhole",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Pool",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_Pool",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Native Well",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_NativeWell",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Gnamma Hole",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_GnammaHole",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Bores",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Bores",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterholes",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterholes",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Springs",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Springs",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterfalls",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterfalls",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Locks",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Locks",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Reefs and Shoals",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Reefs_And_Shoals",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Marine Infrastructure Lines",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Marine_Infrastructure_Lines",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Lighthouses",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Lighthouses",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Offshore Rocks and Wrecks",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Offshore_Rocks_And_Wrecks",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Flats - Marine Swamps - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Flats_MarineSwamps_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Flats - Swamps - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Flats_Swamps_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - All Flood Irrigation Storage - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_All_Flood_Irrigation_Storage_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - All Reservoirs - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_All_Reservoirs_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - All Lakes - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_All_Lakes_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Extra Lakes and Reservoirs - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Extra_Lakes_and_Reservoirs_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Reservoirs Scale 1:10,000,000 to 1:300,000 - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Reservoirs_Scale_10Million_to_300000_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Lakes Scale 1:5,000,000 to 1:300,000 - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Lakes_Scale_5Million_to_300000_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Lakes Scale 1:10,000,000 to 1:5,000,000 - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Lakes_Scale_10Million_to_5Million_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourses - All Rivers - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourses_All_Rivers_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourses - Major Rivers Scale 1:5,000,000 to 1:300,000",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourses_Major_Rivers_Scale_5Million_to_300000_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourses - Major Rivers Scale 1:10,000,000 to 1:5,000,000 - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourses_Major_Rivers_Scale_10Million_to_5Million_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourse Areas - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourse_Areas_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Dam Walls - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Dam_Walls_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Water Storage Points - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Dams_and_Tanks_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Soaks - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_Soaks_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Rockholes - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_Rockholes_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Pools - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_Pools_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Native Wells - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_NativeWells_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Natural Water Points - Gnamma Holes - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Natural_Water_Points_GnammaHoles_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Bores - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Bores_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterholes - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterholes_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Springs - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Springs_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterfalls - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterfalls_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Locks - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Locks_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Reefs and Shoals - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Reefs_and_Shoals_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Lighthouses - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Lighthouses_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Offshore Rocks and Wrecks - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Offshore_Rocks_and_Wrecks_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          }
+        ]
+      },
+      {					
+			  "name": "Dynamic National Map Hydrology and Marine - Lines",
+				"type": "group",
+				"description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.The AusHydro database provides a seamless surface hydrography layer for Australia at a nominal scale of 1:250, 000. It consists of lines, points and polygons representing natural and man-made features such as water courses, lakes, dams and other waterbodies. The natural water course layer consists of a linear network with a consistent topology that provide directional flow paths through the network for hydrological analysis. This network was used to produce the National 9 second Digital Elevation Model (DEM) of  Australia (http://www.ga.gov.au/nmd/products/digidat/dem_9s.jsp). It also provides information on naming, hierarchy and perenniality.",
+				"info": [
+					{
+					  "name": "Data Custodian",
+					  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+					},
+					{
+					  "name": "Further Information",
+					  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+					}
+				],
+				"items": [
+					{
+            "name": "Watercourses - All Watercourse Lines",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Lines/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourses_All_Rivers_Watercourse_Lines",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourses - All Connector Lines",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Lines/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourses_All_Rivers_Connectors",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourses - Major Rivers Scale 1:5,000,000 to 1:300,000",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Lines/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourses_Major_Rivers_Scale_5Million_to_300000",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourses - Major Rivers National Scale to 1:5,000,000",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Lines/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourses_Major_Rivers_National_Scale_to_5Million",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Levees",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Lines/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Levees",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Spillways",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Lines/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Spillways",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Rapid Lines",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Lines/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Rapid_Lines",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Dam Walls",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Lines/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Dam_Walls",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Canal Lines",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Lines/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Canal_Lines",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Marine Infrastructure Lines",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Lines/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Marine_Infrastructure_Lines",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourses - All Rivers - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Lines/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourses_All_Rivers_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourses - Major Rivers Scale 1:5,000,000 to 1:300,000",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Lines/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourses_Major_Rivers_Scale_5Million_to_300000_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourses - Major Rivers Scale 1:10,000,000 to 1:5,000,000 - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Lines/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourses_Major_Rivers_Scale_10Million_to_5Million_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Dam Walls - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Lines/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Dam_Walls_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          }
+        ]
+      },
+      {					
+			  "name": "Dynamic National Map Hydrology and Marine - Polygons",
+				"type": "group",
+				"description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.The AusHydro database provides a seamless surface hydrography layer for Australia at a nominal scale of 1:250, 000. It consists of lines, points and polygons representing natural and man-made features such as water courses, lakes, dams and other waterbodies. The natural water course layer consists of a linear network with a consistent topology that provide directional flow paths through the network for hydrological analysis. This network was used to produce the National 9 second Digital Elevation Model (DEM) of  Australia (http://www.ga.gov.au/nmd/products/digidat/dem_9s.jsp). It also provides information on naming, hierarchy and perenniality.",
+				"info": [
+					{
+					  "name": "Data Custodian",
+					  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+					},
+					{
+					  "name": "Further Information",
+					  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+					}
+				],
+				"items": [
+					{
+            "name": "Flats - Saline Coastal Flats",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Flats_SalineCoastalFlats",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Flats - Land Subject to Inundation",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Flats_LandSubjectToInundation",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Flats - Marine Swamps",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Flats_MarineSwamps",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Flats - Swamps",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Flats_Swamps",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Farm Dam Areas",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Farm_Dam_Area",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - All Flood Irrigation Storage",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_All_Flood_Irrigation_Storage",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - All Reservoirs",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_All_Reservoirs",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - All Lakes",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_All_Lakes",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Extra Lakes and Reservoirs",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Extra_Lakes_and_Reservoirs",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Reservoirs National Scale to 1:300,000",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Reservoirs_National_Scale_to_300000",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Lakes Scale 1:5,000,000 to 1:300,000",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Lakes_Scale_5Million_to_300000",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Lakes National Scale to 1:5,000,000",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Lakes_National_Scale_to_5Million",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Foreshore Flats",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Foreshore_Flats",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Pondage Areas - Settling Ponds",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Pondage_Areas_Settling_Ponds",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Pondage Areas - Salt Evaporators",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Pondage_Areas_Salt_Evaporators",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Pondage Areas - Aquaculture Areas",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "PondageArea_AquacultureAreas",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourse Areas",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourse_Areas",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Rapid Areas",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Rapid_Areas",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Canal Areas",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Canal_Areas",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Reefs and Shoals",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Reefs_And_Shoals",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Flats - Marine Swamps - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Flats_MarineSwamps_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Flats - Swamps - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Flats_Swamps_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - All Flood Irrigation Storage - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_All_Flood_Irrigation_Storage_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - All Reservoirs - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_All_Reservoirs_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - All Lakes - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_All_Lakes_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Extra Lakes and Reservoirs - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Extra_Lakes_and_Reservoirs_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Reservoirs Scale 1:10,000,000 to 1:300,000 - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Reservoirs_Scale_10Million_to_300000_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Lakes Scale 1:5,000,000 to 1:300,000 - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Lakes_Scale_5Million_to_300000_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Waterbody - Lakes Scale 1:10,000,000 to 1:5,000,000 - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Waterbody_Lakes_Scale_10Million_to_5Million_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Watercourse Areas - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Watercourse_Areas_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          },
+          {
+            "name": "Reefs and Shoals - Labels",
+					  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+					  "url": "http://gaservices.ga.gov.au/site_7/services/NM_Hydrology_and_Marine_Polygons/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+					  "layers": "Reefs_and_Shoals_Labels",
+					  "type": "wms",
+					  "opacity": 1
+          }
+        ]
+      }
           ]
         }
       ]
