@@ -7,7 +7,7 @@
       "description": "Conformance for NEII web data services is determined by the [NEII Conformance Framework](http://www.neii.gov.au/system/files/filedepot/1/NEII%20Conformance%20Framework%20Version%201.0%20May%202016.pdf). The framework uses a maturity model approach outlining the various degrees of conformity.\n\nSpecific principles in the framework include the following:\n\n<ul><li>Environmental data are made publically available through machine-readable web data services (published online).</li><li>Structured metadata will support any NEII data release (well described).</li><li>Providers will make their data available through under an open licence.</li><li>Data are provided with support structures that provide enduring operational support to users.</li></ul>\n\nThe first principle is mandatory and in the absence of the availability of environmental data through web data services, NEII conformance is not possible at any level of maturity.\n\nSee the [NEII Conformance Framework](http://www.neii.gov.au/system/files/filedepot/1/NEII%20Conformance%20Framework%20Version%201.0%20May%202016.pdf) for a detailed overview of what constitutes conformance.\n\nSee [here]( http://www.neii.gov.au/web-data-services/) for a list of NEII conformant web data services and how to access.",
       "items": [
         {
-          "name": "Air (1)",
+          "name": "Air (2)",
           "type": "group",
           "items": [
             {
@@ -116,7 +116,13 @@
                   ]
                 }
               ]
-            }
+            },
+	    {
+              "name": "North Australia Automated Marine Weather And Oceanographic Stations",
+	      "description": "Automatic weather stations have been deployed by AIMS since 1980. Most of the stations are along the Great Barrier Reef including the Torres Strait in North-Eastern Australia but there is also a station in Darwin and one in Ningaloo Reef in Western Australia. Many of the stations are located on the reef itself either on poles located in the reef lagoon or on tourist pontoons or other structures. The following is a list of the weather stations which have been deployed by AIMS and the period of time for which data may be available. Records may not be continuous for the time spans given.",
+	      "url": "https://geoserver.data.aims.gov.au/ows?service=WFS&version=1.0.0&request=GetCapabilities&typeName=aims:weather_data",
+	      "type": "wfs-getCapabilities"
+	    }
           ]
         }
       ]
