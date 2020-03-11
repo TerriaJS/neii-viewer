@@ -631,14 +631,6 @@
                 }
               ],
               "items": [				
-				{
-                  "name": "Geomorphic Smartline",
-                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
-                  "layers": "Geomorphic_Smartline",
-                  "type": "wms",
-				  "opacity": 1
-                },
 		{
                   "name": "Guide 500K",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
