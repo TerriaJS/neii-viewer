@@ -537,7 +537,7 @@
 				{
                   "name": "Geomorphic Smartline",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Geomorphic_Smartline",
                   "type": "wms",
 				  "opacity": 1
@@ -545,7 +545,7 @@
 		{
                   "name": "Landform Subtype Surface Geology Reclassified 500K",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Landform_Subtype_Surface_Geology_Reclassified_500K",
                   "type": "wms",
 				  "opacity": 1
@@ -553,7 +553,7 @@
 		{
                   "name": "Landform_Subtype_Surface_Geology_Reclassified_250K",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Landform_Subtype_Surface_Geology_Reclassified_250K",
                   "type": "wms",
 				  "opacity": 1
@@ -561,7 +561,7 @@
 		{
                   "name": "Landform Subtype Surface Geology Reclassified 100K",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Landform_Subtype_Surface_Geology_Reclassified_100K",
                   "type": "wms",
 				  "opacity": 1
@@ -569,7 +569,7 @@
 		{
                   "name": "Landform Subtype OzEstuaries Reclassified 100K",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Landform_Subtype_OzEstuaries_Reclassified_100K",
                   "type": "wms",
 				  "opacity": 1
@@ -577,7 +577,7 @@
 		{
                   "name": "Landform Subtype Geomorphology Reclassified 100K",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Landform_Subtype_Geomorphology_Reclassified_100K",
                   "type": "wms",
 				  "opacity": 1
@@ -585,7 +585,7 @@
 		{
                   "name": "Landform Subtype Geomorphology Reclassified 50K",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Landform_Subtype_Geomorphology_Reclassified_50K",
                   "type": "wms",
 				  "opacity": 1
@@ -593,7 +593,7 @@
 		{
                   "name": "Landform Subtype Surface Geology Reclassified 25K",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Landform_Subtype_Surface_Geology_Reclassified_25K",
                   "type": "wms",
 				  "opacity": 1
@@ -601,7 +601,7 @@
 		{
                   "name": "Landform_Subtype_Regolith_Reclassified_25K",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Landform_Subtype_Regolith_Reclassified_25K",
                   "type": "wms",
 				  "opacity": 1
@@ -609,7 +609,7 @@
 		{
                   "name": "Landform Subtype Geomorphology Reclassified 25K",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Landform_Subtype_Geomorphology_Reclassified_25K",
                   "type": "wms",
 				  "opacity": 1
@@ -634,7 +634,7 @@
 				{
                   "name": "Geomorphic Smartline",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Geomorphic_Smartline",
                   "type": "wms",
 				  "opacity": 1
@@ -642,7 +642,7 @@
 		{
                   "name": "Guide 500K",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Guide_500K",
                   "type": "wms",
 				  "opacity": 1
@@ -650,7 +650,7 @@
 		{
                   "name": "Guide 250K",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Guide_250K",
                   "type": "wms",
 				  "opacity": 1
@@ -658,7 +658,7 @@
 		{
                   "name": "Guide 100K",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Guide_100K",
                   "type": "wms",
 				  "opacity": 1
@@ -666,7 +666,7 @@
 		{
                   "name": "Guide 50K",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Guide_50K",
                   "type": "wms",
 				  "opacity": 1
@@ -674,7 +674,7 @@
 		{
                   "name": "Guide 25K",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Guide_25K",
                   "type": "wms",
 				  "opacity": 1
@@ -699,7 +699,7 @@
 				{
                   "name": "Backshore landform - proximal",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Backshore_landform_proximal",
                   "type": "wms",
 				  "opacity": 1
@@ -707,7 +707,7 @@
 		{
                   "name": "Backshore landform - distal",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Backshore_landform_distal",
                   "type": "wms",
 				  "opacity": 1
@@ -715,7 +715,7 @@
 		{
                   "name": "Backshore - slope profile",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Backshore_slope_profile",
                   "type": "wms",
 				  "opacity": 1
@@ -723,7 +723,7 @@
 		{
                   "name": "Intertidal - dominate landform",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Intertidal_dominate_landform",
                   "type": "wms",
 				  "opacity": 1
@@ -731,7 +731,7 @@
 		{
                   "name": "Intertidal - secondary landform",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Intertidal_secondary_landform",
                   "type": "wms",
 				  "opacity": 1
@@ -739,7 +739,7 @@
 		{
                   "name": "Intertidal zone - slope profile",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Intertidal_zone_slope_profile",
                   "type": "wms",
 				  "opacity": 1
@@ -747,7 +747,7 @@
 		{
                   "name": "Subtidal - dominate landform",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Subtidal_dominate_landform",
                   "type": "wms",
 				  "opacity": 1
@@ -755,7 +755,7 @@
 		{
                   "name": "Subtidal - secondary landform",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Subtidal_secondary_landform",
                   "type": "wms",
 				  "opacity": 1
@@ -763,7 +763,7 @@
 		{
                   "name": "Shoreline segment exposure to waves",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Shoreline_segment_exposure_to_waves",
                   "type": "wms",
 				  "opacity": 1
@@ -771,7 +771,7 @@
 		{
                   "name": "Geology - primary substrate",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Geology_primary_substrate",
                   "type": "wms",
 				  "opacity": 1
@@ -779,7 +779,7 @@
 		{
                   "name": "Geology - secondary substrate",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Geology_secondary_substrate",
                   "type": "wms",
 				  "opacity": 1
@@ -787,7 +787,7 @@
 		{
                   "name": "Muddy",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Muddy",
                   "type": "wms",
 				  "opacity": 1
@@ -795,7 +795,7 @@
 		{
                   "name": "Sandy",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Sandy",
                   "type": "wms",
 				  "opacity": 1
@@ -803,7 +803,7 @@
 		{
                   "name": "Dunes",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Dunes",
                   "type": "wms",
 				  "opacity": 1
@@ -811,7 +811,7 @@
 		{
                   "name": "Coarsed",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Coarsed",
                   "type": "wms",
 				  "opacity": 1
@@ -819,7 +819,7 @@
 		{
                   "name": "Undifsed",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Undifsed",
                   "type": "wms",
 				  "opacity": 1
@@ -827,7 +827,7 @@
 		{
                   "name": "Softrock",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Softrock",
                   "type": "wms",
 				  "opacity": 1
@@ -835,7 +835,7 @@
 		{
                   "name": "Hardrock",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Hardrock",
                   "type": "wms",
 				  "opacity": 1
@@ -843,7 +843,7 @@
 		{
                   "name": "Undfrock",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Undfrock",
                   "type": "wms",
 				  "opacity": 1
@@ -851,7 +851,7 @@
 		{
                   "name": "Coral",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Coral",
                   "type": "wms",
 				  "opacity": 1
@@ -859,7 +859,7 @@
 		{
                   "name": "Unclass",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Unclass",
                   "type": "wms",
 				  "opacity": 1
@@ -867,7 +867,7 @@
 		{
                   "name": "Geomorphic Smartline",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Geomorphic_Smartline",
                   "type": "wms",
 				  "opacity": 1
