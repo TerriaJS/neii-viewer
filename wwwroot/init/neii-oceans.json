@@ -1784,8 +1784,9 @@
       {
               "name": "AIMS Sea Water Temperature Observing System (AIMS Temperature Logger Program)",
 	      "description": "The data provided here are from a number of sea water temperature monitoring programs conducted in tropical and subtropical coral reefs environments around Australia. Data are available from approximately 80 GBR sites, 16 Coral Sea sites, 7 sites in North West Western Australia (WA), 8 Queensland regional ports, 13 sites in the Solitary Islands, 4 sites in PNG and 10 sites in the Cocos (Keeling) Islands. Data are obtained from in-situ data loggers deployed on the reef. Data loggers instantaneously record sea temperatures every 30 minutes and are exchanged and downloaded approximately every 12 months. Temperature loggers on the reef-flat are generally placed just below Lowest Astronomical Tide level. Reef-slope (or where specified as Upper reef-slope) generally refers to depths 5 - 9 m while Deep reef-slope refers to depths of ~20 m.<br/>Reefs are under threat from climate change. Elevated sea temperature is a major stress to reefs, capable of causing widespread coral bleaching and mortality. Small excursions of temperature outside normal summer levels can cause stress and bleaching in corals, especially sensitive species. Temperature data from this program are used to correlate with bleaching events and derive local bleaching thresholds. Data are also used in a wide variety of other marine research programs, including fisheries, balast water, turtles, sea birds, seagrass, coral disease, oceanography, process studies, validation of proxy climate records etc.",
-              "url": "https://geoserver.data.aims.gov.au/ows?service=WFS&version=1.0.0&request=GetCapabilities&typeName=aims:temperature_data",
-              "type": "wfs-getCapabilities"
+              "url": "https://geoserver.data.aims.gov.au/ows?service=WFS&version=1.0.0&request=GetCapabilities",
+	      "typeNames": "aims:temperature_deployment",
+   	      "type": "wfs"
       }
           ]
         }
