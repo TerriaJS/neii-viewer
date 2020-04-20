@@ -82,12 +82,6 @@
                       "featureInfoTemplate": {
                         "template": "{{#value}}{{value}} µg/L{{/value}}"
                       },
-                      "rectangle": [
-                        142,
-                        -9.5,
-                        156,
-                        -25.5
-                      ],
                       "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/mwq_gridAgg_P1A"
                     },
                     {
@@ -111,12 +105,6 @@
                       "featureInfoTemplate": {
                         "template": "{{value}} <a href=\"http://environment.data.gov.au/def/property/absorption_by_colored_dissolved_organic_solids\">m<sup>-1</sup></a>"
                       },
-                      "rectangle": [
-                        142,
-                        -9.5,
-                        156,
-                        -25.5
-                      ],
                       "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/mwq_gridAgg_P1A"
                     },
                     {
@@ -140,12 +128,6 @@
                       "featureInfoTemplate": {
                         "template": "{{value}} <a href=\"http://environment.data.gov.au/def/property/absorption_by_non-algal_particles\">m<sup>-1</sup></a>"
                       },
-                      "rectangle": [
-                        142,
-                        -9.5,
-                        156,
-                        -25.5
-                      ],
                       "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/mwq_gridAgg_P1A"
                     }
                   ]
@@ -172,12 +154,6 @@
                         "VERSION": "1.1.1"
                       },
                       "type": "wms",
-                      "rectangle": [
-                        142,
-                        -9.5,
-                        156,
-                        -25.5
-                      ],
                       "featureInfoTemplate": {
                         "template": "{{#value}}{{value}} µg/L{{/value}}"
                       },
@@ -201,12 +177,6 @@
                         "VERSION": "1.1.1"
                       },
                       "type": "wms",
-                      "rectangle": [
-                        142,
-                        -9.5,
-                        156,
-                        -25.5
-                      ],
                       "featureInfoTemplate": {
                         "template": "{{value}} <a href=\"http://environment.data.gov.au/def/property/absorption_by_colored_dissolved_organic_solids\">m<sup>-1</sup></a>"
                       },
@@ -230,12 +200,6 @@
                         "VERSION": "1.1.1"
                       },
                       "type": "wms",
-                      "rectangle": [
-                        142,
-                        -9.5,
-                        156,
-                        -25.5
-                      ],
                       "featureInfoTemplate": {
                         "template": "{{value}} <a href=\"http://environment.data.gov.au/def/property/absorption_by_non-algal_particles\">m<sup>-1</sup></a>"
                       },
@@ -265,12 +229,6 @@
                         "VERSION": "1.1.1"
                       },
                       "type": "wms",
-                      "rectangle": [
-                        142,
-                        -9.5,
-                        156,
-                        -25.5
-                      ],
                       "featureInfoTemplate": {
                         "template": "{{#value}}{{value}} µg/L{{/value}}"
                       },
@@ -294,12 +252,6 @@
                         "VERSION": "1.1.1"
                       },
                       "type": "wms",
-                      "rectangle": [
-                        142,
-                        -9.5,
-                        156,
-                        -25.5
-                      ],
                       "featureInfoTemplate": {
                         "template": "{{value}} <a href=\"http://environment.data.gov.au/def/property/absorption_by_colored_dissolved_organic_solids\">m<sup>-1</sup></a>"
                       },
@@ -323,12 +275,6 @@
                         "VERSION": "1.1.1"
                       },
                       "type": "wms",
-                      "rectangle": [
-                        142,
-                        -9.5,
-                        156,
-                        -25.5
-                      ],
                       "featureInfoTemplate": {
                         "template": "{{value}} <a href=\"http://environment.data.gov.au/def/property/absorption_by_non-algal_particles\">m<sup>-1</sup></a>"
                       },
