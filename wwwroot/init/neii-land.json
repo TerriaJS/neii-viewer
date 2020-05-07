@@ -167,7 +167,7 @@
 				  "opacity": 1
                 },
 				{
-                  "name": "TectonicProvinces - Paleozoic Mesozoic",
+                  "name": "Tectonic Provinces - Paleozoic Mesozoic",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
                   "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "TectonicProvinces-PaleozoicMesozoic",
