@@ -11,6 +11,7 @@
           "items": [
             {
 	      "name": "NSW BioNet Flora Survey Data Collection",
+	      "description": "The NSW BioNet Flora Survey Data Collection is maintained via the Flora Survey Module of the NSW BioNet-Atlas application. This collection is a central, authoritative database for systematic vegetation survey data in NSW. Among other applications, this plot data is used to construct and maintain the quantitative Plant Community Type classification & Vegetation Integrity Benchmarks held in the BioNet Vegetation Classification Data Collection. These plots are also used to construct and update State Vegetation Type Maps held in the BioNet Vegetation Map Data Collection.",
 	      "type": "wms",
 	      "url": "https://mapprod.environment.nsw.gov.au/arcgis/services/EDP/SystematicFloraSurvey/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities",
 	      "layers": "0"
