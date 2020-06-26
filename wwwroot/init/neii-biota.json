@@ -6,9 +6,15 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Biota (0)",
+          "name": "Biota (1)",
           "type": "group",
-          "items": []
+          "items": [
+            {
+	      "name": "NSW BioNet Flora Survey Data Collection",
+	      "type": "wms",
+	      "url": "https://mapprod.environment.nsw.gov.au/arcgis/services/EDP/SystematicFloraSurvey/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities"
+	    }
+          ]
         }
       ]
     }
