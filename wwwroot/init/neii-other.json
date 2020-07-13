@@ -10,7 +10,7 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Other (1)",
+          "name": "Other (2)",
           "type": "group",
           "items": [
             {
@@ -607,7 +607,25 @@
                   ]
                 }
               ]
-            }
+            },
+	    {
+              "name": "Beta/Prototypes",
+	      "type": "group",
+	      "items": [
+	        {
+	          "name": "Moving sites (sampled)",
+		  "nameInCatalog": "Sampled",
+		  "type": "csv",
+		  "url": "http://neii.bom.gov.au/neii-analytics/testing_nemsr_move.csv",
+		  "idColumns": ["id"],
+                  "tableStyle": 
+		    {
+                      "dataVariable": "value",
+                      "scaleByValue": false
+                    }
+		}
+	      ]
+	    }
           ]
         }
       ]
