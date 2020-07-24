@@ -613,8 +613,8 @@
 	      "type": "group",
 	      "items": [
 	        {
-	          "name": "Moving sites (sampled)",
-		  "nameInCatalog": "Sampled",
+	          "name": "Collections of Prototypes",
+		  "nameInCatalog": "Moving sites",
 		  "type": "csv",
 		  "url": "http://neii.bom.gov.au/neii-analytics/testing_nemsr_move.csv",
 		  "idColumns": ["id"],
@@ -623,6 +623,41 @@
                       "dataVariable": "value",
                       "scaleByValue": false
                     }
+		},
+		{
+		  "name": "Climate Data (BOM)",
+		  "type": "group",
+		  "preserveOrder": "true",
+		  "items": [
+	            {
+		      "name": "Rainfall Average Annual",
+		      "type": "wms",
+		      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?version=1.1.1&service=WMS&request=GetCapabilities",
+		      "layers": "IDCJCM000400",
+                      "opacity": 1
+		    },
+		    {
+		      "name": "Solar Exposure Daily Average Annual",
+		      "type": "wms",
+		      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+		      "layers": "IDCJCM001900",
+                      "opacity": 1
+		    },
+		    {
+		      "name": "Temperature Max Average Annual",
+		      "type": "wms",
+		      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+		      "layers": "IDCJCM000513", 
+                      "opacity": 1
+		    },
+		    {
+		      "name": "Temperature Min Average Annual",
+		      "type": "wms",
+		      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+		      "layers": "IDCJCM000500",
+                      "opacity": 1
+		    }
+		  ]
 		}
 	      ]
 	    }
