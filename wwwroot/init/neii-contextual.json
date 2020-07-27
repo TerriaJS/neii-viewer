@@ -28,48 +28,30 @@
           "dataUrl": "http://www.abs.gov.au/ausstats/subscriber.nsf/log?openagent&1270055001_ste_2011_aust_shape.zip&1270.0.55.001&Data%20Cubes&1D26EC44E6ABD911CA257801000D8779&0&July%202011&23.12.2010&Latest"
         },
         {
-          "layers": "admin_bnds:LGA_2011_AUST",
-          "url": "http://geoserver.nationalmap.nicta.com.au/admin_bnds_abs/ows",
-          "type": "wms",
-          "rectangle": [
-            112.92111,
-            -43.7405,
-            153.63872,
-            -9.14217
-          ],
-          "dataCustodian": "[Australian Bureau of Statistics](http://www.abs.gov.au/)",
-          "name": "Local Government Areas",
-          "description": "Local Government Areas",
+	  "layers": "LGA",
+	  "url": "https://geo.abs.gov.au/arcgis/rest/services/ASGS2019/LGA/MapServer",
+          "type": "esri-mapServer",
+          "name": "Local Government Areas (2019)",
+          "description": "Local Government Areas (2019)",
           "info": [
             {
               "name": "Licence",
               "content": "[Creative Commons Attribution 2.5 Australia (CC BY 2.5 AU)](http://creativecommons.org/licenses/by/2.5/au/)"
             }
-          ],
-          "dataUrlType": "direct",
-          "dataUrl": "http://www.abs.gov.au/AUSSTATS/subscriber.nsf/log?openagent&1270055003_lga_2011_aust_shape.zip&1270.0.55.003&Data%20Cubes&4A320EE17A293459CA257937000CC967&0&July%202011&31.10.2011&Previous"
+          ]
         },
         {
-          "layers": "admin_bnds:POA_2011_AUST",
-          "url": "http://geoserver.nationalmap.nicta.com.au/admin_bnds_abs/ows",
-          "type": "wms",
-          "rectangle": [
-            96.81694,
-            -43.59821,
-            159.10921,
-            -9.14217
-          ],
-          "dataCustodian": "[Australian Bureau of Statistics](http://www.abs.gov.au/)",
-          "name": "Postal Areas",
-          "description": "Postal Areas",
+	  "layers": "POA",
+	  "url": "https://geo.abs.gov.au/arcgis/rest/services/ASGS2016/POA/MapServer",
+          "type": "esri-mapServer",
+          "name": "Postal Areas (2016)",
+          "description": "Postal Areas (2016)",
           "info": [
             {
               "name": "Licence",
               "content": "[Creative Commons Attribution 2.5 Australia (CC BY 2.5 AU)](http://creativecommons.org/licenses/by/2.5/au/)"
             }
-          ],
-          "dataUrlType": "direct",
-          "dataUrl": "http://www.abs.gov.au/AUSSTATS/subscriber.nsf/log?openagent&1270055003_poa_2011_aust_shape.zip&1270.0.55.003&Data%20Cubes&71B4572D909B934ECA2578D40012FE0D&0&July%202011&22.07.2011&Previous"
+          ]
         },
         {
           "layers": "admin_bnds:NRMR_2011_AUST",
