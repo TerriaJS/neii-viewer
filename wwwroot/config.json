@@ -6,7 +6,6 @@
     "neii-biota",
     "neii-land",
     "neii-other",
-    "neii-bushfires",
     "proxy/_60s/http://neii.bom.gov.au/cgi-bin/nemsr/get_viewer_config.json",
     "neii-contextual"
   ],
