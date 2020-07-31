@@ -8,22 +8,12 @@
       "name": "NEII Data Services – Conformant",
       "type": "group",
       "isOpen": false,
+      "preserveOrder": true,
       "items": [
-	{
-	  "name": "Bushfires (1)",
-          "type": "group",
-          "items": [
-            {
-              "name": "Digital Earth Australia - Burnt Areas",
-              "type": "wms",
-              "url": "https://hotspots.dea.ga.gov.au/geoserver/wms?service=wms&request=getcapabilities",
-              "layers": "umd_burnt_areas"
-            }
-          ]
-	},
         {
           "name": "Other (3)",
           "type": "group",
+	  "preserveOrder": true,
           "items": [
             {
               "name": "Satellite Imagery",
@@ -623,14 +613,17 @@
 	    {
 	      "name": "Climate",
 	      "type": "group",
+	      "preserveOrder": true,
 	      "items": [
 		{
 		  "name": "Grids",
 		  "type": "group",
+	          "preserveOrder": true,
 		  "items": [
 		    {
 		      "name": "Rainfall",
 		      "type": "group",
+	              "preserveOrder": true,
 		      "items": [
 		        {
 			  "name": "Rainfall Average Annual | Australia | mm",
@@ -643,6 +636,7 @@
 		    {
 		      "name": "Temperature",
 		      "type": "group",
+	              "preserveOrder": true,
 		      "items": [
 		        {
 			  "name": "Temperature Min Average Annual | Australia | degC",
@@ -661,6 +655,7 @@
 		    {
 		      "name": "Solar",
 		      "type": "group",
+	              "preserveOrder": true,
 		      "items": [
 		        {
 			  "name": "Solar Exposure Daily Average Annual | Australia | MJ/m2",
@@ -747,6 +742,7 @@
 		{
 		  "name": "Sites",
 		  "type": "group",
+	          "preserveOrder": true,
 		  "items": [
 		    {
 		      "name": "Rainfall Stations (open) | Aust. Region",
@@ -897,114 +893,13 @@
 		{
 		  "name": "BOM_boundaries",
 		  "type": "group",
+	          "preserveOrder": true,
 		  "items": [
 		    {
 		      "name": "BOM Rainfall Districts | Australia | 2 M",
 		      "type": "wms",
 		      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
 		      "layers": "IDM00004"
-		    }
-		  ]
-		},
-		{
-		  "name": "Background",
-		  "type": "group",
-		  "items": [
-		    {
-		      "name": "GA_Drainage",
-		      "type": "group",
-		      "items": [
-		        {
-		          "name": "River Basins | Australia | 250 K | Geoscience Australia",
-		          "type": "wms",
-		          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
-		          "layers": "IDZ10009"
-		        }
-		      ]
-		    },
-		    {
-		      "name": "GA_Placenames",
-		      "type": "group",
-		      "items": [
-		        {
-		          "name": "Capital cities | Australia | 250K | Geoscience Australia",
-		          "type": "wms",
-		          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
-		          "layers": "IDZ10008_cap_city"
-		        },
-		        {
-		          "name": "Place names | Australia | 250K | Geoscience Australia",
-		          "type": "wms",
-		          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
-		          "layers": "IDZ10008"
-		        },
-		        {
-		          "name": "Place names (black) | Australia | 250K | Geoscience Australia",
-		          "type": "wms",
-		          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
-		          "layers": "IDZ10008_black"
-		        }
-		      ]
-		    },
-		    {
-		      "name": "GA_Topology_1M",
-		      "type": "group",
-		      "items": [
-		        {
-		          "name": "States and off-shore islands | Australia | 1 M | Geoscience Australia",
-		          "type": "wms",
-		          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
-		          "layers": "IDZ10005_poly"
-		        },
-		        {
-		          "name": "States and off-shore islands (outline) | Australia | 1 M | Geoscience Australia",
-		          "type": "wms",
-		          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
-		          "layers": "IDZ10005_line"
-		        }
-		      ]
-		    },
-		    {
-		      "name": "GA_Topology_2p5M",
-		      "type": "group",
-		      "items": [
-		        {
-		          "name": "Roads | Australia | 2.5 M | Geoscience Australia",
-		          "type": "wms",
-		          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
-		          "layers": "IDZ10006"
-		        }
-		      ]
-		    },
-		    {
-		      "name": "GA_Topology_10M",
-		      "type": "group",
-		      "items": [
-		        {
-		          "name": "Elevaton | Australia | 10 M | Geoscience Australia",
-		          "type": "wms",
-		          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
-		          "layers": "IDZ10004"
-		        }
-		      ]
-		    },
-		    {
-		      "name": "GA_Topology_250K",
-		      "type": "group",
-		      "items": [
-		        {
-		          "name": "Lakes (Named) | Australia | 250K | Geoscience Australia",
-		          "type": "wms",
-		          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
-		          "layers": "IDZ10000"
-		        },
-		        {
-		          "name": "Watercourses (Major Named) | Australia | 250 K | Geoscience Australia",
-		          "type": "wms",
-		          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
-		          "layers": "IDZ10001"
-		        }
-		      ]
 		    }
 		  ]
 		}
@@ -1064,7 +959,21 @@
 	      ]
 	    }
           ]
-        }
+        },
+	{
+	  "name": "Bushfires (1)",
+          "type": "group",
+	  "preserveOrder": true,
+          "items": [
+            {
+              "name": "Digital Earth Australia - Burnt Areas",
+	      "preserveOrder": true,
+              "type": "wms",
+              "url": "https://hotspots.dea.ga.gov.au/geoserver/wms?service=wms&request=getcapabilities",
+              "layers": "umd_burnt_areas"
+            }
+          ]
+	}
       ]
     }
   ]
