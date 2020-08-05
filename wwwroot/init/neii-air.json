@@ -133,7 +133,14 @@
 	    {
 	      "name": "Australian Climate (BoM)",
 	      "type": "group",
+	      "description": "Bureau of Meteorology Climate Data Information Online",
 	      "preserveOrder": true,
+              "info": [
+                {
+                  "name": "Data Custodian",
+                  "content": "[Bureau of Meteorology](http://www.bom.gov.au/)"
+                }
+	      ],
 	      "items": [
 	        {
 		  "name": "Grids",
