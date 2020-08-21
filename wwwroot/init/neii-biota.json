@@ -6,7 +6,7 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Biota (1)",
+          "name": "Biota (2)",
           "type": "group",
           "items": [
             {
@@ -15,6 +15,66 @@
 	      "type": "wms",
 	      "url": "https://mapprod.environment.nsw.gov.au/arcgis/services/EDP/SystematicFloraSurvey/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities",
 	      "layers": "0"
+	    },
+	    {
+	      "name": "eAtlas - Australia's Tropical Land and Seas",
+	      "type": "group",
+	      "description": "The eAtlas is a website and mapping system for presenting environmental research data in an accessible form that promotes greater use of this information. It is also a data management system for preserving and encouraging reuse of this data.\nDecades of research have generated a large amount of data and information on the Great Barrier Reef and the terrestrial tropical ecosystems. Until now this information has generally been under-used. The eAtlas aims to promote collaboration and support the work of management agencies, researchers, reef-based industries and community groups.\nFrom the site, users can discover what research is being done in a given region or on a given topic, then learn more about this research and its outcomes. The data behind the research can be investigated through an interactive mapping system and, where possible, the data itself can be downloaded. The eAtlas also contains a wide range of reference datasets that complement its research content.",
+	      "info": [
+	        {
+		  "name": "Further Information",
+		  "content": "[About eAtlas](https://eatlas.org.au/content/about-e-atlas)"
+		}
+	      ],
+	      "items": [
+	        {
+		  "name": "Biota",
+		  "type": "group",
+		  "items": [
+		    {
+		      "name": "QLD: Venomous Jellyfish Database - November, 2018 (NESP TWQ 2.2.3, CSIRO)",
+		      "type": "wms",
+		      "description": "This layer contains an extract of the public records of the Venomous Jellyfish Database compiled in November 2018 and shows the month of the sting event / specimen sample.\nNote: Care should be taken in making conclusions about the spatial nature of the sting events as the data is incomplete (subset of all sting events) and influenced by the density and behaviour of people.",
+                      "url": "https://maps.eatlas.org.au/maps/wfs?service=WFS&version=1.1.0&request=GetCapabilities",
+		      "layers": "nesp2:AU_NESP-TWQ-2-2-3_CSIRO_Venomous-Jellyfish-DB_extract_20181130"
+		    },
+		    {
+		      "name": "GBR: Marine bioregions reefs (GBRMPA, 2002)",
+		      "type": "wms",
+		      "description": "This layer shows the bioregions of the reef areas in the Great Barrier Reef Marine Park.",
+                      "url": "https://maps.eatlas.org.au/maps/wfs?service=WFS&version=1.1.0&request=GetCapabilities",
+		      "layers": "ea:GBR_GBRMPA_Marine-bioregions_2002_Reefs"
+		    }
+		  ]
+		},
+		{
+		  "name": "Marine Biology",
+		  "type": "group",
+		  "items": [
+		    {
+		      "name": "Grey Reef shark (Carcharhinus amblyrhynchos)",
+                      "type": "wms",
+		      "description": "This layer shows the abundance of Grey Reef shark (Carcharhinus amblyrhynchos) across the Great Barrier Reef as measured with Baited Remote Underwater Video Stations (BRUVS). This was done as a study to compare fish abundance between pairs of shoals, one closed to fishing (Green zone) and one open to fishing (Blue zone). This layer is a summary of all the BRUVS data, aggregating all the BRUVS taken at each site (typically 12).\nNote: The position of the sites has been rounded to 0.01 degrees to protect the sites from fishing.",
+                      "url": "https://maps.eatlas.org.au/maps/wfs?service=WFS&version=1.1.0&request=GetCapabilities",
+                      "layers": "ea:GBR_AIMS_BRUVS_Car-amblyns"
+		    },
+		    {
+		      "name": "Starry Triggerfish (Abalistes stellatus)",
+                      "type": "wms",
+		      "description": "This layer shows the abundance of Starry Triggerfish (Abalistes stellatus) across the Great Barrier Reef as measured with Baited Remote Underwater Video Stations (BRUVS).\nThis was done as a study to compare fish abundance between pairs of shoals, one closed to fishing (Green zone) and one open to fishing (Blue zone). This layer is a summary of all the BRUVS data, aggregating all the BRUVS taken at each site (typically 12).\nNote: The position of the sites has been rounded to 0.01 degrees to protect the sites from fishing.",
+                      "url": "https://maps.eatlas.org.au/maps/wfs?service=WFS&version=1.1.0&request=GetCapabilities",
+                      "layers": "ea:GBR_AIMS_BRUVS_Aba-stelus"
+		    },
+		    {
+		      "name": "Coral Trout (Plectropomus leopardus)",
+		      "type": "wms",
+		      "description": "This layer shows the abundance of Coral Trout (Plectropomus leopardus) across the Great Barrier Reef as measured with Baited Remote Underwater Video Stations (BRUVS). This was done as a study to compare fish abundance between pairs of shoals, one closed to fishing (Green zone) and one open to fishing (Blue zone). This layer is a summary of all the BRUVS data, aggregating all the BRUVS taken at each site (typically 12).\nNote: The position of the sites has been rounded to 0.01 degrees to protect the sites from fishing.",
+                      "url": "https://maps.eatlas.org.au/maps/wfs?service=WFS&version=1.1.0&request=GetCapabilities",
+                      "layers": "ea:GBR_AIMS_BRUVS_Ple-leopus"
+		    }
+		  ]
+		}
+	      ]
 	    }
           ]
         }
