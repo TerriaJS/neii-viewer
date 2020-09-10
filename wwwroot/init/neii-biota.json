@@ -19,14 +19,14 @@
 	      "layers": "0"
 	    },
 	    {
-	      "name": "Department of Agriculture, Water and the Environment",
+	      "name": "National Vegetation Information System (DoAWE)",
 	      "type": "group",
               "preserveOrder": true,
 	      "description": "NVIS information has been compiled to enable Australia-wide analyses of the Major Vegetation Groups (MVGs) and Major Vegetation Subgroups (MVSs), which are based on the detailed NVIS Level I-VI data. Some non-NVIS data have been used in the development of these products where gaps exist in the NVIS spatial data.\nThese broader-scale interpretations are limited to 33 MVGs and 85 MVSs that represent the dominant vegetation in each spatial feature. (Note: the exact number of Groups and Subgroups varies between some NVIS versions.)\nThese products are designed for broad use at a national or state-wide scale or for simple vegetation descriptions at a regional scale. They are available in Present (Extant) and Estimated Pre-1750 (pre-European) vegetation themes.",
 	      "info": [
 		{
 		  "name": "Further Information",
-		  "content": "[About](https://www.environment.gov.au/land/native-vegetation/national-vegetation-information-system/)"
+		  "content": "[About NVIS](https://www.environment.gov.au/land/native-vegetation/national-vegetation-information-system/)"
 		}
 	      ],
 	      "items": [
