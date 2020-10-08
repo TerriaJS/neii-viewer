@@ -6,7 +6,7 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Land (10)",
+          "name": "Land (11)",
           "type": "group",
           "items": [
             {
@@ -672,8 +672,8 @@
 				  "opacity": 1
 		}
 	      ]
-			},
-			{
+	},
+	{
               "name": "Australian Coastal Geomorphology Smartline",
               "type": "group",
               "description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.",
@@ -865,7 +865,14 @@
 				  "opacity": 1
 		}
 	      ]
-			}
+     	    },
+	    {
+		"name": "Victorian Soil Type Mapping (DELWP)",
+	        "description": "A spatial map layer of soil type (Australian Soil Classification) for Victoria. The harmonised map consists of 3,300 land units (totaling about 225,000 polygons) derived from around 100 soil and land surveys carried out in Victoria over the past 70 years. The land units have been attributed according to the Australian Soil Classification (Order and Suborder levels of the classification scheme) based on their likely dominant soil type. Particular attention was given to harmonising land units across survey boundaries. A reliability index has been assigned to each land unit based on the quality and relevance of the originating survey, providing a qualitative reliability measure to support interpretation and data use.",
+	        "url": "http://services.land.vic.gov.au/catalogue/publicproxy/guest/dv_geoserver/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+	        "layers": "datavic:CATCHMENTS_SOIL_TYPE",
+	        "type": "wms"
+	    }
           ]
         }
       ]
