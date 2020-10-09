@@ -6,7 +6,7 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Land (11)",
+          "name": "Land (15)",
           "type": "group",
           "items": [
             {
@@ -872,13 +872,19 @@
 	        "url": "http://services.land.vic.gov.au/catalogue/publicproxy/guest/dv_geoserver/wms?service=WMS&version=1.3.0&request=GetCapabilities",
 	        "layers": "datavic:CATCHMENTS_SOIL_TYPE",
 	        "type": "wms",
+		"dataCustodian": "[Department of Environment, Land, Water and Planning, State Government of Victoria](https://www.delwp.vic.gov.au/)",
+                "info": [
+                  {
+                    "name": "Licensing, Terms & Conditions",
+                    "content": "[Licence](https://www.delwp.vic.gov.au/copyright)"
+                  }
+                ],
 		"rectangle": [
                 "140.9206",
                 "-39.1623",
                 "150.3",
                 "-33.9857"
               ]
-
 	    }
           ]
         }
