@@ -871,7 +871,14 @@
 	        "description": "A spatial map layer of soil type (Australian Soil Classification) for Victoria. The harmonised map consists of 3,300 land units (totaling about 225,000 polygons) derived from around 100 soil and land surveys carried out in Victoria over the past 70 years. The land units have been attributed according to the Australian Soil Classification (Order and Suborder levels of the classification scheme) based on their likely dominant soil type. Particular attention was given to harmonising land units across survey boundaries. A reliability index has been assigned to each land unit based on the quality and relevance of the originating survey, providing a qualitative reliability measure to support interpretation and data use.",
 	        "url": "http://services.land.vic.gov.au/catalogue/publicproxy/guest/dv_geoserver/wms?service=WMS&version=1.3.0&request=GetCapabilities",
 	        "layers": "datavic:CATCHMENTS_SOIL_TYPE",
-	        "type": "wms"
+	        "type": "wms",
+		"rectangle": [
+                "140.9206",
+                "-39.1623",
+                "150.3",
+                "-33.9857"
+              ]
+
 	    }
           ]
         }
