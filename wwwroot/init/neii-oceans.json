@@ -65,6 +65,12 @@
                       "description": "Chlorophyll-a, reflecting wavelengths in the green part of the visible light spectrum, is the substance that helps plants capture the sun’s energy. In the water, it indicates the presence of microscopic green algae (phytoplankton). While these plants are a natural part of the reef ecosystem, elevated numbers (a bloom) of phytoplankton signal elevated nutrient levels, especially nitrogen, in the water. Typical sources are runoff from excess fertiliser being applied to crops and, to a lesser extent in the Great Barrier Reef region, sewage contamination from urban areas.",
                       "layers": "Chl_MIM_median",
                       "name": "Chlorophyll-a concentration (annual median)",
+		      "info": [
+		        {
+			  "name": "Service Contact",
+			  "content": "Senior Ocean Colour Scientist<br>[sros@bom.gov.au](mailto:sros@bom.gov.au)"
+			}
+		      ],
                       "parameters": {
                         "ABOVEMAXCOLOR": "0xAF324B",
                         "BELOWMINCOLOR": "transparent",
@@ -88,6 +94,12 @@
                       "abstract": "...",
                       "layers": "CDOM_MIM_median",
                       "name": "Coloured dissolved organic matter (annual median)",
+		      "info": [
+		        {
+			  "name": "Service Contact",
+			  "content": "Senior Ocean Colour Scientist<br>[sros@bom.gov.au](mailto:sros@bom.gov.au)"
+			}
+		      ],
                       "parameters": {
                         "ABOVEMAXCOLOR": "0xAF324B",
                         "BELOWMINCOLOR": "transparent",
@@ -111,6 +123,12 @@
                       "abstract": "...",
                       "layers": "Nap_MIM_median",
                       "name": "Non-algal particles (annual median)",
+		      "info": [
+		        {
+			  "name": "Service Contact",
+			  "content": "Senior Ocean Colour Scientist<br>[sros@bom.gov.au](mailto:sros@bom.gov.au)"
+			}
+		      ],
                       "parameters": {
                         "ABOVEMAXCOLOR": "0xAF324B",
                         "BELOWMINCOLOR": "transparent",
@@ -140,6 +158,12 @@
                       "abstract": "Chlorophyll-a, reflecting wavelengths in the green part of the visible light spectrum, is the substance that helps plants capture the sun’s energy. In the water, it indicates the presence of microscopic green algae (phytoplankton). While these plants are a natural part of the reef ecosystem, elevated numbers (a bloom) of phytoplankton signal elevated nutrient levels, especially nitrogen, in the water. Typical sources are runoff from excess fertiliser being applied to crops and, to a lesser extent in the Great Barrier Reef region, sewage contamination from urban areas.",
                       "layers": "Chl_MIM_median",
                       "name": "Chlorophyll-a concentration (seasonal)",
+		      "info": [
+		        {
+			  "name": "Service Contact",
+			  "content": "Senior Ocean Colour Scientist<br>[sros@bom.gov.au](mailto:sros@bom.gov.au)"
+			}
+		      ],
                       "parameters": {
                         "ABOVEMAXCOLOR": "0xAF324B",
                         "BELOWMINCOLOR": "transparent",
@@ -163,6 +187,12 @@
                       "abstract": "...",
                       "layers": "CDOM_MIM_median",
                       "name": "Coloured dissolved organic matter (seasonal)",
+		      "info": [
+		        {
+			  "name": "Service Contact",
+			  "content": "Senior Ocean Colour Scientist<br>[sros@bom.gov.au](mailto:sros@bom.gov.au)"
+			}
+		      ],
                       "parameters": {
                         "ABOVEMAXCOLOR": "0xAF324B",
                         "BELOWMINCOLOR": "transparent",
@@ -186,6 +216,12 @@
                       "abstract": "...",
                       "layers": "Nap_MIM_median",
                       "name": "Non-algal particles (seasonal)",
+		      "info": [
+		        {
+			  "name": "Service Contact",
+			  "content": "Senior Ocean Colour Scientist<br>[sros@bom.gov.au](mailto:sros@bom.gov.au)"
+			}
+		      ],
                       "parameters": {
                         "ABOVEMAXCOLOR": "0xAF324B",
                         "BELOWMINCOLOR": "transparent",
@@ -215,6 +251,12 @@
                       "abstract": "Chlorophyll-a, reflecting wavelengths in the green part of the visible light spectrum, is the substance that helps plants capture the sun’s energy. In the water, it indicates the presence of microscopic green algae (phytoplankton). While these plants are a natural part of the reef ecosystem, elevated numbers (a bloom) of phytoplankton signal elevated nutrient levels, especially nitrogen, in the water. Typical sources are runoff from excess fertiliser being applied to crops and, to a lesser extent in the Great Barrier Reef region, sewage contamination from urban areas.",
                       "layers": "Chl_MIM_median",
                       "name": "Chlorophyll-a concentration (monthly)",
+		      "info": [
+		        {
+			  "name": "Service Contact",
+			  "content": "Senior Ocean Colour Scientist<br>[sros@bom.gov.au](mailto:sros@bom.gov.au)"
+			}
+		      ],
                       "parameters": {
                         "ABOVEMAXCOLOR": "0xAF324B",
                         "BELOWMINCOLOR": "transparent",
@@ -238,6 +280,12 @@
                       "abstract": "...",
                       "layers": "CDOM_MIM_median",
                       "name": "Coloured dissolved organic matter (monthly)",
+		      "info": [
+		        {
+			  "name": "Service Contact",
+			  "content": "Senior Ocean Colour Scientist<br>[sros@bom.gov.au](mailto:sros@bom.gov.au)"
+			}
+		      ],
                       "parameters": {
                         "ABOVEMAXCOLOR": "0xAF324B",
                         "BELOWMINCOLOR": "transparent",
@@ -261,6 +309,12 @@
                       "abstract": "...",
                       "layers": "Nap_MIM_median",
                       "name": "Non-algal particles (monthly)",
+		      "info": [
+		        {
+			  "name": "Service Contact",
+			  "content": "Senior Ocean Colour Scientist<br>[sros@bom.gov.au](mailto:sros@bom.gov.au)"
+			}
+		      ],
                       "parameters": {
                         "ABOVEMAXCOLOR": "0xAF324B",
                         "BELOWMINCOLOR": "transparent",
@@ -290,6 +344,12 @@
                       "abstract": "Chlorophyll-a, reflecting wavelengths in the green part of the visible light spectrum, is the substance that helps plants capture the sun’s energy. In the water, it indicates the presence of microscopic green algae (phytoplankton). While these plants are a natural part of the reef ecosystem, elevated numbers (a bloom) of phytoplankton signal elevated nutrient levels, especially nitrogen, in the water. Typical sources are runoff from excess fertiliser being applied to crops and, to a lesser extent in the Great Barrier Reef region, sewage contamination from urban areas.",
                       "layers": "Chl_MIM_median",
                       "name": "Chlorophyll-a concentration (weekly)",
+		      "info": [
+		        {
+			  "name": "Service Contact",
+			  "content": "Senior Ocean Colour Scientist<br>[sros@bom.gov.au](mailto:sros@bom.gov.au)"
+			}
+		      ],
                       "parameters": {
                         "ABOVEMAXCOLOR": "0xAF324B",
                         "BELOWMINCOLOR": "transparent",
@@ -313,6 +373,12 @@
                       "abstract": "...",
                       "layers": "CDOM_MIM_median",
                       "name": "Coloured dissolved organic matter (weekly)",
+		      "info": [
+		        {
+			  "name": "Service Contact",
+			  "content": "Senior Ocean Colour Scientist<br>[sros@bom.gov.au](mailto:sros@bom.gov.au)"
+			}
+		      ],
                       "parameters": {
                         "ABOVEMAXCOLOR": "0xAF324B",
                         "BELOWMINCOLOR": "transparent",
@@ -336,6 +402,12 @@
                       "abstract": "...",
                       "layers": "Nap_MIM_median",
                       "name": "Non-algal particles (weekly)",
+		      "info": [
+		        {
+			  "name": "Service Contact",
+			  "content": "Senior Ocean Colour Scientist<br>[sros@bom.gov.au](mailto:sros@bom.gov.au)"
+			}
+		      ],
                       "parameters": {
                         "ABOVEMAXCOLOR": "0xAF324B",
                         "BELOWMINCOLOR": "transparent",
@@ -365,6 +437,12 @@
                       "abstract": "Chlorophyll-a, reflecting wavelengths in the green part of the visible light spectrum, is the substance that helps plants capture the sun’s energy. In the water, it indicates the presence of microscopic green algae (phytoplankton). While these plants are a natural part of the reef ecosystem, elevated numbers (a bloom) of phytoplankton signal elevated nutrient levels, especially nitrogen, in the water. Typical sources are runoff from excess fertiliser being applied to crops and, to a lesser extent in the Great Barrier Reef region, sewage contamination from urban areas.",
                       "layers": "Chl_MIM",
                       "name": "Chlorophyll-a concentration (daily)",
+		      "info": [
+		        {
+			  "name": "Service Contact",
+			  "content": "Senior Ocean Colour Scientist<br>[sros@bom.gov.au](mailto:sros@bom.gov.au)"
+			}
+		      ],
                       "parameters": {
                         "ABOVEMAXCOLOR": "0xAF324B",
                         "BELOWMINCOLOR": "transparent",
@@ -388,6 +466,12 @@
                       "abstract": "...",
                       "layers": "CDOM_MIM",
                       "name": "Coloured dissolved organic matter (daily)",
+		      "info": [
+		        {
+			  "name": "Service Contact",
+			  "content": "Senior Ocean Colour Scientist<br>[sros@bom.gov.au](mailto:sros@bom.gov.au)"
+			}
+		      ],
                       "parameters": {
                         "ABOVEMAXCOLOR": "0xAF324B",
                         "BELOWMINCOLOR": "transparent",
@@ -411,6 +495,12 @@
                       "abstract": "...",
                       "layers": "Nap_MIM",
                       "name": "Non-algal particles (daily)",
+		      "info": [
+		        {
+			  "name": "Service Contact",
+			  "content": "Senior Ocean Colour Scientist<br>[sros@bom.gov.au](mailto:sros@bom.gov.au)"
+			}
+		      ],
                       "parameters": {
                         "ABOVEMAXCOLOR": "0xAF324B",
                         "BELOWMINCOLOR": "transparent",
