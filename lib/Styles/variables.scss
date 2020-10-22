@@ -1,6 +1,6 @@
-@import '~terriajs/lib/Sass/common/_variables.scss';
+@import "~terriajs/lib/Sass/common/_variables.scss";
 
-@import url(https://fonts.googleapis.com/css?family=Dosis:400,200,500);
+@import url(https://fonts.googleapis.com/css?family=Dosis:400, 200, 500);
 //$logo-height: 120px;
 
 // overrides
@@ -15,18 +15,21 @@ $font-size-feature-info: 0.9rem;
 $font-size-mini: 0.85rem;
 $font-size-credits: 0.65rem;
 
-$font-base: 'Dosis','HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-base: "Dosis", "HelveticaNeue-Light", "Helvetica Neue Light",
+  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $font-pop: $font-base;
 $font-feature-info: $font-base; // not mono
 $font-weight-normal: 500;
 
-$color-primary: #BCC94E;
-@function get-hover-color($base-color) {@return darken($base-color, 10%)}
-$color-secondary: #632D1A;
+$color-primary: #bcc94e;
+@function get-hover-color($base-color) {
+  @return darken($base-color, 10%);
+}
+$color-secondary: #632d1a;
 
-$dark: #4D4D4D;
+$dark: #4d4d4d;
 $dark-with-overlay: $dark;
-$dark-lighter: #7E7E7E;
+$dark-lighter: #7e7e7e;
 $dark-darker: darken($dark, 10%);
 $charcoal-grey: $dark-lighter;
 
@@ -39,29 +42,35 @@ $charcoal-grey: $dark-lighter;
 }
 @function get-visited-link-color($bg-color) {
   @if (lightness($bg-color) > 50) {
-    @return #BB5430; // Dark color needed on a light background
+    @return #bb5430; // Dark color needed on a light background
   } @else {
-    @return #BB5430; // Light color needed on a dark background
+    @return #bb5430; // Light color needed on a dark background
   }
 }
 
-$modal-secondary-bg: #FFFFFF;
-$modal-highlight: #BB5430;
-$modal-selected: #FFFFFF;
+$modal-secondary-bg: #ffffff;
+$modal-highlight: #bb5430;
+$modal-selected: #ffffff;
 $modal-tab-bg: $dark-lighter;
 $modal-selected-tab-bg: $modal-tab-bg;
 $modal-text: $dark;
-$dropdown-hover-color: #BB5430;
+$dropdown-hover-color: #bb5430;
 
 $data-catalog-color: $color-secondary;
 
-$feature-info-bg: $modal-bg;  // ie. white
+$feature-info-bg: $modal-bg; // ie. white
 $feature-info-color: $dark;
 $feature-info-header-bg: $dark-lighter;
 $feature-info-btn-color: $modal-bg;
-$feature-info-table-odd-row-bg: #EDECEC;
+$feature-info-table-odd-row-bg: #edecec;
 $feature-info-table-border-style: none;
 $feature-info-table-width: 100%;
 
 $overlay: $dark-lighter; // If we need transparency, rgba(255, 255, 255, 0.375) could do it
 $link-text-decoration: underline;
+
+$focus-border-light-color: $text-light;
+$focus-border-dark-color: $text-dark;
+$focus-border-width: 2px;
+$focus-border: solid $focus-border-width $focus-border-light-color;
+$focus-border-dark: solid $focus-border-width $focus-border-dark-color;

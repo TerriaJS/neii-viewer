@@ -1,7 +1,10 @@
 language: node_js
 node_js:
-- '8'
+- '10'
+- '14'
+install:
+- npm ci
 script:
 - gulp lint release
 env:
-- NODE_OPTIONS=--max_old_space_size=2048
+- NODE_OPTIONS=--max_old_space_size=4096

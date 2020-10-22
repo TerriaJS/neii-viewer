@@ -2,125 +2,129 @@
 @import "~terriajs/lib/Sass/global/global";
 
 body {
-    margin: 0;
-    overflow: hidden;
+  margin: 0;
+  overflow: hidden;
 }
 
 :global {
-	@media print {
-		.nationalmap-print-disclaimer {
-			color: #000;
-			display: block;
-		}
-	}
-
-    @import url(https://fonts.googleapis.com/css?family=Dosis:400,200,500);
-
-    /* Logo area in top left */
-	.tjs-branding__branding {
-		a:first-child, a:last-child {
-			display: none;
-
-			@media screen and (min-width: $sm) {
-				display: inline;
-			}
-		}
-        font-weight: 300;
-        color: white;
-        font-size: 26px;
-        padding-top:2px;
-        padding-left:6px;
-        background:$dark url(http://neii.gov.au/sites/default/files/bg_1_col.jpg);
-        background-position: top right;
-        background-size: 30%;
-        background-repeat: no-repeat;
-	}
-
-    /* Because the Add Data catalog is white on both sides, add a border between the two panels */
-    .tjs-data-catalog-tab__data-explorer.tjs-tabs__tab-left-col {
-        border-right: #EEEEEE 1px solid;
+  @media print {
+    .nationalmap-print-disclaimer {
+      color: #000;
+      display: block;
     }
+  }
 
-    /* Change the color of the Add Web Data link */
-    .tjs-add-data__tab-list__btn {
-        color: $color-secondary;
-        border-bottom: 2px solid $color-secondary;
-    }
+  @import url(https://fonts.googleapis.com/css?family=Dosis:400, 200, 500);
 
-    /* Change the Done button coloring. */
-    .tjs-explorer-window__btn--close-modal {
-      border: 2px solid #EEEEEE;
-      color: #EEEEEE;
-      &:focus, &:hover {
-        border: 2px solid $dark;
-        color: $dark;
+  /* Logo area in top left */
+  .tjs-branding__branding {
+    a:first-child,
+    a:last-child {
+      display: none;
+
+      @media screen and (min-width: $sm) {
+        display: inline;
       }
     }
+    font-weight: 300;
+    color: white;
+    font-size: 26px;
+    padding-top: 2px;
+    padding-left: 6px;
+    background: $dark url(http://neii.gov.au/sites/default/files/bg_1_col.jpg);
+    background-position: top right;
+    background-size: 30%;
+    background-repeat: no-repeat;
+  }
 
-    /* Flatten and simplify display of timeline controls */
-    .tjs-timeline-controls__timeline__control {
-        background:$dark-lighter;
-        border:none;
+  /* Because the Add Data catalog is white on both sides, add a border between the two panels */
+  .tjs-data-catalog-tab__data-explorer.tjs-tabs__tab-left-col {
+    border-right: #eeeeee 1px solid;
+  }
+
+  /* Change the color of the Add Web Data link */
+  .tjs-add-data__tab-list__btn {
+    color: $color-secondary;
+    border-bottom: 2px solid $color-secondary;
+  }
+
+  /* Change the Done button coloring. */
+  .tjs-explorer-window__btn--close-modal {
+    border: 2px solid #eeeeee;
+    color: #eeeeee;
+    &:focus,
+    &:hover {
+      border: 2px solid $dark;
+      color: $dark;
     }
+  }
 
-    .tjs-chart-preview__preview-chart-wrapper {
-        background: $dark-lighter;
+  /* Flatten and simplify display of timeline controls */
+  .tjs-timeline-controls__timeline__control {
+    background: $dark-lighter;
+    border: none;
+  }
+
+  .tjs-chart-preview__preview-chart-wrapper {
+    background: $dark-lighter;
+  }
+
+  .tjs-timeline__text-cell {
+    font-family: $font-base;
+  }
+
+  .tjs-timeline__timeline {
+    background: $dark-lighter;
+  }
+
+  .cesium-timeline-bar {
+    background: $dark-with-overlay;
+  }
+
+  /* Feature info table */
+  .tjs-feature-info-section__content {
+    table th {
+      font-weight: 400; // not bold
+      padding-right: 0.5em;
     }
-
-    .tjs-timeline__text-cell {
-        font-family: $font-base; 
+    table td {
+      padding: 2px; // down from 5px
     }
+  }
 
-    .tjs-timeline__timeline {
-        background:$dark-lighter;
+  // Make the location and distance bars a little wider, to accommodate the larger font sizes.
+  .tjs-legend__locationBar,
+  .tjs-legend__distanceLegend {
+    .tjs-legend__section-long {
+      width: 145px;
     }
-
-    .cesium-timeline-bar {
-        background:$dark-with-overlay;
+    .tjs-legend__section {
+      width: 125px;
     }
-
-    /* Feature info table */
-    .tjs-feature-info-section__content {
-        table th {
-            font-weight:400; // not bold
-            padding-right:0.5em;
-        }
-        table td {
-            padding:2px; // down from 5px
-        }
+    .tjs-legend__section-short {
+      width: 80px;
     }
+  }
 
-    // Make the location and distance bars a little wider, to accommodate the larger font sizes.
-    .tjs-legend__locationBar, .tjs-legend__distanceLegend {
-      .tjs-legend__section-long{
-        width: 145px;
+  .tjs-tabs__btn--selected {
+    color: $color-primary;
+    &:hover,
+    &:focus {
+      color: $color-primary;
+    }
+  }
+  .tjs-tabs__btn--tab {
+    &:hover,
+    &:focus {
+      color: darken($color-primary, 0.5);
+    }
+  }
+  .tjs-feature-info-panel__btn--close-feature {
+    &:hover,
+    &:focus {
+      svg {
+        fill: #ffffff;
       }
-      .tjs-legend__section{
-        width: 125px;
-      }
-      .tjs-legend__section-short{
-        width: 80px;
-      }
     }
-
-    .tjs-tabs__btn--selected{
-        color: $color-primary;
-        &:hover, &:focus{
-            color: $color-primary;
-        }
-    }
-    .tjs-tabs__btn--tab{
-        &:hover, &:focus{
-            color: darken($color-primary, 0.5);
-        }
-    }
-    .tjs-feature-info-panel__btn--close-feature{
-        &:hover, &:focus{
-          svg{
-                fill: #ffffff;
-          }
-
-        }
-    }
-
+  }
 }
