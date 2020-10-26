@@ -1,0 +1,91 @@
+{
+  "catalog": [
+    {
+      "type": "group",
+      "name": "NEII Data Services – Conformant",
+      "members": [
+        {
+          "type": "group",
+          "name": "Biota (3)",
+          "members": [
+            {
+              "type": "wms",
+              "name": "NSW BioNet Flora Survey Data Collection",
+              "description": "The NSW BioNet Flora Survey Data Collection is maintained via the Flora Survey Module of the NSW BioNet-Atlas application. This collection is a central, authoritative database for systematic vegetation survey data in NSW. Among other applications, this plot data is used to construct and maintain the quantitative Plant Community Type classification & Vegetation Integrity Benchmarks held in the BioNet Vegetation Classification Data Collection. These plots are also used to construct and update State Vegetation Type Maps held in the BioNet Vegetation Map Data Collection.",
+              "url": "https://mapprod.environment.nsw.gov.au/arcgis/services/EDP/SystematicFloraSurvey/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "0"
+            },
+            {
+              "type": "group",
+              "name": "National Vegetation Information System (DoAWE)",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Australia - Present Major Vegetation Groups - NVIS Version 5.1 (Albers 100m analysis product)",
+                  "url": "http://www.environment.gov.au/mapping/services/ogc_services/NVIS_ext_mvg/MapServer/WMSServer",
+                  "layers": "NVIS_EXT_MVG"
+                },
+                {
+                  "type": "wms",
+                  "name": "Australia - Pre-1750 Major Vegetation Groups - NVIS Version 5.1 (Albers 100m analysis product)",
+                  "url": "http://www.environment.gov.au/mapping/services/ogc_services/NVIS_pre_mvg/MapServer/WMSServer",
+                  "layers": "NVIS_PRE_MVG"
+                },
+                {
+                  "type": "wms",
+                  "name": "Australia - Present Major Vegetation Subgroups - NVIS Version 5.1 (Albers 100m analysis product)",
+                  "url": "http://www.environment.gov.au/mapping/services/ogc_services/NVIS_ext_mvs/MapServer/WMSServer",
+                  "layers": "NVIS_EXT_MVS"
+                },
+                {
+                  "type": "wms",
+                  "name": "Australia - Pre-1750 Major Vegetation Subgroups - NVIS Version 5.1 (Albers 100m analysis product)",
+                  "url": "http://www.environment.gov.au/mapping/services/ogc_services/NVIS_pre_mvs/MapServer/WMSServer",
+                  "layers": "NVIS_PRE_MVS"
+                }
+              ],
+              "description": "NVIS information has been compiled to enable Australia-wide analyses of the Major Vegetation Groups (MVGs) and Major Vegetation Subgroups (MVSs), which are based on the detailed NVIS Level I-VI data. Some non-NVIS data have been used in the development of these products where gaps exist in the NVIS spatial data.\nThese broader-scale interpretations are limited to 33 MVGs and 85 MVSs that represent the dominant vegetation in each spatial feature. (Note: the exact number of Groups and Subgroups varies between some NVIS versions.)\nThese products are designed for broad use at a national or state-wide scale or for simple vegetation descriptions at a regional scale. They are available in Present (Extant) and Estimated Pre-1750 (pre-European) vegetation themes.",
+              "info": [
+                {
+                  "name": "Further Information",
+                  "content": "[About NVIS](https://www.environment.gov.au/land/native-vegetation/national-vegetation-information-system/)"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Fish abundance (eAtlas)",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Grey Reef shark (Carcharhinus amblyrhynchos)",
+                  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+                  "layers": "ea:GBR_AIMS_BRUVS_Car-amblyns"
+                },
+                {
+                  "type": "wms",
+                  "name": "Red Emperor (Lutjanus sebae) abundance",
+                  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+                  "layers": "ea:GBR_AIMS_BRUVS_Lut-seba"
+                }
+              ],
+              "description": "The eAtlas is a website and mapping system for presenting environmental research data in an accessible form that promotes greater use of this information. It is also a data management system for preserving and encouraging reuse of this data.\nDecades of research have generated a large amount of data and information on the Great Barrier Reef and the terrestrial tropical ecosystems. Until now this information has generally been under-used. The eAtlas aims to promote collaboration and support the work of management agencies, researchers, reef-based industries and community groups.\nFrom the site, users can discover what research is being done in a given region or on a given topic, then learn more about this research and its outcomes. The data behind the research can be investigated through an interactive mapping system and, where possible, the data itself can be downloaded. The eAtlas also contains a wide range of reference datasets that complement its research content.\nThe eAtlas is the primary data and knowledge repository for the National Environmental Science Programme Tropical Water Quality Hub and historically for the 38 NERP Tropical Ecosystems Hub projects, 6 Reef Rescue Marine Monitoring Program projects and the Marine and Tropical Science Research Facility. This research covers a wide range of topics some of which include: seagrass, coral reefs, turtles, dugongs, seabirds, bathymetry, fish abundance, Crown Of Thorns Starfish, rainforest revegetation, wet tropics species distributions, etc.",
+              "info": [
+                {
+                  "name": "Data Custodian",
+                  "content": "[eAtlas](https://eatlas.org.au/)"
+                },
+                {
+                  "name": "Further Information",
+                  "content": "[About eAtlas](https://eatlas.org.au/content/about-e-atlas)"
+                }
+              ],
+              "isOpen": false
+            }
+          ]
+        }
+      ],
+      "isOpen": false
+    }
+  ]
+}

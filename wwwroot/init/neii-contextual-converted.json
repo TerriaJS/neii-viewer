@@ -1,0 +1,77 @@
+{
+  "catalog": [
+    {
+      "type": "group",
+      "name": "Contextual layers",
+      "members": [
+        {
+          "type": "wms",
+          "name": "States & Territories",
+          "description": "States & Territories",
+          "info": [
+            {
+              "name": "Licence",
+              "content": "[Creative Commons Attribution 2.5 Australia (CC BY 2.5 AU)](http://creativecommons.org/licenses/by/2.5/au/)"
+            }
+          ],
+          "url": "http://geoserver.nationalmap.nicta.com.au/admin_bnds_abs/ows",
+          "rectangle": {
+            "west": 96.81694,
+            "south": -43.7405,
+            "east": 159.10921,
+            "north": -9.14217
+          },
+          "dataCustodian": "[Australian Bureau of Statistics](http://www.abs.gov.au/)",
+          "layers": "admin_bnds:STE_2011_AUST"
+        },
+        {
+          "layers": "LGA",
+          "url": "https://geo.abs.gov.au/arcgis/rest/services/ASGS2019/LGA/MapServer",
+          "type": "esri-mapServer",
+          "name": "Local Government Areas (2019)",
+          "description": "Local Government Areas (2019)",
+          "info": [
+            {
+              "name": "Licence",
+              "content": "[Creative Commons Attribution 2.5 Australia (CC BY 2.5 AU)](http://creativecommons.org/licenses/by/2.5/au/)"
+            }
+          ]
+        },
+        {
+          "layers": "POA",
+          "url": "https://geo.abs.gov.au/arcgis/rest/services/ASGS2016/POA/MapServer",
+          "type": "esri-mapServer",
+          "name": "Postal Areas (2016)",
+          "description": "Postal Areas (2016)",
+          "info": [
+            {
+              "name": "Licence",
+              "content": "[Creative Commons Attribution 2.5 Australia (CC BY 2.5 AU)](http://creativecommons.org/licenses/by/2.5/au/)"
+            }
+          ]
+        },
+        {
+          "type": "wms",
+          "name": "Natural Resource Management Regions",
+          "description": "Natural Resource Management Regions",
+          "info": [
+            {
+              "name": "Licence",
+              "content": "[Creative Commons Attribution 2.5 Australia (CC BY 2.5 AU)](http://creativecommons.org/licenses/by/2.5/au/)"
+            }
+          ],
+          "url": "http://geoserver.nationalmap.nicta.com.au/admin_bnds_abs/ows",
+          "rectangle": {
+            "west": 96.81694,
+            "south": -43.7405,
+            "east": 159.10921,
+            "north": -9.14217
+          },
+          "dataCustodian": "[Australian Bureau of Statistics](http://www.abs.gov.au/)",
+          "layers": "admin_bnds:NRMR_2011_AUST"
+        }
+      ],
+      "isOpen": false
+    }
+  ]
+}

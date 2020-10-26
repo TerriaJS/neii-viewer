@@ -1,17 +1,22 @@
 {
   "initializationUrls": [
-    "neii-oceans",
-    "neii-water",
-    "neii-air",
-    "neii-biota",
-    "neii-land",
-    "neii-other",
-    "proxy/_60s/http://neii.bom.gov.au/cgi-bin/nemsr/get_viewer_config.json",
-    "neii-contextual"
+    // "neii-oceans",
+    // "neii-water",
+    // "neii-air",
+    // "neii-biota",
+    // "neii-land",
+    // "neii-other",
+    // "proxy/_60s/http://neii.bom.gov.au/cgi-bin/nemsr/get_viewer_config.json",
+    // "neii-contextual"
+    "neii-air-converted",
+    "neii-biota-converted",
+    "neii-contextual-converted",
+    "neii-land-converted",
   ],
   "parameters": {
     "initFragmentPaths": [
-        "proxy/_60s/https://raw.githubusercontent.com/TerriaJS/neii-viewer/master/wwwroot/init/"
+        //"proxy/_60s/https://raw.githubusercontent.com/TerriaJS/neii-viewer/master/wwwroot/init/"
+        "init"
     ],
     "feedbackUrl": "feedback",
     "bingMapsKey": "Ah0FX538FOPIU4YbgatM2ZbNG1nIXWw0SL-kECSxZJ8BKa32aQe_x9cakb9Lepg-",

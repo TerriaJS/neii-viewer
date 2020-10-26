@@ -1,0 +1,895 @@
+{
+  "catalog": [
+    {
+      "type": "group",
+      "name": "NEII Data Services – Conformant",
+      "members": [
+        {
+          "type": "group",
+          "name": "Land (15)",
+          "members": [
+            {
+              "type": "group",
+              "name": "Australian Geophysical Data Collection (GA)",
+              "members": [],
+              "description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.",
+              "info": [
+                {
+                  "name": "Data Custodian",
+                  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+                },
+                {
+                  "name": "Further Information",
+                  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+                }
+              ],
+              "items": [
+                {
+                  "name": "Gravity Anomaly",
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer/9",
+                  "layers": "9",
+                  "type": "esri-mapServer"
+                },
+                {
+                  "name": "Magnetic Intensity",
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "url": "http://services.ga.gov.au/site_13/rest/services/Geophysical_Grids/MapServer/4",
+                  "layers": "4",
+                  "type": "esri-mapServer"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Australian World Heritage Areas (DoEE)",
+              "url": "http://www.environment.gov.au/mapping/services/ogc_services/World_Heritage_Areas/MapServer/WMSServer",
+              "layers": "World_Heritage_Areas_Australia"
+            },
+            {
+              "name": "Australia 250K Topographic Map 2008 (GA)",
+              "info": [
+                {
+                  "name": "Licensing, Terms & Conditions",
+                  "content": "[Licence](http://www.ga.gov.au/copyright)"
+                }
+              ],
+              "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+              "url": "http://services.ga.gov.au/gis/rest/services/NATMAP_Digital_Maps_250K_2008Edition_WM/MapServer",
+              "layers": "0",
+              "type": "esri-mapServer"
+            },
+            {
+              "type": "wms",
+              "name": "Collaborative Australian Protected Areas Database (CAPAD) 2018 - Terrestrial (DoEE)",
+              "url": "http://www.environment.gov.au/mapping/services/ogc_services/capad/MapServer/WMSServer",
+              "layers": "Protected_Areas"
+            },
+            {
+              "type": "wms",
+              "name": "Directory of Important Wetlands in Australia (DIWA)",
+              "url": "http://www.environment.gov.au/mapping/services/ogc_services/Important_Wetlands/MapServer/WMSServer",
+              "layers": "Directory of Important Wetlands in Australia"
+            },
+            {
+              "type": "group",
+              "name": "Australian Geological Provinces",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "All Provinces",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "AllProvinces"
+                },
+                {
+                  "type": "wms",
+                  "name": "Crustal Elements",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "CrustalElements"
+                },
+                {
+                  "type": "wms",
+                  "name": "Tectonic Provinces - Archean Proterozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "TectonicProvinces-ArcheanProterozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Sedimentary Basins - Archean Paleoproterozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "SedimentaryBasins-ArcheanPaleoproterozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Sedimentary Basins - Paleoproterozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "SedimentaryBasins-Paleoproterozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Tectonic Provinces - Proterozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "TectonicProvinces-Proterozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Sedimentary Basins - Mesoproterozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "SedimentaryBasins-Mesoproterozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Igneous Provinces - Proterozoic Paleozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "IgneousProvinces-ProterozoicPaleozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Sedimentary Basins - Neoproterozoic Paleozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "SedimentaryBasins-NeoproterozoicPaleozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Tectonic Provinces - Neoproterozoic Paleozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "TectonicProvinces-NeoproterozoicPaleozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Tectonic Provinces - Paleozoic Mesozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "TectonicProvinces-PaleozoicMesozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Sedimentary Basins - Early Paleozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "SedimentaryBasins-EarlyPaleozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Sedimentary Basins - Early To Late Paleozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "SedimentaryBasins-EarlyToLatePaleozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Sedimentary Basins - Late Paleozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "SedimentaryBasins-LatePaleozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Sedimentary Basins - PaleozoicMesozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "SedimentaryBasins-PaleozoicMesozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Sedimentary Basins - PaleozoicCenozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "SedimentaryBasins-PaleozoicCenozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Sedimentary Basins - Mesozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "SedimentaryBasins-Mesozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Sedimentary Basins - MesozoicCenozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "SedimentaryBasins-MesozoicCenozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Sedimentary Basins - Cenozoic",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "SedimentaryBasins-Cenozoic"
+                },
+                {
+                  "type": "wms",
+                  "name": "Cenozoic Paleovalleys",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "CenozoicPaleovalleys"
+                },
+                {
+                  "type": "wms",
+                  "name": "Metallogenic Provinces",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "MetallogenicProvinces"
+                },
+                {
+                  "type": "wms",
+                  "name": "Province Contacts",
+                  "url": "http://services.ga.gov.au/gis/services/Australian_Geological_Provinces/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "ProvinceContacts"
+                }
+              ],
+              "description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.",
+              "info": [
+                {
+                  "name": "Data Custodian",
+                  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+                },
+                {
+                  "name": "Further Information",
+                  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Australian Land Cover (Web Mercator)",
+              "url": "http://services.ga.gov.au/gis/services/Land_Cover_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+              "layers": "Land_Cover_Class"
+            },
+            {
+              "type": "wms",
+              "name": "Australian Shoreline (Web Mercator)",
+              "url": "http://gaservices.ga.gov.au/site_1/services/Shoreline_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+              "layers": "Shoreline"
+            },
+            {
+              "type": "group",
+              "name": "Dynamic National Map Reserves",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Prohibited Areas",
+                  "url": "http://services.ga.gov.au/gis/services/NM_Reserves/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Prohibited_Areas"
+                },
+                {
+                  "type": "wms",
+                  "name": "Marine Parks",
+                  "url": "http://services.ga.gov.au/gis/services/NM_Reserves/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Nature_Conservation_Reserves_Marine"
+                },
+                {
+                  "type": "wms",
+                  "name": "National Parks and Other Reserves",
+                  "url": "http://services.ga.gov.au/gis/services/NM_Reserves/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Nature_Conservation_Reserves_Land"
+                },
+                {
+                  "type": "wms",
+                  "name": "Water Supply Reserves",
+                  "url": "http://services.ga.gov.au/gis/services/NM_Reserves/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Water_Supply_Reserves"
+                },
+                {
+                  "type": "wms",
+                  "name": "Indigenous Reserves",
+                  "url": "http://services.ga.gov.au/gis/services/NM_Reserves/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Indigenous_Reserves"
+                },
+                {
+                  "type": "wms",
+                  "name": "Forestry Reserves",
+                  "url": "http://services.ga.gov.au/gis/services/NM_Reserves/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Forestry_Reserves"
+                },
+                {
+                  "type": "wms",
+                  "name": "Nature Conservation Reserves Marine - Labels",
+                  "url": "http://services.ga.gov.au/gis/services/NM_Reserves/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Nature_Conservation_Reserves_Marine_Labels"
+                },
+                {
+                  "type": "wms",
+                  "name": "Nature Conservation Reserves Land - Labels",
+                  "url": "http://services.ga.gov.au/gis/services/NM_Reserves/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Nature_Conservation_Reserves_Land_Labels"
+                },
+                {
+                  "type": "wms",
+                  "name": "Water Supply Reserves - Labels",
+                  "url": "http://services.ga.gov.au/gis/services/NM_Reserves/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Water_Supply_Reserves_Labels"
+                },
+                {
+                  "type": "wms",
+                  "name": "Indigenous Reserves - Labels",
+                  "url": "http://services.ga.gov.au/gis/services/NM_Reserves/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Indigenous_Reserves_Labels"
+                },
+                {
+                  "type": "wms",
+                  "name": "Forestry Reserves - Labels",
+                  "url": "http://services.ga.gov.au/gis/services/NM_Reserves/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Forestry_Reserves_Labels"
+                },
+                {
+                  "type": "wms",
+                  "name": "Prohibited Areas - Labels",
+                  "url": "http://services.ga.gov.au/gis/services/NM_Reserves/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Prohibited_Areas_Labels"
+                }
+              ],
+              "description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.",
+              "info": [
+                {
+                  "name": "Data Custodian",
+                  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+                },
+                {
+                  "name": "Further Information",
+                  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Expected Australian Earthquake Hazard (Web Mercator)",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Earthquake hazard",
+                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Earthquake_hazard"
+                },
+                {
+                  "type": "wms",
+                  "name": "Hazard contours",
+                  "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Hazard_contours"
+                }
+              ],
+              "description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.",
+              "info": [
+                {
+                  "name": "Data Custodian",
+                  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+                },
+                {
+                  "name": "Further Information",
+                  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Australian Coastal Geomorphology Landform Type (Web Mercator)",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Landform Type Surface Geology Reclassified 500K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Type_Surface_Geology_Reclassified_500K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform Type Surface Geology Reclassified 250K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Type_Surface_Geology_Reclassified_250K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform Type Surface Geology Reclassified 100K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Type_Surface_Geology_Reclassified_100K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform Type OzEstuaries Reclassified 100K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Type_OzEstuaries_Reclassified_100K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform Type Geomorphology Reclassified 100K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Type_Geomorphology_Reclassified_100K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform Type Geomorphology Reclassified 50K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Type_Geomorphology_Reclassified_50K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Geomorphic Smartline",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Geomorphic_Smartline"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform Type Surface Geology Reclassified 25K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Type_Surface_Geology_Reclassified_25K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform Type Regolith Reclassified 25K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Type_Regolith_Reclassified_25K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform Type Geomorphology Reclassified 25K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Type_Geomorphology_Reclassified_25K"
+                }
+              ],
+              "description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.",
+              "info": [
+                {
+                  "name": "Data Custodian",
+                  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+                },
+                {
+                  "name": "Further Information",
+                  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Australian Coastal Geomorphology Landform Subtype (Web Mercator)",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Geomorphic Smartline",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Geomorphic_Smartline"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform Subtype Surface Geology Reclassified 500K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Subtype_Surface_Geology_Reclassified_500K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform_Subtype_Surface_Geology_Reclassified_250K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Subtype_Surface_Geology_Reclassified_250K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform Subtype Surface Geology Reclassified 100K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Subtype_Surface_Geology_Reclassified_100K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform Subtype OzEstuaries Reclassified 100K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Subtype_OzEstuaries_Reclassified_100K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform Subtype Geomorphology Reclassified 100K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Subtype_Geomorphology_Reclassified_100K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform Subtype Geomorphology Reclassified 50K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Subtype_Geomorphology_Reclassified_50K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform Subtype Surface Geology Reclassified 25K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Subtype_Surface_Geology_Reclassified_25K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform_Subtype_Regolith_Reclassified_25K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Subtype_Regolith_Reclassified_25K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Landform Subtype Geomorphology Reclassified 25K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Landform_Subtype_Geomorphology_Reclassified_25K"
+                }
+              ],
+              "description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.",
+              "info": [
+                {
+                  "name": "Data Custodian",
+                  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+                },
+                {
+                  "name": "Further Information",
+                  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Australian Coastal Geomorphology Scale Guide (Web Mercator)",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Guide 500K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Guide_500K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Guide 250K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Guide_250K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Guide 100K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Guide_100K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Guide 50K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Guide_50K"
+                },
+                {
+                  "type": "wms",
+                  "name": "Guide 25K",
+                  "url": "http://gaservices.ga.gov.au/site_1/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Guide_25K"
+                }
+              ],
+              "description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.",
+              "info": [
+                {
+                  "name": "Data Custodian",
+                  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+                },
+                {
+                  "name": "Further Information",
+                  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Australian Coastal Geomorphology Smartline",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Backshore landform - proximal",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Backshore_landform_proximal"
+                },
+                {
+                  "type": "wms",
+                  "name": "Backshore landform - distal",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Backshore_landform_distal"
+                },
+                {
+                  "type": "wms",
+                  "name": "Backshore - slope profile",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Backshore_slope_profile"
+                },
+                {
+                  "type": "wms",
+                  "name": "Intertidal - dominate landform",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Intertidal_dominate_landform"
+                },
+                {
+                  "type": "wms",
+                  "name": "Intertidal - secondary landform",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Intertidal_secondary_landform"
+                },
+                {
+                  "type": "wms",
+                  "name": "Intertidal zone - slope profile",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Intertidal_zone_slope_profile"
+                },
+                {
+                  "type": "wms",
+                  "name": "Subtidal - dominate landform",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Subtidal_dominate_landform"
+                },
+                {
+                  "type": "wms",
+                  "name": "Subtidal - secondary landform",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Subtidal_secondary_landform"
+                },
+                {
+                  "type": "wms",
+                  "name": "Shoreline segment exposure to waves",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Shoreline_segment_exposure_to_waves"
+                },
+                {
+                  "type": "wms",
+                  "name": "Geology - primary substrate",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Geology_primary_substrate"
+                },
+                {
+                  "type": "wms",
+                  "name": "Geology - secondary substrate",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Geology_secondary_substrate"
+                },
+                {
+                  "type": "wms",
+                  "name": "Muddy",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Muddy"
+                },
+                {
+                  "type": "wms",
+                  "name": "Sandy",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Sandy"
+                },
+                {
+                  "type": "wms",
+                  "name": "Dunes",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Dunes"
+                },
+                {
+                  "type": "wms",
+                  "name": "Coarsed",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Coarsed"
+                },
+                {
+                  "type": "wms",
+                  "name": "Undifsed",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Undifsed"
+                },
+                {
+                  "type": "wms",
+                  "name": "Softrock",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Softrock"
+                },
+                {
+                  "type": "wms",
+                  "name": "Hardrock",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Hardrock"
+                },
+                {
+                  "type": "wms",
+                  "name": "Undfrock",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Undfrock"
+                },
+                {
+                  "type": "wms",
+                  "name": "Coral",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Coral"
+                },
+                {
+                  "type": "wms",
+                  "name": "Unclass",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Unclass"
+                },
+                {
+                  "type": "wms",
+                  "name": "Geomorphic Smartline",
+                  "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "opacity": 1,
+                  "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                  "layers": "Geomorphic_Smartline"
+                }
+              ],
+              "description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.",
+              "info": [
+                {
+                  "name": "Data Custodian",
+                  "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+                },
+                {
+                  "name": "Further Information",
+                  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Victorian Soil Type Mapping (DELWP)",
+              "description": "A spatial map layer of soil type (Australian Soil Classification) for Victoria. The harmonised map consists of 3,300 land units (totaling about 225,000 polygons) derived from around 100 soil and land surveys carried out in Victoria over the past 70 years. The land units have been attributed according to the Australian Soil Classification (Order and Suborder levels of the classification scheme) based on their likely dominant soil type. Particular attention was given to harmonising land units across survey boundaries. A reliability index has been assigned to each land unit based on the quality and relevance of the originating survey, providing a qualitative reliability measure to support interpretation and data use.",
+              "info": [
+                {
+                  "name": "Licensing, Terms & Conditions",
+                  "content": "[Licence](https://www.delwp.vic.gov.au/copyright)"
+                }
+              ],
+              "url": "http://services.land.vic.gov.au/catalogue/publicproxy/guest/dv_geoserver/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+              "rectangle": {
+                "west": "140.9206",
+                "south": "-39.1623",
+                "east": "150.3",
+                "north": "-33.9857"
+              },
+              "dataCustodian": "[Department of Environment, Land, Water and Planning, State Government of Victoria](https://www.delwp.vic.gov.au/)",
+              "layers": "datavic:CATCHMENTS_SOIL_TYPE"
+            }
+          ]
+        }
+      ],
+      "isOpen": false
+    }
+  ]
+}

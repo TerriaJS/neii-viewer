@@ -1,0 +1,433 @@
+{
+  "catalog": [
+    {
+      "type": "group",
+      "name": "NEII Data Services – Conformant",
+      "members": [
+        {
+          "type": "group",
+          "name": "Air (3)",
+          "members": [
+            {
+              "type": "group",
+              "name": "Australian Gridded Solar Climatology (BoM)",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Monthly-hourly climatology of hourly exposure - Global Horizontal Exposure",
+                  "description": "",
+                  "url": "http://neii.bom.gov.au/services/solarclim/wms/data/monClim_gloHorExp1Hou.nc",
+                  "rectangle": {
+                    "west": "100.0",
+                    "south": "-44.0",
+                    "east": "159.0",
+                    "north": "-4.0"
+                  },
+                  "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
+                  "layers": "mean_exposure",
+                  "featureInfoTemplate": {
+                    "name": "{{#value}}{{value}} MJ/m2{{/value}}",
+                    "template": "{{#value}}{{value}} MJ/m&#178;{{/value}}"
+                  }
+                },
+                {
+                  "type": "wms",
+                  "name": "Monthly-hourly climatology of hourly exposure - Direct Normal Exposure",
+                  "description": "",
+                  "url": "http://neii.bom.gov.au/services/solarclim/wms/data/monClim_dirNorExp1Hou.nc",
+                  "rectangle": {
+                    "west": "100.0",
+                    "south": "-44.0",
+                    "east": "159.0",
+                    "north": "-4.0"
+                  },
+                  "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
+                  "layers": "mean_exposure",
+                  "featureInfoTemplate": {
+                    "name": "{{#value}}{{value}} MJ/m2{{/value}}",
+                    "template": "{{#value}}{{value}} MJ/m&#178;{{/value}}"
+                  }
+                },
+                {
+                  "type": "wms",
+                  "name": "Monthly climatology of daily exposure - Global Horizontal Exposure",
+                  "description": "",
+                  "url": "http://neii.bom.gov.au/services/solarclim/wms/data/monClim_gloHorExp1Day.nc",
+                  "rectangle": {
+                    "west": "100.0",
+                    "south": "-44.0",
+                    "east": "159.0",
+                    "north": "-4.0"
+                  },
+                  "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
+                  "layers": "mean_exposure",
+                  "featureInfoTemplate": {
+                    "name": "{{#value}}{{value}} MJ/m2{{/value}}",
+                    "template": "{{#value}}{{value}} MJ/m&#178;{{/value}}"
+                  }
+                },
+                {
+                  "type": "wms",
+                  "name": "Monthly climatology of daily exposure - Direct Normal Exposure",
+                  "description": "",
+                  "url": "http://neii.bom.gov.au/services/solarclim/wms/data/monClim_dirNorExp1Day.nc",
+                  "rectangle": {
+                    "west": "100.0",
+                    "south": "-44.0",
+                    "east": "159.0",
+                    "north": "-4.0"
+                  },
+                  "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
+                  "layers": "mean_exposure",
+                  "featureInfoTemplate": {
+                    "name": "{{#value}}{{value}} MJ/m2{{/value}}",
+                    "template": "{{#value}}{{value}} MJ/m&#178;{{/value}}"
+                  }
+                },
+                {
+                  "type": "wms",
+                  "name": "Annual climatology of daily exposure - Global Horizontal Exposure",
+                  "description": "",
+                  "url": "http://neii.bom.gov.au/services/solarclim/wms/data/annClim_gloHorExp1Day.nc",
+                  "rectangle": {
+                    "west": "100.0",
+                    "south": "-44.0",
+                    "east": "159.0",
+                    "north": "-4.0"
+                  },
+                  "dataCustodian": "[Bureau of Meteorology](http://www.bom.gov.au/)",
+                  "layers": "mean_exposure",
+                  "featureInfoTemplate": {
+                    "name": "{{#value}}{{value}} MJ/m2{{/value}}",
+                    "template": "{{#value}}{{value}} MJ/m&#178;{{/value}}"
+                  }
+                }
+              ],
+              "description": "The Australian Gridded Solar Climatology datasets are long-term averages of solar radiation at the surface over the Australian land mass.\n\nClimatologies are given for two radiation parameters: the global horizontal exposure, which is the total amount of solar energy falling on a horizontal surface over a time interval; and the direct normal exposure which is the total of the component of radiation from the sun’s disk on a plane perpendicular to the beam. Climatologies of daily exposure are given as an annual average and as a set of twelve monthly averages. Climatologies of the diurnal cycle are given as monthly averages of hourly exposures through the day.\n\nThese data sets are derived from 23 years (1990 - 2012) of data from satellites operated by Japan Meteorological Agency and the US National Oceanographic & Atmospheric Administration.",
+              "info": [
+                {
+                  "name": "Data Custodian",
+                  "content": "[Bureau of Meteorology](http://www.bom.gov.au/)"
+                },
+                {
+                  "name": "Further Information",
+                  "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+                }
+              ]
+            },
+            {
+              "name": "North Australia Automated Marine Weather And Oceanographic Stations (AIMS)",
+              "description": "Automatic weather stations have been deployed by AIMS since 1980. Most of the stations are along the Great Barrier Reef including the Torres Strait in North-Eastern Australia but there is also a station in Darwin and one in Ningaloo Reef in Western Australia. Many of the stations are located on the reef itself either on poles located in the reef lagoon or on tourist pontoons or other structures.",
+              "url": "https://geoserver.data.aims.gov.au/ows?service=WFS&version=1.0.0&request=GetCapabilities",
+              "type": "wfs",
+              "typeNames": "aims:weather_deployment",
+              "info": [
+                {
+                  "name": "Copyright",
+                  "content": "&copy;Australian Institute of Marine Science 2011. This product is released under the Creative Commons Attribution 3.0 Australia (CC BY 3.0 AU)"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Australian Climate (BoM)",
+              "members": [
+                {
+                  "type": "group",
+                  "name": "Grids",
+                  "members": [
+                    {
+                      "type": "group",
+                      "name": "Rainfall",
+                      "members": [
+                        {
+                          "type": "wms",
+                          "name": "Rainfall Average Annual | Australia | mm",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM000400"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "group",
+                      "name": "Temperature",
+                      "members": [
+                        {
+                          "type": "wms",
+                          "name": "Temperature Min Average Annual | Australia | degC",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM000500"
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Temperature Max Average Annual | Australia | degC",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM000513"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "group",
+                      "name": "Solar",
+                      "members": [
+                        {
+                          "type": "wms",
+                          "name": "Solar Exposure Daily Average Annual | Australia | MJ/m2",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM001900"
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Solar Exposure Daily Average January | Australia | MJ/m2",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM001901"
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Solar Exposure Daily Average February | Australia | MJ/m2",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM001902"
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Solar Exposure Daily Average March | Australia | MJ/m2",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM001903"
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Solar Exposure Daily Average April | Australia | MJ/m2",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM001904"
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Solar Exposure Daily Average May | Australia | MJ/m2",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM001905"
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Solar Exposure Daily Average June | Australia | MJ/m2",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM001906"
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Solar Exposure Daily Average July | Australia | MJ/m2",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM001907"
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Solar Exposure Daily Average August | Australia | MJ/m2",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM001908"
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Solar Exposure Daily Average September | Australia | MJ/m2",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM001909"
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Solar Exposure Daily Average October | Australia | MJ/m2",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM001910"
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Solar Exposure Daily Average November | Australia | MJ/m2",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM001911"
+                        },
+                        {
+                          "type": "wms",
+                          "name": "Solar Exposure Daily Average December | Australia | MJ/m2",
+                          "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                          "layers": "IDCJCM001912"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "name": "Sites and Stations",
+                  "members": [
+                    {
+                      "type": "wms",
+                      "name": "Rainfall Stations (open) | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10002_open"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Rainfall Stations | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10002"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Climate Average Stations (open) | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10000_open"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Climate Average Stations | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10000"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Daily weather observations sites (open) | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10001_open"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Daily weather observations sites | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10001"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Mean Minimum Temperature Stations (open) | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10003_open"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Mean Minimum Temperature Stations | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10003"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Lowest Temperature Stations (open) | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10004_open"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Lowest Temperature Stations | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10004"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Lowest Maximum Temperature Stations (open) | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10005_open"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Lowest Maximum Temperature Stations | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10005"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Highest Temperature Stations (open) | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10006_open"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Highest Temperature Stations | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10006"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Highest Minimum Temperature Stations (open) | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10007_open"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Highest Minimum Temperature Stations | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10007"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Mean Maximum Temperature Stations (open) | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10008_open"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Mean Maximum Temperature Stations | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10008"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Daily Minimum Temperature Stations (open) | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10024_open"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Daily Minimum Temperature Stations | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10024"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Daily Maximum Temperature Stations (open) | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10025_open"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Daily Maximum Temperature Stations | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDC10025"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Global Solar Radiation Stations (open) | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDCJAC0016_open"
+                    },
+                    {
+                      "type": "wms",
+                      "name": "Global Solar Radiation Stations | Aust. Region",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDCJAC0016"
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "name": "Boundaries",
+                  "members": [
+                    {
+                      "type": "wms",
+                      "name": "BOM Rainfall Districts | Australia | 2 M",
+                      "url": "http://www.bom.gov.au/cgi-bin/ws/gis/ncc/cdio/wxs?service=WMS&version=1.3.0&request=GetCapabilities",
+                      "layers": "IDM00004"
+                    }
+                  ]
+                }
+              ],
+              "description": "Bureau of Meteorology Climate Data Information Online",
+              "info": [
+                {
+                  "name": "Data Custodian",
+                  "content": "[Bureau of Meteorology](http://www.bom.gov.au/)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "Conformance for NEII web data services is determined by the [NEII Conformance Framework](http://www.neii.gov.au/system/files/filedepot/1/NEII%20Conformance%20Framework%20Version%201.0%20May%202016.pdf). The framework uses a maturity model approach outlining the various degrees of conformity.\n\nSpecific principles in the framework include the following:\n\n<ul><li>Environmental data are made publically available through machine-readable web data services (published online).</li><li>Structured metadata will support any NEII data release (well described).</li><li>Providers will make their data available through under an open licence.</li><li>Data are provided with support structures that provide enduring operational support to users.</li></ul>\n\nThe first principle is mandatory and in the absence of the availability of environmental data through web data services, NEII conformance is not possible at any level of maturity.\n\nSee the [NEII Conformance Framework](http://www.neii.gov.au/system/files/filedepot/1/NEII%20Conformance%20Framework%20Version%201.0%20May%202016.pdf) for a detailed overview of what constitutes conformance.\n\nSee [here]( http://www.neii.gov.au/web-data-services/) for a list of NEII conformant web data services and how to access.",
+      "isOpen": false
+    }
+  ]
+}
