@@ -631,10 +631,22 @@
           ]
         },
 	{
-	  "name": "Bushfires (8)",
+	  "name": "Bushfires (7)",
           "type": "group",
           "preserveOrder": true,
           "items": [
+            {
+              "name": "Digital Earth Australia Hotspots (Geoscience Australia)",
+              "type": "wms",
+              "url": "https://hotspots.dea.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities",
+              "layers": "public:hotspots",
+              "rectangle": [
+                "100.0",
+                "-44.0",
+                "159.0",
+                "-4.0"
+              ]
+            },
             {
               "name": "Current Incidents (Rural Fire Service, NSW)",
               "type": "geojson",
@@ -646,8 +658,8 @@
               "items": [
                 {
                   "name": "Bushfire Current Incidents",
-                  "type": "kml",
-                  "url": "https://ruralfire.qld.gov.au/bushfirealert/bushfireAlert.kmz"
+                  "type": "esri-featureServer",
+		  "url": "https://services1.arcgis.com/vkTwD8kHw2woKBqV/arcgis/rest/services/BushfireCurrentIncidentsHostedPublicView/FeatureServer/0"
                 },
                 {
                   "name": "QFES Fire Bans and Restrictions",
@@ -681,22 +693,6 @@
                   "type": "esri-featureServer"
                 },
                 {
-                  "name": "Bushfire Mitigation Plans",
-                  "url": "http://www.fire.tas.gov.au/Show?pageId=mitigationKml",
-                  "type": "kml"
-                },
-                {
-                  "name": "Bushfire Protection Plans",
-                  "url": "http://www.fire.tas.gov.au/Show?pageId=cppKml",
-                  "type": "kml"
-                },
-                {
-                  "name": "Bushfire Response Plans",
-                  "url": "http://www.fire.tas.gov.au/Show?pageId=cprpKml",
-                  "type": "kml"
-                },
-
-                {
                   "name": "Evacaution Centres",
                   "url": "http://www.fire.tas.gov.au/Show?pageId=refugeKml",
                   "type": "kml"
@@ -718,8 +714,9 @@
                 },
                 {
                   "name": "Registered Burns and Permits",
-                  "url": "http://www.fire.tas.gov.au/Show?pageId=permKml",
-                  "type": "kml"
+		  "url": "https://data.gov.au/geoserver/tfs-current-permit-registered-burn-locations/wms?request=GetCapabilities",
+		  "type": "wms",
+		  "layers": "ckan_5df7f300_46ac_4a56_b1d0_95e369eeb45f"
                 },
                 {
                   "name": "Total Fire Ban Areas",
@@ -743,33 +740,6 @@
                   "url": "https://fireweb.ffm.vic.gov.au/kml/Planned_burns_poly.kmz"
                 }
               ]
-            },
-            {
-              "name": "Department of Home Affairs",
-              "type": "group",
-              "items": [
-                {
-                  "name": "National Bushfire 202021 FY Accumulation Boundaries",
-                  "type": "kml",
-                  "url": "https://bushfire-status-board.s3-ap-southeast-2.amazonaws.com/financial_year_accumulation_product/Bushfire_financial_year_accumulation_product_20-21.kml"
-                },
-                {
-                  "name": "National Operational Bushfire Boundaries (3 hour time series)",
-                  "type": "kml",
-                  "url": "https://bushfire-status-board.s3-ap-southeast-2.amazonaws.com/OperationalBoundaries_3hourly.kml"
-                },
-                {
-                  "name": "National Operational Bushfire Boundary (15 minutes refresh)",
-                  "type": "kml",
-                  "url": "https://bushfire-status-board.s3-ap-southeast-2.amazonaws.com/OperationalBoundaries.kml"
-                }
-              ]
-            },
-            {
-              "name": "Digital Earth Australia Hotspots (Geoscience Australia)",
-	       "type": "wms",
-              "url": "https://hotspots.dea.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities",
-              "layers": "public:hotspots"
             }
           ]
 	}
