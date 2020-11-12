@@ -135,6 +135,27 @@
 		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
                   "layers": "ea:GBR_AIMS_BRUVS_Aba-stelus",
 		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_AIMS_BRUVS_Aba-stelus"
+		},
+		{
+                  "name": "Catch abundance",
+                  "type": "wms",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+                  "layers": "ea:GBR_AIMS_BRUVS_B-abund",
+		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_AIMS_BRUVS_B-abund"
+		},
+		{
+                  "name": "Total abundance",
+                  "type": "wms",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+                  "layers": "ea:GBR_AIMS_BRUVS_Abund",
+		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_AIMS_BRUVS_Abund"
+		},
+		{
+                  "name": "Species Richness",
+                  "type": "wms",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+                  "layers": "ea:GBR_AIMS_BRUVS_Rich",
+		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_AIMS_BRUVS_Rich"
 		}
               ]
             }
