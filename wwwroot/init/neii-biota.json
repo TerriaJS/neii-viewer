@@ -86,7 +86,77 @@
 		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
                   "layers": "ea:GBR_AIMS_BRUVS_Lut-seba",
 		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_AIMS_BRUVS_Lut-seba"
-                }
+                },
+		{
+                  "name": "Large-mouth nannygai (Lutjanus malabaricus) abundance",
+                  "type": "wms",		  
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+                  "layers": "ea:GBR_AIMS_BRUVS_Lut-malaic",
+		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_AIMS_BRUVS_Lut-malaic"
+		},
+		{
+                  "name": "Small-mouth nannygai (Lutjanus erythropterus) abundance",
+                  "type": "wms",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+                  "layers": "ea:GBR_AIMS_BRUVS_Lut-erytpt",
+		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_AIMS_BRUVS_Lut-erytpt"
+		},
+		{
+                  "name": "Venus Tuskfish (Choerodon venustus) abundance",
+                  "type": "wms",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+                  "layers": "ea:GBR_AIMS_BRUVS_Cho-venus",
+		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_AIMS_BRUVS_Cho-venus"
+		},
+		{
+                  "name": "Coral Trout (Plectropomus leopardus) abundance",
+                  "type": "wms",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+                  "layers": "ea:GBR_AIMS_BRUVS_Ple-leopus",
+		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_AIMS_BRUVS_Ple-leopus"
+		},
+		{
+                  "name": "Red-throat Emperor (Lethrinus miniatus) abundance",
+                  "type": "wms",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+                  "layers": "ea:GBR_AIMS_BRUVS_Let-minis",
+		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_AIMS_BRUVS_Let-minis"
+		},
+		{
+                  "name": "Collared Sea Bream (Gymnocranius audleyi) abundance",
+                  "type": "wms",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+                  "layers": "ea:GBR_AIMS_BRUVS_Gym-audl",
+		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_AIMS_BRUVS_Gym-audl"
+		},
+		{
+                  "name": "Starry Triggerfish (Abalistes stellatus) abundance",
+                  "type": "wms",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+                  "layers": "ea:GBR_AIMS_BRUVS_Aba-stelus",
+		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_AIMS_BRUVS_Aba-stelus"
+		},
+		{
+                  "name": "By catch abundance",
+                  "type": "wms",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+                  "layers": "ea:GBR_AIMS_BRUVS_B-abund",
+		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_AIMS_BRUVS_B-abund"
+		},
+		{
+                  "name": "Total abundance",
+                  "type": "wms",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+                  "layers": "ea:GBR_AIMS_BRUVS_Abund",
+		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_AIMS_BRUVS_Abund"
+		},
+		{
+                  "name": "Species Richness",
+                  "type": "wms",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+                  "layers": "ea:GBR_AIMS_BRUVS_Rich",
+		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_AIMS_BRUVS_Rich"
+		}
               ]
             }
           ]
