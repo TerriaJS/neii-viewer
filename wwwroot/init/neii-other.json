@@ -11,7 +11,7 @@
       "preserveOrder": true,
       "items": [
         {
-          "name": "Other (2)",
+          "name": "Other (1)",
           "type": "group",
 	  "preserveOrder": true,
           "items": [
@@ -609,139 +609,128 @@
                   ]
                 }
               ]
-            },
-	    {
-              "name": "Beta/Prototypes",
-	      "type": "group",
-	      "items": [
-	        {
-	          "name": "Collections of Prototypes",
-		  "nameInCatalog": "Moving sites",
-		  "type": "csv",
-		  "url": "http://neii.bom.gov.au/neii-analytics/testing_nemsr_move.csv",
-		  "idColumns": ["id"],
-                  "tableStyle": 
-		    {
-                      "dataVariable": "value",
-                      "scaleByValue": false
-                    }
-		}
-	      ]
-	    }
+            }
           ]
         },
 	{
-	  "name": "Bushfires (7)",
+	  "name": "Processes (1)",
           "type": "group",
           "preserveOrder": true,
           "items": [
-            {
-              "name": "Digital Earth Australia Hotspots (Geoscience Australia)",
-              "type": "wms",
-              "url": "https://hotspots.dea.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities",
-              "layers": "public:hotspots",
-              "rectangle": [
-                "100.0",
-                "-44.0",
-                "159.0",
-                "-4.0"
-              ]
-            },
-            {
-              "name": "Current Incidents (Rural Fire Service, NSW)",
-              "type": "geojson",
-              "url": "http://www.rfs.nsw.gov.au/feeds/majorIncidents.json"
-            },
-            {
-              "name": "Queensland Fire and Emergency Services",
-              "type": "group",
-              "items": [
-                {
-                  "name": "Bushfire Current Incidents",
-                  "type": "esri-featureServer",
-		  "url": "https://services1.arcgis.com/vkTwD8kHw2woKBqV/arcgis/rest/services/BushfireCurrentIncidentsHostedPublicView/FeatureServer/0"
-                },
-                {
-                  "name": "QFES Fire Bans and Restrictions",
-                  "type": "esri-featureServer",
-                  "url": "https://services1.arcgis.com/vkTwD8kHw2woKBqV/arcgis/rest/services/QFES_Local_Government_Area_Fire_Bans_View/FeatureServer/0"
-                }
-              ]
-            },
 	    {
-              "name": "Queensland Parks Fire History (Queensland Parks and Wildlife Service operations)",
-              "type": "esri-featureServer",
-              "url": "https://gisservices.information.qld.gov.au/arcgis/rest/services/Environment/ParksFireHistory/FeatureServer/0"
-            },
-            {
-              "name": "SA CFS Area Burnt (Country Fire Service)",
-              "type": "esri-featureServer",
-              "url": "https://cfs.geohub.sa.gov.au/server/rest/services/CFS_Incident_Read/SACFS_Area_Burnt/FeatureServer/0"
-            },
-            {
-              "name": "Tasmania Fire Service",
-              "type": "group",
-              "items": [
-                {
-                  "name": "Alert Areas/Potential Impact Zones",
-                  "url": "https://services6.arcgis.com/OWiNqVszgclESSTd/arcgis/rest/services/Alerts/FeatureServer/0",
-                  "type": "esri-featureServer"
-                },
-                {
-                  "name": "Burnt Area Boundaries",
-                  "url": "https://services6.arcgis.com/OWiNqVszgclESSTd/arcgis/rest/services/Burnt_Area/FeatureServer/0",
-                  "type": "esri-featureServer"
-                },
-                {
-                  "name": "Evacaution Centres",
-                  "url": "http://www.fire.tas.gov.au/Show?pageId=refugeKml",
-                  "type": "kml"
-                },
-                {
-                  "name": "Fuel Reduction Program burns",
-                  "url": "http://www.fire.tas.gov.au/userfiles/FuelReductionUnit/Current_Burn_Schedule.KML",
-                  "type": "kml"
-                },
-                {
-                  "name": "Nearby Safer Places",
-                  "url": "https://services6.arcgis.com/OWiNqVszgclESSTd/arcgis/rest/services/Nearby_Safer_Places/FeatureServer",
-                  "type": "esri-featureServer"
-                },
-                {
-                  "name": "Permits Required",
-                  "url": "https://services6.arcgis.com/OWiNqVszgclESSTd/arcgis/rest/services/ResourceManagementSystem/FeatureServer/0",
-                  "type": "esri-featureServer"
-                },
-                {
-                  "name": "Registered Burns and Permits",
-		  "url": "https://data.gov.au/geoserver/tfs-current-permit-registered-burn-locations/wms?request=GetCapabilities",
-		  "type": "wms",
-		  "layers": "ckan_5df7f300_46ac_4a56_b1d0_95e369eeb45f"
-                },
-                {
-                  "name": "Total Fire Ban Areas",
-                  "url": "http://www.fire.tas.gov.au/Show?pageId=tfbKml",
-                  "type": "kml"
-                }
-              ]
-            },
-            {
-              "name": "Department of Environment, Land, Water and Planning (Victoria State Government)",
-	      "type": "group",
-              "items": [
-                {
-                  "name": "Current Burnt Area Polygons",
-                  "type": "esri-featureServer",
-                  "url": "https://services6.arcgis.com/GB33F62SbDxJjwEL/ArcGIS/rest/services/Bushfire_Observations/FeatureServer/"
-                },
-                {
-                  "name": "Current Planned Burn Polygons",
-                  "type": "kml",
-                  "url": "https://fireweb.ffm.vic.gov.au/kml/Planned_burns_poly.kmz"
-                }
-              ]
-            }
-          ]
+		  "name": "Bushfires (7)",
+        	  "type": "group",
+	          "preserveOrder": true,
+	          "items": [
+	            {
+        	      "name": "Digital Earth Australia Hotspots (Geoscience Australia)",
+	              "type": "wms",
+	              "url": "https://hotspots.dea.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities",
+	              "layers": "public:hotspots",
+	              "rectangle": [
+	                "100.0",
+	                "-44.0",
+	                "159.0",
+	                "-4.0"
+	              ]
+	            },
+	            {
+	              "name": "Current Incidents (Rural Fire Service, NSW)",
+	              "type": "geojson",
+	              "url": "http://www.rfs.nsw.gov.au/feeds/majorIncidents.json"
+	            },
+	            {
+	              "name": "Queensland Fire and Emergency Services",
+	              "type": "group",
+	              "items": [
+	                {
+	                  "name": "Bushfire Current Incidents",
+	                  "type": "esri-featureServer",
+			  "url": "https://services1.arcgis.com/vkTwD8kHw2woKBqV/arcgis/rest/services/BushfireCurrentIncidentsHostedPublicView/FeatureServer/0"
+	                },
+	                {
+	                  "name": "QFES Fire Bans and Restrictions",
+	                  "type": "esri-featureServer",
+	                  "url": "https://services1.arcgis.com/vkTwD8kHw2woKBqV/arcgis/rest/services/QFES_Local_Government_Area_Fire_Bans_View/FeatureServer/0"
+        	        }
+	              ]
+	            },
+		    {
+	              "name": "Queensland Parks Fire History (Queensland Parks and Wildlife Service operations)",
+	              "type": "esri-featureServer",
+	              "url": "https://gisservices.information.qld.gov.au/arcgis/rest/services/Environment/ParksFireHistory/FeatureServer/0"
+	            },
+	            {
+	              "name": "SA CFS Area Burnt (Country Fire Service)",
+	              "type": "esri-featureServer",
+	              "url": "https://cfs.geohub.sa.gov.au/server/rest/services/CFS_Incident_Read/SACFS_Area_Burnt/FeatureServer/0"
+	            },
+	            {
+	              "name": "Tasmania Fire Service",
+	              "type": "group",
+	              "items": [
+	                {
+	                  "name": "Alert Areas/Potential Impact Zones",
+	                  "url": "https://services6.arcgis.com/OWiNqVszgclESSTd/arcgis/rest/services/Alerts/FeatureServer/0",
+	                  "type": "esri-featureServer"
+	                },
+	                {
+	                  "name": "Burnt Area Boundaries",
+	                  "url": "https://services6.arcgis.com/OWiNqVszgclESSTd/arcgis/rest/services/Burnt_Area/FeatureServer/0",
+	                  "type": "esri-featureServer"
+	                },
+	                {
+	                  "name": "Evacaution Centres",
+	                  "url": "http://www.fire.tas.gov.au/Show?pageId=refugeKml",
+	                  "type": "kml"
+	                },
+	                {
+	                  "name": "Fuel Reduction Program burns",
+	                  "url": "http://www.fire.tas.gov.au/userfiles/FuelReductionUnit/Current_Burn_Schedule.KML",
+	                  "type": "kml"
+	                },
+	                {
+	                  "name": "Nearby Safer Places",
+	                  "url": "https://services6.arcgis.com/OWiNqVszgclESSTd/arcgis/rest/services/Nearby_Safer_Places/FeatureServer",
+	                  "type": "esri-featureServer"
+	                },
+	                {
+	                  "name": "Permits Required",
+	                  "url": "https://services6.arcgis.com/OWiNqVszgclESSTd/arcgis/rest/services/ResourceManagementSystem/FeatureServer/0",
+	                  "type": "esri-featureServer"
+	                },
+	                {
+	                  "name": "Registered Burns and Permits",
+			  "url": "https://data.gov.au/geoserver/tfs-current-permit-registered-burn-locations/wms?request=GetCapabilities",
+			  "type": "wms",
+			  "layers": "ckan_5df7f300_46ac_4a56_b1d0_95e369eeb45f"
+	                },
+	                {
+	                  "name": "Total Fire Ban Areas",
+        	          "url": "http://www.fire.tas.gov.au/Show?pageId=tfbKml",
+	                  "type": "kml"
+	                }
+	              ]
+	            },
+	            {
+	              "name": "Department of Environment, Land, Water and Planning (Victoria State Government)",
+		      "type": "group",
+	              "items": [
+	                {
+	                  "name": "Current Burnt Area Polygons",
+	                  "type": "esri-featureServer",
+	                  "url": "https://services6.arcgis.com/GB33F62SbDxJjwEL/ArcGIS/rest/services/Bushfire_Observations/FeatureServer/"
+	                },
+        	        {
+	                  "name": "Current Planned Burn Polygons",
+	                  "type": "kml",
+	                  "url": "https://fireweb.ffm.vic.gov.au/kml/Planned_burns_poly.kmz"
+        	        }
+	              ]
+	            }
+        	  ]
+	    }
+	  ]
 	}
       ]
     }
