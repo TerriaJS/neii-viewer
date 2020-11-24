@@ -598,26 +598,14 @@
                   "layers": "Key_Ecological_Features",
                   "dataCustodian": "[Department of the Environment and Energy](http://www.environment.gov.au/)",
                   "url": "http://www.environment.gov.au/mapping/services/ogc_services/Key_Ecological_Features/MapServer/WMSServer",
-                  "type": "wms",
-                  "rectangle": [
-                    "100.0",
-                    "-44.0",
-                    "159.0",
-                    "-4.0"
-                  ]
+                  "type": "wms"
                 },
                 {
                   "name": "Marine key ecological features - named",
                   "layers": "Key_Ecological_Features_named",
                   "dataCustodian": "[Department of the Environment and Energy](http://www.environment.gov.au/)",
                   "url": "http://www.environment.gov.au/mapping/services/ogc_services/Key_Ecological_Features_named/MapServer/WMSServer",
-                  "type": "wms",
-                  "rectangle": [
-                    "100.0",
-                    "-44.0",
-                    "159.0",
-                    "-4.0"
-                  ]
+                  "type": "wms"
                 }
               ]
             },
