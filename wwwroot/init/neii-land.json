@@ -6,7 +6,7 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Land (15)",
+          "name": "Land (16)",
           "type": "group",
           "items": [
             {
@@ -892,7 +892,126 @@
                 "150.3",
                 "-33.9857"
               ]
-	    }
+	    },
+	    {
+	      "name": "Queensland Geology Detailed Web Map Service (Department of Natural Resources, Mines and Energy, Queensland Government)",
+	      "type": "group",
+		  "preserveOrder": true,
+	      "items": [
+		{
+		  "name": "Field Sites",
+		  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities",
+		  "type": "wms",
+		  "layers": "Field Sites"
+		},
+		{
+		  "name": "Detailed 1:100k",
+		  "type": "group",
+		  "description": "Queensland detailed Geology dataset including extents of digital datasets; Detailed Structure features, Surface Geology and Detailed Solid Geology",
+		  "preserveOrder": true,
+		  "items": [
+		    {
+			  "name": "Detailed Soil geology",
+			  "type": "wms",
+			  "layers": "Detailed Solid geology",
+			  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities"
+			},
+			{
+			  "name": "Detailed Soil geology extent",
+			  "type": "wms",
+			  "layers": "Detailed Solid geology extent",
+			  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities"
+			},
+			{
+			  "name": "Detailed Surface geology",
+			  "type": "wms",
+			  "layers": "Detailed Surface geology",
+			  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities"
+			},
+			{
+			  "name": "Detailed Surface geology extent",
+			  "type": "wms",
+			  "layers": "Detailed Surface geology extent",
+			  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities"
+			},
+			{
+			  "name": "Detailed Structure",
+			  "type": "group",
+			  "description": "The lines in this dataset are a digital representation of the position of the boundaries of geological units and other linear features such as faults, bedding trends, dykes, fold axial traces, jointing patterns and other unassigned lineaments. The lines are attributed with a description of the type of line represented.",
+			  "preserveOrder": true,
+			  "items": [
+			    {
+				  "name": "Detailed other features",
+				  "type": "wms",
+				  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities",
+				  "layers": "Detailed other features"
+				},
+				{
+				  "name": "Detailed other natural features",
+				  "type": "wms",
+				  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities",
+				  "layers": "Detailed other natural features"
+				},
+				{
+				  "name": "Detailed Volcanic features",
+				  "type": "wms",
+				  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities",
+				  "layers": "Detailed Volcanic features"
+				},
+				{
+				  "name": "Detailed Trends and Dips",
+				  "type": "wms",
+				  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities",
+				  "layers": "Detailed Trends and Dips"
+				},
+				{
+				  "name": "Detailed Joints and Fractures",
+				  "type": "wms",
+				  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities",
+				  "layers": "Detailed Joints and Fractures"
+				},
+				{
+				  "name": "Detailed Lineaments",
+				  "type": "wms",
+				  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities",
+				  "layers": "Detailed Lineaments"
+				},
+				{
+				  "name": "Detailed Markers Marker Beds or Marker Bands",
+				  "type": "wms",
+				  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities",
+				  "layers": "Detailed Markers Marker Beds or Marker Bands"
+				},
+				{
+				  "name": "Detailed Dykes Veins or Sills",
+				  "type": "wms",
+				  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities",
+				  "layers": "Detailed Dykes Veins or Sills"
+				},
+				{
+				  "name": "Detailed Folds",
+				  "type": "wms",
+				  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities",
+				  "layers": "Detailed Folds"
+				},
+				{
+				  "name": "Detailed Faults and Shear Zones",
+				  "type": "wms",
+				  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities",
+				  "layers": "Detailed Faults and Shear Zones"
+				},
+				{
+				  "name": "Detailed Geological Boundaries",
+				  "type": "wms",
+				  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities",
+				  "layers": "Detailed Geological Boundaries"
+				}
+			  ]
+			}
+		  ]
+		}
+	      ]
+            }
           ]
         }
       ]
