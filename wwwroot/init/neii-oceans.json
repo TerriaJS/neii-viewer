@@ -13,8 +13,9 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Oceans (13)",
+          "name": "Oceans (14)",
           "type": "group",
+	  "preserveOrder": true,
           "items": [
             {
               "name": " NSW Marine protected areas (NSW DPI)",
@@ -1977,6 +1978,132 @@
 		{
 		  "name": "Copyright",
 		  "content": "&copy;Australian Institute of Marine Science 2011. This product is released under the Creative Commons Attribution 3.0 Australia (CC BY 3.0 AU)"
+		}
+	      ]
+      },
+      {
+	      "name": "Queensland watercourse and water area web map service (Department of Natural Resources and Mines, Queensland Government)",
+	      "type": "group",
+	      "preserveOrder": true,
+	      "description": "This web map service displays the watercourse network and areas of inland surface water in Queensland. Water areas include lakes,reservoir and man-made canals. This service is limited to display at scales between 1:4,513 and 1:1, and is designed to be used in conjunction with the WaterCoursesAndBodiesCache service for small scale levels from 1:4,622,325 to 1:4514",
+	      "items": [
+	        {
+		  "name": "Canal",
+		  "type": "group",
+		  "preserveOrder": true,
+		  "items": [
+		    {
+		      "name": "Canal area",
+		      "type": "wms",
+		      "layers": "Canal area",
+		      "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		      "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Canal area"
+		    },
+		    {
+		      "name": "Canal line",
+		      "type": "wms",
+		      "layers": "Canal line",
+		      "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		      "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Canal line"
+		    }
+		  ]
+		},
+		{
+		  "name": "Watercourse",
+		  "type": "group",
+		  "items": [
+		    {
+		      "name": "Watercourse area",
+		      "type": "wms",
+		      "layers": "Watercourse area",
+		      "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		      "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Watercourse area"
+		    },
+		    {
+		      "name": "Watercourse line",
+		      "type": "wms",
+		      "layers": "Watercourse line",
+		      "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		      "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Watercourse line"
+		    },
+		    {
+		      "name": "Watercourse stream order",
+		      "type": "wms",
+		      "layers": "Watercourse stream order",
+		      "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		      "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Watercourse stream order"
+		    }
+		  ]
+		},
+		{
+		  "name": "Coastline",
+		  "type": "wms",
+		  "layers": "Coastline",
+		  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Coastline"
+		},
+		{
+		  "name": "Dam",
+		  "type": "wms",
+		  "layers": "Dam",
+		  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Dam"
+		},
+		{
+		  "name": "Flat or swamp",
+		  "type": "wms",
+		  "layers": "Flat or swamp",
+		  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Flat or swamp"
+		},
+		{
+		  "name": "Lake",
+		  "type": "wms",
+		  "layers": "Lake",
+		  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Lake"
+		},
+		{
+		  "name": "Pondage area",
+		  "type": "wms",
+		  "layers": "Pondage area",
+		  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Pondage area"
+		},
+		{
+		  "name": "Reservoir",
+		  "type": "wms",
+		  "layers": "Reservoir",
+		  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Reservoir"
+		},
+		{
+		  "name": "Rockpool or rockhole",
+		  "type": "wms",
+		  "layers": "Rockpool or rockhole",
+		  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Rockpool or rockhole"
+		},
+		{
+		  "name": "Water area edge",
+		  "type": "wms",
+		  "layers": "Water area edge",
+		  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Water area edge"
+		},
+		{
+		  "name": "Waterfall",
+		  "type": "wms",
+		  "layers": "Waterfall",
+		  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Waterfall"
+		},
+		{
+		  "name": "Waterhole",
+		  "type": "wms",
+		  "layers": "Waterhole",
+		  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Waterhole"
 		}
 	      ]
       }
