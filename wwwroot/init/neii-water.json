@@ -6,7 +6,7 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Water (5)",
+          "name": "Water (6)",
           "type": "group",
           "items": [
             {
@@ -1070,9 +1070,9 @@
                   "opacity": 1
                 }
 			  ]
-			},
-			{
-			  "name": "Australian Surface Hydrology (Web Mercator)",
+	},
+	{
+              "name": "Australian Surface Hydrology (Web Mercator)",
               "type": "group",
               "description": "Australian Surface Hydrology (Web Mercator)",
               "info": [
@@ -1151,7 +1151,223 @@
                   "opacity": 1
 				}
 			  ]
+	},
+	{
+	      "name": "Queensland watercourse and water area web map service (Department of Natural Resources and Mines, Queensland Government)",
+              "type": "group",
+              "preserveOrder": true,
+              "description": "This web map service displays the watercourse network and areas of inland surface water in Queensland. Water areas include lakes,reservoir and man-made canals. This service is limited to display at scales between 1:4,513 and 1:1, and is designed to be used in conjunction with the WaterCoursesAndBodiesCache service for small scale levels from 1:4,622,325 to 1:4514",
+              "items": [
+                {
+                  "name": "Canal",
+                  "type": "group",
+                  "preserveOrder": true,
+                  "items": [
+                    {
+                      "name": "Canal area",
+                      "type": "wms",
+                      "layers": "Canal area",
+                      "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                      "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Canal area",
+		      "info": [
+		        {
+			  "name": "Copyright",
+			  "content": "&copy; State of Queensland (Department of Natural Resources, Mines and Energy) 2020."
 			}
+		      ]
+                    },
+                    {
+                      "name": "Canal line",
+                      "type": "wms",
+                      "layers": "Canal line",
+                      "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                      "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Canal line",
+		      "info": [
+		        {
+			  "name": "Copyright",
+			  "content": "&copy; State of Queensland (Department of Natural Resources, Mines and Energy) 2020."
+			}
+		      ]
+                    }
+                  ]
+                },
+		{
+                  "name": "Watercourse",
+                  "type": "group",
+                  "items": [
+                    {
+                      "name": "Watercourse area",
+                      "type": "wms",
+                      "layers": "Watercourse area",
+                      "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                      "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Watercourse area",
+		      "info": [
+		        {
+			  "name": "Copyright",
+			  "content": "&copy; State of Queensland (Department of Natural Resources, Mines and Energy) 2020."
+			}
+		      ]
+                    },
+                    {
+                      "name": "Watercourse line",
+                      "type": "wms",
+                      "layers": "Watercourse line",
+                      "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                      "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Watercourse line",
+		      "info": [
+		        {
+			  "name": "Copyright",
+			  "content": "&copy; State of Queensland (Department of Natural Resources, Mines and Energy) 2020."
+			}
+		      ]
+                    },
+                    {
+                      "name": "Watercourse stream order",
+                      "type": "wms",
+                      "layers": "Watercourse stream order",
+                      "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                      "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Watercourse stream order",
+		      "info": [
+		        {
+			  "name": "Copyright",
+			  "content": "&copy; State of Queensland (Department of Natural Resources, Mines and Energy) 2020."
+			}
+		      ]
+                    }
+                  ]
+                },
+		{
+                  "name": "Coastline",
+                  "type": "wms",
+                  "layers": "Coastline",
+                  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Coastline",
+		  "info": [
+		    {
+		      "name": "Copyright",
+		      "content": "&copy; State of Queensland (Department of Natural Resources, Mines and Energy) 2020."
+		    }
+		  ]
+                },
+                {
+                  "name": "Dam",
+                  "type": "wms",
+                  "layers": "Dam",
+                  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Dam",
+		  "info": [
+		    {
+		      "name": "Copyright",
+		      "content": "&copy; State of Queensland (Department of Natural Resources, Mines and Energy) 2020."
+		    }
+		  ]
+                },
+                {
+                  "name": "Flat or swamp",
+                  "type": "wms",
+                  "layers": "Flat or swamp",
+                  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Flat or swamp",
+		  "info": [
+		    {
+		      "name": "Copyright",
+		      "content": "&copy; State of Queensland (Department of Natural Resources, Mines and Energy) 2020."
+		    }
+		  ]
+                },
+		{
+                  "name": "Lake",
+                  "type": "wms",
+                  "layers": "Lake",
+                  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Lake",
+		  "info": [
+		    {
+		      "name": "Copyright",
+		      "content": "&copy; State of Queensland (Department of Natural Resources, Mines and Energy) 2020."
+		    }
+		  ]
+                },
+                {
+                  "name": "Pondage area",
+                  "type": "wms",
+                  "layers": "Pondage area",
+                  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Pondage area",
+		  "info": [
+		    {
+		      "name": "Copyright",
+		      "content": "&copy; State of Queensland (Department of Natural Resources, Mines and Energy) 2020."
+		    }
+		  ]
+                },
+                {
+                  "name": "Reservoir",
+                  "type": "wms",
+                  "layers": "Reservoir",
+                  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Reservoir",
+		  "info": [
+		    {
+		      "name": "Copyright",
+		      "content": "&copy; State of Queensland (Department of Natural Resources, Mines and Energy) 2020."
+		    }
+		  ]
+                },
+                {
+                  "name": "Rockpool or rockhole",
+                  "type": "wms",
+                  "layers": "Rockpool or rockhole",
+                  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Rockpool or rockhole",
+		  "info": [
+		    {
+		      "name": "Copyright",
+		      "content": "&copy; State of Queensland (Department of Natural Resources, Mines and Energy) 2020."
+		    }
+		  ]
+                },
+		{
+                  "name": "Water area edge",
+                  "type": "wms",
+                  "layers": "Water area edge",
+                  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Water area edge",
+		  "info": [
+		    {
+		      "name": "Copyright",
+		      "content": "&copy; State of Queensland (Department of Natural Resources, Mines and Energy) 2020."
+		    }
+		  ]
+                },
+                {
+                  "name": "Waterfall",
+                  "type": "wms",
+                  "layers": "Waterfall",
+                  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Waterfall",
+		  "info": [
+		    {
+		      "name": "Copyright",
+		      "content": "&copy; State of Queensland (Department of Natural Resources, Mines and Energy) 2020."
+		    }
+		  ]
+                },
+                {
+                  "name": "Waterhole",
+                  "type": "wms",
+                  "layers": "Waterhole",
+                  "url": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/InlandWaters/WaterCoursesAndBodies/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Waterhole",
+		  "info": [
+		    {
+		      "name": "Copyright",
+		      "content": "&copy; State of Queensland (Department of Natural Resources, Mines and Energy) 2020."
+		    }
+		  ]
+                }
+              ]
+	}
           ]
         }
       ]
