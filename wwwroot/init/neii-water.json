@@ -1153,7 +1153,7 @@
 			  ]
 	},
 	{
-	      "name": "Queensland watercourse and water area web map service (Department of Natural Resources and Mines, Queensland Government)",
+	      "name": "Queensland watercourse and water area web map service (Department of Natural Resources, Mines and Energy, Queensland Government)",
               "type": "group",
               "preserveOrder": true,
               "description": "This web map service displays the watercourse network and areas of inland surface water in Queensland. Water areas include lakes,reservoir and man-made canals. This service is limited to display at scales between 1:4,513 and 1:1, and is designed to be used in conjunction with the WaterCoursesAndBodiesCache service for small scale levels from 1:4,622,325 to 1:4514",
