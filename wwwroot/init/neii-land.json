@@ -912,14 +912,14 @@
 		  "preserveOrder": true,
 		  "items": [
 		    {
-			  "name": "Detailed Soild geology",
+			  "name": "Detailed Solid geology",
 			  "type": "wms",
 			  "layers": "Detailed Solid geology",
 			  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Detailed Solid geology",
 			  "url": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities"
 			},
 			{
-			  "name": "Detailed Soild geology extent",
+			  "name": "Detailed Solid geology extent",
 			  "type": "wms",
 			  "layers": "Detailed Solid geology extent",
 			  "legendUrl": "https://gisservices.information.qld.gov.au/arcgis/services/GeoscientificInformation/GeologyDetailed/MapServer/WMSServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Detailed Solid geology extent",
