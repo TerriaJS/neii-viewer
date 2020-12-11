@@ -623,10 +623,16 @@
 	          "preserveOrder": true,
 	          "items": [
 	            {
-        	      "name": "Digital Earth Australia Hotspots (Geoscience Australia)",
-	              "type": "wms",
-	              "url": "https://hotspots.dea.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities",
-	              "layers": "public:hotspots",
+		      "name": "Digital Earth Australia Hotspots, Last 24h (Geoscience Australia)",
+                      "type": "wms",
+                      "url": "https://hotspots.dea.ga.gov.au/geoserver/ows",
+                      "layers": "public:hotspots_three_days",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "leafletUpdateInterval": 750,
+                      "parameters": {
+                        "cql_filter":"hours_since_hotspot<=24 AND sensor IN ('AVHRR','MODIS','VIIRS') AND product IN ('SRSS','MOD14','AFMOD','EDR')"
+		      },
 	              "rectangle": [
 	                "100.0",
 	                "-44.0",
