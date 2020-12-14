@@ -618,7 +618,7 @@
           "preserveOrder": true,
           "items": [
 	    {
-		  "name": "Natural Disasters (Bushfires) (2)",
+		  "name": "Natural Disasters (including fire) (3)",
         	  "type": "group",
 	          "preserveOrder": true,
 	          "items": [
@@ -644,7 +644,40 @@
 	              "name": "Fires in Australias Forests 2011-16 [2018] [Fire Type 2011-12 to 2015-16] (ABARES)",
 		      "type": "esri-mapServer",
 		      "url": "https://www.asris.csiro.au/arcgis/rest/services/abares/fire_in_australias_forests_2011_2016/MapServer/0"
-		    }
+		    },
+		    {
+                      "name": "Expected Australian Earthquake Hazard (Web Mercator)",
+                      "type": "group",
+                      "description": "Geoscience Australia is the custodian of the most comprehensive publicly available Australian airborne magnetic, gamma-ray, seismic, electromagnetic and gravity data sets. The airborne geophysics data set contains approximately 34 million line kilometres of data, which, at current prices, would cost approximately $197 million to acquire. The gravity data set contains more than 1.57 million reliable onshore stations gathered during more than 1800 surveys. The collection also includes a large number of seismic surveys from Australia offshore basins. The data types and access methods for the Offshore and Onshore data are identical.",
+                      "info": [
+                        {
+                          "name": "Data Custodian",
+                          "content": "[Geoscience Australia](http://www.ga.gov.au/)"
+                        },
+                        {
+                          "name": "Further Information",
+                          "content": "[NEII Catalogue](http://neii.gov.au/catalogue/)"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "name": "Earthquake hazard",
+                          "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                          "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                          "layers": "Earthquake_hazard",
+                          "type": "wms",
+                          "opacity": 1
+                        },
+                        {
+                          "name": "Hazard contours",
+                          "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+                          "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                          "layers": "Hazard_contours",
+                          "type": "wms",
+                          "opacity": 1
+                        }
+                      ]
+                    }
         	  ]
 	    }
 	  ]
