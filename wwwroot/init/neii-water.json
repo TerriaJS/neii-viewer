@@ -1049,49 +1049,57 @@
                   "name": "Basins",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
 		  "url": "https://services.ga.gov.au/gis/rest/services/Surface_Hydrology/MapServer/7",
-		  "type": "esri-mapServer"
+		  "type": "esri-mapServer",
+		  "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/73079"
                 },
 		{
 		  "name": "Catchments",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
 		  "url": "https://services.ga.gov.au/gis/rest/services/Surface_Hydrology/MapServer/6",
-		  "type": "esri-mapServer"
+		  "type": "esri-mapServer",
+		  "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/73078"
 		},
 		{
 		  "name": "Surface HydroLines Regional",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
 		  "url": "https://services.ga.gov.au/gis/rest/services/Surface_Hydrology/MapServer/3",
-		  "type": "esri-mapServer"
+		  "type": "esri-mapServer",
+		  "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/83107"
 		},
 		{
 		  "name": "Surface HydroPolys Regional",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
 		  "url": "https://services.ga.gov.au/gis/rest/services/Surface_Hydrology/MapServer/5",
-		  "type": "esri-mapServer"
+		  "type": "esri-mapServer",
+		  "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/83134"
 		},
 		{
 		  "name": "Surface HydroPoints Regional",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
 		  "url": "https://services.ga.gov.au/gis/rest/services/Surface_Hydrology/MapServer/1",
-		  "type": "esri-mapServer"
+		  "type": "esri-mapServer",
+		  "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/83132"
 		},
 		{
 		  "name": "Surface HydroLines National",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
 		  "url": "https://services.ga.gov.au/gis/rest/services/Surface_Hydrology/MapServer/2",
-		  "type": "esri-mapServer"
+		  "type": "esri-mapServer",
+		  "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/83130"
 		},
 		{
 		  "name": "Surface HydroPolys National",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
 		  "url": "https://services.ga.gov.au/gis/rest/services/Surface_Hydrology/MapServer/4",
-		  "type": "esri-mapServer"
+		  "type": "esri-mapServer",
+		  "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/83135"
 		},
 		{
 		  "name": "Surface HydroPoints National",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
 		  "url": "https://services.ga.gov.au/gis/rest/services/Surface_Hydrology/MapServer/0",
-		  "type": "esri-mapServer"
+		  "type": "esri-mapServer",
+		  "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/83149"
 		}
 	  ]
 	},
