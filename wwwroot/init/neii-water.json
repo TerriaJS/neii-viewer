@@ -1062,8 +1062,10 @@
 		{
 		  "name": "Surface HydroLines Regional",
                   "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
-		  "url": "https://services.ga.gov.au/gis/rest/services/Surface_Hydrology/MapServer/3",
-		  "type": "esri-mapServer",
+		  "url": "http://gaservices.ga.gov.au/site_1/services/Surface_Hydrology_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+                  "layers": "Surface_HydroLines_Regional",
+                  "type": "wms",
+                  "opacity": 1,
 		  "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/83107"
 		},
 		{
