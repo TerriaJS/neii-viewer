@@ -1065,8 +1065,7 @@
 		  "url": "http://gaservices.ga.gov.au/site_1/services/Surface_Hydrology_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
                   "layers": "Surface_HydroLines_Regional",
                   "type": "wms",
-                  "opacity": 1,
-		  "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/83107"
+                  "opacity": 1
 		},
 		{
 		  "name": "Surface HydroPolys Regional",
