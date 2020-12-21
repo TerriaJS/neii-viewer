@@ -1321,10 +1321,42 @@
               ]
 	},
 	{
-	  "name": "Great Artesian Basin water table elevation (Geoscience Australia)",
-	  "type": "wms",
-	  "layers": "Great_Artesian_Basin_Water_Table_Elevation",
-	  "url": "https://services.ga.gov.au/gis/services/Great_Artesian_Basin_water_table_elevation/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+	  "name": "Great Artesian Basin Digital Data (Geoscience Australia)",
+	  "type": "group",
+          "preserveOrder": true,
+	  "description": "This web service provides access to geological, hydrogeological and hydrochemical digital datasets that have been published by Geoscience Australia for the Great Artesian Basin (GAB).",
+	  "items": [
+		  {
+	            "name": "Great Artesian Basin water table elevation",
+	            "type": "wms",
+	            "layers": "Great_Artesian_Basin_Water_Table_Elevation",
+	            "url": "https://services.ga.gov.au/gis/services/Great_Artesian_Basin_water_table_elevation/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+		  },
+		  {
+	            "name": "Alluvium Water Level and GAB Watertable Relationships",
+		    "type": "wms",
+		    "layers": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+		    "url": "gab:alluvium_water_level_gab_wt_relationships"
+		  },
+		  {
+	            "name": "Alluvium Watertable Elevation Contours",
+		    "type": "wms",
+		    "layers": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+		    "url": "gab:alluvium_wt_contours"
+		  },
+		  {
+	            "name": "Watertable Elevation Contours",
+		    "type": "wms",
+		    "layers": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+		    "url": "gab:wt_contours"
+		  },
+		  {
+	            "name": "Watertable Elevation Grid",
+		    "type": "wms",
+		    "layers": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+		    "url": "gab:wt_grid"
+		  }
+	  ]
 	}
           ]
         }
