@@ -1335,26 +1335,26 @@
 		  {
 	            "name": "Alluvium Water Level and GAB Watertable Relationships",
 		    "type": "wms",
-		    "layers": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-		    "url": "gab:alluvium_water_level_gab_wt_relationships"
+		    "url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+		    "layers": "gab:alluvium_water_level_gab_wt_relationships"
 		  },
 		  {
 	            "name": "Alluvium Watertable Elevation Contours",
 		    "type": "wms",
-		    "layers": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-		    "url": "gab:alluvium_wt_contours"
+		    "url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+		    "layers": "gab:alluvium_wt_contours"
 		  },
 		  {
 	            "name": "Watertable Elevation Contours",
 		    "type": "wms",
-		    "layers": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-		    "url": "gab:wt_contours"
+		    "url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+		    "layers": "gab:wt_contours"
 		  },
 		  {
 	            "name": "Watertable Elevation Grid",
 		    "type": "wms",
-		    "layers": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-		    "url": "gab:wt_grid"
+		    "url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+		    "layers": "gab:wt_grid"
 		  }
 	  ]
 	}
