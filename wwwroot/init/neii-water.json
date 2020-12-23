@@ -1326,6 +1326,12 @@
           "preserveOrder": true,
 	  "description": "This web service provides access to geological, hydrogeological and hydrochemical digital datasets that have been published by Geoscience Australia for the Great Artesian Basin (GAB).",
 	  "items": [
+                  {
+	            "name": "Great Artesian Basin Watertable elevation (Geoscience Australia)",
+	            "type": "wms",
+	            "layers": "Great_Artesian_Basin_Water_Table_Elevation",
+	            "url": "https://services.ga.gov.au/gis/services/Great_Artesian_Basin_water_table_elevation/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+	          },
 		  {
 	            "name": "Polygonal Faulting",
 		    "type": "group",
@@ -1350,12 +1356,6 @@
 		    "type": "group",
 		    "preserveOrder": true,
 		    "items": [
-		      {
-	                "name": "Watertable elevation",
-	                "type": "wms",
-	                "layers": "Great_Artesian_Basin_Water_Table_Elevation",
-	                "url": "https://services.ga.gov.au/gis/services/Great_Artesian_Basin_water_table_elevation/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-		      },
 		      {
 	                "name": "Alluvium Water Level and GAB Watertable Relationships",
 		        "type": "wms",
