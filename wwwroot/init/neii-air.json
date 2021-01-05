@@ -7,7 +7,7 @@
       "description": "Conformance for NEII web data services is determined by the [NEII Conformance Framework](http://www.neii.gov.au/system/files/filedepot/1/NEII%20Conformance%20Framework%20Version%201.0%20May%202016.pdf). The framework uses a maturity model approach outlining the various degrees of conformity.\n\nSpecific principles in the framework include the following:\n\n<ul><li>Environmental data are made publically available through machine-readable web data services (published online).</li><li>Structured metadata will support any NEII data release (well described).</li><li>Providers will make their data available through under an open licence.</li><li>Data are provided with support structures that provide enduring operational support to users.</li></ul>\n\nThe first principle is mandatory and in the absence of the availability of environmental data through web data services, NEII conformance is not possible at any level of maturity.\n\nSee the [NEII Conformance Framework](http://www.neii.gov.au/system/files/filedepot/1/NEII%20Conformance%20Framework%20Version%201.0%20May%202016.pdf) for a detailed overview of what constitutes conformance.\n\nSee [here]( http://www.neii.gov.au/web-data-services/) for a list of NEII conformant web data services and how to access.",
       "items": [
         {
-          "name": "Air (3)",
+          "name": "Air (4)",
           "type": "group",
           "items": [
             {
@@ -431,6 +431,13 @@
                   ]
                 }
 	      ]
+	    },
+	    {
+	      "name": "Carbon Capture Storage Basins",
+	      "type": "wms",
+	      "url": "https://www.ga.gov.au/arcgis/services/Maps/Carbon_Capture_Storage_Basins/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+	      "layers": "Basin Ranking",
+	      "legendUrl": "https://www.ga.gov.au/arcgis/services/Maps/Carbon_Capture_Storage_Basins/MapServer/WmsServer?request=GetLegendGraphic%26version=1.3.0%26format=image/png%26layer=Basin%20Ranking"
 	    }
           ]
         }
