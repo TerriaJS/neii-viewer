@@ -433,7 +433,7 @@
 	      ]
 	    },
 	    {
-	      "name": "Carbon Capture Storage Basins",
+	      "name": "Carbon Capture Storage Basins (GA)",
 	      "type": "wms",
 	      "url": "https://www.ga.gov.au/arcgis/services/Maps/Carbon_Capture_Storage_Basins/MapServer/WMSServer?request=GetCapabilities&service=WMS",
 	      "layers": "Basin Ranking",
