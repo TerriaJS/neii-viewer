@@ -13,7 +13,7 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Oceans (13)",
+          "name": "Oceans (14)",
           "type": "group",
 	  "preserveOrder": true,
           "items": [
@@ -1980,6 +1980,24 @@
 		  "content": "&copy;Australian Institute of Marine Science 2011. This product is released under the Creative Commons Attribution 3.0 Australia (CC BY 3.0 AU)"
 		}
 	      ]
+      },
+      {
+	      "name": "Geomorphic Features of Australia's Marine Jurisdiction (GA)",
+              "type": "wfs",
+              "rectangle": [
+                "93.41",
+                "-60.92",
+                "171.80",
+                "-8.47"
+              ],
+	      "url": "https://services.ga.gov.au/gis/services/Marine_Geomorphic_Features/MapServer/WFSServer?request=GetCapabilities&service=WFS",
+	      "typeNames": "Marine_Geomorphic_Features:Geomorphic_Features",
+	      "ignoreUnknownTileErrors": true,
+              "opacity": 1,
+              "leafletUpdateInterval": 750,
+	      "parameters": {
+                "maxFeatures": 5
+	      }
       }
           ]
         }
