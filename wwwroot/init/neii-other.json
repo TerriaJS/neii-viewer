@@ -680,9 +680,88 @@
                     },
 		    {
 		      "name": "Tropical Cyclone Hazard Assessment 2018 (GA)",
-		      "type": "esri-mapServer",
-		      "url": "https://services.ga.gov.au/gis/rest/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer",
-		      "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/130860"
+		      "type": "group",
+		      "description": "As part of the 2018 Tropical Cyclone Hazard Assessment (TCHA), we compiled the geospatial raster dataset that can be accessible to internal and external users via ArcGIS online and can be integrated for building additional geoprocessing applications. This web service gives more stable and easy access to data and interactive maps. With having separate geospatial layers for each recurrence interval- i.e. 5 through 10000 years, users can toggle between the layers and evaluate the changes in wind speed (km/hr) and potential areas at risk on the fly.",
+		      "items": [
+		        {
+			  "name": "RP5 - 5 Years",
+			  "type": "wms",
+			  "url": "https://services.ga.gov.au/gis/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer/WMSServer",
+			  "layers": "RP5"
+			},
+		        {
+			  "name": "RP10 - 10 Years",
+			  "type": "wms",
+			  "url": "https://services.ga.gov.au/gis/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer/WMSServer",
+			  "layers": "RP10"
+			},
+		        {
+			  "name": "RP20 - 20 Years",
+			  "type": "wms",
+			  "url": "https://services.ga.gov.au/gis/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer/WMSServer",
+			  "layers": "RP20"
+			},
+		        {
+			  "name": "RP25 - 25 Years",
+			  "type": "wms",
+			  "url": "https://services.ga.gov.au/gis/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer/WMSServer",
+			  "layers": "RP25"
+			},
+		        {
+			  "name": "RP50 - 50 Years",
+			  "type": "wms",
+			  "url": "https://services.ga.gov.au/gis/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer/WMSServer",
+			  "layers": "RP50"
+			},
+		        {
+			  "name": "RP100 - 100 Years",
+			  "type": "wms",
+			  "url": "https://services.ga.gov.au/gis/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer/WMSServer",
+			  "layers": "RP100"
+			},
+		        {
+			  "name": "RP200 - 200 Years",
+			  "type": "wms",
+			  "url": "https://services.ga.gov.au/gis/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer/WMSServer",
+			  "layers": "RP200"
+			},
+		        {
+			  "name": "RP250 - 250 Years",
+			  "type": "wms",
+			  "url": "https://services.ga.gov.au/gis/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer/WMSServer",
+			  "layers": "RP250"
+			},
+		        {
+			  "name": "RP500 - 500 Years",
+			  "type": "wms",
+			  "url": "https://services.ga.gov.au/gis/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer/WMSServer",
+			  "layers": "RP500"
+			},
+		        {
+			  "name": "RP1000 - 1000 Years",
+			  "type": "wms",
+			  "url": "https://services.ga.gov.au/gis/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer/WMSServer",
+			  "layers": "RP1000"
+			},
+		        {
+			  "name": "RP2000 - 2000 Years",
+			  "type": "wms",
+			  "url": "https://services.ga.gov.au/gis/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer/WMSServer",
+			  "layers": "RP2000"
+			},
+		        {
+			  "name": "RP5000 - 5000 Years",
+			  "type": "wms",
+			  "url": "https://services.ga.gov.au/gis/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer/WMSServer",
+			  "layers": "RP5000"
+			},
+		        {
+			  "name": "RP10000 - 10000 Years",
+			  "type": "wms",
+			  "url": "https://services.ga.gov.au/gis/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer/WMSServer",
+			  "layers": "RP10000"
+			}
+		      ]
 		    }
         	  ]
 	    }
