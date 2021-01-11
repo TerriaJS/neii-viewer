@@ -681,7 +681,8 @@
 		    {
 		      "name": "Tropical Cyclone Hazard Assessment 2018 (GA)",
 		      "type": "esri-mapServer",
-		      "url": "https://services.ga.gov.au/gis/rest/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer"
+		      "url": "https://services.ga.gov.au/gis/rest/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer",
+		      "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/130860"
 		    }
         	  ]
 	    }
