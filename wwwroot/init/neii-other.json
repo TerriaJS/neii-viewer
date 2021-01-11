@@ -618,7 +618,7 @@
           "preserveOrder": true,
           "items": [
 	    {
-		  "name": "Natural Hazards (including fire) (3)",
+		  "name": "Natural Hazards (including fire) (4)",
         	  "type": "group",
 	          "preserveOrder": true,
 	          "items": [
@@ -677,7 +677,12 @@
                           "opacity": 1
                         }
                       ]
-                    }
+                    },
+		    {
+		      "name": "Tropical Cyclone Hazard Assessment 2018 (GA)",
+		      "type": "esri-mapServer",
+		      "url": "https://services.ga.gov.au/gis/rest/services/Tropical_Cyclone_Hazard_Assessment_2018/MapServer"
+		    }
         	  ]
 	    }
 	  ]
