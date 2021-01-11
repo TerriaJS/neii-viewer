@@ -1983,21 +1983,9 @@
       },
       {
 	      "name": "Geomorphic Features of Australia's Marine Jurisdiction (GA)",
-              "type": "wfs",
-              "rectangle": [
-                "93.41",
-                "-60.92",
-                "171.80",
-                "-8.47"
-              ],
-	      "url": "https://services.ga.gov.au/gis/services/Marine_Geomorphic_Features/MapServer/WFSServer?request=GetCapabilities&service=WFS",
-	      "typeNames": "Marine_Geomorphic_Features:Geomorphic_Features",
-	      "ignoreUnknownTileErrors": true,
-              "opacity": 1,
-              "leafletUpdateInterval": 750,
-	      "parameters": {
-                "maxFeatures": 5
-	      }
+	      "type": "esri-mapServer",
+	      "url": "http://services.ga.gov.au/gis/rest/services/Marine_Geomorphic_Features/MapServer/0",
+	      "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/100252"
       }
           ]
         }
