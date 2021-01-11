@@ -13,8 +13,9 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Oceans (13)",
+          "name": "Oceans (14)",
           "type": "group",
+	  "preserveOrder": true,
           "items": [
             {
               "name": " NSW Marine protected areas (NSW DPI)",
@@ -598,14 +599,26 @@
                   "layers": "Key_Ecological_Features",
                   "dataCustodian": "[Department of the Environment and Energy](http://www.environment.gov.au/)",
                   "url": "http://www.environment.gov.au/mapping/services/ogc_services/Key_Ecological_Features/MapServer/WMSServer",
-                  "type": "wms"
+                  "type": "wms",
+                  "rectangle": [
+                    "100.0",
+                    "-44.0",
+                    "159.0",
+                    "-4.0"
+                  ]
                 },
                 {
                   "name": "Marine key ecological features - named",
                   "layers": "Key_Ecological_Features_named",
                   "dataCustodian": "[Department of the Environment and Energy](http://www.environment.gov.au/)",
                   "url": "http://www.environment.gov.au/mapping/services/ogc_services/Key_Ecological_Features_named/MapServer/WMSServer",
-                  "type": "wms"
+                  "type": "wms",
+                  "rectangle": [
+                    "100.0",
+                    "-44.0",
+                    "159.0",
+                    "-4.0"
+                  ]
                 }
               ]
             },
@@ -1967,6 +1980,12 @@
 		  "content": "&copy;Australian Institute of Marine Science 2011. This product is released under the Creative Commons Attribution 3.0 Australia (CC BY 3.0 AU)"
 		}
 	      ]
+      },
+      {
+	      "name": "Geomorphic Features of Australia's Marine Jurisdiction (GA)",
+	      "type": "esri-mapServer",
+	      "url": "http://services.ga.gov.au/gis/rest/services/Marine_Geomorphic_Features/MapServer/0",
+	      "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/100252"
       }
           ]
         }
