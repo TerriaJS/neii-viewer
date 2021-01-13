@@ -123,6 +123,7 @@
               "url": "https://geoserver.data.aims.gov.au/ows?service=WFS&version=1.0.0&request=GetCapabilities",
               "type": "wfs",
               "typeNames": "aims:weather_deployment",
+	      "metadataUrl": "https://apps.aims.gov.au/metadata/view/0887cb5b-b443-4e08-a169-038208109466",
               "info": [
                 {
                   "name": "Copyright",
