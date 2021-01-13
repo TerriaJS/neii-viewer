@@ -618,7 +618,7 @@
           "preserveOrder": true,
           "items": [
 	    {
-		  "name": "Natural Hazards (including fire) (4)",
+		  "name": "Natural Hazards (including fire) (5)",
         	  "type": "group",
 	          "preserveOrder": true,
 	          "items": [
@@ -762,6 +762,12 @@
 			  "layers": "RP10000"
 			}
 		      ]
+		    },
+		    {
+		      "name": "2018 National Seismic Hazard Assessment for Australia (GA)",
+		      "type": "esri-mapServer",
+		      "url": "https://services.ga.gov.au/gis/rest/services/National_Seismic_Hazard_Assessment_2018/MapServer",
+		      "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/123370"
 		    }
         	  ]
 	    }
