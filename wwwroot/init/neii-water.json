@@ -1321,6 +1321,12 @@
               ]
 	},
 	{
+	  "name": "Great Artesian Basin Watertable elevation",
+	  "type": "wms",
+	  "layers": "Great_Artesian_Basin_Water_Table_Elevation",
+	  "url": "https://services.ga.gov.au/gis/services/Great_Artesian_Basin_water_table_elevation/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+	},
+	{
 	  "name": "Great Artesian Basin Digital Data (Geoscience Australia)",
 	  "type": "group",
           "preserveOrder": true,
@@ -1356,16 +1362,11 @@
 	            "layers": "gab:geol_structural_elements",
 		    "url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS"
 		  },
-                  {
-	            "name": "Great Artesian Basin Watertable elevation",
-	            "type": "wms",
-	            "layers": "Great_Artesian_Basin_Water_Table_Elevation",
-	            "url": "https://services.ga.gov.au/gis/services/Great_Artesian_Basin_water_table_elevation/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-	          },
 		  {
 	            "name": "Aquifer Groundwater Chemistry",
 		    "type": "group",
 		    "preserveOrder": true,
+		    "description": "Chemical parameter concentrations and isotopic variations in groundwater in the Great Artesian Basin for the following aquifers: Adori Sandstone; Cadna-owie - Hooray and equivalents; Hutton Sandstone and Winton-Mackunda Formation.",
 		    "items": [
 		      {
 		        "name": "Adori Alkalinity",
@@ -1511,6 +1512,7 @@
 		    "name": "Geological Formation Contact Surfaces",
 		    "type": "group",
 		    "preserveOrder": true,
+		    "description": "Contact surfaces between geological formations containing major aquifers and aquitards in the Great Artesian Basin.",
 		    "items": [
 		      {
 		        "name": "3-second Digital Elevation Model",
@@ -1590,6 +1592,7 @@
 		    "name": "Potentiometric Surfaces",
 		    "type": "group",
 		    "preserveOrder": true,
+		    "description": "Potentiometric surface of the Cadna-owie - Hooray Aquifer in the Great Artesian Basin at 20 year intervals from 1900-2010.",
 		    "items": [
 		      {
 		        "name": "Potentiometric Surface 1900-1920",
@@ -1645,6 +1648,7 @@
 	            "name": "Polygonal Faulting",
 		    "type": "group",
 		    "preserveOrder": true,
+		    "description": "Extent of identified polygonal faulting in the Great Artesian Basin.",
 		    "items": [
 		      {
 		        "name": "Polygonal Faulting Evident In Seismic Transects",
@@ -1664,6 +1668,7 @@
 		    "name": "Watertable Elevation",
 		    "type": "group",
 		    "preserveOrder": true,
+		    "description": "Watertable elevation of the Great Artesian Basin.",
 		    "items": [
 		      {
 	                "name": "Alluvium Water Level and GAB Watertable Relationships",
