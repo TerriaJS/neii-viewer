@@ -6,7 +6,7 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Water (5)",
+          "name": "Water (7)",
           "type": "group",
           "items": [
             {
@@ -1321,11 +1321,384 @@
               ]
 	},
 	{
-	  "name": "Great Artesian Basin water table elevation (Geoscience Australia)",
+	  "name": "Great Artesian Basin Watertable elevation",
 	  "type": "wms",
 	  "layers": "Great_Artesian_Basin_Water_Table_Elevation",
 	  "url": "https://services.ga.gov.au/gis/services/Great_Artesian_Basin_water_table_elevation/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-	}
+	},
+	{
+	  "name": "Great Artesian Basin Digital Data (Geoscience Australia)",
+	  "type": "group",
+          "preserveOrder": true,
+	  "description": "This web service provides access to geological, hydrogeological and hydrochemical digital datasets that have been published by Geoscience Australia for the Great Artesian Basin (GAB).",
+	  "items": [
+		  {
+		    "name": "Basement Inliers",
+	            "type": "wms",
+	            "layers": "gab:basement_inliers",
+		    "url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS"
+		  },
+		  {
+		    "name": "Geomorphology",
+	            "type": "wms",
+	            "layers": "gab:geomorphology",
+		    "url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS"
+		  },
+		  {
+		    "name": "Groundwater Recharge Estimates",
+	            "type": "wms",
+	            "layers": "gab:gw_recharge_estimates",
+		    "url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS"
+		  },
+		  {
+		    "name": "Hydrogeological Basement Units",
+	            "type": "wms",
+	            "layers": "gab:hydrogeol_base_units",
+		    "url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS"
+		  },
+		  {
+		    "name": "Major Geological Structural Elements",
+	            "type": "wms",
+	            "layers": "gab:geol_structural_elements",
+		    "url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS"
+		  },
+		  {
+	            "name": "Aquifer Groundwater Chemistry",
+		    "type": "group",
+		    "preserveOrder": true,
+		    "description": "Chemical parameter concentrations and isotopic variations in groundwater in the Great Artesian Basin for the following aquifers: Adori Sandstone; Cadna-owie - Hooray and equivalents; Hutton Sandstone and Winton-Mackunda Formation.",
+		    "items": [
+		      {
+		        "name": "Adori Alkalinity",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:ADORI_ALK"
+		      },
+		      {
+			"name": "Adori Flouride",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:ADORI_FLU"
+		      },
+		      {
+			"name": "Adori Sodium Adsorption Ratio",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:ADORI_SAR"
+		      },
+		      {
+			"name": "Adori Sulphate",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:ADORI_SO4"
+		      },
+		      {
+			"name": "Adori Total Dissolved Solids",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:ADORI_TDS"
+		      },
+		      {
+			"name": "Cadna-owie - Hooray Alkalinity",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:CAD-HOOR_ALK"
+		      },
+		      {
+			"name": "Cadna-owie - Hooray Carbon-14 Variation",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:TP-RS_14C_CH"
+		      },
+		      {
+			"name": "Cadna-owie - Hooray Flouride",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:CAD-HOOR_FLU"
+		      },
+		      {
+			"name": "Cadna-owie – Hooray Chlorine-36 to chloride ratio",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:T-RS_36CLR_CH"
+		      },
+		      {
+			"name": "Cadna-owie – Hooray Sodium Adsorption Ratio",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:CAD-HOOR_SAR"
+		      },
+		      {
+			"name": "Cadna-owie – Hooray Stable Carbon Isotope Variations",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:CAD-HOOR_TP-RS_13C_CH"
+		      },
+		      {
+			"name": "Cadna-owie – Hooray Sulphate",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:CAD-HOOR_SO4"
+		      },
+		      {
+			"name": "Cadna-owie – Hooray Total Dissolved Solids",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:CAD-HOOR_TDS"
+		      },
+		      {
+			"name": "Hutton Alkalinity",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:HUTTON_ALK"
+		      },
+		      {
+			"name": "Hutton Flouride",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:HUTTON_FLU"
+		      },
+		      {
+			"name": "Hutton Sodium Adsorption Ratio",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:HUTTON_SAR"
+		      },
+		      {
+			"name": "Hutton Sulphate",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:HUTTON_SO4"
+		      },
+		      {
+			"name": "Hutton Total Dissolved Solids",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:HUTTON_TDS"
+		      },
+		      {
+			"name": "Winton – Mackunda Alkalinity",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:WINT-MACK_ALK"
+		      },
+		      {
+			"name": "Winton – Mackunda Flouride",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:WINT-MACK_FLU"
+		      },
+		      {
+			"name": "Winton – Mackunda Sodium Adsorption Ratio",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:WINT-MACK_SAR"
+		      },
+		      {
+			"name": "Winton – Mackunda Sulphate",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:WINT-MACK_SO4"
+		      },
+		      {
+			"name": "Winton – Mackunda Total Dissolved Solids",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:WINT-MACK_TDS"
+		      }
+		    ]
+		  },
+		  {
+		    "name": "Geological Formation Contact Surfaces",
+		    "type": "group",
+		    "preserveOrder": true,
+		    "description": "Contact surfaces between geological formations containing major aquifers and aquitards in the Great Artesian Basin.",
+		    "items": [
+		      {
+		        "name": "3-second Digital Elevation Model",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:3DVIS_LAYER01_3SEC_DEM"
+		      },
+		      {
+		        "name": "Base of Algebuckina Sandstone",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:3DVIS_LAYER05-07_BASE_ALGEBUCKINA_SANDSTONE"
+		      },
+		      {
+		        "name": "Base of Cenozoic",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:3DVIS_LAYER02_BASE_CENOZOIC"
+		      },
+		      {
+		        "name": "Base of Evergreen and Marburg Formations",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:3DVIS_LAYER08a_BASE_EVERGREEN_MARBURG_FORMATION"
+		      },
+		      {
+		        "name": "Base of Hooray Sandstone and Equivalents",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:3DVIS_LAYER05_BASE_HOORAY_SANDSTONE"
+		      },
+		      {
+		        "name": "Base of Hutton Sandstone",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:3DVIS_LAYER07_BASE_HUTTON_SANDSTONE"
+		      },
+		      {
+		        "name": "Base of Injune Creek Group",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:3DVIS_LAYER06_BASE_INJUNE_CREEK_GROUP"
+		      },
+		      {
+		        "name": "Base of Jurassic-Cretaceous Sequence",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:3DVIS_LAYER10_BASE_ASSESSMENT"
+		      },
+		      {
+		        "name": "Base of Mackunda Formation and Equivalents",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:3DVIS_LAYER03_BASE_MACKUNDA_FORMATION"
+		      },
+		      {
+		        "name": "Base of Poolowanna Formation",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:3DVIS_LAYER08b_BASE_POOLOWANNA_FORMATION"
+		      },
+		      {
+		        "name": "Base of Precipice Sandstone and Equivalents",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:3DVIS_LAYER09_BASE_PRECIPICE_SANDSTONE"
+		      },
+		      {
+		        "name": "Base of Rolling Downs Group",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:04_GABWRA_Base_RollingDowns_grid"
+		      }
+		    ]
+		  },
+		  {
+		    "name": "Potentiometric Surfaces",
+		    "type": "group",
+		    "preserveOrder": true,
+		    "description": "Potentiometric surface of the Cadna-owie - Hooray Aquifer in the Great Artesian Basin at 20 year intervals from 1900-2010.",
+		    "items": [
+		      {
+		        "name": "Potentiometric Surface 1900-1920",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:POTENTIOMETRIC_SURFACE_1900-1920"
+		      },
+		      {
+		        "name": "Potentiometric Surface 1900-1920 without faults",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:POTENTIOMETRIC_SURFACE_1900-1920_nf"
+		      },
+		      {
+		        "name": "Potentiometric Surface 1920-1940",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:POTENTIOMETRIC_SURFACE_1920-1940"
+		      },
+		      {
+		        "name": "Potentiometric Surface 1940-1960",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:POTENTIOMETRIC_SURFACE_1940-1960"
+		      },
+		      {
+		        "name": "Potentiometric Surface 1960-1980",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:POTENTIOMETRIC_SURFACE_1960-1980"
+		      },
+		      {
+		        "name": "Potentiometric Surface 1980-2000",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:POTENTIOMETRIC_SURFACE_1980-2000"
+		      },
+		      {
+		        "name": "Potentiometric Surface 2000-2010",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:POTENTIOMETRIC_SURFACE_2000-2010"
+		      },
+		      {
+		        "name": "Potentiometric Surface 2000-2010 without faults",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:POTENTIOMETRIC_SURFACE_2000-2010_nf"
+		      }
+		    ]
+		  },
+		  {
+	            "name": "Polygonal Faulting",
+		    "type": "group",
+		    "preserveOrder": true,
+		    "description": "Extent of identified polygonal faulting in the Great Artesian Basin.",
+		    "items": [
+		      {
+		        "name": "Polygonal Faulting Evident In Seismic Transects",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:poly_faulting_seismic"
+		      },
+		      {
+		        "name": "Surface Polygonal Faulting",
+			"type": "wms",
+			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+			"layers": "gab:surface_poly_faulting"
+		      }
+		    ]
+		  },
+		  {
+		    "name": "Watertable Elevation",
+		    "type": "group",
+		    "preserveOrder": true,
+		    "description": "Watertable elevation of the Great Artesian Basin.",
+		    "items": [
+		      {
+	                "name": "Alluvium Water Level and GAB Watertable Relationships",
+		        "type": "wms",
+		        "url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+		        "layers": "gab:alluvium_water_level_gab_wt_relationships"
+		      },
+		      {
+	                "name": "Alluvium Watertable Elevation Contours",
+		        "type": "wms",
+		        "url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+		        "layers": "gab:alluvium_wt_contours"
+		      },
+		      {
+	                "name": "Watertable Elevation Contours",
+		        "type": "wms",
+		        "url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+		        "layers": "gab:wt_contours"
+		      },
+		      {
+	                "name": "Watertable Elevation Grid",
+		        "type": "wms",
+		        "url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
+		        "layers": "gab:wt_grid",
+		        "legendUrl": "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/wt_grid_red-blue_legend.png"
+		      }
+	            ]
+	          }
+	      ]
+	    }
           ]
         }
       ]
