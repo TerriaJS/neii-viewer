@@ -279,7 +279,7 @@
             },
 			{
               "name": "Australian Shoreline (Web Mercator)",
-              "url": "http://gaservices.ga.gov.au/site_1/services/Shoreline_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+	      "url": "https://services.ga.gov.au/gis/services/Australian_Shoreline/MapServer/WMSServer?request=GetCapabilities&service=WMS",
               "layers": "Shoreline",
               "type": "wms"
             },
