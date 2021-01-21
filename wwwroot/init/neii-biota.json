@@ -161,9 +161,10 @@
             },
 	    {
 	      "name": "Environment Bird Atlas (City of Greater Geelong)",
-	      "type": "wms",
-	      "url": "http://data.gov.au/geoserver/environment-bird-atlas/wms?service=WMS&version=1.3.0&request=GetCapabilities",
-	      "layers": "ckan_4d3e6adb_8356_4d35_9a07_4e09550627c4",
+	      "description": "Australia and its territories are home to over 800 species of birds. The 'Env Bird Atlas' dataset includes many of these species as observed in the Geelong area. Users can search for a species by its common name, or scientific name. The attribute report also displays the species identification number.<br/>Although all due care has been taken to ensure that these data are correct, no warranty is expressed or implied by the City of Greater Geelong in their use. Geographic Coordinate System: GCS_WGS_1984.",
+	      "type": "wfs",
+	      "url": "https://data.gov.au/geoserver/environment-bird-atlas/wfs?service=WFS&version=1.1.0&request=GetCapabilities",
+	      "typeNames": "environment-bird-atlas:ckan_4d3e6adb_8356_4d35_9a07_4e09550627c4",
 	      "metadataUrl": "https://data.gov.au/data/dataset/4d3e6adb-8356-4d35-9a07-4e09550627c4"
 	    },
 	    {
