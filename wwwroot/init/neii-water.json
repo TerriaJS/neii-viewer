@@ -1371,139 +1371,162 @@
 		        "name": "Adori Alkalinity",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:ADORI_ALK"
+			"layers": "gab:ADORI_ALK",
+			"legendUrls": [ "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_alk_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_alk_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Adori Flouride",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:ADORI_FLU"
+			"layers": "gab:ADORI_FLU",
+			"legendUrls": [ "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_flu_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_flu_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Adori Sodium Adsorption Ratio",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:ADORI_SAR"
+			"layers": "gab:ADORI_SAR",
+			"legendUrls": [ "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_sar_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_sar_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Adori Sulphate",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:ADORI_SO4"
+			"layers": "gab:ADORI_SO4",
+			"legendUrls": [ "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_so4_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_so4_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Adori Total Dissolved Solids",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:ADORI_TDS"
+			"layers": "gab:ADORI_TDS",
+			"legendUrls": [ "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_tds_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_tds_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Cadna-owie - Hooray Alkalinity",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:CAD-HOOR_ALK"
+			"layers": "gab:CAD-HOOR_ALK",
+			"legendUrls": [ "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_alk_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_alk_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Cadna-owie - Hooray Carbon-14 Variation",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:TP-RS_14C_CH"
+			"layers": "gab:TP-RS_14C_CH",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/tp-rs_14c_ch_red-blue_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/tp-rs_14c_ch_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Cadna-owie - Hooray Flouride",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:CAD-HOOR_FLU"
+			"layers": "gab:CAD-HOOR_FLU",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_flu_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_flu_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Cadna-owie – Hooray Chlorine-36 to chloride ratio",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:T-RS_36CLR_CH"
+			"layers": "gab:T-RS_36CLR_CH",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/t-rs_36clr_ch_red-blue_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/t-rs_36clr_ch_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Cadna-owie – Hooray Sodium Adsorption Ratio",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:CAD-HOOR_SAR"
+			"layers": "gab:CAD-HOOR_SAR",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_sar_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_sar_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Cadna-owie – Hooray Stable Carbon Isotope Variations",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:CAD-HOOR_TP-RS_13C_CH"
+			"layers": "gab:CAD-HOOR_TP-RS_13C_CH",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/tp-rs_13c_red-blue_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/tp-rs_13c_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Cadna-owie – Hooray Sulphate",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:CAD-HOOR_SO4"
+			"layers": "gab:CAD-HOOR_SO4",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_so4_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_so4_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Cadna-owie – Hooray Total Dissolved Solids",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:CAD-HOOR_TDS"
+			"layers": "gab:CAD-HOOR_TDS",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_tds_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_tds_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Hutton Alkalinity",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:HUTTON_ALK"
+			"layers": "gab:HUTTON_ALK",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_alk_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_alk_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Hutton Flouride",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:HUTTON_FLU"
+			"layers": "gab:HUTTON_FLU",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_flu_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_flu_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Hutton Sodium Adsorption Ratio",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:HUTTON_SAR"
+			"layers": "gab:HUTTON_SAR",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_sar_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_sar_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Hutton Sulphate",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:HUTTON_SO4"
+			"layers": "gab:HUTTON_SO4",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_so4_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_so4_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Hutton Total Dissolved Solids",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:HUTTON_TDS"
+			"layers": "gab:HUTTON_TDS",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_tds_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_tds_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Winton – Mackunda Alkalinity",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:WINT-MACK_ALK"
+			"layers": "gab:WINT-MACK_ALK",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_alk_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_alk_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Winton – Mackunda Flouride",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:WINT-MACK_FLU"
+			"layers": "gab:WINT-MACK_FLU",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_flu_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_flu_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Winton – Mackunda Sodium Adsorption Ratio",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:WINT-MACK_SAR"
+			"layers": "gab:WINT-MACK_SAR",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_sar_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_sar_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Winton – Mackunda Sulphate",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:WINT-MACK_SO4"
+			"layers": "gab:WINT-MACK_SO4",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_so4_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_so4_grayscale_legend.png"]
 		      },
 		      {
 			"name": "Winton – Mackunda Total Dissolved Solids",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:WINT-MACK_TDS"
+			"layers": "gab:WINT-MACK_TDS",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_tds_blue-red_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/gw_chem_tds_grayscale_legend.png"]
 		      }
 		    ]
 		  },
@@ -1517,73 +1540,85 @@
 		        "name": "3-second Digital Elevation Model",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:3DVIS_LAYER01_3SEC_DEM"
+			"layers": "gab:3DVIS_LAYER01_3SEC_DEM",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_min-max_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_hist_equal_legend.png"]
 		      },
 		      {
 		        "name": "Base of Algebuckina Sandstone",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:3DVIS_LAYER05-07_BASE_ALGEBUCKINA_SANDSTONE"
+			"layers": "gab:3DVIS_LAYER05-07_BASE_ALGEBUCKINA_SANDSTONE",
+			"legendUrls": [ "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_min-max_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_hist_equal_legend.png"]
 		      },
 		      {
 		        "name": "Base of Cenozoic",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:3DVIS_LAYER02_BASE_CENOZOIC"
+			"layers": "gab:3DVIS_LAYER02_BASE_CENOZOIC",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_min-max_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_hist_equal_legend.png"]
 		      },
 		      {
 		        "name": "Base of Evergreen and Marburg Formations",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:3DVIS_LAYER08a_BASE_EVERGREEN_MARBURG_FORMATION"
+			"layers": "gab:3DVIS_LAYER08a_BASE_EVERGREEN_MARBURG_FORMATION",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_min-max_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_hist_equal_legend.png"]
 		      },
 		      {
 		        "name": "Base of Hooray Sandstone and Equivalents",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:3DVIS_LAYER05_BASE_HOORAY_SANDSTONE"
+			"layers": "gab:3DVIS_LAYER05_BASE_HOORAY_SANDSTONE",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_min-max_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_hist_equal_legend.png"]
 		      },
 		      {
 		        "name": "Base of Hutton Sandstone",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:3DVIS_LAYER07_BASE_HUTTON_SANDSTONE"
+			"layers": "gab:3DVIS_LAYER07_BASE_HUTTON_SANDSTONE",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_min-max_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_hist_equal_legend.png"]
 		      },
 		      {
 		        "name": "Base of Injune Creek Group",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:3DVIS_LAYER06_BASE_INJUNE_CREEK_GROUP"
+			"layers": "gab:3DVIS_LAYER06_BASE_INJUNE_CREEK_GROUP",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_min-max_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_hist_equal_legend.png"]
 		      },
 		      {
 		        "name": "Base of Jurassic-Cretaceous Sequence",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:3DVIS_LAYER10_BASE_ASSESSMENT"
+			"layers": "gab:3DVIS_LAYER10_BASE_ASSESSMENT",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_min-max_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_hist_equal_legend.png"]
 		      },
 		      {
 		        "name": "Base of Mackunda Formation and Equivalents",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:3DVIS_LAYER03_BASE_MACKUNDA_FORMATION"
+			"layers": "gab:3DVIS_LAYER03_BASE_MACKUNDA_FORMATION",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_min-max_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_hist_equal_legend.png"]
 		      },
 		      {
 		        "name": "Base of Poolowanna Formation",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:3DVIS_LAYER08b_BASE_POOLOWANNA_FORMATION"
+			"layers": "gab:3DVIS_LAYER08b_BASE_POOLOWANNA_FORMATION",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_min-max_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_hist_equal_legend.png"]
 		      },
 		      {
 		        "name": "Base of Precipice Sandstone and Equivalents",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:3DVIS_LAYER09_BASE_PRECIPICE_SANDSTONE"
+			"layers": "gab:3DVIS_LAYER09_BASE_PRECIPICE_SANDSTONE",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_min-max_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_hist_equal_legend.png"]
 		      },
 		      {
 		        "name": "Base of Rolling Downs Group",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:04_GABWRA_Base_RollingDowns_grid"
+			"layers": "gab:04_GABWRA_Base_RollingDowns_grid",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_min-max_legend.png", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/3SEC_DEM_hist_equal_legend.png"]
 		      }
 		    ]
 		  },
@@ -1597,49 +1632,57 @@
 		        "name": "Potentiometric Surface 1900-1920",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:POTENTIOMETRIC_SURFACE_1900-1920"
+			"layers": "gab:POTENTIOMETRIC_SURFACE_1900-1920",
+			"legendUrls": [ "https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1980-2000", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
 		      },
 		      {
 		        "name": "Potentiometric Surface 1900-1920 without faults",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:POTENTIOMETRIC_SURFACE_1900-1920_nf"
+			"layers": "gab:POTENTIOMETRIC_SURFACE_1900-1920_nf",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1900-1920_nf", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
 		      },
 		      {
 		        "name": "Potentiometric Surface 1920-1940",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:POTENTIOMETRIC_SURFACE_1920-1940"
+			"layers": "gab:POTENTIOMETRIC_SURFACE_1920-1940",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1920-1940", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
 		      },
 		      {
 		        "name": "Potentiometric Surface 1940-1960",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:POTENTIOMETRIC_SURFACE_1940-1960"
+			"layers": "gab:POTENTIOMETRIC_SURFACE_1940-1960",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1940-1960", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
 		      },
 		      {
 		        "name": "Potentiometric Surface 1960-1980",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:POTENTIOMETRIC_SURFACE_1960-1980"
+			"layers": "gab:POTENTIOMETRIC_SURFACE_1960-1980",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1960-1980", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
 		      },
 		      {
 		        "name": "Potentiometric Surface 1980-2000",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:POTENTIOMETRIC_SURFACE_1980-2000"
+			"layers": "gab:POTENTIOMETRIC_SURFACE_1980-2000",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1980-2000", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
 		      },
 		      {
 		        "name": "Potentiometric Surface 2000-2010",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:POTENTIOMETRIC_SURFACE_2000-2010"
+			"layers": "gab:POTENTIOMETRIC_SURFACE_2000-2010",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_2000-2010", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
 		      },
 		      {
 		        "name": "Potentiometric Surface 2000-2010 without faults",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
-			"layers": "gab:POTENTIOMETRIC_SURFACE_2000-2010_nf"
+			"layers": "gab:POTENTIOMETRIC_SURFACE_2000-2010_nf",
+			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_2000-2010_nf", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
 		      }
 		    ]
 		  },
