@@ -1633,56 +1633,104 @@
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
 			"layers": "gab:POTENTIOMETRIC_SURFACE_1900-1920",
-			"legendUrls": [ "https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1980-2000", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
+			"legendUrls": [
+			    {
+				"mimeType": "image/png",
+				"url": "https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1900-1920"
+			    },
+			    "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"
+			]
 		      },
 		      {
 		        "name": "Potentiometric Surface 1900-1920 without faults",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
 			"layers": "gab:POTENTIOMETRIC_SURFACE_1900-1920_nf",
-			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1900-1920_nf", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
+			"legendUrls": [
+			    {
+				"mimeType": "image/png",
+				"url": "https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1900-1920_nf"
+			    },
+			    "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"
+			]
 		      },
 		      {
 		        "name": "Potentiometric Surface 1920-1940",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
 			"layers": "gab:POTENTIOMETRIC_SURFACE_1920-1940",
-			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1920-1940", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
+			"legendUrls": [
+			    {
+				"mimeType": "image/png",
+				"url": "https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1920-1940"
+			    },
+			    "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"
+			]
 		      },
 		      {
 		        "name": "Potentiometric Surface 1940-1960",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
 			"layers": "gab:POTENTIOMETRIC_SURFACE_1940-1960",
-			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1940-1960", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
+			"legendUrls": [
+			    {
+				"mimeType": "image/png",
+				"url": "https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1940-1960"
+			    },
+			    "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"
+			]
 		      },
 		      {
 		        "name": "Potentiometric Surface 1960-1980",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
 			"layers": "gab:POTENTIOMETRIC_SURFACE_1960-1980",
-			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1960-1980", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
+			"legendUrls": [
+			    {
+				"mimeType": "image/png",
+				"url": "https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1960-1980"
+			    },
+			    "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"
+			]
 		      },
 		      {
 		        "name": "Potentiometric Surface 1980-2000",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
 			"layers": "gab:POTENTIOMETRIC_SURFACE_1980-2000",
-			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1980-2000", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
+			"legendUrls": [
+                            {
+                                "mimeType": "image/png",
+                                "url": "https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_1980-2000"
+                            },
+                            "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"
+                        ]
 		      },
 		      {
 		        "name": "Potentiometric Surface 2000-2010",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
 			"layers": "gab:POTENTIOMETRIC_SURFACE_2000-2010",
-			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_2000-2010", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
+			"legendUrls": [
+                            {
+                                "mimeType": "image/png",
+                                "url": "https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_2000-2010"
+                            },
+                            "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"
+                        ]
 		      },
 		      {
 		        "name": "Potentiometric Surface 2000-2010 without faults",
 			"type": "wms",
 			"url": "https://services.ga.gov.au/gis/great-artesian-basin/wms?REQUEST=GetCapabilities&SERVICE=WMS",
 			"layers": "gab:POTENTIOMETRIC_SURFACE_2000-2010_nf",
-			"legendUrls": ["https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_2000-2010_nf", "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"]
+			"legendUrls": [
+                            {
+                                "mimeType": "image/png",
+                                "url": "https://services.ga.gov.au/gis/great-artesian-basin/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gab%3APOTENTIOMETRIC_SURFACE_2000-2010_nf"
+                            },
+                            "https://services.ga.gov.au/gis/great-artesian-basin/styles/gab/legends/potentiometric_surface_grayscale_legend.png"
+                        ]
 		      }
 		    ]
 		  },
