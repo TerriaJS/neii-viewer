@@ -7,7 +7,7 @@
       "preserveOrder": true,
       "items": [
         {
-          "name": "Biota (6)",
+          "name": "Biota (7)",
           "type": "group",
           "preserveOrder": true,
           "items": [
@@ -73,6 +73,30 @@
                 }
               ],
               "items": [
+		{
+		  "name": "MMP 2015",
+		  "type": "group",
+		  "isOpen": false,
+		  "description": "MMP 2015",
+		  "items": [
+		    {
+		      "name": "MMP Seagrass monitoring sites",
+		      "type": "wms",
+		      "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+		      "disableUserChanges": true,
+		      "styles": "MMP-Locations_Seagrass",
+		      "layers": "GBR_AIMS_MMP_Locations-2017"
+		    },
+		    {
+		      "name": "MMP Inshore Coral sites",
+		      "type": "wms",
+		      "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+		      "disableUserChanges": true,
+		      "styles": "MMP-Locations_Coral",
+		      "layers": "GBR_AIMS_MMP_Locations-2017"
+		    }
+		  ]
+		},
                 {
                   "name": "Marine Monitoring Program Sites (post 2015)",
                   "type": "wms",
@@ -95,6 +119,12 @@
 		  "dataUrl": "https://maps.eatlas.org.au/maps/ea/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ea:GBR_MMP-sites-2010"
 		}
 	      ]
+	    },
+	    {
+	      "name": "GBR: Inshore coral and water quality monitoring (eAtlas)",
+	      "type": "wms",
+	      "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+	      "layers": "GBR_AIMS_WQ-summary"
 	    },
 	    {
               "name": "Fish abundance (eAtlas)",
