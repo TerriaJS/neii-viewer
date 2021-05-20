@@ -31,28 +31,28 @@
 	      ],
 	      "items": [
 		{
-		  "name": "Australia - Present Major Vegetation Groups - NVIS Version 5.1 (Albers 100m analysis product)",
+		  "name": "National Vegetation Information System (NVIS) Version 6.0 Major Vegetation Groups – Extant Vegetation",
 		  "type": "wms",
                   "url": "http://www.environment.gov.au/mapping/services/ogc_services/NVIS_ext_mvg/MapServer/WMSServer",
-		  "layers": "NVIS_EXT_MVG"
+		  "layers": "NVIS6_0_AUST_EXT_MVG_ALB_mer"
 		},
 		{
-		  "name": "Australia - Pre-1750 Major Vegetation Groups - NVIS Version 5.1 (Albers 100m analysis product)",
+		  "name": "National Vegetation Information System (NVIS) Version 6.0 Major Vegetation Groups – Estimated Pre- 1750 Vegetation",
 		  "type": "wms",
 		  "url": "http://www.environment.gov.au/mapping/services/ogc_services/NVIS_pre_mvg/MapServer/WMSServer",
-		  "layers": "NVIS_PRE_MVG"
+		  "layers": "NVIS6_0_AUST_PRE_MVG_ALB_mer"
 		},
 		{
-		  "name": "Australia - Present Major Vegetation Subgroups - NVIS Version 5.1 (Albers 100m analysis product)",
+		  "name": "National Vegetation Information System (NVIS) Version 6.0 Major Vegetation Subgroups – Extant Vegetation",
 		  "type": "wms",
 		  "url": "http://www.environment.gov.au/mapping/services/ogc_services/NVIS_ext_mvs/MapServer/WMSServer",
-		  "layers": "NVIS_EXT_MVS"
+		  "layers": "NVIS6_0_AUST_EXT_MVS_ALB_mer"
 		},
 		{
-		  "name": "Australia - Pre-1750 Major Vegetation Subgroups - NVIS Version 5.1 (Albers 100m analysis product)",
+		  "name": "National Vegetation Information System (NVIS) Version 6.0 Major Vegetation Subgroups – Estimated Pre- 1750 Vegetation",
 		  "type": "wms",
 		  "url": "http://www.environment.gov.au/mapping/services/ogc_services/NVIS_pre_mvs/MapServer/WMSServer",
-		  "layers": "NVIS_PRE_MVS"
+		  "layers": "NVIS6_0_AUST_PRE_MVS_ALB_mer"
 		}
 	      ]
 	    },
