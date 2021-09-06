@@ -1,0 +1,151 @@
+@import "~terriajs-variables";
+@import "~terriajs-mixins";
+
+@include keyframes(fade-in) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@include keyframes(fade-out) {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@include keyframes(slide-up) {
+  0% {
+    @include transform(translate(-50%, 0%));
+  }
+  100% {
+    @include transform(translate(-50%, -50%));
+  }
+}
+@include keyframes(slide-down) {
+  0% {
+    @include transform(translate(-50%, -50%));
+  }
+  100% {
+    @include transform(translate(-50%, 0%));
+  }
+}
+
+.popupModalWrapper {
+  color: white;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba($dark-with-overlay, 0.8);
+  opacity: 1;
+  @include animation("fade-in");
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.popupModalWrapperClosing {
+  @include animation("fade-out");
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  & > article {
+    @include animation("slide-down");
+    animation-duration: 0.3s;
+  }
+}
+
+
+.popupModal {
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: $box-shadow;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  width: 400px;
+  @media (max-width: 500px) {
+      width: 90%;
+  }
+  
+  @media (min-width: 500px) {
+    min-height: 360px;
+  }
+  
+  @include transform(translate(-50%, -50%));  
+  @include animation("slide-up");
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 100%;
+
+  border-radius: 8px;
+  background-color: #072734;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.popupModalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+    max-width: 345px;
+    height: 260px;
+    margin: auto;
+    padding: 1em;
+    padding-top: 0px;
+}
+
+.message {
+    text-align: center;
+    color: white;
+}
+
+.surveyLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 70%;
+    padding: 20px;
+
+    background-color: #BCC94E;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+
+    svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+    }
+}
+
+.dontShowAgain {
+    align-self: center;
+    border: 0;
+    background: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 0.8em;
+    padding: 2px;
+}
+
+svg.closeButton {
+  width: 12px;
+  height: 12px;
+  fill: white;
+  align-self: flex-end;
+  padding: 10px;
+  cursor: pointer;
+}
