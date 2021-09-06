@@ -71,6 +71,7 @@ const SurveyPopup = ({ terria }) => {
                 target="_blank"
                 className={Styles.surveyLink}
                 href={SURVEY_LINK}
+                onClick={() => handleClose(true)}
               >
                 <Icon glyph={Icon.GLYPHS.externalLink} />
                 Open NEII survey
