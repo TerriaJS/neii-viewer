@@ -59,13 +59,11 @@ const SurveyPopup = ({ terria }) => {
             />
             <div className={Styles.popupModalContent}>
               <div className={Styles.message}>
-                <p>
                   The NEII team would like to know about your NEII website
                   usage.
-                </p>
-                <p>
+              </div>
+              <div className={Styles.message}>
                   <b>Please complete our short survey.</b>
-                </p>
               </div>
               <a
                 target="_blank"
