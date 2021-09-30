@@ -67,9 +67,9 @@
               "type": "esri-mapServer"
             },
             {
-              "name": "Collaborative Australian Protected Areas Database (CAPAD) 2018 - Terrestrial (DoEE)",
+              "name": "Collaborative Australian Protected Areas Database (CAPAD) 2020 - Terrestrial (DoEE)",
               "url": "http://www.environment.gov.au/mapping/services/ogc_services/capad/MapServer/WMSServer",
-              "layers": "Protected_Areas",
+              "layers": "Terrestrial CAPAD",
               "type": "wms"
             },
             {

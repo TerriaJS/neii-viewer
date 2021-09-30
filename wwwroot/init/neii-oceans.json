@@ -13,7 +13,7 @@
       "isOpen": false,
       "items": [
         {
-          "name": "Oceans (14)",
+          "name": "Oceans (14A)",
           "type": "group",
 	  "preserveOrder": true,
           "items": [
@@ -623,9 +623,9 @@
               ]
             },
 			{
-				"name": "Collaborative Australian Protected Areas Database (CAPAD) 2018 - Marine (DoEE)",
+				"name": "Collaborative Australian Protected Areas Database (CAPAD) 2020 - Marine (DoEE)",
 				"url": "http://www.environment.gov.au/mapping/services/ogc_services/CAPAD_MARINE/MapServer/WMSServer",
-				"layers": "Marine CAPAD",
+				"layers": "0",
 				"type": "wms"
 			},
 			{					
@@ -1987,6 +1987,79 @@
 	      "type": "esri-mapServer",
 	      "url": "http://services.ga.gov.au/gis/rest/services/Marine_Geomorphic_Features/MapServer/0",
 	      "metadataUrl": "https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/100252"
+      },
+      {
+	      "name": "eAtlas - GBR Features",
+	      "type": "group",
+	      "description": "This dataset contains coastal features within and adjacent to the Great Barrier Reef World Heritage area. This dataset consists of two shapefiles GBR_FEATURES.shp and GBR_DRY_REEF.shp. The GBR_FEATURES shapefile contains the following features: <br/>* Queensland mainland coastline,<br/>* Major and other coral reef structures (as defined by the reef shoal edge),<br/>* Islands and rocks (exposed and submerged), <br/>* Major coral cay features.",
+	      "info": [
+	        {
+		  "name": "Data Custodian",
+		  "content": "[Geoscience Australia](http://www.eatlas.org.au/)"
+		},
+		{
+		  "name": "Further Information",
+		  "content": "[NEII Catalogue](https://eatlas.org.au/data/uuid/ac8e8e4f-fc0e-4a01-9c3d-f27e4a8fac3c)"
+		}
+	      ],
+	      "items": [
+		{
+		  "name": "GBR dry reefs",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+		  "layers": "GBR_GBRMPA_GBR-dry-reef",
+		  "type": "wms",
+		  "dataUrl": "https://maps.eatlas.org.au:443/maps/ea/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=ea:GBR_GBRMPA_GBR-dry-reef&srsName=EPSG%3A4326",
+		  "opacity": 1
+		},
+		{
+                  "name": "GBR Features: Cays (GBRMPA)",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+		  "layers": "GBR_GBRMPA_GBR-features_Cays",
+		  "type": "wms",
+		  "dataUrl": "https://maps.eatlas.org.au:443/maps/ea/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=ea:GBR_GBRMPA_GBR-features_Cays&srsName=EPSG%3A4326",
+		  "opacity": 1
+		},
+		{
+		  "name": "GBR Features: Islands (GBRMPA)",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+		  "layers": "GBR_GBRMPA_GBR-features_Islands",
+		  "type": "wms",
+		  "dataUrl": "https://maps.eatlas.org.au:443/maps/ea/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=ea:GBR_GBRMPA_GBR-features_Islands&srsName=EPSG%3A4326",
+		  "opacity": 1
+		},
+		{
+		  "name": "GBR Features: Mainland (GBRMPA)",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+		  "layers": "GBR_GBRMPA_GBR-features_Mainland",
+		  "type": "wms",
+		  "dataUrl": "https://maps.eatlas.org.au:443/maps/ea/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=ea:GBR_GBRMPA_GBR-features_Mainland&srsName=EPSG%3A4326",
+		  "opacity": 1
+		},
+		{
+		  "name": "GBR Features: Reefs (GBRMPA)",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+		  "layers": "GBR_GBRMPA_GBR-features_Reefs",
+		  "type": "wms",
+		  "dataUrl": "https://maps.eatlas.org.au:443/maps/ea/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=ea:GBR_GBRMPA_GBR-features_Reefs&srsName=EPSG%3A4326",
+		  "opacity": 1
+		},
+		{
+		  "name": "GBR Features: Reefs, Coastline, Cays, Islands (GBRMPA)",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+		  "layers": "GBR_GBRMPA_GBR-features",
+		  "type": "wms",
+		  "dataUrl": "https://maps.eatlas.org.au:443/maps/ea/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=ea:GBR_GBRMPA_GBR-features&srsName=EPSG%3A4326",
+		  "opacity": 1
+		},
+		{
+		  "name": "GBR Features: Rocks (GBRMPA)",
+		  "url": "https://maps.eatlas.org.au/maps/ea/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+		  "layers": "GBR_GBRMPA_GBR-features_Rocks",
+		  "type": "wms",
+		  "dataUrl": "https://maps.eatlas.org.au:443/maps/ea/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=ea:GBR_GBRMPA_GBR-features_Rocks&srsName=EPSG%3A4326",
+		  "opacity": 1
+		}
+	      ]
       }
           ]
         }
