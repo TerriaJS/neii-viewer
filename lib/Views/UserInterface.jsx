@@ -11,7 +11,6 @@ import RelatedMaps from "./RelatedMaps";
 import SplitPoint from "terriajs/lib/ReactViews/SplitPoint";
 import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
 import version from "../../version";
-import SurveyPopup from "./SurveyPopup";
 
 import "./global.scss";
 
@@ -56,7 +55,6 @@ export default function UserInterface(props) {
           </If>
         </ExperimentalMenu>
       </StandardUserInterface>
-      <SurveyPopup terria={props.viewState.terria} />
     </>
   );
 }

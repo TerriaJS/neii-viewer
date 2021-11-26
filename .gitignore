@@ -21,3 +21,5 @@ deploy/packages/
 deploy/work/
 
 packages/
+
+package-lock.json
