@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 2022-05-23
+
+* Added popup for decomissioning site on 15 June 2022.
+
 ### 2020-04-17
 
 * Update to [TerriaJS 7.11.4](https://github.com/TerriaJS/terriajs/blob/7.11.4/CHANGES.md).
