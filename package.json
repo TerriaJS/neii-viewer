@@ -26,7 +26,7 @@
     "awsS3PackagesPath": "s3://nationalmap-apps/neii",
     "awsRegion": "ap-southeast-2",
     "awsEc2InstanceType": "t2.small",
-    "awsEc2ImageId": "ami-0065540df76a93885",
+    "awsEc2ImageId": "ami-0cfaff66cce8cce97",
     "awsKeyName": "has100",
     "awsS3ServerConfigOverridePath": "s3://nationalmap-apps/neii/privateserverconfig-2016-11-10.json",
     "awsS3ClientConfigOverridePath": "s3://nationalmap-apps/neii/privateclientconfig-2018-09-27.json",
